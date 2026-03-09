@@ -19,7 +19,7 @@ class GroceryBot:
         self.pathfinder = Pathfinder()
         self.task_assigner = TaskAssigner(self.pathfinder)
         self.action_generator = ActionGenerator(self.pathfinder)
-        self.collision_avoider = CollisionAvoider()
+        self.collision_avoider = CollisionAvoider(lookahead_steps=4)
         self.current_state: GameState | None = None
     
     def process_round(self, state_data: dict[str, Any]) -> list[dict[str, Any]]:
@@ -33,7 +33,7 @@ class GroceryBot:
         """
         # Parse state
         self.current_state = GameState.from_dict(state_data)
-        logger.debug(f"Round {self.current_state.round}: Processing state")
+        logger.debug(f"Round {self.current_state.round}: Processing state with {len(self.current_state.bots)} bots")
         
         # Initialize pathfinder with current map if needed
         self.pathfinder.set_map(
@@ -42,7 +42,11 @@ class GroceryBot:
             self.current_state.walls
         )
         
-        # Assign tasks to bots
+        # Update congestion based on bot positions
+        bot_positions = [bot.position for bot in self.current_state.bots]
+        self.pathfinder.update_congestion(bot_positions)
+        
+        # Assign tasks to bots (global optimization)
         tasks = self.task_assigner.assign_tasks(self.current_state)
         
         # Generate actions for each bot
@@ -51,7 +55,7 @@ class GroceryBot:
             tasks
         )
         
-        # Apply collision avoidance
+        # Apply collision avoidance with multi-step lookahead
         actions = self.collision_avoider.resolve_conflicts(
             self.current_state,
             actions

@@ -32,10 +32,13 @@ class ActionGenerator:
         """
         actions = []
         
+        # Get all bot positions for congestion awareness
+        bot_positions = [bot.position for bot in state.bots]
+        
         for bot in state.bots:
             task = tasks.get(bot.id)
             if task:
-                action = self._generate_action(bot, state, task)
+                action = self._generate_action(bot, state, task, bot_positions)
             else:
                 action = {"bot": bot.id, "action": "wait"}
             actions.append(action)
@@ -46,7 +49,8 @@ class ActionGenerator:
         self,
         bot: Bot,
         state: GameState,
-        task: Task
+        task: Task,
+        bot_positions: list[tuple[int, int]]
     ) -> dict[str, Any]:
         """Generate an action for a bot based on its task."""
         
@@ -56,11 +60,19 @@ class ActionGenerator:
         if task.type == TaskType.PICK_ACTIVE or task.type == TaskType.PICK_PREVIEW:
             return self._pick_up_action(bot, task.target_item)
         
-        if task.type == TaskType.MOVE_TO_ITEM:
-            return self._move_toward_action(bot, task.target_item.position)
+        if task.type == TaskType.MOVE_TO_ITEM and task.target_item:
+            return self._move_toward_action(
+                bot, 
+                task.target_item.position, 
+                bot_positions
+            )
         
-        if task.type == TaskType.MOVE_TO_DROP_OFF:
-            return self._move_toward_action(bot, task.target_position)
+        if task.type == TaskType.MOVE_TO_DROP_OFF and task.target_position:
+            return self._move_toward_action(
+                bot, 
+                task.target_position, 
+                bot_positions
+            )
         
         # Default: wait
         return {"bot": bot.id, "action": "wait"}
@@ -78,14 +90,29 @@ class ActionGenerator:
     def _move_toward_action(
         self,
         bot: Bot,
-        target: tuple[int, int]
+        target: tuple[int, int],
+        bot_positions: list[tuple[int, int]]
     ) -> dict[str, Any]:
-        """Generate a movement action toward a target."""
+        """Generate a movement action toward a target.
+        
+        Uses congestion-aware pathfinding when multiple bots are present.
+        """
         x, y = bot.position
         tx, ty = target
         
-        # Get next step using BFS
-        next_pos = self.pathfinder.get_next_step(bot.position, target)
+        # Use congestion-aware pathfinding for multi-bot scenarios
+        use_congestion = len(bot_positions) > 1
+        
+        if use_congestion:
+            # Exclude this bot's position from congestion calculation
+            other_positions = [p for p in bot_positions if p != bot.position]
+            next_pos = self.pathfinder.get_next_step(
+                bot.position, 
+                target, 
+                use_congestion=True
+            )
+        else:
+            next_pos = self.pathfinder.get_next_step(bot.position, target)
         
         if next_pos is None:
             # No path or already at target
