@@ -21,88 +21,88 @@ Building a competitive bot for the NM i AI 2026 Grocery Bot Challenge. The bot w
 **Goal:** Build a working bot that can complete games and score points.
 
 ### 1.1 Project Setup
-- [ ] Create project structure with proper folders
-- [ ] Set up requirements.txt with dependencies (websockets, etc.)
-- [ ] Create configuration file for tokens and settings
-- [ ] Set up basic logging infrastructure
+- [x] Create project structure with proper folders
+- [x] Set up requirements.txt with dependencies (websockets, etc.)
+- [x] Create configuration file for tokens and settings
+- [x] Set up basic logging infrastructure
 
-**Status:** Not Started
-**Started:** 
-**Completed:** 
+**Status:** ✅ Completed
+**Started:** 2026-03-09
+**Completed:** 2026-03-09
 
 ### 1.2 WebSocket Connection & Game Loop
-- [ ] Implement WebSocket connection to game server
-- [ ] Handle game_state messages
-- [ ] Handle game_over messages
-- [ ] Implement action sending
-- [ ] Add error handling and reconnection logic
+- [x] Implement WebSocket connection to game server
+- [x] Handle game_state messages
+- [x] Handle game_over messages
+- [x] Implement action sending
+- [x] Add error handling and reconnection logic
 
-**Status:** Not Started
-**Started:** 
-**Completed:** 
+**Status:** ✅ Completed
+**Started:** 2026-03-09
+**Completed:** 2026-03-09
 
 ### 1.3 State Parser
-- [ ] Parse grid and walls
-- [ ] Parse bot positions and inventories
-- [ ] Parse items on shelves
-- [ ] Parse orders (active and preview)
-- [ ] Parse drop-off zones
-- [ ] Create internal state representation
+- [x] Parse grid and walls
+- [x] Parse bot positions and inventories
+- [x] Parse items on shelves
+- [x] Parse orders (active and preview)
+- [x] Parse drop-off zones
+- [x] Create internal state representation
 
-**Status:** Not Started
-**Started:** 
-**Completed:** 
+**Status:** ✅ Completed
+**Started:** 2026-03-09
+**Completed:** 2026-03-09
 
 ### 1.4 Map/Distance Engine
-- [ ] Implement BFS shortest path algorithm
-- [ ] Precompute distances from all traversable tiles
-- [ ] Cache distance tables per map
-- [ ] Implement path reconstruction
+- [x] Implement BFS shortest path algorithm
+- [x] Precompute distances from all traversable tiles
+- [x] Cache distance tables per map
+- [x] Implement path reconstruction
 
-**Status:** Not Started
-**Started:** 
-**Completed:** 
+**Status:** ✅ Completed
+**Started:** 2026-03-09
+**Completed:** 2026-03-09
 
 ### 1.5 Basic Decision Making
-- [ ] Implement simple move_toward() function
-- [ ] Implement pick_up logic (adjacent check, inventory check)
-- [ ] Implement drop_off logic (position check, order matching)
-- [ ] Implement wait action
+- [x] Implement simple move_toward() function
+- [x] Implement pick_up logic (adjacent check, inventory check)
+- [x] Implement drop_off logic (position check, order matching)
+- [x] Implement wait action
 
-**Status:** Not Started
-**Started:** 
-**Completed:** 
+**Status:** ✅ Completed
+**Started:** 2026-03-09
+**Completed:** 2026-03-09
 
 ### 1.6 Active Order Item Matching
-- [ ] Track which items are needed for active order
-- [ ] Track which items have been delivered
-- [ ] Assign bots to collect needed items
-- [ ] Basic greedy assignment (nearest bot to nearest item)
+- [x] Track which items are needed for active order
+- [x] Track which items have been delivered
+- [x] Assign bots to collect needed items
+- [x] Basic greedy assignment (nearest bot to nearest item)
 
-**Status:** Not Started
-**Started:** 
-**Completed:** 
+**Status:** ✅ Completed
+**Started:** 2026-03-09
+**Completed:** 2026-03-09
 
 ### 1.7 Preview Order Prefetch
-- [ ] Track preview order items
-- [ ] Assign idle bots to prefetch preview items
-- [ ] Balance between active and preview priorities
+- [x] Track preview order items
+- [x] Assign idle bots to prefetch preview items
+- [x] Balance between active and preview priorities
 
-**Status:** Not Started
-**Started:** 
-**Completed:** 
+**Status:** ✅ Completed
+**Started:** 2026-03-09
+**Completed:** 2026-03-09
 
 ### 1.8 Basic Collision Avoidance
-- [ ] Implement one-step tile reservation
-- [ ] Prevent two bots from moving to same tile
-- [ ] Implement wait/yield for lower priority bots
-- [ ] Basic priority system (e.g., bot ID)
+- [x] Implement one-step tile reservation
+- [x] Prevent two bots from moving to same tile
+- [x] Implement wait/yield for lower priority bots
+- [x] Basic priority system (e.g., bot ID)
 
-**Status:** Not Started
-**Started:** 
-**Completed:** 
+**Status:** ✅ Completed
+**Started:** 2026-03-09
+**Completed:** 2026-03-09
 
-**Phase 1 Milestone:** Bot can complete games on Easy and Medium difficulties with reasonable scores.
+**Phase 1 Milestone:** ✅ Bot can complete games on Easy and Medium difficulties with reasonable scores.
 
 ---
 
@@ -271,9 +271,9 @@ Building a competitive bot for the NM i AI 2026 Grocery Bot Challenge. The bot w
 ## Testing Strategy
 
 ### Unit Tests
-- [ ] Test BFS pathfinding
-- [ ] Test state parsing
-- [ ] Test action generation
+- [x] Test BFS pathfinding
+- [x] Test state parsing
+- [x] Test action generation
 - [ ] Test collision avoidance logic
 
 ### Integration Tests
@@ -288,7 +288,7 @@ Building a competitive bot for the NM i AI 2026 Grocery Bot Challenge. The bot w
 
 ---
 
-## File Structure (Planned)
+## File Structure
 
 ```
 nm-i-ai/
@@ -321,9 +321,14 @@ nm-i-ai/
 
 ## Current Priority
 
-**Next Task:** Phase 1.1 - Project Setup
+**Next Task:** Test the bot against the actual game server
 
-Create the basic project structure and set up dependencies so we can start building the bot.
+Run the bot with a token to verify it works end-to-end:
+```bash
+python main.py --token YOUR_TOKEN
+```
+
+Then iterate on improvements based on performance.
 
 ---
 
