@@ -21,11 +21,14 @@ LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 # Pathfinding
 CACHE_DISTANCE_TABLES = True
 
-# Task assignment weights
+# Task assignment weights (OPTIMIZED FOR SCORE)
 WEIGHT_ACTIVE_ITEM = 1.0
-WEIGHT_ORDER_COMPLETION = 5.0
-WEIGHT_PREVIEW_ITEM = 0.5
+WEIGHT_ORDER_COMPLETION = 10.0  # Increased from 5.0 - order completion is key!
+WEIGHT_PREVIEW_ITEM = 0.3       # Reduced from 0.5 - focus on active order
 WEIGHT_POSITIONING = 0.1
 
 # Collision avoidance
-COLLISION_LOOKAHEAD_STEPS = 3
+COLLISION_LOOKAHEAD_STEPS = 4
+
+# Drop-off strategy
+MIN_ITEMS_FOR_DROP_OFF = 2  # Drop off when 2+ active items (was implicit)
