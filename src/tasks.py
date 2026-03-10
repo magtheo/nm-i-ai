@@ -164,7 +164,7 @@ class TaskAssigner:
                         continue
                     for item in state.get_items_by_type(item_type):
                         dist = self.pathfinder.bfs_distance(bot.position, item.position)
-                        if dist > 0 and dist <= 3:  # Very close item
+                        if dist > 1 and dist <= 3:  # Nearby item, but NOT adjacent
                             score = self._score_pick_active(bot, item, state, active_order)
                             # Bonus for bundling
                             score *= (1 + 0.2 * active_in_inventory)

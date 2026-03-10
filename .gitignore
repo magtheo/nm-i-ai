@@ -44,3 +44,6 @@ htmlcov/
 # Local config (tokens should never be committed)
 .env
 local_config.py
+
+# Auth token file (JWT from browser)
+.auth_token

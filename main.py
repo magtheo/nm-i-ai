@@ -9,6 +9,7 @@ import sys
 from config import GAME_TOKEN, LOG_FORMAT, LOG_LEVEL
 from src.bot import GroceryBot
 from src.connection import GameConnection
+from src.token_manager import TokenManager, VALID_DIFFICULTIES
 
 
 def setup_logging(verbose: bool = False) -> None:
@@ -47,6 +48,33 @@ async def run_bot(token: str, verbose: bool = False) -> dict:
         raise
 
 
+async def run_with_auto_token(difficulty: str, verbose: bool = False) -> dict:
+    """Run the bot with automatic token fetching.
+    
+    Args:
+        difficulty: Game difficulty level
+        verbose: Enable verbose logging
+        
+    Returns:
+        Game over data
+    """
+    setup_logging(verbose)
+    logger = logging.getLogger(__name__)
+    
+    token_manager = TokenManager()
+    
+    try:
+        game_token = await token_manager.fetch_game_token(difficulty)
+    except FileNotFoundError as e:
+        logger.error(str(e))
+        sys.exit(1)
+    except Exception as e:
+        logger.error(f"Failed to fetch game token: {e}")
+        sys.exit(1)
+    
+    return await run_bot(game_token, verbose)
+
+
 def main() -> None:
     """Main entry point."""
     parser = argparse.ArgumentParser(description="Grocery Bot")
@@ -57,6 +85,18 @@ def main() -> None:
         help="Game token (or set NM_GAME_TOKEN env var)"
     )
     parser.add_argument(
+        "--auto-token", "-a",
+        action="store_true",
+        help="Automatically fetch token using saved JWT (run scripts/save_token.py first)"
+    )
+    parser.add_argument(
+        "--difficulty", "-d",
+        type=str,
+        default="medium",
+        choices=VALID_DIFFICULTIES,
+        help="Game difficulty (default: medium, used with --auto-token)"
+    )
+    parser.add_argument(
         "--verbose", "-v",
         action="store_true",
         help="Enable verbose logging"
@@ -64,11 +104,13 @@ def main() -> None:
     
     args = parser.parse_args()
     
-    if not args.token:
-        print("Error: No token provided. Use --token or set NM_GAME_TOKEN env var")
+    if args.auto_token:
+        result = asyncio.run(run_with_auto_token(args.difficulty, args.verbose))
+    elif not args.token:
+        print("Error: No token provided. Use --token, --auto-token, or set NM_GAME_TOKEN env var")
         sys.exit(1)
-    
-    result = asyncio.run(run_bot(args.token, args.verbose))
+    else:
+        result = asyncio.run(run_bot(args.token, args.verbose))
     
     print(f"\nGame Over!")
     print(f"  Score: {result.get('score', 0)}")

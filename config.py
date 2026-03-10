@@ -1,9 +1,16 @@
 """Configuration settings for the Grocery Bot."""
 
 import os
+from pathlib import Path
 
 # WebSocket URL template - replace YOUR_TOKEN with actual token
 WS_URL_TEMPLATE = "wss://game.ainm.no/ws?token={token}"
+
+# API URLs
+GAME_REQUEST_API_URL = "https://api.ainm.no/games/request"
+
+# Paths
+AUTH_TOKEN_PATH = Path.home() / ".config" / "nm-game" / "auth_token"
 
 # Game settings
 MAX_INVENTORY_SIZE = 3
