@@ -89,28 +89,31 @@ class GroceryBot:
             elif task.target_item:
                 goals[bot_id] = task.target_item.position
         
-        # Log each bot's action
+        # Apply collision avoidance with multi-step lookahead
+        original_actions = {a["bot"]: a["action"] for a in actions}
+        actions = self.collision_avoider.resolve_conflicts(state, actions, goals)
+
+        # Log any changes made by collision avoidance
         for action in actions:
             bot_id = action.get("bot", "?")
-            action_type = action.get("action", "?")
+            final_action = action.get("action", "?")
+            original_action = original_actions.get(bot_id, "?")
             target = action.get("target")
             task = tasks.get(bot_id)
-            
-            if action_type == "drop_off":
+
+            if final_action != original_action:
+                logger.info(f"  Bot {bot_id}: {original_action} -> {final_action} (collision avoidance)")
+            elif final_action == "drop_off":
                 logger.info(f"  Bot {bot_id}: DROP_OFF (carrying item to deliver)")
             elif should_log_info:
                 if target:
-                    logger.info(f"  Bot {bot_id}: {action_type} -> {target} | Task: {task}")
+                    logger.info(f"  Bot {bot_id}: {final_action} -> {target} | Task: {task}")
                 else:
-                    logger.info(f"  Bot {bot_id}: {action_type} | Task: {task}")
-            
+                    logger.info(f"  Bot {bot_id}: {final_action} | Task: {task}")
+
+            if final_action == "wait" and should_log_info:
+                logger.info(f"  Bot {bot_id}: WAIT (blocked)")
             logger.debug(f"  Bot {bot_id} action: {action}")
-        
-        # Apply collision avoidance with multi-step lookahead
-        original_count = len(actions)
-        actions = self.collision_avoider.resolve_conflicts(state, actions, goals)
-        if len(actions) < original_count:
-            logger.warning(f"  Collision avoidance removed {original_count - len(actions)} actions")
         
         if not actions:
             logger.warning("  No actions generated!")

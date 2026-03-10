@@ -294,8 +294,16 @@ class CollisionAvoider:
                 good_alternatives.sort(key=lambda alt: abs(alt[2][0] - goal_pos[0]) + abs(alt[2][1] - goal_pos[1]))
                 dx, dy, _ = good_alternatives[0]
             else:
-                # All alternatives move away significantly - just wait instead of making it worse
-                return None
+                # All alternatives move away significantly
+                # But if bot has been waiting too long, allow a suboptimal move to escape
+                wait_count = self._wait_counts.get(bot_id, 0)
+                if wait_count >= 3:
+                    # Bot is stuck - allow any alternative to escape deadlock
+                    valid_alternatives.sort(key=lambda alt: abs(alt[2][0] - goal_pos[0]) + abs(alt[2][1] - goal_pos[1]))
+                    dx, dy, _ = valid_alternatives[0]
+                else:
+                    # Not stuck yet - wait
+                    return None
         else:
             # No goal, pick first available
             dx, dy, _ = valid_alternatives[0]
