@@ -64,11 +64,21 @@ LOG_CONFIG = {
     },
 }
 
+LOG_DESCRIPTIONS = {
+    LogCategory.MAIN: "Overview: rounds, scores, errors, warnings",
+    LogCategory.BOT: "Bot positions, stuck detection, decision making",
+    LogCategory.PATHFINDING: "Navigation, BFS, distance calculations",
+    LogCategory.TASKS: "Task assignment, scoring, prioritization",
+    LogCategory.ACTIONS: "Action generation, move/pick_up/drop_off decisions",
+    LogCategory.CONNECTION: "WebSocket messages, connection status",
+    LogCategory.COLLISION: "Collision detection, resolution, wait actions",
+}
+
 _loggers: dict[LogCategory, logging.Logger] = {}
 
 
 class LogFormatter(logging.Formatter):
-    """Custom log formatter with timestamps and colored output support."""
+    """Custom log formatter with timestamps."""
 
     def __init__(self, fmt: Optional[str] = None, datefmt: Optional[str] = None):
         if fmt is None:
@@ -80,6 +90,50 @@ class LogFormatter(logging.Formatter):
     def format(self, record: logging.LogRecord) -> str:
         record.asctime = self.formatTime(record, self.datefmt)
         return super().format(record)
+
+
+def get_log_reference(category: LogCategory) -> str:
+    """Get a reference string pointing to a specific log file.
+    
+    Args:
+        category: The log category to reference.
+    
+    Returns:
+        String like "(see logs/pathfinding.log for details)"
+    """
+    filename = LOG_CONFIG[category]["filename"]
+    return f"(see logs/{filename} for details)"
+
+
+def log_issue(logger: logging.Logger, category: LogCategory, message: str, level: int = logging.WARNING) -> None:
+    """Log an issue to the main logger with a reference to a detailed log file.
+    
+    Args:
+        logger: The main logger to log to.
+        category: The log category that contains detailed information.
+        message: The message to log.
+        level: Log level (default: WARNING).
+    """
+    reference = get_log_reference(category)
+    logger.log(level, f"{message} {reference}")
+
+
+def _build_log_files_reference(log_dir: str) -> str:
+    """Build the log files reference section.
+    
+    Args:
+        log_dir: The log directory path.
+    
+    Returns:
+        Formatted string with log files reference.
+    """
+    lines = ["LOG FILES:"]
+    for category in LogCategory:
+        filename = LOG_CONFIG[category]["filename"]
+        description = LOG_DESCRIPTIONS[category]
+        padded_name = f"{log_dir}/{filename}".ljust(21)
+        lines.append(f"  {padded_name} - {description}")
+    return "\n".join(lines)
 
 
 def setup_file_logging(verbose: bool = False, log_dir: str = "logs") -> dict[str, logging.Logger]:
@@ -128,6 +182,18 @@ def setup_file_logging(verbose: bool = False, log_dir: str = "logs") -> dict[str
             args=(),
             exc_info=None,
         ))
+        
+        if category == LogCategory.MAIN:
+            log_files_section = _build_log_files_reference(log_dir)
+            file_handler.emit(logging.LogRecord(
+                name=logger.name,
+                level=logging.INFO,
+                pathname="",
+                lineno=0,
+                msg=log_files_section,
+                args=(),
+                exc_info=None,
+            ))
         
         if config["console"]:
             console_level = logging.DEBUG if verbose else logging.INFO
@@ -202,6 +268,14 @@ def log_game_summary(logger: logging.Logger, result: dict) -> None:
     for key, value in result.items():
         if key not in ("winner", "score", "rounds", "duration", "errors"):
             logger.info(f"{key.replace('_', ' ').title()}: {value}")
+    
+    logger.info(separator)
+    logger.info("For detailed logs, see:")
+    for category in LogCategory:
+        if category != LogCategory.MAIN:
+            filename = LOG_CONFIG[category]["filename"]
+            description = LOG_DESCRIPTIONS[category]
+            logger.info(f"  logs/{filename} - {description}")
     
     logger.info(separator)
     logger.info(f"Session ended at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
