@@ -95,7 +95,7 @@ class GameState:
             items=[Item.from_dict(i) for i in data.get("items", [])],
             orders=[Order.from_dict(o) for o in data.get("orders", [])],
             drop_off=tuple(data.get("drop_off", [0, 0])),
-            drop_off_zones=[tuple(z) for z in data.get("drop_off_zones", [])],
+            drop_off_zones=[tuple(z) for z in data.get("drop_off_zones", [])] or [tuple(data.get("drop_off", [0, 0]))],
             score=data.get("score", 0)
         )
     

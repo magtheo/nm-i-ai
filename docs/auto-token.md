@@ -1,6 +1,6 @@
 # Auto-Token Feature
 
-Automatically fetch game tokens using a saved JWT, eliminating the need to manually copy tokens from the browser for each game.
+Automatically fetch game tokens using browser automation, eliminating the need to manually copy tokens from the browser for each game.
 
 ## Quick Start
 
@@ -8,8 +8,8 @@ Automatically fetch game tokens using a saved JWT, eliminating the need to manua
 # 1. Install browser (one-time)
 playwright install chromium
 
-# 2. Login and save JWT (repeat when token expires)
-python scripts/save_token.py
+# 2. (Optional) Pre-login to save browser session
+python scripts/login.py
 
 # 3. Run the bot
 python main.py --auto-token --difficulty medium
@@ -19,19 +19,20 @@ python main.py --auto-token --difficulty medium
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│                           Setup (run once or when JWT expires)           │
+│                     Optional Pre-Login (run once)                        │
 ├──────────────────────────────────────────────────────────────────────────┤
 │                                                                          │
-│   scripts/save_token.py                                                  │
+│   python scripts/login.py                                                │
 │          │                                                               │
 │          ▼                                                               │
 │   ┌──────────────┐     ┌─────────────┐     ┌────────────────────────┐   │
-│   │   Chromium   │────▶│  You login  │────▶│  Extract access_token  │   │
-│   │   browser    │     │  manually   │     │  cookie (JWT)          │   │
-│   └──────────────┘     └─────────────┘     └────────────────────────┘   │
-│                                                     │                    │
-│                                                     ▼                    │
-│                                          ~/.config/nm-game/auth_token   │
+│   │   Chromium   │────▶│  You login  │────▶│  Browser state saved   │   │
+│   │   browser    │     │  via magic  │     │  for future sessions   │   │
+│   └──────────────┘     │    link     │     └────────────────────────┘   │
+│                        └─────────────┘                    │              │
+│                                                          ▼              │
+│                                            ~/.config/nm-game/           │
+│                                            browser_state/               │
 │                                                                          │
 └──────────────────────────────────────────────────────────────────────────┘
 
@@ -42,9 +43,21 @@ python main.py --auto-token --difficulty medium
 │   python main.py --auto-token --difficulty medium                        │
 │          │                                                               │
 │          ▼                                                               │
+│   ┌──────────────┐     ┌─────────────────────────────────────────────┐  │
+│   │   Chromium   │────▶│  Load browser state (if previously saved)   │  │
+│   │   browser    │     │  Navigate to app.ainm.no/challenge          │  │
+│   └──────────────┘     └─────────────────────────────────────────────┘  │
+│          │                                                               │
+│          ▼                                                               │
+│   ┌──────────────────────────────────────────────────────────────────┐  │
+│   │  If logged in: JWT cookie auto-set (no interaction needed)       │  │
+│   │  If not logged in: User logs in via magic link                   │  │
+│   └──────────────────────────────────────────────────────────────────┘  │
+│          │                                                               │
+│          ▼                                                               │
 │   ┌──────────────────────┐     ┌─────────────────────────────────────┐  │
-│   │ ~/.config/nm-game/   │────▶│  POST api.ainm.no/games/request     │  │
-│   │ auth_token (JWT)     │     │  Cookie: access_token=<JWT>         │  │
+│   │ Extract access_token │────▶│  POST api.ainm.no/games/request     │  │
+│   │ cookie (fresh JWT)   │     │  Cookie: access_token=<JWT>         │  │
 │   └──────────────────────┘     │  Body: {"difficulty": "medium"}     │  │
 │                                └─────────────────────────────────────┘  │
 │                                             │                            │
@@ -55,7 +68,7 @@ python main.py --auto-token --difficulty medium
 │                                             │                            │
 │                                             ▼                            │
 │                                ┌─────────────────────────────────────┐  │
-│                                │  Connect to game WebSocket          │  │
+│                                │  Browser closes, game starts        │  │
 │                                │  wss://game.ainm.no/ws?token=...    │  │
 │                                └─────────────────────────────────────┘  │
 │                                                                          │
@@ -74,20 +87,22 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-### Step 1: Login and Save JWT
+### Step 1: (Optional) Pre-Login
 
 ```bash
-python scripts/save_token.py
+python scripts/login.py
 ```
 
 This will:
 1. Open a Chromium browser window
-2. Navigate to https://game.ainm.no
-3. Wait for you to login manually
-4. Automatically detect and save your JWT when logged in
+2. Navigate to https://app.ainm.no/challenge
+3. Wait for you to login via magic link
+4. Save browser state for future sessions
 5. Close the browser
 
-The JWT is saved to: `~/.config/nm-game/auth_token`
+Browser state is saved to: `~/.config/nm-game/browser_state/`
+
+**Note:** This step is optional. If you skip it, the browser will open on your first `--auto-token` run and you'll login then.
 
 ### Step 2: Run the Bot
 
@@ -102,11 +117,17 @@ python main.py --auto-token --difficulty hard
 python main.py -a -d expert
 ```
 
+Each run will:
+1. Open browser (reusing saved session if available)
+2. Extract fresh JWT from cookies
+3. Fetch game token from API
+4. Close browser and start game
+
 ## CLI Options
 
 | Option | Short | Description |
 |--------|-------|-------------|
-| `--auto-token` | `-a` | Fetch token automatically using saved JWT |
+| `--auto-token` | `-a` | Fetch token automatically via browser |
 | `--difficulty` | `-d` | Game difficulty (used with `--auto-token`) |
 | `--token` | `-t` | Manual token (existing method) |
 | `--verbose` | `-v` | Enable debug logging |
@@ -125,8 +146,8 @@ python main.py -a -d expert
 
 ```
 src/token_manager.py    # TokenManager class for fetching game tokens
-scripts/save_token.py   # Browser automation to extract JWT
-config.py               # API URL and auth token path constants
+scripts/login.py        # Browser automation to login and save session
+config.py               # API URL and browser state path constants
 main.py                 # CLI with --auto-token flag
 ```
 
@@ -137,10 +158,7 @@ from src.token_manager import TokenManager
 
 manager = TokenManager()
 
-# Load saved JWT
-jwt = manager.load_auth_token()
-
-# Fetch game token (async)
+# Fetch game token via browser automation (async)
 game_token = await manager.fetch_game_token(difficulty="medium")
 ```
 
@@ -179,10 +197,11 @@ python main.py --token your_token
 
 ## Security
 
-- JWT is stored in `~/.config/nm-game/auth_token` with `600` permissions
-- The file is excluded from git via `.gitignore`
+- Browser state is stored in `~/.config/nm-game/browser_state/` with restricted permissions
+- The directory is excluded from git via `.gitignore`
 - Browser window is visible - you control the login
-- Never commit your JWT to version control
+- JWT is one-time use and extracted fresh for each game session
+- Never commit your browser state to version control
 
 ## Troubleshooting
 
@@ -191,13 +210,6 @@ python main.py --token your_token
 ```bash
 pip install playwright
 playwright install chromium
-```
-
-### "Auth token file not found"
-
-Run the setup script:
-```bash
-python scripts/save_token.py
 ```
 
 ### "Timeout: No token detected after 5 minutes"
@@ -215,33 +227,43 @@ python main.py --auto-token --verbose
 
 Valid difficulties are: `easy`, `medium`, `hard`, `expert`, `nightmare`
 
-### JWT Expired
+### Session Expired / Login Required
 
-JWTs have an `exp` claim. When expired, re-run:
-```bash
-python scripts/save_token.py
-```
+If your browser session expires, the browser will open and prompt for login again. Use magic link to re-authenticate.
 
 ## Token Lifecycle
 
 ```
-┌─────────────────┐
-│  Login via      │
-│  browser        │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐     ┌─────────────────┐
-│  JWT saved      │────▶│  Fetch game     │
-│  (valid ~hours) │     │  tokens as      │
-└─────────────────┘     │  needed         │
-         │              └─────────────────┘
-         │
-         ▼ (when expired)
-┌─────────────────┐
-│  Re-run         │
-│  save_token.py  │
-└─────────────────┘
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Each Game Session                                │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│   python main.py --auto-token --difficulty medium                        │
+│          │                                                               │
+│          ▼                                                               │
+│   ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐   │
+│   │  Browser opens  │────▶│  Fresh JWT      │────▶│  Game token     │   │
+│   │  (reuses state) │     │  extracted      │     │  fetched        │   │
+│   └─────────────────┘     └─────────────────┘     └─────────────────┘   │
+│          │                                               │               │
+│          ▼                                               ▼               │
+│   ┌─────────────────┐                           ┌─────────────────┐     │
+│   │  Browser closes │                           │  Game starts    │     │
+│   └─────────────────┘                           └─────────────────┘     │
+│                                                                          │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│                      Session Persistence                                 │
+├──────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│   scripts/login.py saves browser state to:                               │
+│   ~/.config/nm-game/browser_state/                                       │
+│                                                                          │
+│   This allows subsequent --auto-token runs to skip login.                │
+│   When session expires, browser prompts for re-authentication.           │
+│                                                                          │
+└──────────────────────────────────────────────────────────────────────────┘
 ```
 
-The JWT typically lasts several hours. You can fetch multiple game tokens with a single JWT. When it expires, re-run `scripts/save_token.py`.
+The browser session persists across runs. When it eventually expires, you'll be prompted to login again via magic link.

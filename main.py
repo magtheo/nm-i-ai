@@ -65,7 +65,10 @@ async def run_with_auto_token(difficulty: str, verbose: bool = False) -> dict:
     
     try:
         game_token = await token_manager.fetch_game_token(difficulty)
-    except FileNotFoundError as e:
+    except ImportError as e:
+        logger.error(str(e))
+        sys.exit(1)
+    except TimeoutError as e:
         logger.error(str(e))
         sys.exit(1)
     except Exception as e:
@@ -87,7 +90,7 @@ def main() -> None:
     parser.add_argument(
         "--auto-token", "-a",
         action="store_true",
-        help="Automatically fetch token using saved JWT (run scripts/save_token.py first)"
+        help="Automatically fetch token via browser (opens browser for login if needed)"
     )
     parser.add_argument(
         "--difficulty", "-d",

@@ -8,9 +8,12 @@ WS_URL_TEMPLATE = "wss://game.ainm.no/ws?token={token}"
 
 # API URLs
 GAME_REQUEST_API_URL = "https://api.ainm.no/games/request"
+MAPS_API_URL = "https://api.ainm.no/games/maps"
+LOGIN_URL = "https://app.ainm.no/challenge"
 
 # Paths
 AUTH_TOKEN_PATH = Path.home() / ".config" / "nm-game" / "auth_token"
+BROWSER_STATE_PATH = Path.home() / ".config" / "nm-game" / "browser_state"
 
 # Game settings
 MAX_INVENTORY_SIZE = 3

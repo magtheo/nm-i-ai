@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""One-time setup script to save JWT auth token via browser automation.
+"""Standalone script to pre-login via browser.
 
 Usage:
-    python scripts/save_token.py
+    python scripts/login.py
 
-Opens a browser window for you to login, then automatically extracts
-the JWT from cookies and saves it locally.
+Opens a browser window for you to login. The browser session is persisted
+so subsequent runs of `python main.py --auto-token` won't require re-login.
 """
 
 import sys
@@ -14,9 +14,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from config import AUTH_TOKEN_PATH
+from config import BROWSER_STATE_PATH, LOGIN_URL
 
-GAME_URL = "https://game.ainm.no"
 TIMEOUT_SECONDS = 300
 
 
@@ -29,27 +28,29 @@ def main() -> int:
         return 1
     
     print("=" * 60)
-    print("NM Game - JWT Token Setup")
+    print("NM Game - Browser Login")
     print("=" * 60)
     print()
     print("A browser window will open.")
-    print("1. Login to your account")
-    print("2. Wait for the game page to fully load")
-    print("3. The script will auto-detect and save your token")
+    print("Login to your account if not already logged in.")
+    print("The browser session will be saved for future use.")
     print()
     print("Press Ctrl+C to cancel at any time.")
     print("-" * 60)
     
+    BROWSER_STATE_PATH.mkdir(parents=True, exist_ok=True)
+    
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
-        context = browser.new_context()
+        context = p.chromium.launch_persistent_context(
+            str(BROWSER_STATE_PATH),
+            headless=False,
+        )
         page = context.new_page()
         
-        print(f"\nOpening {GAME_URL}...")
-        page.goto(GAME_URL)
+        print(f"\nOpening {LOGIN_URL}...")
+        page.goto(LOGIN_URL)
         
-        print("\nWaiting for you to login...")
-        print("(Token will be extracted automatically when logged in)")
+        print("\nWaiting for login...")
         
         try:
             start_time = time.time()
@@ -67,27 +68,23 @@ def main() -> int:
             
             if not access_token:
                 print(f"\nTimeout: No token detected after {TIMEOUT_SECONDS} seconds.")
-                browser.close()
+                context.close()
                 return 1
-            
-            AUTH_TOKEN_PATH.parent.mkdir(parents=True, exist_ok=True)
-            AUTH_TOKEN_PATH.write_text(access_token)
-            AUTH_TOKEN_PATH.chmod(0o600)
             
             print()
             print("-" * 60)
-            print(f"Token saved to: {AUTH_TOKEN_PATH}")
-            print("File permissions set to 600 (owner read/write only)")
+            print("Login successful!")
+            print(f"Browser state saved to: {BROWSER_STATE_PATH}")
             print()
             print("You can now run the bot with:")
             print("  python main.py --auto-token --difficulty medium")
             
-            browser.close()
+            context.close()
             return 0
             
         except KeyboardInterrupt:
             print("\nCancelled by user.")
-            browser.close()
+            context.close()
             return 1
 
 
