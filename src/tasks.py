@@ -56,11 +56,15 @@ class TaskAssigner:
     def __init__(self, pathfinder: Pathfinder):
         self.pathfinder = pathfinder
         self._zone_load: dict[tuple[int, int], int] = {}
+        self._distance_cache: dict[tuple[tuple[int, int], tuple[int, int]], int] = {}
     
     def assign_tasks(self, state: GameState) -> dict[int, Task]:
         """Assign tasks to all bots using global optimization."""
         active_order = state.active_order
         preview_order = state.preview_order
+        
+        # Clear distance cache for new round
+        self._distance_cache = {}
         
         # Update pathfinder with congestion data
         bot_positions = [bot.position for bot in state.bots]
@@ -136,20 +140,35 @@ class TaskAssigner:
         """Generate candidate tasks for a single bot with route bundling."""
         candidates = []
         
-        # Check if at drop-off with useful items
+        # Check if at drop-off with useful items (active OR preview)
         if bot.position in state.drop_off_zones:
-            active_count = sum(1 for t in bot.inventory if t in active_needed)
-            if active_count > 0:
+            # Check active items
+            active_count = sum(1 for t in bot.inventory if active_order and t in active_order.items_needed) if active_order else 0
+            # Check preview items
+            preview_count = sum(1 for t in bot.inventory if preview_order and t in preview_order.items_required) if preview_order else 0
+            
+            if active_count > 0 or preview_count > 0:
                 score = self._score_drop_off(bot, state, active_order, active_needed)
+                # Boost score if carrying preview items too
+                if preview_count > 0:
+                    score += WEIGHT_PREVIEW_ITEM * preview_count
                 candidates.append(Task(TaskType.DROP_OFF, score=score))
         
-        # Count active items in inventory
-        active_in_inventory = sum(1 for t in bot.inventory if t in active_needed)
+        # Count active items in inventory (check against order's items_needed, not active_needed)
+        if active_order:
+            active_in_inventory = sum(1 for t in bot.inventory if t in active_order.items_needed)
+        else:
+            active_in_inventory = 0
         
-        # If inventory is full, must go to drop-off
+        # If inventory is full, must go to drop-off (unless already there)
         if len(bot.inventory) >= 3:
-            zone, score = self._score_move_to_drop_off(bot, state, active_order, active_needed)
-            candidates.append(Task(TaskType.MOVE_TO_DROP_OFF, target_position=zone, score=score))
+            if bot.position in state.drop_off_zones:
+                # Already at drop-off, create DROP_OFF task
+                score = self._score_drop_off(bot, state, active_order, active_needed)
+                candidates.append(Task(TaskType.DROP_OFF, score=score))
+            else:
+                zone, score = self._score_move_to_drop_off(bot, state, active_order, active_needed)
+                candidates.append(Task(TaskType.MOVE_TO_DROP_OFF, target_position=zone, score=score))
             return candidates
         
         # ROUTE BUNDLING: If carrying active items, consider whether to drop off or pick more
@@ -163,8 +182,8 @@ class TaskAssigner:
                     if count <= 0:
                         continue
                     for item in state.get_items_by_type(item_type):
-                        dist = self.pathfinder.bfs_distance(bot.position, item.position)
-                        if dist > 1 and dist <= 3:  # Nearby item, but NOT adjacent
+                        dist = self._get_distance_to_item(bot.position, item.position)
+                        if dist > 1 and dist <= 3:
                             score = self._score_pick_active(bot, item, state, active_order, active_needed)
                             # Bonus for bundling
                             score *= (1 + 0.2 * active_in_inventory)
@@ -261,6 +280,9 @@ class TaskAssigner:
     def _get_fallback_task(self, bot: Bot, state: GameState, active_needed: dict[str, int],
                           preview_needed: dict[str, int]) -> Task:
         """Get a fallback task when no good candidates exist."""
+        # If at drop-off with items, drop them
+        if bot.position in state.drop_off_zones and bot.inventory:
+            return Task(TaskType.DROP_OFF, score=10)
         if self._has_useful_items(bot, active_needed, preview_needed):
             zone = self._find_best_drop_off_balanced(bot.position, state.drop_off_zones)
             return Task(TaskType.MOVE_TO_DROP_OFF, target_position=zone, score=10)
@@ -303,7 +325,7 @@ class TaskAssigner:
         zone = self._find_best_drop_off_balanced(bot.position, state.drop_off_zones)
         distance = self.pathfinder.bfs_distance(bot.position, zone)
         
-        active_count = sum(1 for t in bot.inventory if t in active_needed)
+        active_count = sum(1 for t in bot.inventory if active_order and t in active_order.items_needed)
         score = active_count * WEIGHT_ACTIVE_ITEM
         
         # Significant base bonus when carrying ANY active items
@@ -351,7 +373,7 @@ class TaskAssigner:
     def _score_move_to_item(self, bot: Bot, item: Item, state: GameState,
                            order: Optional[Order], active_needed: dict[str, int], is_active: bool) -> float:
         """Score for moving toward an item."""
-        distance = self.pathfinder.bfs_distance(bot.position, item.position)
+        distance = self._get_distance_to_item(bot.position, item.position)
         
         if distance <= 0:
             return 0.0
@@ -365,7 +387,7 @@ class TaskAssigner:
                 base_value += WEIGHT_ORDER_COMPLETION
         
         # Significant penalty when already carrying active items (should deliver first)
-        active_in_inventory = sum(1 for t in bot.inventory if t in active_needed)
+        active_in_inventory = sum(1 for t in bot.inventory if order and t in order.items_needed)
         if active_in_inventory > 0:
             base_value *= 0.3
         
@@ -381,6 +403,7 @@ class TaskAssigner:
     
     def _has_useful_items(self, bot: Bot, active_needed: dict[str, int],
                          preview_needed: dict[str, int]) -> bool:
+        # Check if any inventory item is needed (needed dicts may have 0 count for items already accounted for)
         for item_type in bot.inventory:
             if item_type in active_needed or item_type in preview_needed:
                 return True
@@ -388,6 +411,43 @@ class TaskAssigner:
     
     def _is_adjacent(self, pos1: tuple[int, int], pos2: tuple[int, int]) -> bool:
         return abs(pos1[0] - pos2[0]) + abs(pos1[1] - pos2[1]) == 1
+    
+    def _get_distance_to_item(self, bot_pos: tuple[int, int], item_pos: tuple[int, int]) -> int:
+        """Get distance from bot to nearest adjacent position of an item.
+        
+        Optimized to minimize BFS calls with caching.
+        """
+        cache_key = (bot_pos, item_pos)
+        if cache_key in self._distance_cache:
+            return self._distance_cache[cache_key]
+        
+        x, y = item_pos
+        
+        valid_adjacent = []
+        for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+            adj_pos = (x + dx, y + dy)
+            if self.pathfinder.is_valid(adj_pos[0], adj_pos[1]):
+                valid_adjacent.append(adj_pos)
+        
+        if not valid_adjacent:
+            self._distance_cache[cache_key] = -1
+            return -1
+        
+        if bot_pos in valid_adjacent:
+            self._distance_cache[cache_key] = 0
+            return 0
+        
+        min_distance = float('inf')
+        for adj_pos in valid_adjacent:
+            dist = self.pathfinder.bfs_distance(bot_pos, adj_pos)
+            if dist > 0 and dist < min_distance:
+                min_distance = dist
+                if min_distance == 1:
+                    break
+        
+        result = int(min_distance) if min_distance != float('inf') else -1
+        self._distance_cache[cache_key] = result
+        return result
     
     def _find_best_drop_off_balanced(self, position: tuple[int, int],
                                      drop_off_zones: list[tuple[int, int]]) -> tuple[int, int]:

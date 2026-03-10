@@ -25,6 +25,8 @@ class Pathfinder:
         self.width = 0
         self.height = 0
         self.walls: set[tuple[int, int]] = set()
+        self.obstacles: set[tuple[int, int]] = set()
+        self._dynamic_obstacles: set[tuple[int, int]] = set()
         self._distance_cache: dict[tuple, dict[tuple, int]] = {}
         self._congestion_map: dict[tuple[int, int], float] = {}
     
@@ -36,9 +38,34 @@ class Pathfinder:
         self.width = width
         self.height = height
         self.walls = walls
+        self.obstacles = set()
+        self._dynamic_obstacles = set()
         self._distance_cache = {}
         self._congestion_map = {}
         logger.debug(f"Map set: {width}x{height}, {len(walls)} walls")
+    
+    def set_obstacles(self, positions: set[tuple[int, int]]) -> None:
+        """Set shelf positions where items are placed (semi-permanent obstacles)."""
+        self.obstacles = positions.copy()
+        self._distance_cache = {}
+        logger.debug(f"Obstacles set: {len(positions)} shelf positions")
+    
+    def add_dynamic_obstacle(self, position: tuple[int, int]) -> None:
+        """Mark a position as blocked at runtime (e.g., bot got stuck there)."""
+        self._dynamic_obstacles.add(position)
+        logger.debug(f"Dynamic obstacle added at {position}")
+    
+    def clear_dynamic_obstacles(self) -> None:
+        """Reset all dynamic obstacles (call at start of each round)."""
+        self._dynamic_obstacles = set()
+        logger.debug("Dynamic obstacles cleared")
+    
+    def remove_obstacle(self, position: tuple[int, int]) -> None:
+        """Remove a specific obstacle when an item is picked up."""
+        self.obstacles.discard(position)
+        self._dynamic_obstacles.discard(position)
+        self._distance_cache = {}
+        logger.debug(f"Obstacle removed at {position}")
     
     def update_congestion(self, bot_positions: list[tuple[int, int]]) -> None:
         """Update congestion map based on bot positions.
@@ -63,7 +90,8 @@ class Pathfinder:
             return False
         if y < 0 or y >= self.height:
             return False
-        return (x, y) not in self.walls
+        pos = (x, y)
+        return pos not in self.walls and pos not in self.obstacles and pos not in self._dynamic_obstacles
     
     def get_neighbors(self, x: int, y: int) -> list[tuple[int, int]]:
         """Get valid neighboring positions."""

@@ -25,6 +25,7 @@ class GroceryBot:
         self.current_state: GameState | None = None
         self._last_positions: dict[int, tuple[int, int]] = {}
         self._stuck_counts: dict[int, int] = {}
+        self._intended_positions: dict[int, tuple[int, int]] = {}
     
     def process_round(self, state_data: dict[str, Any]) -> list[dict[str, Any]]:
         """Process a game state and return actions for all bots.
@@ -75,6 +76,10 @@ class GroceryBot:
                 last_pos = self._last_positions.get(bot.id)
                 if last_pos == bot.position:
                     self._stuck_counts[bot.id] = self._stuck_counts.get(bot.id, 0) + 1
+                    blocked_pos = self._intended_positions.get(bot.id)
+                    if blocked_pos and self._stuck_counts[bot.id] >= 2:
+                        self.pathfinder.add_dynamic_obstacle(blocked_pos)
+                        logger.debug(f"  Bot {bot.id} blocked at {blocked_pos}, adding as dynamic obstacle")
                     if self._stuck_counts[bot.id] >= 5 and should_log_info:
                         logger.warning(f"  Bot {bot.id} STUCK at {bot.position} for {self._stuck_counts[bot.id]} rounds!")
                 else:
@@ -88,6 +93,9 @@ class GroceryBot:
                     state.grid_height,
                     state.walls
                 )
+                
+                self.pathfinder.clear_dynamic_obstacles()
+                self.pathfinder.set_obstacles([item.position for item in state.items])
                 
                 # Debug: Log wall information
                 if state.round == 0 or state.round % 50 == 0:
@@ -121,6 +129,17 @@ class GroceryBot:
                 
                 original_actions = {a["bot"]: a for a in actions}
                 actions = self.collision_avoider.resolve_conflicts(state, actions, goals, stuck_counts=self._stuck_counts)
+            
+            # Track intended positions for stuck detection
+            for action in actions:
+                bot_id = action.get("bot")
+                bot = next((b for b in state.bots if b.id == bot_id), None)
+                if bot:
+                    target = action.get("target")
+                    if target and action.get("action") == "move":
+                        self._intended_positions[bot_id] = target
+                    else:
+                        self._intended_positions[bot_id] = bot.position
 
             # Record metrics
             stuck_count = sum(1 for c in self._stuck_counts.values() if c >= 3)
