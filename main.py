@@ -132,8 +132,8 @@ def main() -> None:
     
     print(f"\nGame Over!")
     print(f"  Score: {result.get('score', 0)}")
-    print(f"  Items delivered: {result.get('items', 0)}")
-    print(f"  Orders completed: {result.get('orders', 0)}")
+    print(f"  Items delivered: {result.get('items_delivered', 0)}")
+    print(f"  Orders completed: {result.get('orders_completed', 0)}")
 
 
 if __name__ == "__main__":
