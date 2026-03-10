@@ -63,34 +63,26 @@ class TaskAssigner:
         active_order = state.active_order
         preview_order = state.preview_order
         
-        # Clear distance cache for new round
         self._distance_cache = {}
         
-        # Update pathfinder with congestion data
-        bot_positions = [bot.position for bot in state.bots]
-        self.pathfinder.update_congestion(bot_positions)
+        bot_positions_list = [bot.position for bot in state.bots]
+        self.pathfinder.update_congestion(bot_positions_list)
         
-        # Reset zone load tracking
         self._zone_load = {zone: 0 for zone in state.drop_off_zones}
         
-        # Track what's needed
         active_needed = self._get_needed_items(active_order, state.bots, "active")
         preview_needed = self._get_needed_items(preview_order, state.bots, "preview")
         
-        # Generate candidate tasks for each bot
         all_candidates = self._generate_all_candidates(
             state, active_order, preview_order, active_needed, preview_needed
         )
         
-        # Build cost matrix and assign globally
         assignments = self._global_assignment(state.bots, all_candidates, state)
         
-        # Update zone load tracking
         for bot_id, task in assignments.items():
             if task.target_position and task.target_position in state.drop_off_zones:
                 self._zone_load[task.target_position] += 1
         
-        # Convert to final tasks
         tasks = {}
         for bot in state.bots:
             if bot.id in assignments:
@@ -176,13 +168,12 @@ class TaskAssigner:
             zone, score = self._score_move_to_drop_off(bot, state, active_order, active_needed)
             candidates.append(Task(TaskType.MOVE_TO_DROP_OFF, target_position=zone, score=score))
             
-            # But also consider picking up more if there's a nearby item
             if len(bot.inventory) < 3:
                 for item_type, count in active_needed.items():
                     if count <= 0:
                         continue
                     for item in state.get_items_by_type(item_type):
-                        dist = self._get_distance_to_item(bot.position, item.position)
+                        dist = abs(bot.position[0] - item.position[0]) + abs(bot.position[1] - item.position[1])
                         if dist > 1 and dist <= 3:
                             score = self._score_pick_active(bot, item, state, active_order, active_needed)
                             # Bonus for bundling
@@ -207,27 +198,25 @@ class TaskAssigner:
                     score = self._score_pick_preview(bot, item, state)
                     candidates.append(Task(TaskType.PICK_PREVIEW, target_item=item, score=score))
         
-        # Move toward active items
         for item_type, count in active_needed.items():
             if count <= 0:
                 continue
-            for item in state.get_items_by_type(item_type):
+            for item in self._get_closest_items_of_type(item_type, state, bot, limit=3):
                 score = self._score_move_to_item(bot, item, state, active_order, active_needed, is_active=True)
                 candidates.append(Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score))
         
-        # Move toward preview items (lower priority)
         for item_type, count in preview_needed.items():
             if count <= 0:
                 continue
-            for item in state.get_items_by_type(item_type):
+            for item in self._get_closest_items_of_type(item_type, state, bot, limit=3):
                 score = self._score_move_to_item(bot, item, state, preview_order, active_needed, is_active=False)
                 candidates.append(Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score))
         
         # Always include wait as fallback
         candidates.append(Task(TaskType.WAIT, score=0.0))
-        
+
         return candidates
-    
+
     def _global_assignment(self, bots: list[Bot], all_candidates: dict[int, list[Task]],
                           state: GameState) -> dict[int, Task]:
         """Globally assign tasks to maximize total benefit."""
@@ -372,28 +361,24 @@ class TaskAssigner:
     
     def _score_move_to_item(self, bot: Bot, item: Item, state: GameState,
                            order: Optional[Order], active_needed: dict[str, int], is_active: bool) -> float:
-        """Score for moving toward an item."""
-        distance = self._get_distance_to_item(bot.position, item.position)
+        distance = abs(bot.position[0] - item.position[0]) + abs(bot.position[1] - item.position[1])
         
         if distance <= 0:
             return 0.0
         
         base_value = WEIGHT_ACTIVE_ITEM if is_active else WEIGHT_PREVIEW_ITEM
         
-        # Bonus for order completion potential
         if is_active and order:
             remaining = len(order.items_needed) - len(order.items_delivered)
             if remaining == 1:
                 base_value += WEIGHT_ORDER_COMPLETION
         
-        # Significant penalty when already carrying active items (should deliver first)
         active_in_inventory = sum(1 for t in bot.inventory if order and t in order.items_needed)
         if active_in_inventory > 0:
             base_value *= 0.3
         
         score = base_value / (1 + distance * 0.2)
         
-        # Congestion penalty
         congestion = self.pathfinder.get_congestion_at(item.position)
         score *= (1.0 / (1 + congestion * 0.5))
         
@@ -411,6 +396,19 @@ class TaskAssigner:
     
     def _is_adjacent(self, pos1: tuple[int, int], pos2: tuple[int, int]) -> bool:
         return abs(pos1[0] - pos2[0]) + abs(pos1[1] - pos2[1]) == 1
+    
+    def _get_closest_items_of_type(self, item_type: str, state: GameState, bot: Bot, limit: int = 3) -> list[Item]:
+        items = state.get_items_by_type(item_type)
+        if len(items) <= limit:
+            return items
+        
+        items_with_dist = []
+        for item in items:
+            dist = abs(bot.position[0] - item.position[0]) + abs(bot.position[1] - item.position[1])
+            items_with_dist.append((item, dist))
+        
+        items_with_dist.sort(key=lambda x: x[1])
+        return [item for item, _ in items_with_dist[:limit]]
     
     def _get_distance_to_item(self, bot_pos: tuple[int, int], item_pos: tuple[int, int]) -> int:
         """Get distance from bot to nearest adjacent position of an item.
