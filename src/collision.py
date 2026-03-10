@@ -21,7 +21,8 @@ class CollisionAvoider:
         self,
         state: GameState,
         actions: list[dict[str, Any]],
-        goals: dict[int, tuple[int, int]] | None = None
+        goals: dict[int, tuple[int, int]] | None = None,
+        stuck_counts: dict[int, int] | None = None
     ) -> list[dict[str, Any]]:
         """Resolve movement conflicts between bots.
         
@@ -83,7 +84,8 @@ class CollisionAvoider:
                 goal_pos = goals.get(bot_id) if goals else None
                 alternative = self._find_alternative_action(
                     bot_id, current_pos, action, 
-                    reservation_table, bot_positions, priorities, goal_pos
+                    reservation_table, bot_positions, priorities, goal_pos,
+                    stuck_counts
                 )
                 
                 if alternative:
@@ -234,7 +236,8 @@ class CollisionAvoider:
         reservation_table: dict[tuple[int, int], set[int]],
         bot_positions: dict[int, tuple[int, int]],
         priorities: dict[int, int],
-        goal_pos: tuple[int, int] | None = None
+        goal_pos: tuple[int, int] | None = None,
+        stuck_counts: dict[int, int] | None = None
     ) -> dict[str, Any] | None:
         """Try to find an alternative action that doesn't conflict.
         
@@ -296,8 +299,9 @@ class CollisionAvoider:
             else:
                 # All alternatives move away significantly
                 # But if bot has been waiting too long, allow a suboptimal move to escape
-                wait_count = self._wait_counts.get(bot_id, 0)
-                if wait_count >= 3:
+                # Use actual stuck count from bot.py instead of wait count
+                actual_stuck = stuck_counts.get(bot_id, 0) if stuck_counts else 0
+                if actual_stuck >= 3:
                     # Bot is stuck - allow any alternative to escape deadlock
                     valid_alternatives.sort(key=lambda alt: abs(alt[2][0] - goal_pos[0]) + abs(alt[2][1] - goal_pos[1]))
                     dx, dy, _ = valid_alternatives[0]

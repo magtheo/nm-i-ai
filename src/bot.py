@@ -108,7 +108,7 @@ class GroceryBot:
         
         # Apply collision avoidance with multi-step lookahead
         original_actions = {a["bot"]: a for a in actions}
-        actions = self.collision_avoider.resolve_conflicts(state, actions, goals)
+        actions = self.collision_avoider.resolve_conflicts(state, actions, goals, stuck_counts=self._stuck_counts)
 
         # Log any changes made by collision avoidance
         for action in actions:
