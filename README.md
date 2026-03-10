@@ -71,6 +71,38 @@ pytest tests/ -v
 python testing/test_performance.py
 ```
 
+## Logging System
+
+The bot uses a multi-file logging system to separate overview logs from detailed debug information.
+
+### Log Files
+
+All logs are written to the `logs/` directory:
+
+| File | Purpose | Level |
+|------|---------|-------|
+| `main.log` | Overview: rounds, scores, errors, warnings | INFO+ |
+| `bot.log` | Bot operations and decision making | DEBUG+ |
+| `pathfinding.log` | Pathfinding and navigation details | DEBUG+ |
+| `tasks.log` | Task assignment details | DEBUG+ |
+| `actions.log` | Action generation details | DEBUG+ |
+| `connection.log` | WebSocket connection details | DEBUG+ |
+| `collision.log` | Collision avoidance details | DEBUG+ |
+
+### Usage
+
+- **Check `main.log`** for an overview of what happened during a game
+- **Check specific logs** (e.g., `pathfinding.log`) when debugging specific issues
+- Use `-v` flag to also see DEBUG messages in the console
+
+### Log Format
+
+```
+2026-03-10 22:27:30 | INFO     | Round 10/300 | Score: 15
+```
+
+Each game session starts with a separator line for easy identification.
+
 ## Project Structure
 
 ```
@@ -86,6 +118,7 @@ nm-i-ai/
 │   ├── tasks.py         # Task assignment
 │   ├── actions.py       # Action generation
 │   ├── collision.py     # Collision avoidance
+│   ├── logging_config.py # Multi-file logging configuration
 │   └── utils.py         # Helper functions
 ├── tests/
 │   ├── test_pathfinding.py

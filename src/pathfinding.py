@@ -1,13 +1,13 @@
 """BFS pathfinding with congestion awareness."""
 
-import logging
 from collections import deque
 from typing import Optional
 from dataclasses import dataclass
 
 from config import CACHE_DISTANCE_TABLES
+from src.logging_config import get_logger, LogCategory
 
-logger = logging.getLogger(__name__)
+logger = get_logger(LogCategory.PATHFINDING)
 
 
 @dataclass

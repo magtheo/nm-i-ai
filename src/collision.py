@@ -1,12 +1,12 @@
 """Collision avoidance between bots with multi-step reservation."""
 
-import logging
 from typing import Any
 from collections import defaultdict
 
 from .state import GameState, Bot
+from src.logging_config import get_logger, LogCategory
 
-logger = logging.getLogger(__name__)
+logger = get_logger(LogCategory.COLLISION)
 
 
 class CollisionAvoider:

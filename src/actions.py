@@ -1,13 +1,13 @@
 """Action generation from tasks."""
 
-import logging
 from typing import Any
 
 from .state import GameState, Bot
 from .tasks import Task, TaskType
 from .pathfinding import Pathfinder
+from src.logging_config import get_logger, LogCategory
 
-logger = logging.getLogger(__name__)
+logger = get_logger(LogCategory.ACTIONS)
 
 
 class ActionGenerator:

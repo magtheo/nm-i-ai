@@ -2,15 +2,15 @@
 
 import asyncio
 import json
-import logging
 from typing import Callable
 
 import websockets
 from websockets.client import WebSocketClientProtocol
 
 from config import WS_URL_TEMPLATE, GAME_TOKEN
+from src.logging_config import get_logger, LogCategory
 
-logger = logging.getLogger(__name__)
+logger = get_logger(LogCategory.CONNECTION)
 
 
 class GameConnection:

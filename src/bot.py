@@ -1,6 +1,5 @@
 """Main bot class that orchestrates decision making."""
 
-import logging
 from typing import Any
 
 from .state import GameState
@@ -9,8 +8,9 @@ from .actions import ActionGenerator
 from .collision import CollisionAvoider
 from .pathfinding import Pathfinder
 from .observer import Observer
+from src.logging_config import get_logger, LogCategory
 
-logger = logging.getLogger(__name__)
+logger = get_logger(LogCategory.BOT)
 
 
 class GroceryBot:

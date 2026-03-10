@@ -1,6 +1,5 @@
 """Task generation and assignment with global optimization and route bundling."""
 
-import logging
 from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
@@ -15,8 +14,9 @@ from config import (
     WEIGHT_POSITIONING,
     MIN_ITEMS_FOR_DROP_OFF
 )
+from src.logging_config import get_logger, LogCategory
 
-logger = logging.getLogger(__name__)
+logger = get_logger(LogCategory.TASKS)
 
 
 class TaskType(Enum):

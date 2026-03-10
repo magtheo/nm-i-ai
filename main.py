@@ -3,24 +3,14 @@
 
 import argparse
 import asyncio
-import logging
 import sys
 
-from config import GAME_TOKEN, LOG_FORMAT, LOG_LEVEL
+from config import GAME_TOKEN
 from src.bot import GroceryBot
 from src.connection import GameConnection
-from src.token_manager import TokenManager, VALID_DIFFICULTIES
-from src.observer import Observer, JSONOutput
-
-
-def setup_logging(verbose: bool = False) -> None:
-    """Configure logging."""
-    level = logging.DEBUG if verbose else getattr(logging, LOG_LEVEL)
-    logging.basicConfig(
-        level=level,
-        format=LOG_FORMAT,
-        handlers=[logging.StreamHandler(sys.stdout)]
-    )
+from src.logging_config import LogCategory, get_logger, log_game_summary, setup_file_logging
+from src.observer import JSONOutput, Observer
+from src.token_manager import VALID_DIFFICULTIES, TokenManager
 
 
 async def run_bot(token: str, verbose: bool = False, observe: bool = False) -> dict:
@@ -34,12 +24,11 @@ async def run_bot(token: str, verbose: bool = False, observe: bool = False) -> d
     Returns:
         Game over data
     """
-    setup_logging(verbose)
-    logger = logging.getLogger(__name__)
+    setup_file_logging(verbose)
+    logger = get_logger(LogCategory.MAIN)
     
     logger.info("Starting Grocery Bot...")
     
-    # Create observer (or null observer if disabled)
     if observe:
         json_output = JSONOutput(output_dir="observer_logs")
         observer = Observer(enabled=True)
@@ -54,12 +43,13 @@ async def run_bot(token: str, verbose: bool = False, observe: bool = False) -> d
     try:
         result = await connection.play_game(bot)
         
-        # Generate analysis if observing
         if observe and json_output:
             analysis = observer.analyze()
             analysis.print_report()
             filepath = json_output.save(analysis.to_dict())
             logger.info(f"Observation data saved to {filepath}")
+        
+        log_game_summary(logger, result)
         
         return result
     except Exception as e:
@@ -78,8 +68,8 @@ async def run_with_auto_token(difficulty: str, verbose: bool = False, observe: b
     Returns:
         Game over data
     """
-    setup_logging(verbose)
-    logger = logging.getLogger(__name__)
+    setup_file_logging(verbose)
+    logger = get_logger(LogCategory.MAIN)
     
     token_manager = TokenManager()
     
