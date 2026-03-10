@@ -42,3 +42,7 @@ COLLISION_LOOKAHEAD_STEPS = 4
 
 # Drop-off strategy
 MIN_ITEMS_FOR_DROP_OFF = 1  # Drop off when 2+ active items (was implicit)
+
+# Observation
+OBSERVE_ENABLED = False  # Set by CLI flag, not config file
+OBSERVE_OUTPUT_DIR = "observation_logs"
