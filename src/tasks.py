@@ -280,6 +280,13 @@ class TaskAssigner:
                     score += WEIGHT_ACTIVE_ITEM
                     active_count += 1
         
+        
+        # Base bonus for carrying active items (same as move_to_drop_off)
+        if active_count > 0:
+            score += 2.0
+        
+        # Immediate action bonus - drop_off can be done right now!
+        score += 1.0
         # BIG bonus for completing order
         if active_order:
             remaining = len(active_order.items_needed) - len(active_order.items_delivered)
