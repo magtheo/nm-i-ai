@@ -99,7 +99,7 @@ class Pathfinder:
         # Check cache (only for simple distance queries)
         if not use_congestion and CACHE_DISTANCE_TABLES:
             if start in self._distance_cache:
-                return self._distance_cache[start].get(goal, -1)
+                if goal in self._distance_cache[start]: return self._distance_cache[start][goal]
         
         visited = {start}
         queue = deque([(start, 0)])
@@ -158,7 +158,7 @@ class Pathfinder:
                 while parent[node] is not None:
                     path.append(node)
                     node = parent[node]
-                return path[0] if path else None
+                return path[1] if len(path) > 1 else (parent[start] if start in parent else None)
             
             neighbors = self.get_neighbors(*current)
             
