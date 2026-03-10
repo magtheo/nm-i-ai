@@ -95,13 +95,14 @@ class ActionGenerator:
     ) -> dict[str, Any]:
         """Generate a movement action toward a target.
         
-        Congestion-based pathfinding is disabled to avoid self-congestion issues.
-        The collision avoider handles conflicts between bots.
+        Uses congestion-aware pathfinding when multiple bots are active
+        to help avoid areas with other bots.
         """
         x, y = bot.position
         tx, ty = target
         
-        next_pos = self.pathfinder.get_next_step(bot.position, target)
+        use_congestion = len(bot_positions) > 1
+        next_pos = self.pathfinder.get_next_step(bot.position, target, use_congestion=use_congestion)
         
         if next_pos is None:
             return {"bot": bot.id, "action": "wait"}

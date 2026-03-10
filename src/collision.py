@@ -12,8 +12,10 @@ logger = logging.getLogger(__name__)
 class CollisionAvoider:
     """Resolves collisions between bot movements with multi-step lookahead."""
     
-    def __init__(self, lookahead_steps: int = 4):
+    def __init__(self, lookahead_steps: int = 4, pathfinder=None):
         self.lookahead_steps = lookahead_steps
+        self.pathfinder = pathfinder
+        self._wait_counts: dict[int, int] = {}  # Track consecutive waits per bot
     
     def resolve_conflicts(
         self,
@@ -104,6 +106,14 @@ class CollisionAvoider:
                 for pos in planned_path:
                     reservation_table[pos].add(bot_id)
                 bot_reservations[bot_id] = planned_path
+        
+        # Update wait counts for deadlock detection
+        for action in resolved_actions:
+            bot_id = action["bot"]
+            if action.get("action") == "wait":
+                self._wait_counts[bot_id] = self._wait_counts.get(bot_id, 0) + 1
+            else:
+                self._wait_counts[bot_id] = 0
         
         return resolved_actions
     
@@ -251,6 +261,10 @@ class CollisionAvoider:
             
             new_pos = (current_pos[0] + dx, current_pos[1] + dy)
             
+            # Check if position is valid (not wall, in bounds)
+            if self.pathfinder and not self.pathfinder.is_valid(new_pos[0], new_pos[1]):
+                continue
+            
             # Check if this position is reserved
             if new_pos not in reservation_table or bot_id in reservation_table[new_pos]:
                 # Also check no other bot is currently at this position
@@ -265,16 +279,27 @@ class CollisionAvoider:
         if not valid_alternatives:
             return None
         
-        # If goal is provided, sort by distance to goal (ascending)
+        # If goal is provided, prefer alternatives that don't increase distance
         if goal_pos:
-            def distance_to_goal(alt):
-                _, _, new_pos = alt
-                return abs(new_pos[0] - goal_pos[0]) + abs(new_pos[1] - goal_pos[1])
+            current_dist = abs(current_pos[0] - goal_pos[0]) + abs(current_pos[1] - goal_pos[1])
             
-            valid_alternatives.sort(key=distance_to_goal)
-        
-        # Pick the best alternative (first after sorting, or first found if no goal)
-        dx, dy, _ = valid_alternatives[0]
+            # Filter to alternatives that don't increase distance (or increase minimally)
+            good_alternatives = [
+                alt for alt in valid_alternatives
+                if abs(alt[2][0] - goal_pos[0]) + abs(alt[2][1] - goal_pos[1]) <= current_dist + 1
+            ]
+            
+            if good_alternatives:
+                # Sort by distance to goal
+                good_alternatives.sort(key=lambda alt: abs(alt[2][0] - goal_pos[0]) + abs(alt[2][1] - goal_pos[1]))
+                dx, dy, _ = good_alternatives[0]
+            else:
+                # All alternatives move away significantly - just wait instead of making it worse
+                return None
+        else:
+            # No goal, pick first available
+            dx, dy, _ = valid_alternatives[0]
+
         action_name = self._direction_to_action(dx, dy)
         return {"bot": bot_id, "action": action_name}
     

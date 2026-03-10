@@ -19,7 +19,7 @@ class GroceryBot:
         self.pathfinder = Pathfinder()
         self.task_assigner = TaskAssigner(self.pathfinder)
         self.action_generator = ActionGenerator(self.pathfinder)
-        self.collision_avoider = CollisionAvoider(lookahead_steps=4)
+        self.collision_avoider = CollisionAvoider(lookahead_steps=4, pathfinder=self.pathfinder)
         self.current_state: GameState | None = None
     
     def process_round(self, state_data: dict[str, Any]) -> list[dict[str, Any]]:
