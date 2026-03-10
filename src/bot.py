@@ -1,5 +1,6 @@
 """Main bot class that orchestrates decision making."""
 
+import random
 from typing import Any
 
 from .state import GameState
@@ -11,6 +12,9 @@ from .observer import Observer
 from src.logging_config import get_logger, LogCategory
 
 logger = get_logger(LogCategory.BOT)
+
+STUCK_RECOVERY_THRESHOLD = 10
+STUCK_TASK_CLEAR_THRESHOLD = 20
 
 
 class GroceryBot:
@@ -27,6 +31,56 @@ class GroceryBot:
         self._stuck_counts: dict[int, int] = {}
         self._intended_positions: dict[int, tuple[int, int]] = {}
     
+    def _find_escape_position(self, bot_pos: tuple[int, int], bot_positions: list[tuple[int, int]]) -> tuple[int, int] | None:
+        """Find a valid adjacent position to escape to when stuck.
+        
+        Args:
+            bot_pos: Current position of the stuck bot
+            bot_positions: Positions of all bots (to avoid collisions)
+            
+        Returns:
+            A valid adjacent position, or None if no escape is possible
+        """
+        directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+        random.shuffle(directions)
+        
+        for dx, dy in directions:
+            nx, ny = bot_pos[0] + dx, bot_pos[1] + dy
+            if self.pathfinder.is_valid(nx, ny) and (nx, ny) not in bot_positions:
+                return (nx, ny)
+        return None
+    
+    def _get_recovery_action(self, bot_id: int, bot_pos: tuple[int, int], bot_positions: list[tuple[int, int]]) -> dict[str, Any] | None:
+        """Generate a recovery action for a stuck bot.
+        
+        Args:
+            bot_id: ID of the stuck bot
+            bot_pos: Current position of the stuck bot
+            bot_positions: Positions of all bots
+            
+        Returns:
+            A recovery action dict, or None if no recovery is possible
+        """
+        escape_pos = self._find_escape_position(bot_pos, bot_positions)
+        if escape_pos:
+            x, y = bot_pos
+            nx, ny = escape_pos
+            
+            if ny < y:
+                action = "move_up"
+            elif ny > y:
+                action = "move_down"
+            elif nx > x:
+                action = "move_right"
+            elif nx < x:
+                action = "move_left"
+            else:
+                return None
+            
+            logger.info(f"  Bot {bot_id} RECOVERY: {action} to escape position {escape_pos}")
+            return {"bot": bot_id, "action": action}
+        return None
+    
     def process_round(self, state_data: dict[str, Any]) -> list[dict[str, Any]]:
         """Process a game state and return actions for all bots.
         
@@ -39,6 +93,9 @@ class GroceryBot:
         # Parse state
         self.current_state = GameState.from_dict(state_data)
         state = self.current_state
+        
+        # Clear dynamic obstacles from previous round before stuck detection adds new ones
+        self.pathfinder.clear_dynamic_obstacles()
         
         # Start round observation
         with self.observer.session(f"round_{state.round}", score=state.score):
@@ -72,16 +129,19 @@ class GroceryBot:
                 logger.info(f"  Bot {bot.id} at {bot.position} | Inventory: {bot.inventory or 'empty'}")
             
             # Track positions to detect stuck bots
+            bots_needing_recovery: dict[int, int] = {}
             for bot in state.bots:
                 last_pos = self._last_positions.get(bot.id)
                 if last_pos == bot.position:
                     self._stuck_counts[bot.id] = self._stuck_counts.get(bot.id, 0) + 1
                     blocked_pos = self._intended_positions.get(bot.id)
                     if blocked_pos and self._stuck_counts[bot.id] >= 2:
-                        self.pathfinder.add_dynamic_obstacle(blocked_pos)
-                        logger.debug(f"  Bot {bot.id} blocked at {blocked_pos}, adding as dynamic obstacle")
+                        pass
+                        logger.debug(f"  Bot {bot.id} blocked at {blocked_pos}")
                     if self._stuck_counts[bot.id] >= 5 and should_log_info:
                         logger.warning(f"  Bot {bot.id} STUCK at {bot.position} for {self._stuck_counts[bot.id]} rounds!")
+                    if self._stuck_counts[bot.id] >= STUCK_RECOVERY_THRESHOLD:
+                        bots_needing_recovery[bot.id] = self._stuck_counts[bot.id]
                 else:
                     self._stuck_counts[bot.id] = 0
                 self._last_positions[bot.id] = bot.position
@@ -94,7 +154,6 @@ class GroceryBot:
                     state.walls
                 )
                 
-                self.pathfinder.clear_dynamic_obstacles()
                 self.pathfinder.set_obstacles([item.position for item in state.items])
                 
                 # Debug: Log wall information
@@ -129,6 +188,23 @@ class GroceryBot:
                 
                 original_actions = {a["bot"]: a for a in actions}
                 actions = self.collision_avoider.resolve_conflicts(state, actions, goals, stuck_counts=self._stuck_counts)
+            
+            # Apply stuck recovery for bots that have been stuck too long
+            bot_positions = [bot.position for bot in state.bots]
+            for i, action in enumerate(actions):
+                bot_id = action.get("bot")
+                if bot_id in bots_needing_recovery:
+                    stuck_count = bots_needing_recovery[bot_id]
+                    bot = next((b for b in state.bots if b.id == bot_id), None)
+                    if bot:
+                        if stuck_count >= STUCK_TASK_CLEAR_THRESHOLD:
+                            if bot_id in tasks:
+                                logger.info(f"  Bot {bot_id} severely stuck ({stuck_count} rounds), clearing task for reassignment")
+                                del tasks[bot_id]
+                        recovery_action = self._get_recovery_action(bot_id, bot.position, bot_positions)
+                        if recovery_action:
+                            actions[i] = recovery_action
+                            self._stuck_counts[bot_id] = 0
             
             # Track intended positions for stuck detection
             for action in actions:
