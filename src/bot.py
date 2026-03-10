@@ -80,6 +80,13 @@ class GroceryBot:
             state.walls
         )
         
+        # Debug: Log wall information
+        if state.round == 0 or state.round % 50 == 0:
+            logger.info(f"  Map: {state.grid_width}x{state.grid_height}, {len(state.walls)} walls")
+            if len(state.walls) > 0:
+                sample_walls = list(state.walls)[:5]
+                logger.info(f"  Sample walls: {sample_walls}")
+        
         # Update congestion based on bot positions
         bot_positions = [bot.position for bot in state.bots]
         self.pathfinder.update_congestion(bot_positions)

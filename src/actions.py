@@ -101,13 +101,28 @@ class ActionGenerator:
         x, y = bot.position
         tx, ty = target
         
+        logger.debug(f"  Bot {bot.id}: _move_toward_action from {bot.position} to {target}")
+        
         use_congestion = len(bot_positions) > 1
         next_pos = self.pathfinder.get_next_step(bot.position, target, use_congestion=use_congestion)
         
+        logger.debug(f"  Bot {bot.id}: pathfinder returned next_pos={next_pos}")
+        
         if next_pos is None:
+            logger.warning(f"  Bot {bot.id}: pathfinder returned None, waiting")
             return {"bot": bot.id, "action": "wait"}
         
         nx, ny = next_pos
+        
+        # Check if next_pos is valid (not a wall)
+        if self.pathfinder.walls is not None and next_pos in self.pathfinder.walls:
+            logger.error(f"  Bot {bot.id}: pathfinder returned WALL position {next_pos}!")
+        
+        # Check if next_pos is actually adjacent to current position
+        dx = abs(nx - x)
+        dy = abs(ny - y)
+        if dx + dy != 1:
+            logger.error(f"  Bot {bot.id}: pathfinder returned non-adjacent position {next_pos} from {bot.position}")
         
         if nx > x:
             return {"bot": bot.id, "action": "move_right"}
