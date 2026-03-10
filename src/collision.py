@@ -18,7 +18,8 @@ class CollisionAvoider:
     def resolve_conflicts(
         self,
         state: GameState,
-        actions: list[dict[str, Any]]
+        actions: list[dict[str, Any]],
+        goals: dict[int, tuple[int, int]] | None = None
     ) -> list[dict[str, Any]]:
         """Resolve movement conflicts between bots.
         
@@ -30,6 +31,7 @@ class CollisionAvoider:
         Args:
             state: Current game state
             actions: List of proposed actions
+            goals: Optional dict mapping bot_id to goal position
             
         Returns:
             List of resolved actions
@@ -76,9 +78,10 @@ class CollisionAvoider:
             
             if conflict:
                 # Try to find alternative action
+                goal_pos = goals.get(bot_id) if goals else None
                 alternative = self._find_alternative_action(
                     bot_id, current_pos, action, 
-                    reservation_table, bot_positions, priorities
+                    reservation_table, bot_positions, priorities, goal_pos
                 )
                 
                 if alternative:
@@ -220,13 +223,16 @@ class CollisionAvoider:
         original_action: dict[str, Any],
         reservation_table: dict[tuple[int, int], set[int]],
         bot_positions: dict[int, tuple[int, int]],
-        priorities: dict[int, int]
+        priorities: dict[int, int],
+        goal_pos: tuple[int, int] | None = None
     ) -> dict[str, Any] | None:
         """Try to find an alternative action that doesn't conflict.
         
         Tries:
         1. Alternative directions toward same goal
         2. Wait action
+        
+        If goal_pos is provided, prefers directions that reduce distance to goal.
         """
         original_direction = self._get_movement_direction(original_action.get("action"))
         
@@ -235,6 +241,9 @@ class CollisionAvoider:
         
         # Try all other directions
         all_directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+        
+        # Collect valid alternatives
+        valid_alternatives = []
         
         for dx, dy in all_directions:
             if (dx, dy) == original_direction:
@@ -251,12 +260,23 @@ class CollisionAvoider:
                 )
                 
                 if not position_occupied:
-                    # Found alternative
-                    action_name = self._direction_to_action(dx, dy)
-                    return {"bot": bot_id, "action": action_name}
+                    valid_alternatives.append((dx, dy, new_pos))
         
-        # No alternative found
-        return None
+        if not valid_alternatives:
+            return None
+        
+        # If goal is provided, sort by distance to goal (ascending)
+        if goal_pos:
+            def distance_to_goal(alt):
+                _, _, new_pos = alt
+                return abs(new_pos[0] - goal_pos[0]) + abs(new_pos[1] - goal_pos[1])
+            
+            valid_alternatives.sort(key=distance_to_goal)
+        
+        # Pick the best alternative (first after sorting, or first found if no goal)
+        dx, dy, _ = valid_alternatives[0]
+        action_name = self._direction_to_action(dx, dy)
+        return {"bot": bot_id, "action": action_name}
     
     def _direction_to_action(self, dx: int, dy: int) -> str:
         """Convert direction vector to action name."""

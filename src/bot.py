@@ -81,6 +81,14 @@ class GroceryBot:
         # Generate actions for each bot
         actions = self.action_generator.generate_actions(state, tasks)
         
+        # Extract goal positions from tasks for collision avoidance
+        goals = {}
+        for bot_id, task in tasks.items():
+            if task.target_position:
+                goals[bot_id] = task.target_position
+            elif task.target_item:
+                goals[bot_id] = task.target_item.position
+        
         # Log each bot's action
         for action in actions:
             bot_id = action.get("bot", "?")
@@ -100,7 +108,7 @@ class GroceryBot:
         
         # Apply collision avoidance with multi-step lookahead
         original_count = len(actions)
-        actions = self.collision_avoider.resolve_conflicts(state, actions)
+        actions = self.collision_avoider.resolve_conflicts(state, actions, goals)
         if len(actions) < original_count:
             logger.warning(f"  Collision avoidance removed {original_count - len(actions)} actions")
         

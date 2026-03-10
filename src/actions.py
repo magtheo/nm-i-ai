@@ -95,32 +95,19 @@ class ActionGenerator:
     ) -> dict[str, Any]:
         """Generate a movement action toward a target.
         
-        Uses congestion-aware pathfinding when multiple bots are present.
+        Congestion-based pathfinding is disabled to avoid self-congestion issues.
+        The collision avoider handles conflicts between bots.
         """
         x, y = bot.position
         tx, ty = target
         
-        # Use congestion-aware pathfinding for multi-bot scenarios
-        use_congestion = len(bot_positions) > 1
-        
-        if use_congestion:
-            # Exclude this bot's position from congestion calculation
-            other_positions = [p for p in bot_positions if p != bot.position]
-            next_pos = self.pathfinder.get_next_step(
-                bot.position, 
-                target, 
-                use_congestion=True
-            )
-        else:
-            next_pos = self.pathfinder.get_next_step(bot.position, target)
+        next_pos = self.pathfinder.get_next_step(bot.position, target)
         
         if next_pos is None:
-            # No path or already at target
             return {"bot": bot.id, "action": "wait"}
         
         nx, ny = next_pos
         
-        # Determine direction
         if nx > x:
             return {"bot": bot.id, "action": "move_right"}
         elif nx < x:

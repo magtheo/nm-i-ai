@@ -148,13 +148,13 @@ class TaskAssigner:
         
         # If inventory is full, must go to drop-off
         if len(bot.inventory) >= 3:
-            zone, score = self._score_move_to_drop_off(bot, state, active_needed)
+            zone, score = self._score_move_to_drop_off(bot, state, active_order, active_needed)
             candidates.append(Task(TaskType.MOVE_TO_DROP_OFF, target_position=zone, score=score))
             return candidates
         
         # ROUTE BUNDLING: If carrying active items, consider whether to drop off or pick more
         if active_in_inventory >= MIN_ITEMS_FOR_DROP_OFF:
-            zone, score = self._score_move_to_drop_off(bot, state, active_needed)
+            zone, score = self._score_move_to_drop_off(bot, state, active_order, active_needed)
             candidates.append(Task(TaskType.MOVE_TO_DROP_OFF, target_position=zone, score=score))
             
             # But also consider picking up more if there's a nearby item
@@ -165,7 +165,7 @@ class TaskAssigner:
                     for item in state.get_items_by_type(item_type):
                         dist = self.pathfinder.bfs_distance(bot.position, item.position)
                         if dist > 1 and dist <= 3:  # Nearby item, but NOT adjacent
-                            score = self._score_pick_active(bot, item, state, active_order)
+                            score = self._score_pick_active(bot, item, state, active_order, active_needed)
                             # Bonus for bundling
                             score *= (1 + 0.2 * active_in_inventory)
                             candidates.append(Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score))
@@ -176,7 +176,7 @@ class TaskAssigner:
                 continue
             for item in state.get_items_by_type(item_type):
                 if self._is_adjacent(bot.position, item.position):
-                    score = self._score_pick_active(bot, item, state, active_order)
+                    score = self._score_pick_active(bot, item, state, active_order, active_needed)
                     candidates.append(Task(TaskType.PICK_ACTIVE, target_item=item, score=score))
         
         # Pick up adjacent preview items
@@ -193,7 +193,7 @@ class TaskAssigner:
             if count <= 0:
                 continue
             for item in state.get_items_by_type(item_type):
-                score = self._score_move_to_item(bot, item, state, active_order, is_active=True)
+                score = self._score_move_to_item(bot, item, state, active_order, active_needed, is_active=True)
                 candidates.append(Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score))
         
         # Move toward preview items (lower priority)
@@ -201,7 +201,7 @@ class TaskAssigner:
             if count <= 0:
                 continue
             for item in state.get_items_by_type(item_type):
-                score = self._score_move_to_item(bot, item, state, preview_order, is_active=False)
+                score = self._score_move_to_item(bot, item, state, preview_order, active_needed, is_active=False)
                 candidates.append(Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score))
         
         # Always include wait as fallback
@@ -290,7 +290,7 @@ class TaskAssigner:
         
         return score
     
-    def _score_move_to_drop_off(self, bot: Bot, state: GameState,
+    def _score_move_to_drop_off(self, bot: Bot, state: GameState, active_order: Optional[Order],
                                 active_needed: dict[str, int]) -> tuple[tuple[int, int], float]:
         """Score for moving to drop-off zone."""
         zone = self._find_best_drop_off_balanced(bot.position, state.drop_off_zones)
@@ -299,17 +299,28 @@ class TaskAssigner:
         active_count = sum(1 for t in bot.inventory if t in active_needed)
         score = active_count * WEIGHT_ACTIVE_ITEM
         
+        # Significant base bonus when carrying ANY active items
+        if active_count > 0:
+            score += 2.0
+        
+        # Extra bonus when delivery would complete the order
+        if active_order and active_count > 0:
+            remaining = len(active_order.items_needed) - len(active_order.items_delivered)
+            if remaining <= active_count:
+                score += WEIGHT_ORDER_COMPLETION * 0.3
+        
         # Bonus for having multiple active items (bundling)
         if active_count >= MIN_ITEMS_FOR_DROP_OFF:
             score *= 1.2
         
+        # Reduced distance penalty (0.05 instead of 0.1)
         if distance > 0:
-            score = score / (1 + distance * 0.1)
+            score = score / (1 + distance * 0.05)
         
         return zone, score
     
     def _score_pick_active(self, bot: Bot, item: Item, state: GameState,
-                          active_order: Optional[Order]) -> float:
+                          active_order: Optional[Order], active_needed: dict[str, int]) -> float:
         """Score for picking up an active order item."""
         score = WEIGHT_ACTIVE_ITEM
         
@@ -319,10 +330,10 @@ class TaskAssigner:
             if remaining == 1:
                 score += WEIGHT_ORDER_COMPLETION
         
-        # Bonus for bundling (picking up when already carrying active items)
+        # Reduced bundling bonus (0.05 instead of 0.1)
         active_in_inventory = sum(1 for t in bot.inventory if active_order and t in active_order.items_needed)
         if active_in_inventory > 0:
-            score *= (1 + 0.1 * active_in_inventory)
+            score *= (1 + 0.05 * active_in_inventory)
         
         return score
     
@@ -331,7 +342,7 @@ class TaskAssigner:
         return WEIGHT_PREVIEW_ITEM
     
     def _score_move_to_item(self, bot: Bot, item: Item, state: GameState,
-                           order: Optional[Order], is_active: bool) -> float:
+                           order: Optional[Order], active_needed: dict[str, int], is_active: bool) -> float:
         """Score for moving toward an item."""
         distance = self.pathfinder.bfs_distance(bot.position, item.position)
         
@@ -345,6 +356,11 @@ class TaskAssigner:
             remaining = len(order.items_needed) - len(order.items_delivered)
             if remaining == 1:
                 base_value += WEIGHT_ORDER_COMPLETION
+        
+        # Significant penalty when already carrying active items (should deliver first)
+        active_in_inventory = sum(1 for t in bot.inventory if t in active_needed)
+        if active_in_inventory > 0:
+            base_value *= 0.3
         
         score = base_value / (1 + distance * 0.2)
         

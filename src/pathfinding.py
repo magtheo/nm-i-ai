@@ -162,9 +162,9 @@ class Pathfinder:
             
             neighbors = self.get_neighbors(*current)
             
-            # Sort neighbors by congestion (less congested first)
+            # Sort neighbors by congestion (less congested first), with position as tie-breaker
             if use_congestion and self._congestion_map:
-                neighbors.sort(key=lambda n: self._congestion_map.get(n, 0))
+                neighbors.sort(key=lambda n: (self._congestion_map.get(n, 0), n))
             
             for neighbor in neighbors:
                 if neighbor not in visited:
