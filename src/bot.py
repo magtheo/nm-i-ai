@@ -33,33 +33,78 @@ class GroceryBot:
         """
         # Parse state
         self.current_state = GameState.from_dict(state_data)
-        logger.debug(f"Round {self.current_state.round}: Processing state with {len(self.current_state.bots)} bots")
+        state = self.current_state
+        
+        should_log_info = state.round == 0 or state.round % 10 == 0
+        
+        if should_log_info:
+            logger.info(f"=== Round {state.round}/{state.max_rounds} | Score: {state.score} ===")
+        
+        logger.debug(f"Bots: {len(state.bots)} | Items: {len(state.items)} | Orders: {len(state.orders)}")
+        
+        active = state.active_order
+        preview = state.preview_order
+        
+        if active:
+            if should_log_info:
+                logger.info(f"  Active order needs: {active.items_needed}")
+            logger.debug(f"  Active order: {active.id} | Needed: {active.items_needed} | Delivered: {active.items_delivered}")
+        else:
+            logger.warning("  No active order!")
+        if preview:
+            logger.debug(f"  Preview order: {preview.id} | Items: {preview.items_required}")
+        
+        logger.debug(f"  Drop-off zones: {state.drop_off_zones}")
+        
+        for bot in state.bots:
+            logger.debug(f"  Bot {bot.id} at {bot.position} | Inventory: {bot.inventory or 'empty'}")
+            if should_log_info and bot.inventory:
+                logger.info(f"  Bot {bot.id} carrying: {bot.inventory}")
+            if should_log_info and bot.position in state.drop_off_zones:
+                logger.info(f"  Bot {bot.id} is at drop-off zone")
         
         # Initialize pathfinder with current map if needed
         self.pathfinder.set_map(
-            self.current_state.grid_width,
-            self.current_state.grid_height,
-            self.current_state.walls
+            state.grid_width,
+            state.grid_height,
+            state.walls
         )
         
         # Update congestion based on bot positions
-        bot_positions = [bot.position for bot in self.current_state.bots]
+        bot_positions = [bot.position for bot in state.bots]
         self.pathfinder.update_congestion(bot_positions)
         
         # Assign tasks to bots (global optimization)
-        tasks = self.task_assigner.assign_tasks(self.current_state)
+        tasks = self.task_assigner.assign_tasks(state)
+        logger.debug(f"Assigned tasks: {tasks}")
         
         # Generate actions for each bot
-        actions = self.action_generator.generate_actions(
-            self.current_state,
-            tasks
-        )
+        actions = self.action_generator.generate_actions(state, tasks)
+        
+        # Log each bot's action
+        for action in actions:
+            bot_id = action.get("bot", "?")
+            action_type = action.get("action", "?")
+            target = action.get("target")
+            task = tasks.get(bot_id)
+            
+            if action_type == "drop_off":
+                logger.info(f"  Bot {bot_id}: DROP_OFF (carrying item to deliver)")
+            elif should_log_info:
+                if target:
+                    logger.info(f"  Bot {bot_id}: {action_type} -> {target} | Task: {task}")
+                else:
+                    logger.info(f"  Bot {bot_id}: {action_type} | Task: {task}")
+            
+            logger.debug(f"  Bot {bot_id} action: {action}")
         
         # Apply collision avoidance with multi-step lookahead
-        actions = self.collision_avoider.resolve_conflicts(
-            self.current_state,
-            actions
-        )
+        original_count = len(actions)
+        actions = self.collision_avoider.resolve_conflicts(state, actions)
+        if len(actions) < original_count:
+            logger.warning(f"  Collision avoidance removed {original_count - len(actions)} actions")
         
-        logger.debug(f"Generated {len(actions)} actions")
+        if not actions:
+            logger.warning("  No actions generated!")
+        
         return actions

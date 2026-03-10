@@ -41,4 +41,4 @@ WEIGHT_POSITIONING = 0.1
 COLLISION_LOOKAHEAD_STEPS = 4
 
 # Drop-off strategy
-MIN_ITEMS_FOR_DROP_OFF = 2  # Drop off when 2+ active items (was implicit)
+MIN_ITEMS_FOR_DROP_OFF = 1  # Drop off when 2+ active items (was implicit)

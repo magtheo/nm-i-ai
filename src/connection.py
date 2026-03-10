@@ -47,7 +47,19 @@ class GameConnection:
         
         raw_message = await self.ws.recv()
         message = json.loads(raw_message)
-        logger.debug(f"Received message type: {message.get('type', 'unknown')}")
+        
+        msg_type = message.get("type", "unknown")
+        logger.debug(f"Received message type: {msg_type}")
+        
+        if msg_type == "game_over":
+            logger.info(f"Game over message received: {message}")
+        elif msg_type != "unknown":
+            round_num = message.get("round", "?")
+            score = message.get("score", 0)
+            bots = message.get("bots", [])
+            orders = message.get("orders", [])
+            logger.debug(f"  Round {round_num} | Score: {score} | Bots: {len(bots)} | Orders: {len(orders)}")
+        
         return message
     
     async def send_actions(self, actions: list[dict]) -> None:
