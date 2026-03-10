@@ -47,3 +47,6 @@ local_config.py
 
 # Auth token file (JWT from browser)
 .auth_token
+
+# Observer output
+observer_logs/
