@@ -15,60 +15,79 @@ A competitive AI bot for the Grocery Bot Challenge warm-up competition. The bot 
    cd nm-i-ai
    ```
 
-2. Install dependencies:
+2. Create and activate virtual environment:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-   
-   Or if you're on a system with externally-managed Python:
+
+4. (Optional) For auto-token feature:
    ```bash
-   pip install -r requirements.txt --break-system-packages
+   pip install playwright && playwright install chromium
    ```
 
 ## Getting a Game Token
 
+### Manual Method
 1. Go to https://app.ainm.no/challenge
 2. Select a difficulty level (Easy, Medium, Hard, Expert, or Nightmare)
 3. Click "Play" to generate a token
 4. Copy the token from the URL (the part after `token=`)
 
+### Automatic Method
+Use the `--auto-token` flag which opens a browser, logs you in, and fetches the token automatically:
+```bash
+./run.sh play -b theo -d easy -a
+```
+
 ## Running the Bot
 
-### Basic Usage
+### Interactive Mode (Recommended)
 ```bash
-python main.py --token <your_token>
+./run.sh
+```
+Presents a menu to select challenge, bot, difficulty, and token mode.
+
+### Direct Mode
+```bash
+./run.sh play -b theo -d easy -a      # Auto-token, easy difficulty
+./run.sh play -b mykyta -d hard -t TOKEN  # Manual token, hard difficulty
 ```
 
-### With Verbose Logging
+### History Commands
 ```bash
-python main.py --token <your_token> -v
+./run.sh --history    # Show command history and re-run selected
+./run.sh --last       # Re-run the last command
 ```
 
-### Using the Test Script
-```bash
-python testing/test_server.py <your_token>
-```
+### Command Options
+| Flag | Description |
+|------|-------------|
+| `-b, --bot` | Bot implementation: `theo`, `mykyta`, `member3` |
+| `-d, --difficulty` | Difficulty: `easy`, `medium`, `hard`, `expert`, `nightmare` |
+| `-t, --token` | Game token (manual mode) |
+| `-a, --auto-token` | Fetch token automatically (opens browser) |
+| `-v, --verbose` | Enable verbose logging |
+| `-o, --observe` | Enable observation metrics |
 
 ## Running Tests
 
-### Run All Unit Tests
+### Bot-specific Tests
 ```bash
-pytest tests/
+./run.sh test -b theo      # Test theo's implementation
+./run.sh test -b mykyta    # Test mykyta's implementation
 ```
 
-### Run Specific Test File
+### Direct pytest Commands
 ```bash
-pytest tests/test_pathfinding.py
-```
-
-### Run with Verbose Output
-```bash
-pytest tests/ -v
-```
-
-### Run Performance Tests
-```bash
-python testing/test_performance.py
+pytest challenges/grocery_bot/theo/tests/      # Theo's tests
+pytest challenges/grocery_bot/shared/tests/    # Shared tests
+pytest challenges/grocery_bot/theo/tests/ -v   # Verbose output
 ```
 
 ## Logging System
@@ -107,28 +126,41 @@ Each game session starts with a separator line for easy identification.
 
 ```
 nm-i-ai/
-├── main.py              # Main entry point
-├── config.py            # Configuration settings
-├── requirements.txt     # Python dependencies
-├── src/
-│   ├── bot.py           # Main bot orchestrator
-│   ├── connection.py    # WebSocket connection handling
-│   ├── state.py         # Game state parsing
-│   ├── pathfinding.py   # BFS pathfinding
-│   ├── tasks.py         # Task assignment
-│   ├── actions.py       # Action generation
-│   ├── collision.py     # Collision avoidance
-│   ├── logging_config.py # Multi-file logging configuration
-│   └── utils.py         # Helper functions
-├── tests/
-│   ├── test_pathfinding.py
-│   ├── test_state.py
-│   └── test_actions.py
-└── testing/
-    ├── test_server.py       # Live server test script
-    ├── test_performance.py  # Performance benchmarks
-    ├── testing-plan.md      # Testing documentation
-    └── mock_states/         # Mock game states
+├── run.sh                    # Main entry script (interactive/direct mode)
+├── main.py                   # Python entry point
+├── config.py                 # Configuration settings
+├── requirements.txt          # Python dependencies
+│
+├── challenges/
+│   └── grocery_bot/          # Grocery Bot challenge
+│       ├── shared/           # Shared code between bots
+│       │   ├── config.py     # Shared configuration
+│       │   ├── state.py      # Game state parsing
+│       │   ├── utils.py      # Helper functions
+│       │   └── tests/        # Shared tests
+│       ├── theo/             # Theo's bot implementation
+│       │   ├── bot.py        # Main bot orchestrator
+│       │   ├── pathfinding.py
+│       │   ├── tasks.py
+│       │   ├── actions.py
+│       │   ├── collision.py
+│       │   └── tests/
+│       ├── mykyta/           # Mykyta's bot implementation
+│       └── member3/          # Member3's bot implementation
+│
+├── tools/                    # Shared utilities
+│   ├── connection.py         # WebSocket connection handling
+│   ├── logging_config.py     # Multi-file logging configuration
+│   ├── observer/             # Observation metrics
+│   └── token_manager.py      # Auto-token fetching
+│
+├── testing/
+│   ├── test_performance.py   # Performance benchmarks
+│   ├── mock_states/          # Mock game states
+│   ├── results/              # Test results
+│   └── bugs/                 # Bug tracking
+│
+└── logs/                     # Log files (gitignored)
 ```
 
 ## Game Rules
@@ -164,9 +196,18 @@ The token has expired or already been used. Get a fresh token from https://app.a
 
 ### "command not found: python"
 
-Try using `python3` instead:
+Try using `python3` instead, or ensure your virtual environment is activated:
 ```bash
-python3 main.py --token <your_token>
+source .venv/bin/activate
+```
+
+### "Virtual environment not found"
+
+Create and activate the virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ### Tests Failing
