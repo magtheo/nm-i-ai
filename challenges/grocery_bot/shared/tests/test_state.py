@@ -1,7 +1,7 @@
 """Tests for state module."""
 
 import pytest
-from src.state import GameState, Bot, Item, Order
+from challenges.grocery_bot.shared.state import GameState, Bot, Item, Order
 
 
 class TestBot:

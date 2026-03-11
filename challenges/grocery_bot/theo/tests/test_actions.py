@@ -1,10 +1,10 @@
 """Tests for actions module."""
 
 import pytest
-from src.actions import ActionGenerator
-from src.pathfinding import Pathfinder
-from src.state import GameState, Bot, Item, Order
-from src.tasks import Task, TaskType
+from challenges.grocery_bot.theo.actions import ActionGenerator
+from challenges.grocery_bot.theo.pathfinding import Pathfinder
+from challenges.grocery_bot.shared.state import GameState, Bot, Item, Order
+from challenges.grocery_bot.theo.tasks import Task, TaskType
 
 
 class TestActionGenerator:

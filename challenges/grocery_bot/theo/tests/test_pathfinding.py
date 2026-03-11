@@ -1,7 +1,7 @@
 """Tests for pathfinding module."""
 
 import pytest
-from src.pathfinding import Pathfinder
+from challenges.grocery_bot.theo.pathfinding import Pathfinder
 
 
 class TestPathfinder:

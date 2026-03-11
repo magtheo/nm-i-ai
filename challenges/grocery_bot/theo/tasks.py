@@ -5,16 +5,16 @@ from enum import Enum
 from typing import Optional
 from collections import defaultdict
 
-from .state import GameState, Bot, Item, Order
-from .pathfinding import Pathfinder
-from config import (
+from challenges.grocery_bot.shared.state import GameState, Bot, Item, Order
+from challenges.grocery_bot.theo.pathfinding import Pathfinder
+from challenges.grocery_bot.shared.config import (
     WEIGHT_ACTIVE_ITEM, 
     WEIGHT_ORDER_COMPLETION, 
     WEIGHT_PREVIEW_ITEM,
     WEIGHT_POSITIONING,
     MIN_ITEMS_FOR_DROP_OFF
 )
-from src.logging_config import get_logger, LogCategory
+from tools.logging_config import get_logger, LogCategory
 
 logger = get_logger(LogCategory.TASKS)
 

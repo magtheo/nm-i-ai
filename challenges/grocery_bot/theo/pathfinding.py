@@ -4,8 +4,8 @@ from collections import deque
 from typing import Optional
 from dataclasses import dataclass
 
-from config import CACHE_DISTANCE_TABLES
-from src.logging_config import get_logger, LogCategory
+from challenges.grocery_bot.shared.config import CACHE_DISTANCE_TABLES
+from tools.logging_config import get_logger, LogCategory
 
 logger = get_logger(LogCategory.PATHFINDING)
 

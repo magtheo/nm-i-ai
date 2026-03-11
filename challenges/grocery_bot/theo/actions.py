@@ -2,10 +2,10 @@
 
 from typing import Any, Optional
 
-from .state import GameState, Bot
-from .tasks import Task, TaskType
-from .pathfinding import Pathfinder
-from src.logging_config import get_logger, LogCategory
+from challenges.grocery_bot.shared.state import GameState, Bot
+from challenges.grocery_bot.theo.tasks import Task, TaskType
+from challenges.grocery_bot.theo.pathfinding import Pathfinder
+from tools.logging_config import get_logger, LogCategory
 
 logger = get_logger(LogCategory.ACTIONS)
 

@@ -3,13 +3,13 @@
 import random
 from typing import Any
 
-from .state import GameState
-from .tasks import TaskAssigner
-from .actions import ActionGenerator
-from .collision import CollisionAvoider
-from .pathfinding import Pathfinder
-from .observer import Observer
-from src.logging_config import get_logger, LogCategory
+from challenges.grocery_bot.shared.state import GameState
+from challenges.grocery_bot.theo.tasks import TaskAssigner
+from challenges.grocery_bot.theo.actions import ActionGenerator
+from challenges.grocery_bot.theo.collision import CollisionAvoider
+from challenges.grocery_bot.theo.pathfinding import Pathfinder
+from tools.observer import Observer
+from tools.logging_config import get_logger, LogCategory
 
 logger = get_logger(LogCategory.BOT)
 

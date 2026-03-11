@@ -3,8 +3,8 @@
 from typing import Any
 from collections import defaultdict
 
-from .state import GameState, Bot
-from src.logging_config import get_logger, LogCategory
+from challenges.grocery_bot.shared.state import GameState, Bot
+from tools.logging_config import get_logger, LogCategory
 
 logger = get_logger(LogCategory.COLLISION)
 
