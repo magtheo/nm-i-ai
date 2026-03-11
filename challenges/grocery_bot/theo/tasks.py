@@ -174,10 +174,10 @@ class TaskAssigner:
                         continue
                     for item in state.get_items_by_type(item_type):
                         dist = abs(bot.position[0] - item.position[0]) + abs(bot.position[1] - item.position[1])
-                        if dist > 1 and dist <= 3:
+                        if dist > 1 and dist <= 5:
                             score = self._score_pick_active(bot, item, state, active_order, active_needed)
                             # Bonus for bundling
-                            score *= (1 + 0.2 * active_in_inventory)
+                            score *= (1 + 0.3 * active_in_inventory)
                             candidates.append(Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score))
         
         # Pick up adjacent active items (high priority)
@@ -375,7 +375,8 @@ class TaskAssigner:
         
         active_in_inventory = sum(1 for t in bot.inventory if order and t in order.items_needed)
         if active_in_inventory > 0:
-            base_value *= 0.3
+            # Bonus for bundling - picking up more items while already carrying
+            base_value *= (1 + 0.15 * active_in_inventory)
         
         score = base_value / (1 + distance * 0.2)
         
