@@ -34,7 +34,7 @@ nm-i-ai/
 │   └── run_benchmark.py        # Performance benchmarking
 │
 ├── challenges/
-│   └── grocery-bot/            # Challenge: Grocery Bot
+│   └── grocery_bot/            # Challenge: Grocery Bot
 │       ├── README.md           # Challenge rules & documentation
 │       ├── docs/               # Additional challenge docs
 │       ├── shared/             # Challenge-specific shared code
@@ -124,9 +124,9 @@ Single entry point via `main.py`:
 
 ```bash
 # Run with specific bot
-python main.py --challenge grocery-bot --bot theo --token <TOKEN>
+python main.py --challenge grocery_bot --bot theo --token <TOKEN>
 
-# Shorter (defaults to grocery-bot if only one challenge)
+# Shorter (defaults to grocery_bot if only one challenge)
 python main.py --bot theo --token <TOKEN>
 
 # With options
@@ -140,7 +140,7 @@ python main.py --bot theo --auto-token --difficulty hard
 
 | Argument | Description |
 |----------|-------------|
-| `--challenge` | Challenge name (default: grocery-bot) |
+| `--challenge` | Challenge name (default: grocery_bot) |
 | `--bot` | Bot implementation to use (theo, mykyta, member3) |
 | `--token` | Game token |
 | `--auto-token` | Fetch token automatically via browser |
@@ -182,19 +182,19 @@ from challenges.grocery_bot.shared.types import Bot as GameBot
 
 ```bash
 # Theo's tests
-pytest challenges/grocery-bot/theo/tests/
+pytest challenges/grocery_bot/theo/tests/
 
 # Mykyta's tests
-pytest challenges/grocery-bot/mykyta/tests/
+pytest challenges/grocery_bot/mykyta/tests/
 
 # Shared code tests
-pytest challenges/grocery-bot/shared/tests/
+pytest challenges/grocery_bot/shared/tests/
 ```
 
 ### Run all tests
 
 ```bash
-pytest challenges/grocery-bot/
+pytest challenges/grocery_bot/
 ```
 
 ---
@@ -215,7 +215,7 @@ From current structure to new structure:
 
 ### Phase 1: Create directories
 - [ ] Create `tools/` directory
-- [ ] Create `challenges/grocery-bot/` structure
+- [ ] Create `challenges/grocery_bot/` structure
 - [ ] Create member directories
 
 ### Phase 2: Move shared code
@@ -223,16 +223,16 @@ From current structure to new structure:
 - [ ] Move `src/logging_config.py` → `tools/logging_config.py`
 - [ ] Move `src/token_manager.py` → `tools/token_manager.py`
 - [ ] Move `src/observer/` → `tools/observer/`
-- [ ] Move `src/state.py` → `challenges/grocery-bot/shared/state.py`
-- [ ] Move `src/utils.py` → `challenges/grocery-bot/shared/utils.py`
+- [ ] Move `src/state.py` → `challenges/grocery_bot/shared/state.py`
+- [ ] Move `src/utils.py` → `challenges/grocery_bot/shared/utils.py`
 
 ### Phase 3: Move member code (Theo)
-- [ ] Move `src/bot.py` → `challenges/grocery-bot/theo/bot.py`
-- [ ] Move `src/pathfinding.py` → `challenges/grocery-bot/theo/pathfinding.py`
-- [ ] Move `src/tasks.py` → `challenges/grocery-bot/theo/tasks.py`
-- [ ] Move `src/actions.py` → `challenges/grocery-bot/theo/actions.py`
-- [ ] Move `src/collision.py` → `challenges/grocery-bot/theo/collision.py`
-- [ ] Move `tests/` → `challenges/grocery-bot/theo/tests/`
+- [ ] Move `src/bot.py` → `challenges/grocery_bot/theo/bot.py`
+- [ ] Move `src/pathfinding.py` → `challenges/grocery_bot/theo/pathfinding.py`
+- [ ] Move `src/tasks.py` → `challenges/grocery_bot/theo/tasks.py`
+- [ ] Move `src/actions.py` → `challenges/grocery_bot/theo/actions.py`
+- [ ] Move `src/collision.py` → `challenges/grocery_bot/theo/collision.py`
+- [ ] Move `tests/` → `challenges/grocery_bot/theo/tests/`
 
 ### Phase 4: Update imports
 - [ ] Update all import paths in moved files
