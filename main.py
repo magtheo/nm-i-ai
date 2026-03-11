@@ -3,21 +3,38 @@
 
 import argparse
 import asyncio
+import importlib
 import sys
 
-from config import GAME_TOKEN
-from src.bot import GroceryBot
-from src.connection import GameConnection
-from src.logging_config import LogCategory, get_logger, log_game_summary, setup_file_logging
-from src.observer import JSONOutput, Observer
-from src.token_manager import VALID_DIFFICULTIES, TokenManager
+from challenges.grocery_bot.shared.config import GAME_TOKEN
+from tools.connection import GameConnection
+from tools.logging_config import LogCategory, get_logger, log_game_summary, setup_file_logging
+from tools.observer import JSONOutput, Observer
+from tools.token_manager import VALID_DIFFICULTIES, TokenManager
+
+# Available bot implementations
+AVAILABLE_BOTS = ["theo", "mykyta", "member3"]
 
 
-async def run_bot(token: str, verbose: bool = False, observe: bool = False) -> dict:
+def get_bot_class(bot_name: str):
+    """Dynamically import and return the bot class for the specified implementation."""
+    if bot_name not in AVAILABLE_BOTS:
+        raise ValueError(f"Unknown bot: {bot_name}. Available: {AVAILABLE_BOTS}")
+    
+    module_path = f"challenges.grocery_bot.{bot_name}.bot"
+    try:
+        module = importlib.import_module(module_path)
+        return module.GroceryBot
+    except ImportError as e:
+        raise ImportError(f"Could not import bot '{bot_name}': {e}")
+
+
+async def run_bot(token: str, bot_name: str = "theo", verbose: bool = False, observe: bool = False) -> dict:
     """Run the bot for a single game.
     
     Args:
         token: Game token from the website
+        bot_name: Which bot implementation to use
         verbose: Enable verbose logging
         observe: Enable observation metrics
         
@@ -27,7 +44,7 @@ async def run_bot(token: str, verbose: bool = False, observe: bool = False) -> d
     setup_file_logging(verbose)
     logger = get_logger(LogCategory.MAIN)
     
-    logger.info("Starting Grocery Bot...")
+    logger.info(f"Starting Grocery Bot ({bot_name})...")
     
     if observe:
         json_output = JSONOutput(output_dir="observer_logs")
@@ -37,7 +54,9 @@ async def run_bot(token: str, verbose: bool = False, observe: bool = False) -> d
         observer = Observer(enabled=False)
         json_output = None
     
-    bot = GroceryBot(observer=observer)
+    # Get the bot class dynamically
+    BotClass = get_bot_class(bot_name)
+    bot = BotClass(observer=observer)
     connection = GameConnection(token)
     
     try:
@@ -57,11 +76,12 @@ async def run_bot(token: str, verbose: bool = False, observe: bool = False) -> d
         raise
 
 
-async def run_with_auto_token(difficulty: str, verbose: bool = False, observe: bool = False) -> dict:
+async def run_with_auto_token(difficulty: str, bot_name: str = "theo", verbose: bool = False, observe: bool = False) -> dict:
     """Run the bot with automatic token fetching.
     
     Args:
         difficulty: Game difficulty level
+        bot_name: Which bot implementation to use
         verbose: Enable verbose logging
         observe: Enable observation metrics
         
@@ -85,7 +105,7 @@ async def run_with_auto_token(difficulty: str, verbose: bool = False, observe: b
         logger.error(f"Failed to fetch game token: {e}")
         sys.exit(1)
     
-    return await run_bot(game_token, verbose, observe)
+    return await run_bot(game_token, bot_name, verbose, observe)
 
 
 def main() -> None:
@@ -110,6 +130,13 @@ def main() -> None:
         help="Game difficulty (default: medium, used with --auto-token)"
     )
     parser.add_argument(
+        "--bot", "-b",
+        type=str,
+        default="theo",
+        choices=AVAILABLE_BOTS,
+        help="Bot implementation to use (default: theo)"
+    )
+    parser.add_argument(
         "--verbose", "-v",
         action="store_true",
         help="Enable verbose logging"
@@ -123,14 +150,15 @@ def main() -> None:
     args = parser.parse_args()
     
     if args.auto_token:
-        result = asyncio.run(run_with_auto_token(args.difficulty, args.verbose, args.observe))
+        result = asyncio.run(run_with_auto_token(args.difficulty, args.bot, args.verbose, args.observe))
     elif not args.token:
         print("Error: No token provided. Use --token, --auto-token, or set NM_GAME_TOKEN env var")
         sys.exit(1)
     else:
-        result = asyncio.run(run_bot(args.token, args.verbose, args.observe))
+        result = asyncio.run(run_bot(args.token, args.bot, args.verbose, args.observe))
     
     print(f"\nGame Over!")
+    print(f"  Bot: {args.bot}")
     print(f"  Score: {result.get('score', 0)}")
     print(f"  Items delivered: {result.get('items_delivered', 0)}")
     print(f"  Orders completed: {result.get('orders_completed', 0)}")
