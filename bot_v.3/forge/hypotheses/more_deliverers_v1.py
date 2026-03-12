@@ -1,42 +1,46 @@
-"""Improved baseline strategy for bot_v.3 Forge — incorporating best v.2 insights.
+"""Hypothesis: increase MAX_DELIVERERS to 3 and reduce STARVATION_ROUNDS to 4.
 
-Key improvements over the original minimal strategy:
-  - Strict active-first ordering (never waste capacity on preview when active needs it)
-  - Delivery concurrency cap (max 2 simultaneous deliverers prevents drop-off congestion)
-  - Committed demand accounting (don't re-assign items already being carried to drop-off)
-  - Transition stash: when order ≥90% complete, hold empty bots near drop-off
-  - Anti-starvation: bots stuck for STARVATION_ROUNDS rounds get freed to pick anything
+Tests whether allowing more simultaneous deliverers improves throughput on
+expert (10-bot) maps at the cost of potential drop-off congestion.
 
-Required interface (do NOT change):
-    decide_intents(game_state: dict) -> list[dict]
+Name: more_deliverers_v1
 """
 from __future__ import annotations
 
 from collections import Counter
 from typing import Any
 
-
 # ─────────────────────────────────────────────────────────────────────────────
-# Configuration (tune these via experiments)
+# Hypothesis-specific config (differs from baseline strategy.py)
 # ─────────────────────────────────────────────────────────────────────────────
 
-MAX_DELIVERERS = 2
+MAX_DELIVERERS = 3          # ← was 2
 COMMIT_RADIUS = 2
-STARVATION_ROUNDS = 6
+STARVATION_ROUNDS = 4       # ← was 6
 PREVIEW_SAFETY_SLOTS = 1
 TRANSITION_STASH_COMPLETION = 0.9
 
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Module-level stall tracking state
-# ─────────────────────────────────────────────────────────────────────────────
-
+# Internal state
 _prev_positions: dict[int, tuple[int, int]] = {}
 _stall_counts: dict[int, int] = {}
 
 
 def _manhattan(a: tuple[int, int], b: tuple[int, int]) -> int:
     return abs(a[0] - b[0]) + abs(a[1] - b[1])
+
+
+def _walkable_neighbors(
+    cell: tuple[int, int],
+    walls: set[tuple[int, int]],
+    width: int,
+    height: int,
+) -> list[tuple[int, int]]:
+    out: list[tuple[int, int]] = []
+    for dx, dy in ((0, -1), (0, 1), (-1, 0), (1, 0)):
+        nx, ny = cell[0] + dx, cell[1] + dy
+        if 0 <= nx < width and 0 <= ny < height and (nx, ny) not in walls:
+            out.append((nx, ny))
+    return out
 
 
 def _active_and_preview(
@@ -55,28 +59,14 @@ def _active_and_preview(
 def _remaining_need(order: dict[str, Any] | None) -> Counter[str]:
     if not order:
         return Counter()
-    required = Counter(str(v) for v in order.get("items_required", []))
-    delivered = Counter(str(v) for v in order.get("items_delivered", []))
+    req = Counter(str(v) for v in order.get("items_required", []))
+    dlv = Counter(str(v) for v in order.get("items_delivered", []))
     result: Counter[str] = Counter()
-    for item_type, count in required.items():
-        remaining = count - delivered.get(item_type, 0)
+    for item_type, count in req.items():
+        remaining = count - dlv.get(item_type, 0)
         if remaining > 0:
             result[item_type] = remaining
     return result
-
-
-def _walkable_neighbors(
-    cell: tuple[int, int],
-    walls: set[tuple[int, int]],
-    width: int,
-    height: int,
-) -> list[tuple[int, int]]:
-    out: list[tuple[int, int]] = []
-    for dx, dy in ((0, -1), (0, 1), (-1, 0), (1, 0)):
-        nx, ny = cell[0] + dx, cell[1] + dy
-        if 0 <= nx < width and 0 <= ny < height and (nx, ny) not in walls:
-            out.append((nx, ny))
-    return out
 
 
 def _committed_bot_ids(
@@ -85,19 +75,15 @@ def _committed_bot_ids(
     drop_off: tuple[int, int],
     commit_radius: int,
 ) -> set[int]:
-    """Bots carrying active-matching items AND near drop-off or inventory-full."""
     needed = dict(active_need)
     committed: set[int] = set()
     for bot in sorted(bots, key=lambda b: int(b.get("id", -1))):
         inv = [str(v) for v in bot.get("inventory", [])]
-        matching = sum(1 for t in inv if needed.get(t, 0) > 0)
-        if matching <= 0:
+        if not any(needed.get(t, 0) > 0 for t in inv):
             continue
         pos_raw = bot.get("position", [0, 0])
         bot_pos = (int(pos_raw[0]), int(pos_raw[1]))
-        near = _manhattan(bot_pos, drop_off) <= commit_radius
-        full = len(inv) >= 3
-        if near or full:
+        if _manhattan(bot_pos, drop_off) <= commit_radius or len(inv) >= 3:
             committed.add(int(bot.get("id", -1)))
             for t in inv:
                 if needed.get(t, 0) > 0:
@@ -110,9 +96,7 @@ def _completion_ratio(order: dict[str, Any] | None) -> float:
         return 0.0
     req = order.get("items_required", [])
     dlv = order.get("items_delivered", [])
-    if not req:
-        return 1.0
-    return min(1.0, len(dlv) / len(req))
+    return min(1.0, len(dlv) / len(req)) if req else 1.0
 
 
 def _update_stalls(bots: list[dict[str, Any]]) -> None:
@@ -156,7 +140,6 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
 
     committed_ids = _committed_bot_ids(bots, active_need, drop_off, COMMIT_RADIUS)
 
-    # Serviceable deficit: active need minus what committed bots are already carrying
     serviceable_deficit: Counter[str] = Counter(active_need)
     for bot in sorted(bots, key=lambda b: int(b.get("id", -1))):
         if int(bot.get("id", -1)) not in committed_ids:
@@ -168,7 +151,6 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
                 if serviceable_deficit[t] == 0:
                     del serviceable_deficit[t]
 
-    # Preview prefetch gate
     total_free_slots = sum(max(0, 3 - len(bot.get("inventory", []))) for bot in bots)
     can_preview = (
         len(serviceable_deficit) == 0
@@ -176,14 +158,13 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
         and total_free_slots > PREVIEW_SAFETY_SLOTS
     )
 
-    # Transition stash gate
     transition_mode = _completion_ratio(active_order) >= TRANSITION_STASH_COMPLETION
 
     reserved_item_ids: set[str] = set()
     intents: list[dict[str, Any]] = []
 
-    # ── Pass 1: delivery assignment (closest-first, capped at MAX_DELIVERERS) ──
-    delivery_candidates: list[tuple[int, int, dict[str, Any]]] = []  # (dist, id, bot)
+    # Delivery pass
+    delivery_candidates: list[tuple[int, int, dict[str, Any]]] = []
     for bot in bots:
         inv = [str(t) for t in bot.get("inventory", [])]
         pos_raw = bot.get("position", [0, 0])
@@ -198,14 +179,12 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
             continue
         assigned_delivery.add(bot_id)
 
-    # ── Pass 2: per-bot intents ──────────────────────────────────────────────
     for bot in bots:
         bot_id = int(bot.get("id", -1))
         pos_raw = bot.get("position", [0, 0])
         bot_pos = (int(pos_raw[0]), int(pos_raw[1]))
         inv = [str(t) for t in bot.get("inventory", [])]
 
-        # Deliver
         if bot_id in assigned_delivery:
             if bot_pos == drop_off:
                 intents.append({"bot": bot_id, "action": "drop_off"})
@@ -213,7 +192,6 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
                 intents.append({"bot": bot_id, "target": list(drop_off)})
             continue
 
-        # Full inventory → force deliver
         if len(inv) >= 3:
             if bot_pos == drop_off:
                 intents.append({"bot": bot_id, "action": "drop_off"})
@@ -221,7 +199,6 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
                 intents.append({"bot": bot_id, "target": list(drop_off)})
             continue
 
-        # Transition stash: empty bots wait when order is nearly done and bots are covering it
         if transition_mode and len(inv) == 0:
             bots_covering = sum(
                 1 for b in bots
@@ -231,7 +208,6 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
                 intents.append({"bot": bot_id, "action": "wait"})
                 continue
 
-        # Determine demand to serve
         if len(serviceable_deficit) > 0 or not can_preview:
             demand_counter: Counter[str] = Counter(serviceable_deficit)
             demand_weight_map = {t: 10.0 for t in demand_counter}
@@ -239,7 +215,6 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
             demand_counter = Counter(preview_need)
             demand_weight_map = {t: 3.0 for t in demand_counter}
 
-        # Stalled bots get access to all demand
         if _is_stalled(bot_id):
             demand_counter = Counter(serviceable_deficit) + Counter(preview_need)
             demand_weight_map = {
@@ -259,11 +234,9 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
             if demand_counter.get(item_type, 0) <= 0:
                 continue
             demand_w = demand_weight_map.get(item_type, 1.0)
-
             item_pos_raw = item.get("position", [0, 0])
             item_pos = (int(item_pos_raw[0]), int(item_pos_raw[1]))
 
-            # Adjacent (directly pickable)?
             if _manhattan(bot_pos, item_pos) == 1:
                 best_item = item
                 best_target = bot_pos
@@ -273,20 +246,16 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
             pickup_cells = _walkable_neighbors(item_pos, walls, width, height)
             if not pickup_cells:
                 continue
-
             nearest = min(pickup_cells, key=lambda p: _manhattan(bot_pos, p))
-            dist = _manhattan(bot_pos, nearest)
-            score = demand_w - dist
+            score = demand_w - _manhattan(bot_pos, nearest)
             if score > best_score:
                 best_score = score
                 best_item = item
                 best_target = nearest
 
         if best_item is None or best_target is None:
-            if inv:
-                intents.append({"bot": bot_id, "target": list(drop_off)})
-            else:
-                intents.append({"bot": bot_id, "action": "wait"})
+            intents.append({"bot": bot_id, "action": "wait"} if not inv
+                           else {"bot": bot_id, "target": list(drop_off)})
             continue
 
         reserved_item_ids.add(str(best_item.get("id", "")))
@@ -304,11 +273,7 @@ def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
         item_pos = (int(item_pos_raw[0]), int(item_pos_raw[1]))
 
         if _manhattan(bot_pos, item_pos) == 1:
-            intents.append({
-                "bot": bot_id,
-                "action": "pick_up",
-                "item_id": str(best_item.get("id", "")),
-            })
+            intents.append({"bot": bot_id, "action": "pick_up", "item_id": str(best_item.get("id", ""))})
         else:
             intents.append({"bot": bot_id, "target": [best_target[0], best_target[1]]})
 

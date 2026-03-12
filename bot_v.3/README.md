@@ -173,7 +173,7 @@ python -m forge.orchestrator --iterations 0
 
 **Strategy interface contract** (must not change):
 ```python
-def decide_intents(game_state: dict) -> list[dict]:
+def decide_intents(game_state: dict[str, Any]) -> list[dict[str, Any]]:
     ...
 ```
 
