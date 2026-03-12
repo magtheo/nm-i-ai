@@ -1,0 +1,20 @@
+{
+  "strict_active_priority": true,
+  "prefetch_release_use_delivered_completion": true,
+  "transition_stash_enabled": true,
+  "transition_stash_completion_ratio": 0.9,
+  "transition_stash_remaining_items": 2,
+  "transition_stash_finisher_count": 2,
+  "transition_stash_preview_bonus": 1.0,
+  "anti_no_assignment_enabled": true,
+  "secondary_assignment_enabled": true,
+  "max_concurrent_deliverers": 2,
+  "demand_commitment_mode": "committed",
+  "etadlc_enabled": true,
+  "etadlc_converter_floor_min": 2,
+  "etadlc_converter_floor_tail": 3,
+  "etadlc_tail_remaining_threshold": 2,
+  "etadlc_retrieval_eta_weight": 0.65,
+  "etadlc_known_shelf_target_bonus": 2.0,
+  "etadlc_local_courier_harvest_radius": 6
+}

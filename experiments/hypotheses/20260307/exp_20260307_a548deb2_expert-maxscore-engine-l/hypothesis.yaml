@@ -1,0 +1,12 @@
+experiment_id: exp_20260307_a548deb2_expert-maxscore-engine-l
+title: expert maxscore engine live validation
+level: expert
+owner: planner_agent
+created_at: "2026-03-07T10:31:05.366190"
+hypothesis: expert maxscore engine live validation
+mechanism: Validate whether the maxscore-engine expert package improves expert score and order completion relative to the canonical default baseline without increasing idle stalls.
+patch: patch.diff
+success_metric: score
+verdict: null
+baseline_config: bot — копия/best/expert/current.json
+candidate_notes: expert_snapshot_copy_20260306_maxscore_engine/expert_snapshot_copy_20260306/artifacts/MAXSCORE_ENGINE_NOTES.md

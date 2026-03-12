@@ -1,0 +1,47 @@
+[
+  {
+    "run_name": "run_20260307_233817",
+    "role": "high_rotation_low_spacing_quality",
+    "artifact_path": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_233817",
+    "decision_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_233817\\decision_trace.jsonl",
+    "order_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_233817\\order_trace.json",
+    "result": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_233817\\result.json",
+    "ui_replay": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_233817\\ui_replay.html"
+  },
+  {
+    "run_name": "run_20260307_234824",
+    "role": "formation_oriented_baseline",
+    "artifact_path": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_234824",
+    "decision_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_234824\\decision_trace.jsonl",
+    "order_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_234824\\order_trace.json",
+    "result": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_234824\\result.json",
+    "ui_replay": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_234824\\ui_replay.html"
+  },
+  {
+    "run_name": "run_20260307_235618",
+    "role": "overactive_hybrid_degradation",
+    "artifact_path": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_235618",
+    "decision_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_235618\\decision_trace.jsonl",
+    "order_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_235618\\order_trace.json",
+    "result": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_235618\\result.json",
+    "ui_replay": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_235618\\ui_replay.html"
+  },
+  {
+    "run_name": "run_20260308_000913",
+    "role": "ring_collapse_regression",
+    "artifact_path": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260308_000913",
+    "decision_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260308_000913\\decision_trace.jsonl",
+    "order_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260308_000913\\order_trace.json",
+    "result": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260308_000913\\result.json",
+    "ui_replay": null
+  },
+  {
+    "run_name": "run_20260308_001202",
+    "role": "current_relatively_stable_hybrid_baseline",
+    "artifact_path": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260308_001202",
+    "decision_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260308_001202\\decision_trace.jsonl",
+    "order_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260308_001202\\order_trace.json",
+    "result": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260308_001202\\result.json",
+    "ui_replay": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260308_001202\\ui_replay.html"
+  }
+]

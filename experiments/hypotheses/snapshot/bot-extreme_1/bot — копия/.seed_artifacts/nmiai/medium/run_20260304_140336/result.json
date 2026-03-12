@@ -1,0 +1,27 @@
+{
+  "run_index": 1,
+  "score": 2,
+  "items_delivered": 2,
+  "orders_completed": 0,
+  "rounds_played": 300,
+  "idle_steps": 3,
+  "collisions_avoided": 12,
+  "avg_decision_ms": 3.6349233333021402,
+  "max_score_exact": null,
+  "max_score_upper_bound": 498,
+  "max_score_lower_bound": 402,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\nmiai\\medium\\run_20260304_140336",
+  "max_score_info": {
+    "difficulty": "medium",
+    "total_orders": 50,
+    "observed_orders": 2,
+    "completed_orders": 0,
+    "observed_items": 8,
+    "lower_bound_score": 402,
+    "upper_bound_score": 498,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 48
+  }
+}

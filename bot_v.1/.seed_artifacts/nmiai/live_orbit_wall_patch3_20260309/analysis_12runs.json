@@ -1,0 +1,161 @@
+{
+  "agg": {
+    "runs": 12,
+    "mean_score": 27.583333333333332,
+    "min_score": 10,
+    "max_score": 31,
+    "mean_orders": 2.6666666666666665,
+    "mean_idle": 731.8333333333334,
+    "mean_spacing": 278.5833333333333,
+    "mean_collision": 183.91666666666666,
+    "mean_no_assign": 4.25,
+    "mean_rejoin_denials": 6.166666666666667,
+    "mean_drop": 13.583333333333334
+  },
+  "runs": [
+    {
+      "run": "run_20260309_005737",
+      "score": 31,
+      "items": 16,
+      "orders": 3,
+      "idle": 676,
+      "spacing": 291.0,
+      "collision": 136.0,
+      "no_assign": 6.0,
+      "rejoin_denials": 9.0,
+      "drop": 17.0
+    },
+    {
+      "run": "run_20260309_005917",
+      "score": 31,
+      "items": 16,
+      "orders": 3,
+      "idle": 696,
+      "spacing": 221.0,
+      "collision": 207.0,
+      "no_assign": 5.0,
+      "rejoin_denials": 7.0,
+      "drop": 14.0
+    },
+    {
+      "run": "run_20260309_005650",
+      "score": 31,
+      "items": 16,
+      "orders": 3,
+      "idle": 696,
+      "spacing": 221.0,
+      "collision": 207.0,
+      "no_assign": 5.0,
+      "rejoin_denials": 7.0,
+      "drop": 14.0
+    },
+    {
+      "run": "run_20260309_005519",
+      "score": 31,
+      "items": 16,
+      "orders": 3,
+      "idle": 696,
+      "spacing": 221.0,
+      "collision": 207.0,
+      "no_assign": 5.0,
+      "rejoin_denials": 7.0,
+      "drop": 14.0
+    },
+    {
+      "run": "run_20260309_005347",
+      "score": 31,
+      "items": 16,
+      "orders": 3,
+      "idle": 696,
+      "spacing": 221.0,
+      "collision": 207.0,
+      "no_assign": 5.0,
+      "rejoin_denials": 7.0,
+      "drop": 14.0
+    },
+    {
+      "run": "run_20260309_005219",
+      "score": 31,
+      "items": 16,
+      "orders": 3,
+      "idle": 696,
+      "spacing": 221.0,
+      "collision": 207.0,
+      "no_assign": 5.0,
+      "rejoin_denials": 7.0,
+      "drop": 14.0
+    },
+    {
+      "run": "run_20260309_004921",
+      "score": 31,
+      "items": 16,
+      "orders": 3,
+      "idle": 696,
+      "spacing": 221.0,
+      "collision": 207.0,
+      "no_assign": 5.0,
+      "rejoin_denials": 7.0,
+      "drop": 14.0
+    },
+    {
+      "run": "run_20260309_004753",
+      "score": 31,
+      "items": 16,
+      "orders": 3,
+      "idle": 696,
+      "spacing": 221.0,
+      "collision": 207.0,
+      "no_assign": 5.0,
+      "rejoin_denials": 7.0,
+      "drop": 14.0
+    },
+    {
+      "run": "run_20260309_004629",
+      "score": 31,
+      "items": 16,
+      "orders": 3,
+      "idle": 696,
+      "spacing": 221.0,
+      "collision": 207.0,
+      "no_assign": 5.0,
+      "rejoin_denials": 7.0,
+      "drop": 14.0
+    },
+    {
+      "run": "run_20260309_005051",
+      "score": 30,
+      "items": 15,
+      "orders": 3,
+      "idle": 758,
+      "spacing": 383.0,
+      "collision": 149.0,
+      "no_assign": 5.0,
+      "rejoin_denials": 7.0,
+      "drop": 17.0
+    },
+    {
+      "run": "run_20260309_010049",
+      "score": 12,
+      "items": 7,
+      "orders": 1,
+      "idle": 807,
+      "spacing": 463.0,
+      "collision": 126.0,
+      "no_assign": 0.0,
+      "rejoin_denials": 0.0,
+      "drop": 12.0
+    },
+    {
+      "run": "run_20260309_010214",
+      "score": 10,
+      "items": 5,
+      "orders": 1,
+      "idle": 973,
+      "spacing": 438.0,
+      "collision": 140.0,
+      "no_assign": 0.0,
+      "rejoin_denials": 2.0,
+      "drop": 5.0
+    }
+  ]
+}

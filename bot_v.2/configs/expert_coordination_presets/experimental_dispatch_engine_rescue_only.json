@@ -1,0 +1,11 @@
+﻿{
+  "rescue_fallback_enabled": true,
+  "rescue_round_threshold": 0,
+  "rescue_score_threshold": 999,
+  "rescue_stagnation_window": 1,
+  "reservation_horizon": 2,
+  "path_window": 6,
+  "eta_weight": 3.5,
+  "drop_eta_weight": 0.6,
+  "rescue_params_file": "bundle_a_critical_dispatch_overlay_v2_iter11.json"
+}

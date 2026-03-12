@@ -1,0 +1,51 @@
+{
+  "shuffle_prob": 0.35,
+  "seeds": [
+    7004,
+    7005,
+    7006,
+    7007,
+    7008
+  ],
+  "summary": [
+    {
+      "name": "deliver_early",
+      "scores": [
+        54,
+        71,
+        49,
+        50,
+        70
+      ],
+      "mean": 58.8,
+      "min": 49,
+      "max": 71
+    },
+    {
+      "name": "best_live_75",
+      "scores": [
+        54,
+        71,
+        49,
+        40,
+        70
+      ],
+      "mean": 56.8,
+      "min": 40,
+      "max": 71
+    },
+    {
+      "name": "aggressive_active",
+      "scores": [
+        53,
+        61,
+        79,
+        56,
+        14
+      ],
+      "mean": 52.6,
+      "min": 14,
+      "max": 79
+    }
+  ]
+}

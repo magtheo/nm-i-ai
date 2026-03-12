@@ -1,0 +1,27 @@
+{
+  "run_index": 1,
+  "score": 70,
+  "items_delivered": 35,
+  "orders_completed": 7,
+  "rounds_played": 300,
+  "idle_steps": 1244,
+  "collisions_avoided": 330,
+  "avg_decision_ms": 8.501636000340417,
+  "max_score_exact": null,
+  "max_score_upper_bound": 538,
+  "max_score_lower_bound": 456,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\branch_pipeline_budget_fork_v1\\smoke\\expert\\run_20260310_035927",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 9,
+    "completed_orders": 0,
+    "observed_items": 42,
+    "lower_bound_score": 456,
+    "upper_bound_score": 538,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 41
+  }
+}

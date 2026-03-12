@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-03-03T10:59:00",
+  "source": "validated_live_runs",
+  "best_live_score": 138,
+  "items_delivered": 63,
+  "orders_completed": 15,
+  "config": {
+    "lookahead_k": 5,
+    "active_weight": 8.0,
+    "preview_weight": 2.0,
+    "dropoff_threshold": 1.0,
+    "zone_penalty": 0.0,
+    "dist_weight": 1.0,
+    "dropoff_dist_weight": 0.5,
+    "congestion_weight": 2.0,
+    "collision_risk_weight": 2.0,
+    "replan_penalty_weight": 1.0,
+    "urgency_weight": 0.8,
+    "future_depth_decay": 1.0,
+    "future_prefetch_bonus": 0,
+    "future_priority_mode": "depth",
+    "reservation_horizon": 2,
+    "hysteresis_penalty": 0.0,
+    "collision_aggressiveness": "detour",
+    "seed": 0,
+    "tie_break_dynamic": false
+  },
+  "repro_command": "python scripts/run_nmiai_grocery_bot.py --difficulty medium --runs 1 --lookahead-k 5 --active-weight 8 --preview-weight 2 --dropoff-threshold 1.0 --dist-weight 1.0 --dropoff-dist-weight 0.5 --congestion-weight 2.0 --collision-risk-weight 2.0 --replan-penalty-weight 1.0 --urgency-weight 0.8 --future-depth-decay 1.0 --future-prefetch-bonus 0 --future-priority-mode depth --prefetch-min-completion 0.0 --assignment-strategy greedy --reservation-horizon 2 --hysteresis-penalty 0.0 --collision-aggressiveness detour --seed 0"
+}

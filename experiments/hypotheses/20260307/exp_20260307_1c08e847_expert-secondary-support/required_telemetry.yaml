@@ -1,0 +1,15 @@
+required_telemetry:
+  baseline_reference: bot — копия/best/expert/current.json
+  candidate_reference: bot — копия/configs/expert_candidate_secondary_support_20260307.json
+  required_metrics:
+    - score
+    - items_delivered
+    - orders_completed
+    - idle_steps
+    - collisions_avoided
+    - avg_decision_ms
+  focused_observations:
+    - count of idle_fallback assignments in under-covered active-order states
+    - whether loaded nonmatching bots are redirected into secondary_reposition
+    - whether redirected bots later contribute to deliveries or only add traffic
+  honesty_rule: Proxy improvements alone are insufficient for promotion.

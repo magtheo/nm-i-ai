@@ -1,0 +1,301 @@
+{"round": 0, "score": 0, "score_delta": 0, "decision_ms": 1.43, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "wait"}]}
+{"round": 1, "score": 0, "score_delta": 0, "decision_ms": 1.29, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 2, "score": 0, "score_delta": 0, "decision_ms": 1.28, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_left"}]}
+{"round": 3, "score": 0, "score_delta": 0, "decision_ms": 1.16, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_left"}]}
+{"round": 4, "score": 0, "score_delta": 0, "decision_ms": 1.2, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 5, "score": 0, "score_delta": 0, "decision_ms": 1.2, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 6, "score": 0, "score_delta": 0, "decision_ms": 1.1, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_31"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "pick_up", "item_id": "item_32"}]}
+{"round": 7, "score": 0, "score_delta": 0, "decision_ms": 1.15, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "pick_up", "item_id": "item_33"}]}
+{"round": 8, "score": 0, "score_delta": 0, "decision_ms": 1.01, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 9, "score": 0, "score_delta": 0, "decision_ms": 1.06, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "pick_up", "item_id": "item_28"}, {"bot": 2, "action": "move_down"}]}
+{"round": 10, "score": 0, "score_delta": 0, "decision_ms": 0.91, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 11, "score": 0, "score_delta": 0, "decision_ms": 0.76, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 12, "score": 0, "score_delta": 0, "decision_ms": 0.75, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 13, "score": 0, "score_delta": 0, "decision_ms": 0.9, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 14, "score": 0, "score_delta": 0, "decision_ms": 0.91, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 15, "score": 0, "score_delta": 0, "decision_ms": 0.89, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "pick_up", "item_id": "item_8"}, {"bot": 2, "action": "move_left"}]}
+{"round": 16, "score": 0, "score_delta": 0, "decision_ms": 0.65, "actions": [{"bot": 0, "action": "drop_off"}, {"bot": 1, "action": "pick_up", "item_id": "item_8"}, {"bot": 2, "action": "move_down"}]}
+{"round": 17, "score": 1, "score_delta": 1, "decision_ms": 0.73, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 18, "score": 1, "score_delta": 0, "decision_ms": 0.7, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 19, "score": 1, "score_delta": 0, "decision_ms": 0.68, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 20, "score": 1, "score_delta": 0, "decision_ms": 0.54, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 21, "score": 1, "score_delta": 0, "decision_ms": 0.6, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 22, "score": 1, "score_delta": 0, "decision_ms": 0.61, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "drop_off"}]}
+{"round": 23, "score": 8, "score_delta": 7, "decision_ms": 1.06, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_right"}]}
+{"round": 24, "score": 8, "score_delta": 0, "decision_ms": 1.25, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 25, "score": 8, "score_delta": 0, "decision_ms": 1.14, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_right"}]}
+{"round": 26, "score": 8, "score_delta": 0, "decision_ms": 1.24, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_right"}]}
+{"round": 27, "score": 8, "score_delta": 0, "decision_ms": 1.07, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 28, "score": 8, "score_delta": 0, "decision_ms": 1.1, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_6"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 29, "score": 8, "score_delta": 0, "decision_ms": 0.79, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "pick_up", "item_id": "item_25"}]}
+{"round": 30, "score": 8, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "pick_up", "item_id": "item_25"}]}
+{"round": 31, "score": 8, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 32, "score": 8, "score_delta": 0, "decision_ms": 0.75, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_left"}]}
+{"round": 33, "score": 8, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "pick_up", "item_id": "item_6"}]}
+{"round": 34, "score": 8, "score_delta": 0, "decision_ms": 0.48, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_right"}]}
+{"round": 35, "score": 8, "score_delta": 0, "decision_ms": 0.58, "actions": [{"bot": 0, "action": "drop_off"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_down"}]}
+{"round": 36, "score": 9, "score_delta": 1, "decision_ms": 0.86, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "wait"}]}
+{"round": 37, "score": 9, "score_delta": 0, "decision_ms": 0.81, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "wait"}]}
+{"round": 38, "score": 9, "score_delta": 0, "decision_ms": 0.7, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "drop_off"}, {"bot": 2, "action": "wait"}]}
+{"round": 39, "score": 17, "score_delta": 8, "decision_ms": 1.22, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 40, "score": 17, "score_delta": 0, "decision_ms": 1.28, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 41, "score": 17, "score_delta": 0, "decision_ms": 1.06, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 42, "score": 17, "score_delta": 0, "decision_ms": 1.12, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "pick_up", "item_id": "item_26"}, {"bot": 2, "action": "move_left"}]}
+{"round": 43, "score": 17, "score_delta": 0, "decision_ms": 1.05, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "pick_up", "item_id": "item_26"}, {"bot": 2, "action": "move_left"}]}
+{"round": 44, "score": 17, "score_delta": 0, "decision_ms": 1.01, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_left"}]}
+{"round": 45, "score": 17, "score_delta": 0, "decision_ms": 1.23, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "drop_off"}]}
+{"round": 46, "score": 19, "score_delta": 2, "decision_ms": 1.4, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 47, "score": 19, "score_delta": 0, "decision_ms": 1.33, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_0"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 48, "score": 19, "score_delta": 0, "decision_ms": 1.2, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_0"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 49, "score": 19, "score_delta": 0, "decision_ms": 1.15, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 50, "score": 19, "score_delta": 0, "decision_ms": 1.24, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 51, "score": 19, "score_delta": 0, "decision_ms": 1.11, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 52, "score": 19, "score_delta": 0, "decision_ms": 1.13, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "pick_up", "item_id": "item_1"}, {"bot": 2, "action": "move_right"}]}
+{"round": 53, "score": 19, "score_delta": 0, "decision_ms": 0.81, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_right"}]}
+{"round": 54, "score": 19, "score_delta": 0, "decision_ms": 0.93, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_right"}]}
+{"round": 55, "score": 19, "score_delta": 0, "decision_ms": 0.89, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 56, "score": 19, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 57, "score": 19, "score_delta": 0, "decision_ms": 0.72, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 58, "score": 19, "score_delta": 0, "decision_ms": 0.98, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 59, "score": 19, "score_delta": 0, "decision_ms": 0.81, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 60, "score": 19, "score_delta": 0, "decision_ms": 0.78, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 61, "score": 19, "score_delta": 0, "decision_ms": 0.81, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 62, "score": 19, "score_delta": 0, "decision_ms": 0.99, "actions": [{"bot": 0, "action": "drop_off"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 63, "score": 26, "score_delta": 7, "decision_ms": 1.29, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 64, "score": 26, "score_delta": 0, "decision_ms": 1.49, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 65, "score": 26, "score_delta": 0, "decision_ms": 1.42, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "pick_up", "item_id": "item_0"}]}
+{"round": 66, "score": 26, "score_delta": 0, "decision_ms": 1.22, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_26"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "pick_up", "item_id": "item_1"}]}
+{"round": 67, "score": 26, "score_delta": 0, "decision_ms": 0.7, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 68, "score": 26, "score_delta": 0, "decision_ms": 0.65, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 69, "score": 26, "score_delta": 0, "decision_ms": 0.66, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 70, "score": 26, "score_delta": 0, "decision_ms": 0.63, "actions": [{"bot": 0, "action": "drop_off"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 71, "score": 27, "score_delta": 1, "decision_ms": 0.9, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 72, "score": 27, "score_delta": 0, "decision_ms": 0.91, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 73, "score": 27, "score_delta": 0, "decision_ms": 0.88, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_down"}]}
+{"round": 74, "score": 27, "score_delta": 0, "decision_ms": 0.78, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_26"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 75, "score": 27, "score_delta": 0, "decision_ms": 0.5, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 76, "score": 27, "score_delta": 0, "decision_ms": 0.45, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 77, "score": 27, "score_delta": 0, "decision_ms": 0.68, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 78, "score": 27, "score_delta": 0, "decision_ms": 0.54, "actions": [{"bot": 0, "action": "drop_off"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 79, "score": 28, "score_delta": 1, "decision_ms": 0.78, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 80, "score": 28, "score_delta": 0, "decision_ms": 0.79, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_right"}]}
+{"round": 81, "score": 28, "score_delta": 0, "decision_ms": 0.93, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 82, "score": 28, "score_delta": 0, "decision_ms": 0.72, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "drop_off"}, {"bot": 2, "action": "move_down"}]}
+{"round": 83, "score": 29, "score_delta": 1, "decision_ms": 1.1, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 84, "score": 29, "score_delta": 0, "decision_ms": 0.91, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "drop_off"}]}
+{"round": 85, "score": 36, "score_delta": 7, "decision_ms": 1.45, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 86, "score": 36, "score_delta": 0, "decision_ms": 1.3, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_right"}]}
+{"round": 87, "score": 36, "score_delta": 0, "decision_ms": 1.36, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_right"}]}
+{"round": 88, "score": 36, "score_delta": 0, "decision_ms": 1.49, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_7"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_right"}]}
+{"round": 89, "score": 36, "score_delta": 0, "decision_ms": 1.37, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 90, "score": 36, "score_delta": 0, "decision_ms": 1.46, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "pick_up", "item_id": "item_27"}]}
+{"round": 91, "score": 36, "score_delta": 0, "decision_ms": 1.21, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 92, "score": 36, "score_delta": 0, "decision_ms": 1.24, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_1"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 93, "score": 36, "score_delta": 0, "decision_ms": 2.34, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_1"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 94, "score": 36, "score_delta": 0, "decision_ms": 0.88, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "pick_up", "item_id": "item_7"}]}
+{"round": 95, "score": 36, "score_delta": 0, "decision_ms": 0.66, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_down"}]}
+{"round": 96, "score": 36, "score_delta": 0, "decision_ms": 0.73, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 97, "score": 36, "score_delta": 0, "decision_ms": 0.65, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 98, "score": 36, "score_delta": 0, "decision_ms": 0.61, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 99, "score": 36, "score_delta": 0, "decision_ms": 0.65, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 100, "score": 36, "score_delta": 0, "decision_ms": 0.58, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 101, "score": 36, "score_delta": 0, "decision_ms": 0.58, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 102, "score": 36, "score_delta": 0, "decision_ms": 0.54, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 103, "score": 36, "score_delta": 0, "decision_ms": 0.53, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "drop_off"}]}
+{"round": 104, "score": 37, "score_delta": 1, "decision_ms": 0.9, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_right"}]}
+{"round": 105, "score": 37, "score_delta": 0, "decision_ms": 1.03, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 106, "score": 37, "score_delta": 0, "decision_ms": 0.81, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "drop_off"}, {"bot": 2, "action": "move_left"}]}
+{"round": 107, "score": 39, "score_delta": 2, "decision_ms": 1.22, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 108, "score": 39, "score_delta": 0, "decision_ms": 1.01, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 109, "score": 39, "score_delta": 0, "decision_ms": 1.2, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 110, "score": 39, "score_delta": 0, "decision_ms": 1.02, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_right"}]}
+{"round": 111, "score": 39, "score_delta": 0, "decision_ms": 1.22, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_right"}]}
+{"round": 112, "score": 39, "score_delta": 0, "decision_ms": 1.18, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_right"}]}
+{"round": 113, "score": 39, "score_delta": 0, "decision_ms": 1.23, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 114, "score": 39, "score_delta": 0, "decision_ms": 1.16, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 115, "score": 39, "score_delta": 0, "decision_ms": 0.92, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 116, "score": 39, "score_delta": 0, "decision_ms": 1.0, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 117, "score": 39, "score_delta": 0, "decision_ms": 1.03, "actions": [{"bot": 0, "action": "drop_off"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "pick_up", "item_id": "item_1"}]}
+{"round": 118, "score": 47, "score_delta": 8, "decision_ms": 1.28, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 119, "score": 47, "score_delta": 0, "decision_ms": 1.2, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 120, "score": 47, "score_delta": 0, "decision_ms": 1.13, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 121, "score": 47, "score_delta": 0, "decision_ms": 1.2, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_26"}, {"bot": 1, "action": "pick_up", "item_id": "item_7"}, {"bot": 2, "action": "move_down"}]}
+{"round": 122, "score": 47, "score_delta": 0, "decision_ms": 1.4, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_down"}]}
+{"round": 123, "score": 47, "score_delta": 0, "decision_ms": 1.39, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 124, "score": 47, "score_delta": 0, "decision_ms": 1.05, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "pick_up", "item_id": "item_24"}, {"bot": 2, "action": "move_down"}]}
+{"round": 125, "score": 47, "score_delta": 0, "decision_ms": 1.5, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 126, "score": 47, "score_delta": 0, "decision_ms": 1.29, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 127, "score": 47, "score_delta": 0, "decision_ms": 1.34, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 128, "score": 47, "score_delta": 0, "decision_ms": 1.21, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_27"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 129, "score": 47, "score_delta": 0, "decision_ms": 1.05, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_left"}]}
+{"round": 130, "score": 47, "score_delta": 0, "decision_ms": 0.92, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_left"}]}
+{"round": 131, "score": 47, "score_delta": 0, "decision_ms": 0.98, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_right"}]}
+{"round": 132, "score": 47, "score_delta": 0, "decision_ms": 1.14, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 133, "score": 47, "score_delta": 0, "decision_ms": 1.0, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 134, "score": 47, "score_delta": 0, "decision_ms": 1.07, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 135, "score": 47, "score_delta": 0, "decision_ms": 0.8, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_1"}, {"bot": 1, "action": "drop_off"}, {"bot": 2, "action": "move_down"}]}
+{"round": 136, "score": 48, "score_delta": 1, "decision_ms": 0.85, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 137, "score": 48, "score_delta": 0, "decision_ms": 1.02, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 138, "score": 48, "score_delta": 0, "decision_ms": 0.98, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 139, "score": 48, "score_delta": 0, "decision_ms": 0.91, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 140, "score": 48, "score_delta": 0, "decision_ms": 1.05, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 141, "score": 48, "score_delta": 0, "decision_ms": 0.97, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "pick_up", "item_id": "item_27"}, {"bot": 2, "action": "move_down"}]}
+{"round": 142, "score": 48, "score_delta": 0, "decision_ms": 0.59, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 143, "score": 48, "score_delta": 0, "decision_ms": 0.59, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "drop_off"}]}
+{"round": 144, "score": 50, "score_delta": 2, "decision_ms": 1.13, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 145, "score": 50, "score_delta": 0, "decision_ms": 1.2, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 146, "score": 50, "score_delta": 0, "decision_ms": 1.11, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 147, "score": 50, "score_delta": 0, "decision_ms": 0.95, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 148, "score": 50, "score_delta": 0, "decision_ms": 1.13, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_right"}]}
+{"round": 149, "score": 50, "score_delta": 0, "decision_ms": 1.06, "actions": [{"bot": 0, "action": "drop_off"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_right"}]}
+{"round": 150, "score": 58, "score_delta": 8, "decision_ms": 1.48, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 151, "score": 58, "score_delta": 0, "decision_ms": 1.24, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "pick_up", "item_id": "item_7"}, {"bot": 2, "action": "move_right"}]}
+{"round": 152, "score": 58, "score_delta": 0, "decision_ms": 1.21, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 153, "score": 58, "score_delta": 0, "decision_ms": 1.23, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_26"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 154, "score": 58, "score_delta": 0, "decision_ms": 1.28, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 155, "score": 58, "score_delta": 0, "decision_ms": 1.29, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 156, "score": 58, "score_delta": 0, "decision_ms": 1.09, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 157, "score": 58, "score_delta": 0, "decision_ms": 1.13, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 158, "score": 58, "score_delta": 0, "decision_ms": 1.06, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 159, "score": 58, "score_delta": 0, "decision_ms": 1.01, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_right"}]}
+{"round": 160, "score": 58, "score_delta": 0, "decision_ms": 0.97, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_right"}]}
+{"round": 161, "score": 58, "score_delta": 0, "decision_ms": 0.96, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "pick_up", "item_id": "item_0"}]}
+{"round": 162, "score": 58, "score_delta": 0, "decision_ms": 1.06, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "drop_off"}, {"bot": 2, "action": "move_right"}]}
+{"round": 163, "score": 60, "score_delta": 2, "decision_ms": 1.31, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_right"}]}
+{"round": 164, "score": 60, "score_delta": 0, "decision_ms": 1.17, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_right"}]}
+{"round": 165, "score": 60, "score_delta": 0, "decision_ms": 1.36, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_7"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_right"}]}
+{"round": 166, "score": 60, "score_delta": 0, "decision_ms": 1.2, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_right"}]}
+{"round": 167, "score": 60, "score_delta": 0, "decision_ms": 1.07, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_down"}]}
+{"round": 168, "score": 60, "score_delta": 0, "decision_ms": 0.91, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 169, "score": 60, "score_delta": 0, "decision_ms": 1.08, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 170, "score": 60, "score_delta": 0, "decision_ms": 0.95, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 171, "score": 60, "score_delta": 0, "decision_ms": 1.01, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "pick_up", "item_id": "item_15"}]}
+{"round": 172, "score": 60, "score_delta": 0, "decision_ms": 0.82, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 173, "score": 60, "score_delta": 0, "decision_ms": 0.92, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "pick_up", "item_id": "item_7"}, {"bot": 2, "action": "move_down"}]}
+{"round": 174, "score": 60, "score_delta": 0, "decision_ms": 0.78, "actions": [{"bot": 0, "action": "drop_off"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 175, "score": 67, "score_delta": 7, "decision_ms": 1.0, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 176, "score": 67, "score_delta": 0, "decision_ms": 0.98, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 177, "score": 67, "score_delta": 0, "decision_ms": 0.91, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 178, "score": 67, "score_delta": 0, "decision_ms": 0.87, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_26"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_left"}]}
+{"round": 179, "score": 67, "score_delta": 0, "decision_ms": 1.02, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 180, "score": 67, "score_delta": 0, "decision_ms": 0.94, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_right"}]}
+{"round": 181, "score": 67, "score_delta": 0, "decision_ms": 0.82, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_left"}]}
+{"round": 182, "score": 67, "score_delta": 0, "decision_ms": 0.7, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_25"}, {"bot": 1, "action": "drop_off"}, {"bot": 2, "action": "move_down"}]}
+{"round": 183, "score": 68, "score_delta": 1, "decision_ms": 1.14, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 184, "score": 68, "score_delta": 0, "decision_ms": 1.15, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 185, "score": 68, "score_delta": 0, "decision_ms": 1.01, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_6"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 186, "score": 68, "score_delta": 0, "decision_ms": 0.85, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_left"}]}
+{"round": 187, "score": 68, "score_delta": 0, "decision_ms": 0.78, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_left"}]}
+{"round": 188, "score": 68, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "drop_off"}]}
+{"round": 189, "score": 76, "score_delta": 8, "decision_ms": 1.37, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 190, "score": 76, "score_delta": 0, "decision_ms": 1.29, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_right"}]}
+{"round": 191, "score": 76, "score_delta": 0, "decision_ms": 1.29, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_right"}]}
+{"round": 192, "score": 76, "score_delta": 0, "decision_ms": 1.04, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "pick_up", "item_id": "item_26"}]}
+{"round": 193, "score": 76, "score_delta": 0, "decision_ms": 1.14, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "pick_up", "item_id": "item_26"}]}
+{"round": 194, "score": 76, "score_delta": 0, "decision_ms": 1.03, "actions": [{"bot": 0, "action": "drop_off"}, {"bot": 1, "action": "pick_up", "item_id": "item_1"}, {"bot": 2, "action": "move_right"}]}
+{"round": 195, "score": 79, "score_delta": 3, "decision_ms": 1.09, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 196, "score": 79, "score_delta": 0, "decision_ms": 1.17, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 197, "score": 79, "score_delta": 0, "decision_ms": 1.03, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 198, "score": 79, "score_delta": 0, "decision_ms": 1.08, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 199, "score": 79, "score_delta": 0, "decision_ms": 1.07, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "pick_up", "item_id": "item_7"}]}
+{"round": 200, "score": 79, "score_delta": 0, "decision_ms": 0.88, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "wait"}]}
+{"round": 201, "score": 79, "score_delta": 0, "decision_ms": 0.87, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_6"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "wait"}]}
+{"round": 202, "score": 79, "score_delta": 0, "decision_ms": 0.77, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "wait"}]}
+{"round": 203, "score": 79, "score_delta": 0, "decision_ms": 0.76, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "wait"}]}
+{"round": 204, "score": 79, "score_delta": 0, "decision_ms": 0.67, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "wait"}]}
+{"round": 205, "score": 79, "score_delta": 0, "decision_ms": 0.76, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "wait"}]}
+{"round": 206, "score": 79, "score_delta": 0, "decision_ms": 0.9, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "wait"}]}
+{"round": 207, "score": 79, "score_delta": 0, "decision_ms": 0.86, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "wait"}]}
+{"round": 208, "score": 79, "score_delta": 0, "decision_ms": 0.66, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "wait"}]}
+{"round": 209, "score": 79, "score_delta": 0, "decision_ms": 0.69, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "wait"}]}
+{"round": 210, "score": 79, "score_delta": 0, "decision_ms": 0.8, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "wait"}]}
+{"round": 211, "score": 79, "score_delta": 0, "decision_ms": 0.8, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "wait"}]}
+{"round": 212, "score": 79, "score_delta": 0, "decision_ms": 0.69, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "wait"}]}
+{"round": 213, "score": 79, "score_delta": 0, "decision_ms": 0.75, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "wait"}]}
+{"round": 214, "score": 79, "score_delta": 0, "decision_ms": 0.69, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "drop_off"}, {"bot": 2, "action": "wait"}]}
+{"round": 215, "score": 85, "score_delta": 6, "decision_ms": 1.17, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 216, "score": 85, "score_delta": 0, "decision_ms": 1.24, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 217, "score": 85, "score_delta": 0, "decision_ms": 1.16, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_7"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 218, "score": 85, "score_delta": 0, "decision_ms": 0.89, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 219, "score": 85, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 220, "score": 85, "score_delta": 0, "decision_ms": 0.82, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 221, "score": 85, "score_delta": 0, "decision_ms": 1.01, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "pick_up", "item_id": "item_6"}, {"bot": 2, "action": "move_up"}]}
+{"round": 222, "score": 85, "score_delta": 0, "decision_ms": 0.72, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_up"}]}
+{"round": 223, "score": 85, "score_delta": 0, "decision_ms": 0.6, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_left"}, {"bot": 2, "action": "move_down"}]}
+{"round": 224, "score": 85, "score_delta": 0, "decision_ms": 0.58, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 225, "score": 85, "score_delta": 0, "decision_ms": 0.63, "actions": [{"bot": 0, "action": "move_left"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 226, "score": 85, "score_delta": 0, "decision_ms": 0.56, "actions": [{"bot": 0, "action": "drop_off"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_down"}]}
+{"round": 227, "score": 87, "score_delta": 2, "decision_ms": 0.9, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 228, "score": 87, "score_delta": 0, "decision_ms": 1.16, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 229, "score": 87, "score_delta": 0, "decision_ms": 0.8, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 230, "score": 87, "score_delta": 0, "decision_ms": 0.98, "actions": [{"bot": 0, "action": "move_right"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 231, "score": 87, "score_delta": 0, "decision_ms": 1.1, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 232, "score": 87, "score_delta": 0, "decision_ms": 1.0, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_right"}]}
+{"round": 233, "score": 87, "score_delta": 0, "decision_ms": 0.94, "actions": [{"bot": 0, "action": "pick_up", "item_id": "item_25"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_right"}]}
+{"round": 234, "score": 87, "score_delta": 0, "decision_ms": 0.81, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_right"}]}
+{"round": 235, "score": 87, "score_delta": 0, "decision_ms": 0.88, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_right"}]}
+{"round": 236, "score": 87, "score_delta": 0, "decision_ms": 0.93, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 237, "score": 87, "score_delta": 0, "decision_ms": 0.93, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 238, "score": 87, "score_delta": 0, "decision_ms": 0.94, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 239, "score": 87, "score_delta": 0, "decision_ms": 0.82, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 240, "score": 87, "score_delta": 0, "decision_ms": 0.8, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 241, "score": 87, "score_delta": 0, "decision_ms": 0.79, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 242, "score": 87, "score_delta": 0, "decision_ms": 0.81, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 243, "score": 87, "score_delta": 0, "decision_ms": 0.8, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 244, "score": 87, "score_delta": 0, "decision_ms": 0.84, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 245, "score": 87, "score_delta": 0, "decision_ms": 0.78, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 246, "score": 87, "score_delta": 0, "decision_ms": 0.76, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_left"}]}
+{"round": 247, "score": 87, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "wait"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "drop_off"}]}
+{"round": 248, "score": 95, "score_delta": 8, "decision_ms": 0.91, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_right"}]}
+{"round": 249, "score": 95, "score_delta": 0, "decision_ms": 1.12, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_down"}, {"bot": 2, "action": "move_up"}]}
+{"round": 250, "score": 95, "score_delta": 0, "decision_ms": 0.93, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "drop_off"}, {"bot": 2, "action": "move_down"}]}
+{"round": 251, "score": 96, "score_delta": 1, "decision_ms": 1.05, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 252, "score": 96, "score_delta": 0, "decision_ms": 1.13, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 253, "score": 96, "score_delta": 0, "decision_ms": 1.23, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_up"}]}
+{"round": 254, "score": 96, "score_delta": 0, "decision_ms": 1.34, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_up"}, {"bot": 2, "action": "move_down"}]}
+{"round": 255, "score": 96, "score_delta": 0, "decision_ms": 1.12, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_up"}]}
+{"round": 256, "score": 96, "score_delta": 0, "decision_ms": 1.14, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "move_right"}, {"bot": 2, "action": "move_down"}]}
+{"round": 257, "score": 96, "score_delta": 0, "decision_ms": 1.13, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "pick_up", "item_id": "item_24"}, {"bot": 2, "action": "move_up"}]}
+{"round": 258, "score": 96, "score_delta": 0, "decision_ms": 1.11, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "pick_up", "item_id": "item_6"}, {"bot": 2, "action": "move_down"}]}
+{"round": 259, "score": 96, "score_delta": 0, "decision_ms": 0.76, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 260, "score": 96, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 261, "score": 96, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 262, "score": 96, "score_delta": 0, "decision_ms": 0.94, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 263, "score": 96, "score_delta": 0, "decision_ms": 0.73, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 264, "score": 96, "score_delta": 0, "decision_ms": 0.84, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 265, "score": 96, "score_delta": 0, "decision_ms": 0.77, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 266, "score": 96, "score_delta": 0, "decision_ms": 0.89, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 267, "score": 96, "score_delta": 0, "decision_ms": 0.75, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 268, "score": 96, "score_delta": 0, "decision_ms": 0.86, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 269, "score": 96, "score_delta": 0, "decision_ms": 0.87, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 270, "score": 96, "score_delta": 0, "decision_ms": 1.0, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 271, "score": 96, "score_delta": 0, "decision_ms": 0.72, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 272, "score": 96, "score_delta": 0, "decision_ms": 0.94, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 273, "score": 96, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 274, "score": 96, "score_delta": 0, "decision_ms": 0.97, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 275, "score": 96, "score_delta": 0, "decision_ms": 0.87, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 276, "score": 96, "score_delta": 0, "decision_ms": 0.85, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 277, "score": 96, "score_delta": 0, "decision_ms": 0.83, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 278, "score": 96, "score_delta": 0, "decision_ms": 1.05, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 279, "score": 96, "score_delta": 0, "decision_ms": 0.85, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 280, "score": 96, "score_delta": 0, "decision_ms": 0.96, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 281, "score": 96, "score_delta": 0, "decision_ms": 0.78, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 282, "score": 96, "score_delta": 0, "decision_ms": 0.93, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 283, "score": 96, "score_delta": 0, "decision_ms": 0.93, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 284, "score": 96, "score_delta": 0, "decision_ms": 0.9, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 285, "score": 96, "score_delta": 0, "decision_ms": 0.95, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 286, "score": 96, "score_delta": 0, "decision_ms": 0.98, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 287, "score": 96, "score_delta": 0, "decision_ms": 0.94, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 288, "score": 96, "score_delta": 0, "decision_ms": 0.79, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 289, "score": 96, "score_delta": 0, "decision_ms": 0.89, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 290, "score": 96, "score_delta": 0, "decision_ms": 0.86, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 291, "score": 96, "score_delta": 0, "decision_ms": 0.74, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 292, "score": 96, "score_delta": 0, "decision_ms": 0.97, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 293, "score": 96, "score_delta": 0, "decision_ms": 0.92, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 294, "score": 96, "score_delta": 0, "decision_ms": 0.9, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 295, "score": 96, "score_delta": 0, "decision_ms": 0.9, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 296, "score": 96, "score_delta": 0, "decision_ms": 0.99, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 297, "score": 96, "score_delta": 0, "decision_ms": 0.84, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"round": 298, "score": 96, "score_delta": 0, "decision_ms": 0.93, "actions": [{"bot": 0, "action": "move_down"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_down"}]}
+{"round": 299, "score": 96, "score_delta": 0, "decision_ms": 0.9, "actions": [{"bot": 0, "action": "move_up"}, {"bot": 1, "action": "wait"}, {"bot": 2, "action": "move_up"}]}
+{"type": "summary", "difficulty": "medium", "total_score": 96, "rounds_played": 300, "items_delivered": 46, "orders_completed": 10, "avg_decision_ms": 0.9690426647042235, "max_decision_ms": 2.3403000086545944, "start_time": "2026-03-03T14:28:53.554908", "end_time": "2026-03-03T14:29:13.982553"}

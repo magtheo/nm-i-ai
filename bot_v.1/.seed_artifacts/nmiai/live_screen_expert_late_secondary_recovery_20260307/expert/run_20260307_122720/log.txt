@@ -1,0 +1,13 @@
+run_index=1
+difficulty=expert
+map_seed=0
+ws_url=wss://game.ainm.no/ws?token=eyJh...NPQc
+order_forecast_source=none
+score=3
+items_delivered=3
+orders_completed=0
+rounds_played=300
+idle_steps=2590
+collisions_avoided=376
+avg_decision_ms=7.119
+logger_path=C:\Users\Exempel\Desktop\Seed\bot_v.1\.seed_artifacts\nmiai\live_screen_expert_late_secondary_recovery_20260307\expert\run_20260307_122720\round_logs\game_20260307_122720_expert.jsonl

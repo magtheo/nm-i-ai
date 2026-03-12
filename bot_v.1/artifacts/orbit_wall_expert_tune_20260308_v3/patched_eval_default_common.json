@@ -1,0 +1,45 @@
+{
+  "params": {
+    "reservation_horizon": 1,
+    "migration_stage": 5,
+    "delivery_quota_min": 2,
+    "delivery_quota_max": 3,
+    "forecast_buffer_cap": 2,
+    "rejoin_slot_headroom": 2
+  },
+  "gate_a": {
+    "runs": 10.0,
+    "mean_score": 3.1,
+    "min_score": 1.0,
+    "mean_items": 2.6,
+    "mean_orders": 0.1,
+    "mean_idle": 2325.1,
+    "mean_spacing_wait": 835.3,
+    "mean_collision_wait": 421.7,
+    "mean_no_assign_wait": 0.4,
+    "mean_queue_violation": 0.0,
+    "mean_rejoin_denials": 1.3,
+    "mean_rejoin_backlog": 1.6536666666666666,
+    "mean_branch_rate": 1.0,
+    "mean_deliver_bots": 1.2176666666666667,
+    "mean_drop_off_actions": 2.4
+  },
+  "gate_b": {
+    "runs": 10.0,
+    "mean_score": 4.7,
+    "min_score": 1.0,
+    "mean_items": 3.7,
+    "mean_orders": 0.2,
+    "mean_idle": 2096.6,
+    "mean_spacing_wait": 452.5,
+    "mean_collision_wait": 438.3,
+    "mean_no_assign_wait": 93.4,
+    "mean_queue_violation": 0.0,
+    "mean_rejoin_denials": 94.3,
+    "mean_rejoin_backlog": 2.530666666666667,
+    "mean_branch_rate": 1.0,
+    "mean_deliver_bots": 0.858,
+    "mean_drop_off_actions": 3.6
+  },
+  "objective": 307.504
+}

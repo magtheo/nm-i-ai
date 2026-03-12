@@ -1,0 +1,4 @@
+{"round": 0, "event": "order_started", "active_order_id": "order_0", "active_order_index": 0}
+{"round": 51, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 6, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 53, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 56, "event": "tail_opened", "active_order_id": "order_0", "remaining_items": 3}

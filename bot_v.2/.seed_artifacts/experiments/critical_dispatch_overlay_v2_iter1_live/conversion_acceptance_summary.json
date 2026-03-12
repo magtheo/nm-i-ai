@@ -1,0 +1,85 @@
+{
+  "inputs": {
+    "artifact_root": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\critical_dispatch_overlay_v2_iter1_live",
+    "difficulty": "expert",
+    "limit": 1
+  },
+  "thresholds": {
+    "max_no_target_wait_ratio": 0.1,
+    "max_no_target_waits": 120,
+    "min_drop_actions": 12,
+    "min_items_per_drop": 0.9,
+    "min_drop_to_pick_ratio": 0.3,
+    "max_coupling_break_rounds": 40,
+    "max_commitment_stagnation_rounds": 80,
+    "max_throughput_floor_breach_rounds": 90,
+    "max_delivery_lane_breach_rounds": 20
+  },
+  "summary": {
+    "runs": 1,
+    "score_median": 79.0,
+    "orders_completed_median": 8.0,
+    "items_delivered_median": 39.0,
+    "overall_pass_runs": 0,
+    "overall_pass_rate": 0.0,
+    "gate_fail_counts": {
+      "target_liveness": 0,
+      "drop_conversion_floor": 0,
+      "pickup_drop_coupling": 0,
+      "commitment_realism": 1,
+      "throughput_lane_floor": 1,
+      "delivery_lane_guarantee": 0
+    },
+    "conversion_medians": {
+      "items_per_drop_action": 1.3928571428571428,
+      "drop_to_pick_ratio": 0.4827586206896552,
+      "wait_due_to_no_target": 0.0,
+      "wait_due_to_no_target_ratio": 0.0,
+      "wait_due_to_no_assignment": 909.0,
+      "wait_due_to_no_assignment_ratio": 0.303,
+      "coupling_break_rounds": 23.0,
+      "commitment_stagnation_rounds": 114.0,
+      "throughput_floor_breach_rounds": 284.0,
+      "delivery_lane_breach_rounds": 0.0,
+      "weak_conversion_window_rounds": 243.0
+    }
+  },
+  "runs": [
+    {
+      "run_name": "run_20260312_005933",
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\critical_dispatch_overlay_v2_iter1_live\\expert\\run_20260312_005933",
+      "score": 79,
+      "orders_completed": 8,
+      "items_delivered": 39,
+      "rounds": 300,
+      "bot_count": 10,
+      "action_counts": {
+        "pick_up": 58,
+        "drop_off": 28,
+        "wait": 1078
+      },
+      "conversion_metrics": {
+        "items_per_drop_action": 1.3928571428571428,
+        "drop_to_pick_ratio": 0.4827586206896552,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 909.0,
+        "wait_due_to_no_assignment_ratio": 0.303,
+        "coupling_break_rounds": 23,
+        "commitment_stagnation_rounds": 114,
+        "throughput_floor_breach_rounds": 284,
+        "delivery_lane_breach_rounds": 0,
+        "weak_conversion_window_rounds": 243
+      },
+      "gates": {
+        "target_liveness": true,
+        "drop_conversion_floor": true,
+        "pickup_drop_coupling": true,
+        "commitment_realism": false,
+        "throughput_lane_floor": false,
+        "delivery_lane_guarantee": true
+      },
+      "pass_all_gates": false
+    }
+  ]
+}

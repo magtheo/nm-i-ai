@@ -1,0 +1,27 @@
+{
+  "run_index": 2,
+  "score": 73,
+  "items_delivered": 38,
+  "orders_completed": 7,
+  "rounds_played": 300,
+  "idle_steps": 1117,
+  "collisions_avoided": 225,
+  "avg_decision_ms": 15.066615999894566,
+  "max_score_exact": null,
+  "max_score_upper_bound": 541,
+  "max_score_lower_bound": 459,
+  "all_orders_observed": false,
+  "artifact_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\critical_dispatch_overlay_v2_batch\\expert\\run_20260312_003202",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 9,
+    "completed_orders": 0,
+    "observed_items": 45,
+    "lower_bound_score": 459,
+    "upper_bound_score": 541,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 41
+  }
+}

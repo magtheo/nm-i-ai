@@ -1,0 +1,13 @@
+level: expert
+experiment_id: expert_baseline_20260307
+branch: local-working-tree
+commit: untracked
+score: null
+date: 2026-03-07
+source_config: "C:\\Users\\Exempel\\Desktop\\bot-extreme_1\\bot — копия\\configs\\expert_baseline_current.json"
+provenance_status: bootstrap_only
+provenance_target: stable expert 82 profile
+provenance_note: "Exact recovery of the stable expert 82 profile was not possible from the current workspace. No preserved expert run-backed config or expert score-82 artifact was found; the active baseline remains a defaults-derived bootstrap reference."
+provenance_note_file: "C:\Users\Exempel\Desktop\bot-extreme_1\bot — копия\best\expert\provenance_recovery_20260307.md"
+history_snapshot_config: "C:\\Users\\Exempel\\Desktop\\bot-extreme_1\\archive\\deprecated\\20260307\\best_history\\expert\\bootstrap_recovery_pass_current_104000.json"
+history_snapshot_metadata: "C:\\Users\\Exempel\\Desktop\\bot-extreme_1\\archive\\deprecated\\20260307\\best_history\\expert\\bootstrap_recovery_pass_metadata_104000.yaml"

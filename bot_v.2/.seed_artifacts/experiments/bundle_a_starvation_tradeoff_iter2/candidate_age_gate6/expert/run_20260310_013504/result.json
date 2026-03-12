@@ -1,0 +1,27 @@
+{
+  "run_index": 2,
+  "score": 33,
+  "items_delivered": 18,
+  "orders_completed": 3,
+  "rounds_played": 300,
+  "idle_steps": 1380,
+  "collisions_avoided": 108,
+  "avg_decision_ms": 8.904915332968812,
+  "max_score_exact": null,
+  "max_score_upper_bound": 545,
+  "max_score_lower_bound": 455,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\bundle_a_starvation_tradeoff_iter2\\candidate_age_gate6\\expert\\run_20260310_013504",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 5,
+    "completed_orders": 0,
+    "observed_items": 25,
+    "lower_bound_score": 455,
+    "upper_bound_score": 545,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 45
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "old_best_225125": {
+    "rounds": 300,
+    "gap1_rounds": 169,
+    "mean_gap": 1.563,
+    "spacing": 220,
+    "collision": 161,
+    "no_assign": 12,
+    "rejoin_denials": 12,
+    "mean_rejoin_backlog": 1.18,
+    "phase_advance_ratio": 1.0,
+    "mean_cw_moved": 0.0,
+    "mean_deliver_bots": 1.07
+  },
+  "new_best_001138": {
+    "rounds": 300,
+    "gap1_rounds": 101,
+    "mean_gap": 1.617,
+    "spacing": 234,
+    "collision": 162,
+    "no_assign": 5,
+    "rejoin_denials": 7,
+    "mean_rejoin_backlog": 1.737,
+    "phase_advance_ratio": 0.587,
+    "mean_cw_moved": 3.597,
+    "mean_deliver_bots": 1.17
+  }
+}

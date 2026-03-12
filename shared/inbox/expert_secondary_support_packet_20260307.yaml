@@ -1,0 +1,32 @@
+id: handoff_20260307_expert_secondary_support
+from: coding_agent
+to: validation_agent
+type: experiment_packet
+created_at: 2026-03-07T11:20:00
+experiment:
+  id: exp_20260307_1c08e847_expert-secondary-support
+  level: expert
+  baseline: bot — копия/best/expert/current.json
+  candidate: bot — копия/configs/expert_candidate_secondary_support_20260307.json
+  hypothesis_path: experiments/hypotheses/20260307/exp_20260307_1c08e847_expert-secondary-support/hypothesis.yaml
+  patch_path: experiments/hypotheses/20260307/exp_20260307_1c08e847_expert-secondary-support/patch.diff
+  evidence_path: experiments/hypotheses/20260307/exp_20260307_1c08e847_expert-secondary-support/offline_validation.json
+summary: Narrow config-only Expert trial enabling existing secondary-support logic to reduce idle fallback in under-covered active-order states.
+evidence:
+  verdict: ready_for_live_validation
+  confidence: moderate
+  findings:
+    - In focused offline assignment checks, the baseline produced idle_fallback for the extra loaded bot.
+    - In the same checks, the candidate produced secondary_reposition via secondary_active_support.
+    - The observed delta appears in both under-covered distinct-item and duplicate-item active-order scenarios.
+constraints:
+  - Comparison baseline is operational and bootstrap_only, not a recovered historical authority baseline.
+  - Evidence is assignment-layer proxy evidence only.
+  - decision_engine replay validation is currently blocked by a missing bot.cooperative_path import in this workspace.
+request:
+  next_step: Run the standard narrow Expert live validation workflow against the current operational baseline.
+  guardrails:
+    - Do not promote on proxy evidence alone.
+    - Reject if score regresses materially or if orders_completed drops.
+    - Prefer rollback on collision or congestion regressions.
+status: open

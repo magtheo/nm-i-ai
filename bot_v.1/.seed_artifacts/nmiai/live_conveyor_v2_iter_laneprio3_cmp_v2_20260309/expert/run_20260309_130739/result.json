@@ -1,0 +1,27 @@
+{
+  "run_index": 1,
+  "score": 21,
+  "items_delivered": 11,
+  "orders_completed": 2,
+  "rounds_played": 300,
+  "idle_steps": 349,
+  "collisions_avoided": 116,
+  "avg_decision_ms": 5.396042333377409,
+  "max_score_exact": null,
+  "max_score_upper_bound": 545,
+  "max_score_lower_bound": 453,
+  "all_orders_observed": false,
+  "artifact_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_conveyor_v2_iter_laneprio3_cmp_v2_20260309\\expert\\run_20260309_130739",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 4,
+    "completed_orders": 0,
+    "observed_items": 19,
+    "lower_bound_score": 453,
+    "upper_bound_score": 545,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 46
+  }
+}

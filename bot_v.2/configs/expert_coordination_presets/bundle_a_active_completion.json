@@ -1,0 +1,9 @@
+{
+  "strict_active_priority": true,
+  "prefetch_release_use_delivered_completion": true,
+  "transition_stash_enabled": true,
+  "transition_stash_completion_ratio": 0.9,
+  "transition_stash_remaining_items": 2,
+  "transition_stash_finisher_count": 2,
+  "transition_stash_preview_bonus": 1.0
+}

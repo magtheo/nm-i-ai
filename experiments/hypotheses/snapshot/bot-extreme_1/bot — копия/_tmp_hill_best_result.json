@@ -1,0 +1,52 @@
+{
+  "score": 150,
+  "items_delivered": 70,
+  "orders_completed": 16,
+  "rounds_used": 300,
+  "avg_decision_ms": 0.7282,
+  "p95_decision_ms": 1.1217,
+  "idle_steps_per_bot": {
+    "0": 6,
+    "1": 32,
+    "2": 66
+  },
+  "blocked_moves": 3,
+  "collisions_avoided": 17,
+  "swaps_prevented": 0,
+  "replans": 48,
+  "fallback_rounds": 0,
+  "policy": {
+    "decision": {
+      "lookahead_orders": 2,
+      "active_weight": 8.0,
+      "preview_weight": 8.0,
+      "dropoff_completion_threshold": 0.8,
+      "zone_penalty_weight": 0.0,
+      "dist_weight": 0.9,
+      "dropoff_dist_weight": 0.5,
+      "congestion_weight": 1.0,
+      "collision_risk_weight": 2.0,
+      "replan_penalty_weight": 1.5,
+      "urgency_weight": 0.8,
+      "reservation_horizon": 1,
+      "hysteresis_penalty": 0.0,
+      "collision_aggressiveness": "wait",
+      "decision_soft_budget_ms": 20.0,
+      "decision_hard_cap_ms": 50.0,
+      "tie_break_seed": 0
+    },
+    "generator": {
+      "seed": 7002,
+      "size3_bias": 0.25,
+      "template_repeat_prob": 0.3,
+      "hot_type_bias": 0.66
+    }
+  },
+  "max_info": {
+    "total_orders": 50,
+    "total_items_needed": 204,
+    "max_score": 454,
+    "exact": true,
+    "score_formula": "max_score = delivered_items + 5 * completed_orders"
+  }
+}

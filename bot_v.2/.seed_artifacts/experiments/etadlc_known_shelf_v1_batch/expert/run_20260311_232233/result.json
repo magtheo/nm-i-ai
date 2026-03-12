@@ -1,0 +1,27 @@
+{
+  "run_index": 2,
+  "score": 35,
+  "items_delivered": 20,
+  "orders_completed": 3,
+  "rounds_played": 300,
+  "idle_steps": 1639,
+  "collisions_avoided": 272,
+  "avg_decision_ms": 7.451847333407689,
+  "max_score_exact": null,
+  "max_score_upper_bound": 546,
+  "max_score_lower_bound": 456,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\etadlc_known_shelf_v1_batch\\expert\\run_20260311_232233",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 5,
+    "completed_orders": 0,
+    "observed_items": 26,
+    "lower_bound_score": 456,
+    "upper_bound_score": 546,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 45
+  }
+}

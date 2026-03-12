@@ -1,0 +1,30 @@
+{
+  "artifact_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\etadlc_known_shelf_v1_batch\\expert\\run_20260311_232359",
+  "result": {
+    "score": 35,
+    "orders_completed": 3,
+    "items_delivered": 20,
+    "rounds_played": 300
+  },
+  "diagnostics": {
+    "rounds": 300,
+    "tail_open_rounds": 226,
+    "secured_rounds": 273,
+    "coupling_break_rounds": 13,
+    "commitment_stagnation_rounds": 195,
+    "throughput_lane_breach_rounds": 287,
+    "delivery_lane_guarantee_breach_rounds": 60,
+    "wait_totals": {
+      "no_target": 0,
+      "no_assignment": 1553,
+      "collision": 86,
+      "queue": 0
+    },
+    "completion_rounds": [
+      67,
+      96,
+      137
+    ]
+  },
+  "order_trace_rounds": 300
+}

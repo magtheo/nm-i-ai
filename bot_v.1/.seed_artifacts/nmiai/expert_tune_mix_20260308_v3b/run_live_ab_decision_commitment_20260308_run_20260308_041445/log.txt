@@ -1,0 +1,18 @@
+run_index=1
+difficulty=expert
+map_seed=0
+ws_url=wss://game.ainm.no/ws?token=eyJh...YdlU
+order_forecast_source=none
+orbit_flow_hypothesis=False
+orbit_wall=False
+engine_mode=decision_engine
+orbit_shelf_ids=(72, 73, 112, 113)
+score=49
+items_delivered=24
+orders_completed=5
+rounds_played=300
+idle_steps=1376
+collisions_avoided=324
+avg_decision_ms=7.569
+logger_path=.seed_artifacts\nmiai\live_ab_decision_commitment_20260308\expert\run_20260308_041445\round_logs\game_20260308_041445_expert.jsonl
+decision_trace_path=.seed_artifacts\nmiai\live_ab_decision_commitment_20260308\expert\run_20260308_041445\decision_trace.jsonl

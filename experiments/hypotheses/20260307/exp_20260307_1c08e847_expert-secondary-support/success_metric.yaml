@@ -1,0 +1,13 @@
+primary_metric: score
+target: "Beat or match the operational Expert baseline score while reducing idle_steps without lowering orders_completed."
+comparison: bot — копия/best/expert/current.json
+secondary_metrics:
+  - idle_steps
+  - orders_completed
+  - items_delivered
+  - collisions_avoided
+proxy_metric:
+  - fewer idle_fallback assignments in focused offline under-covered-order checks
+acceptance_notes:
+  - Do not promote on proxy behavior alone.
+  - Live or replay evidence must confirm score safety.

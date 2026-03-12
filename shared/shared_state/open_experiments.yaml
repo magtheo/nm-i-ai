@@ -1,0 +1,13 @@
+open_experiments:
+  - id: exp_20260307_1c08e847_expert-secondary-support
+    level: expert
+    status: ready_for_live_validation
+    owner: planner_agent
+    baseline: bot — копия/best/expert/current.json
+    candidate: bot — копия/configs/expert_candidate_secondary_support_20260307.json
+    hypothesis_path: experiments/hypotheses/20260307/exp_20260307_1c08e847_expert-secondary-support/hypothesis.yaml
+    evidence_path: experiments/hypotheses/20260307/exp_20260307_1c08e847_expert-secondary-support/offline_validation.json
+    notes:
+      - Proxy evidence is positive at assignment layer.
+      - Baseline remains bootstrap_only and is valid for operational comparison, not historical authority.
+      - Full score safety still requires live or replay validation.

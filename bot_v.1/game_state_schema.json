@@ -1,0 +1,166 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "game_state.schema.json",
+  "title": "NMiAI Grocery Bot — game_state message",
+  "description": "Server-to-client message sent every round containing full game state.",
+  "type": "object",
+  "required": ["type", "round", "max_rounds", "grid", "bots", "items", "orders", "drop_off", "score"],
+  "properties": {
+    "type": {
+      "const": "game_state",
+      "description": "Message type discriminator"
+    },
+    "round": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 299,
+      "description": "Current round number (0-indexed)"
+    },
+    "max_rounds": {
+      "type": "integer",
+      "const": 300,
+      "description": "Maximum number of rounds in the game"
+    },
+    "grid": {
+      "type": "object",
+      "required": ["width", "height", "walls"],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "description": "Grid width in cells. Easy=12, Medium=16, Hard=22, Expert=28"
+        },
+        "height": {
+          "type": "integer",
+          "description": "Grid height in cells. Easy=10, Medium=12, Hard=14, Expert=18"
+        },
+        "walls": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": { "type": "integer" },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "description": "Array of [x, y] coordinates for all impassable cells (border + interior walls + shelf cells). Items position on these wall cells."
+        }
+      },
+      "additionalProperties": false
+    },
+    "bots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "position", "inventory"],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Bot ID. Actions resolve in bot ID order (0 first)."
+          },
+          "position": {
+            "type": "array",
+            "items": { "type": "integer" },
+            "minItems": 2,
+            "maxItems": 2,
+            "description": "[x, y] current position on the grid"
+          },
+          "inventory": {
+            "type": "array",
+            "items": { "type": "string" },
+            "maxItems": 3,
+            "description": "Item type names currently held by this bot (max 3)"
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "Array of bot states. Easy=1 bot, Medium=3, Hard=5, Expert=10."
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "position"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^item_\\d+$",
+            "description": "Unique item ID (e.g. 'item_0')"
+          },
+          "type": {
+            "type": "string",
+            "description": "Item type name (e.g. 'milk', 'bread', 'cheese', 'butter', 'yogurt')"
+          },
+          "position": {
+            "type": "array",
+            "items": { "type": "integer" },
+            "minItems": 2,
+            "maxItems": 2,
+            "description": "[x, y] position on a shelf wall cell. NOT walkable — bot must be adjacent to pick up."
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "All items currently on shelves (not yet picked up)"
+    },
+    "orders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "items_required", "items_delivered", "complete", "status"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^order_\\d+$",
+            "description": "Unique order ID"
+          },
+          "items_required": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Item type names required for this order. May contain duplicates."
+          },
+          "items_delivered": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Item type names already delivered for this order"
+          },
+          "complete": {
+            "type": "boolean",
+            "description": "Whether all required items have been delivered"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["active", "preview"],
+            "description": "'active' = can deliver to; 'preview' = next order (visible, can pre-pick items but not deliver)"
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 2,
+      "description": "Visible orders. Always contains active + preview (when available)."
+    },
+    "drop_off": {
+      "type": "array",
+      "items": { "type": "integer" },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "[x, y] position of the drop-off cell. Walkable. Bot must stand here to drop_off."
+    },
+    "score": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Current score. +1 per item delivered, +5 bonus per order completed."
+    },
+    "active_order_index": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Index of the active order in the full order list"
+    },
+    "total_orders": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Total number of orders in the game (Easy: 50)"
+    }
+  },
+  "additionalProperties": false
+}

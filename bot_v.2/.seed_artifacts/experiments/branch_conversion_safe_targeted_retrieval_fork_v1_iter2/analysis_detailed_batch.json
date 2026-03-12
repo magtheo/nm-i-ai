@@ -1,0 +1,114 @@
+{
+  "summary": {
+    "runs": 3,
+    "score_median": 32,
+    "orders_completed_median": 3,
+    "items_delivered_median": 17,
+    "first_completion_round_median": 68,
+    "second_completion_round_median": 135,
+    "third_completion_round_median": 171,
+    "action_wait_median": 1709,
+    "action_pick_up_median": 49,
+    "action_drop_off_median": 17,
+    "action_move_median": 1209,
+    "wait_due_to_no_target_median": 1044,
+    "wait_due_to_collision_block_median": 480,
+    "wait_due_to_no_assignment_median": 0,
+    "wait_due_to_drop_queue_slot_hold_median": 73,
+    "active_stage_targets_median": 96.0,
+    "active_sustain_targets_median": 44.0,
+    "delivery_lane_force_rounds_median": 164.0,
+    "delivery_lane_forced_bots_sum_median": 164.0,
+    "sustain_active_lane_rounds_median": 44.0,
+    "courier_active_targets_median": 529.0
+  },
+  "runs": [
+    {
+      "run": "run_20260311_170323",
+      "score": 34,
+      "orders_completed": 3,
+      "items_delivered": 19,
+      "first_completion_round": 68,
+      "second_completion_round": 135,
+      "third_completion_round": 173,
+      "action_counts": {
+        "wait": 1709,
+        "pick_up": 60,
+        "drop_off": 22,
+        "move": 1209
+      },
+      "wait_counts": {
+        "wait_due_to_no_target": 1247,
+        "wait_due_to_collision_block": 186,
+        "wait_due_to_no_assignment": 0,
+        "wait_due_to_drop_queue_slot_hold": 73
+      },
+      "telemetry_sums": {
+        "active_stage_targets": 96.0,
+        "active_sustain_targets": 44.0,
+        "delivery_lane_force": 164.0,
+        "delivery_lane_forced_bots": 164.0,
+        "sustain_active_lane": 44.0,
+        "courier_active_targets": 384.0
+      }
+    },
+    {
+      "run": "run_20260311_170511",
+      "score": 32,
+      "orders_completed": 3,
+      "items_delivered": 17,
+      "first_completion_round": 68,
+      "second_completion_round": 135,
+      "third_completion_round": 171,
+      "action_counts": {
+        "wait": 1892,
+        "pick_up": 38,
+        "drop_off": 14,
+        "move": 1056
+      },
+      "wait_counts": {
+        "wait_due_to_no_target": 1044,
+        "wait_due_to_collision_block": 480,
+        "wait_due_to_no_assignment": 0,
+        "wait_due_to_drop_queue_slot_hold": 83
+      },
+      "telemetry_sums": {
+        "active_stage_targets": 96.0,
+        "active_sustain_targets": 44.0,
+        "delivery_lane_force": 150.0,
+        "delivery_lane_forced_bots": 150.0,
+        "sustain_active_lane": 44.0,
+        "courier_active_targets": 638.0
+      }
+    },
+    {
+      "run": "run_20260311_170633",
+      "score": 31,
+      "orders_completed": 3,
+      "items_delivered": 16,
+      "first_completion_round": 68,
+      "second_completion_round": 137,
+      "third_completion_round": 165,
+      "action_counts": {
+        "wait": 1666,
+        "pick_up": 49,
+        "drop_off": 17,
+        "move": 1268
+      },
+      "wait_counts": {
+        "wait_due_to_no_target": 853,
+        "wait_due_to_collision_block": 504,
+        "wait_due_to_no_assignment": 0,
+        "wait_due_to_drop_queue_slot_hold": 38
+      },
+      "telemetry_sums": {
+        "active_stage_targets": 96.0,
+        "active_sustain_targets": 30.0,
+        "delivery_lane_force": 276.0,
+        "delivery_lane_forced_bots": 276.0,
+        "sustain_active_lane": 30.0,
+        "courier_active_targets": 529.0
+      }
+    }
+  ]
+}

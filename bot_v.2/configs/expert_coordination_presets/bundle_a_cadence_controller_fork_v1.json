@@ -1,0 +1,17 @@
+{
+  "strict_active_priority": true,
+  "prefetch_release_use_delivered_completion": true,
+  "transition_stash_enabled": true,
+  "transition_stash_completion_ratio": 0.9,
+  "transition_stash_remaining_items": 2,
+  "transition_stash_finisher_count": 2,
+  "transition_stash_preview_bonus": 1.0,
+  "anti_no_assignment_enabled": true,
+  "secondary_assignment_enabled": true,
+  "cadence_controller_enabled": true,
+  "cadence_close_min_order_index": 4,
+  "cadence_target_order_age_rounds": 30,
+  "cadence_close_deficit_threshold": 2,
+  "cadence_close_disable_transition_stash": true,
+  "cadence_close_disable_secondary_assignment": false
+}

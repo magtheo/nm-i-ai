@@ -1,0 +1,322 @@
+{
+  "inputs": {
+    "presets_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\configs\\expert_coordination_presets",
+    "artifact_root": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix",
+    "runs_per_preset": 3,
+    "cooldown_sec": 1.0,
+    "preset_order": [
+      "legacy_baseline",
+      "bundle_a_active_completion",
+      "bundle_b_dropoff_corridor",
+      "bundle_c_startup_anti_idle"
+    ]
+  },
+  "presets": {
+    "legacy_baseline": {
+      "params_file": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\configs\\expert_coordination_presets\\legacy_baseline.json",
+      "aggregate": {
+        "runs": 3,
+        "score_median": 42.0,
+        "score_mean": 29.333333333333332,
+        "score_best": 42,
+        "orders_median": 4.0,
+        "orders_mean": 2.6666666666666665,
+        "items_median": 22.0,
+        "items_mean": 16.0,
+        "first_completion_median": 52.0,
+        "second_completion_median": 68.0,
+        "active_tail_rounds_median": 195.0,
+        "idle_steps_median": 1649.0,
+        "no_target_waits_median": 0.0,
+        "no_assignment_waits_median": 1565.0,
+        "collision_waits_median": 83.0
+      },
+      "runs": [
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\legacy_baseline\\expert\\run_20260309_235837",
+          "score": 42,
+          "orders_completed": 4,
+          "items_delivered": 22,
+          "idle_steps": 1649,
+          "first_completion_round": 52,
+          "second_completion_round": 68,
+          "active_tail_rounds": 195,
+          "no_target_waits": 0,
+          "no_assignment_waits": 1565,
+          "collision_waits": 83
+        },
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\legacy_baseline\\expert\\run_20260309_235651",
+          "score": 4,
+          "orders_completed": 0,
+          "items_delivered": 4,
+          "idle_steps": 2362,
+          "first_completion_round": null,
+          "second_completion_round": null,
+          "active_tail_rounds": 250,
+          "no_target_waits": 0,
+          "no_assignment_waits": 2192,
+          "collision_waits": 170
+        },
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\legacy_baseline\\expert\\run_20260309_235525",
+          "score": 42,
+          "orders_completed": 4,
+          "items_delivered": 22,
+          "idle_steps": 1649,
+          "first_completion_round": 52,
+          "second_completion_round": 68,
+          "active_tail_rounds": 195,
+          "no_target_waits": 0,
+          "no_assignment_waits": 1565,
+          "collision_waits": 83
+        }
+      ]
+    },
+    "bundle_a_active_completion": {
+      "params_file": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\configs\\expert_coordination_presets\\bundle_a_active_completion.json",
+      "aggregate": {
+        "runs": 3,
+        "score_median": 74.0,
+        "score_mean": 74.0,
+        "score_best": 74,
+        "orders_median": 7.0,
+        "orders_mean": 7.0,
+        "items_median": 39.0,
+        "items_mean": 39.0,
+        "first_completion_median": 52.0,
+        "second_completion_median": 82.0,
+        "active_tail_rounds_median": 121.0,
+        "idle_steps_median": 1368.0,
+        "no_target_waits_median": 0.0,
+        "no_assignment_waits_median": 1266.0,
+        "collision_waits_median": 102.0
+      },
+      "runs": [
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\bundle_a_active_completion\\expert\\run_20260310_000307",
+          "score": 74,
+          "orders_completed": 7,
+          "items_delivered": 39,
+          "idle_steps": 1368,
+          "first_completion_round": 52,
+          "second_completion_round": 82,
+          "active_tail_rounds": 121,
+          "no_target_waits": 0,
+          "no_assignment_waits": 1266,
+          "collision_waits": 102
+        },
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\bundle_a_active_completion\\expert\\run_20260310_000143",
+          "score": 74,
+          "orders_completed": 7,
+          "items_delivered": 39,
+          "idle_steps": 1368,
+          "first_completion_round": 52,
+          "second_completion_round": 82,
+          "active_tail_rounds": 121,
+          "no_target_waits": 0,
+          "no_assignment_waits": 1266,
+          "collision_waits": 102
+        },
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\bundle_a_active_completion\\expert\\run_20260310_000018",
+          "score": 74,
+          "orders_completed": 7,
+          "items_delivered": 39,
+          "idle_steps": 1368,
+          "first_completion_round": 52,
+          "second_completion_round": 82,
+          "active_tail_rounds": 121,
+          "no_target_waits": 0,
+          "no_assignment_waits": 1266,
+          "collision_waits": 102
+        }
+      ]
+    },
+    "bundle_b_dropoff_corridor": {
+      "params_file": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\configs\\expert_coordination_presets\\bundle_b_dropoff_corridor.json",
+      "aggregate": {
+        "runs": 3,
+        "score_median": 54.0,
+        "score_mean": 54.0,
+        "score_best": 54,
+        "orders_median": 5.0,
+        "orders_mean": 5.0,
+        "items_median": 29.0,
+        "items_mean": 29.0,
+        "first_completion_median": 52.0,
+        "second_completion_median": 68.0,
+        "active_tail_rounds_median": 174.0,
+        "idle_steps_median": 1660.0,
+        "no_target_waits_median": 0.0,
+        "no_assignment_waits_median": 1471.0,
+        "collision_waits_median": 188.0
+      },
+      "runs": [
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\bundle_b_dropoff_corridor\\expert\\run_20260310_000728",
+          "score": 54,
+          "orders_completed": 5,
+          "items_delivered": 29,
+          "idle_steps": 1660,
+          "first_completion_round": 52,
+          "second_completion_round": 68,
+          "active_tail_rounds": 174,
+          "no_target_waits": 0,
+          "no_assignment_waits": 1471,
+          "collision_waits": 188
+        },
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\bundle_b_dropoff_corridor\\expert\\run_20260310_000559",
+          "score": 54,
+          "orders_completed": 5,
+          "items_delivered": 29,
+          "idle_steps": 1660,
+          "first_completion_round": 52,
+          "second_completion_round": 68,
+          "active_tail_rounds": 174,
+          "no_target_waits": 0,
+          "no_assignment_waits": 1471,
+          "collision_waits": 188
+        },
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\bundle_b_dropoff_corridor\\expert\\run_20260310_000434",
+          "score": 54,
+          "orders_completed": 5,
+          "items_delivered": 29,
+          "idle_steps": 1660,
+          "first_completion_round": 52,
+          "second_completion_round": 68,
+          "active_tail_rounds": 174,
+          "no_target_waits": 0,
+          "no_assignment_waits": 1471,
+          "collision_waits": 188
+        }
+      ]
+    },
+    "bundle_c_startup_anti_idle": {
+      "params_file": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\configs\\expert_coordination_presets\\bundle_c_startup_anti_idle.json",
+      "aggregate": {
+        "runs": 3,
+        "score_median": 63.0,
+        "score_mean": 53.0,
+        "score_best": 74,
+        "orders_median": 6.0,
+        "orders_mean": 5.0,
+        "items_median": 33.0,
+        "items_mean": 28.0,
+        "first_completion_median": 52.0,
+        "second_completion_median": 68.0,
+        "active_tail_rounds_median": 155.0,
+        "idle_steps_median": 772.0,
+        "no_target_waits_median": 0.0,
+        "no_assignment_waits_median": 589.0,
+        "collision_waits_median": 183.0
+      },
+      "runs": [
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\bundle_c_startup_anti_idle\\expert\\run_20260310_001157",
+          "score": 22,
+          "orders_completed": 2,
+          "items_delivered": 12,
+          "idle_steps": 427,
+          "first_completion_round": 81,
+          "second_completion_round": 135,
+          "active_tail_rounds": 155,
+          "no_target_waits": 0,
+          "no_assignment_waits": 375,
+          "collision_waits": 52
+        },
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\bundle_c_startup_anti_idle\\expert\\run_20260310_001032",
+          "score": 74,
+          "orders_completed": 7,
+          "items_delivered": 39,
+          "idle_steps": 955,
+          "first_completion_round": 52,
+          "second_completion_round": 68,
+          "active_tail_rounds": 136,
+          "no_target_waits": 0,
+          "no_assignment_waits": 758,
+          "collision_waits": 196
+        },
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\bundle_c_startup_anti_idle\\expert\\run_20260310_000853",
+          "score": 63,
+          "orders_completed": 6,
+          "items_delivered": 33,
+          "idle_steps": 772,
+          "first_completion_round": 52,
+          "second_completion_round": 68,
+          "active_tail_rounds": 162,
+          "no_target_waits": 0,
+          "no_assignment_waits": 589,
+          "collision_waits": 183
+        }
+      ]
+    }
+  },
+  "reference": {
+    "expert_supply_strategy_latest": {
+      "aggregate": {
+        "runs": 3,
+        "score_median": 20.0,
+        "score_mean": 20.0,
+        "score_best": 20,
+        "orders_median": 2.0,
+        "orders_mean": 2.0,
+        "items_median": 10.0,
+        "items_mean": 10.0,
+        "first_completion_median": 54.0,
+        "second_completion_median": 70.0,
+        "active_tail_rounds_median": 18.0,
+        "idle_steps_median": 2212.0,
+        "no_target_waits_median": 65.0,
+        "no_assignment_waits_median": 0.0,
+        "collision_waits_median": 974.0
+      },
+      "runs": [
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\nmiai\\expert\\run_20260309_234055",
+          "score": 20,
+          "orders_completed": 2,
+          "items_delivered": 10,
+          "idle_steps": 2173,
+          "first_completion_round": 54,
+          "second_completion_round": 73,
+          "active_tail_rounds": 20,
+          "no_target_waits": 1282,
+          "no_assignment_waits": 0,
+          "collision_waits": 512
+        },
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\nmiai\\expert\\run_20260309_233930",
+          "score": 20,
+          "orders_completed": 2,
+          "items_delivered": 10,
+          "idle_steps": 2212,
+          "first_completion_round": 54,
+          "second_completion_round": 70,
+          "active_tail_rounds": 18,
+          "no_target_waits": 65,
+          "no_assignment_waits": 0,
+          "collision_waits": 974
+        },
+        {
+          "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\nmiai\\expert\\run_20260309_233807",
+          "score": 20,
+          "orders_completed": 2,
+          "items_delivered": 10,
+          "idle_steps": 2212,
+          "first_completion_round": 54,
+          "second_completion_round": 70,
+          "active_tail_rounds": 18,
+          "no_target_waits": 65,
+          "no_assignment_waits": 0,
+          "collision_waits": 974
+        }
+      ]
+    }
+  }
+}

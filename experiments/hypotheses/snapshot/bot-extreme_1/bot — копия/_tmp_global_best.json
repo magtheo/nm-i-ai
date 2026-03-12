@@ -1,0 +1,26 @@
+{
+  "score": 132,
+  "seed": 111783,
+  "params": {
+    "lookahead_orders": 2,
+    "active_weight": 18.11,
+    "preview_weight": 2.66,
+    "dropoff_completion_threshold": 0.89,
+    "zone_penalty_weight": 1.76,
+    "dist_weight": 1.9,
+    "dropoff_dist_weight": 1.54,
+    "congestion_weight": 2.08,
+    "collision_risk_weight": 1.33,
+    "replan_penalty_weight": 0.46,
+    "urgency_weight": 2.21,
+    "future_depth_decay": 0.77,
+    "future_prefetch_bonus": 2,
+    "future_priority_mode": "flat",
+    "reservation_horizon": 2,
+    "hysteresis_penalty": 3.8,
+    "collision_aggressiveness": "wait",
+    "tie_break_seed": 5
+  },
+  "items": 62,
+  "orders": 14
+}

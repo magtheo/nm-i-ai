@@ -1,0 +1,413 @@
+{
+  "baseline": {
+    "runs": [
+      "run_20260310_022113",
+      "run_20260310_022403",
+      "run_20260310_022237"
+    ],
+    "median": {
+      "score": 88.0,
+      "orders": 9.0,
+      "items": 43.0,
+      "tail_open_rounds": 186.0,
+      "wait_due_to_no_assignment": 873.0,
+      "completion_round_1": 54,
+      "completion_round_2": 91,
+      "completion_round_3": 118,
+      "critical_dispatch_assignments": 0.0,
+      "critical_dispatch_payload_assignments": 0.0,
+      "critical_overlay_floor_deliver_assignments": 0.0,
+      "critical_overlay_payload_deliver_assignments": 0.0
+    },
+    "accept_summary": {
+      "runs": 3,
+      "score_median": 88.0,
+      "orders_completed_median": 9.0,
+      "items_delivered_median": 43.0,
+      "overall_pass_runs": 3,
+      "overall_pass_rate": 1.0,
+      "gate_fail_counts": {
+        "target_liveness": 0,
+        "drop_conversion_floor": 0,
+        "pickup_drop_coupling": 0,
+        "commitment_realism": 0,
+        "throughput_lane_floor": 0,
+        "delivery_lane_guarantee": 0
+      },
+      "conversion_medians": {
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 873.0,
+        "wait_due_to_no_assignment_ratio": 0.291,
+        "coupling_break_rounds": 0.0,
+        "commitment_stagnation_rounds": 0.0,
+        "throughput_floor_breach_rounds": 0.0,
+        "delivery_lane_breach_rounds": 0.0,
+        "weak_conversion_window_rounds": 0.0
+      }
+    },
+    "run_rows": [
+      {
+        "run": "run_20260310_022113",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "tail_open_rounds": 186,
+        "no_assignment": 873,
+        "completion_rounds": [
+          54,
+          91,
+          118
+        ],
+        "critical_dispatch_assignments": 0,
+        "critical_dispatch_payload_assignments": 0,
+        "critical_overlay_floor_deliver_assignments": 0,
+        "critical_overlay_payload_deliver_assignments": 0
+      },
+      {
+        "run": "run_20260310_022403",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "tail_open_rounds": 186,
+        "no_assignment": 873,
+        "completion_rounds": [
+          54,
+          91,
+          118
+        ],
+        "critical_dispatch_assignments": 0,
+        "critical_dispatch_payload_assignments": 0,
+        "critical_overlay_floor_deliver_assignments": 0,
+        "critical_overlay_payload_deliver_assignments": 0
+      },
+      {
+        "run": "run_20260310_022237",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "tail_open_rounds": 186,
+        "no_assignment": 873,
+        "completion_rounds": [
+          54,
+          91,
+          118
+        ],
+        "critical_dispatch_assignments": 0,
+        "critical_dispatch_payload_assignments": 0,
+        "critical_overlay_floor_deliver_assignments": 0,
+        "critical_overlay_payload_deliver_assignments": 0
+      }
+    ]
+  },
+  "etadlc_v1": {
+    "runs": [
+      "run_20260311_232359",
+      "run_20260311_232233",
+      "run_20260311_232104"
+    ],
+    "median": {
+      "score": 35.0,
+      "orders": 3.0,
+      "items": 20.0,
+      "tail_open_rounds": 226.0,
+      "wait_due_to_no_assignment": 1553.0,
+      "completion_round_1": 67,
+      "completion_round_2": 96,
+      "completion_round_3": 137,
+      "critical_dispatch_assignments": 0.0,
+      "critical_dispatch_payload_assignments": 0.0,
+      "critical_overlay_floor_deliver_assignments": 0.0,
+      "critical_overlay_payload_deliver_assignments": 0.0
+    },
+    "accept_summary": {
+      "runs": 3,
+      "score_median": 35.0,
+      "orders_completed_median": 3.0,
+      "items_delivered_median": 20.0,
+      "overall_pass_runs": 0,
+      "overall_pass_rate": 0.0,
+      "gate_fail_counts": {
+        "target_liveness": 0,
+        "drop_conversion_floor": 0,
+        "pickup_drop_coupling": 0,
+        "commitment_realism": 3,
+        "throughput_lane_floor": 3,
+        "delivery_lane_guarantee": 0
+      },
+      "conversion_medians": {
+        "items_per_drop_action": 1.4285714285714286,
+        "drop_to_pick_ratio": 0.3684210526315789,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 1553.0,
+        "wait_due_to_no_assignment_ratio": 0.5176666666666667,
+        "coupling_break_rounds": 11.0,
+        "commitment_stagnation_rounds": 178.0,
+        "throughput_floor_breach_rounds": 283.0,
+        "delivery_lane_breach_rounds": 0.0,
+        "weak_conversion_window_rounds": 245.0
+      }
+    },
+    "run_rows": [
+      {
+        "run": "run_20260311_232359",
+        "score": 35,
+        "orders": 3,
+        "items": 20,
+        "tail_open_rounds": 226,
+        "no_assignment": 1553,
+        "completion_rounds": [
+          67,
+          96,
+          137
+        ],
+        "critical_dispatch_assignments": 0,
+        "critical_dispatch_payload_assignments": 0,
+        "critical_overlay_floor_deliver_assignments": 0,
+        "critical_overlay_payload_deliver_assignments": 0
+      },
+      {
+        "run": "run_20260311_232233",
+        "score": 35,
+        "orders": 3,
+        "items": 20,
+        "tail_open_rounds": 226,
+        "no_assignment": 1553,
+        "completion_rounds": [
+          67,
+          96,
+          137
+        ],
+        "critical_dispatch_assignments": 0,
+        "critical_dispatch_payload_assignments": 0,
+        "critical_overlay_floor_deliver_assignments": 0,
+        "critical_overlay_payload_deliver_assignments": 0
+      },
+      {
+        "run": "run_20260311_232104",
+        "score": 35,
+        "orders": 3,
+        "items": 20,
+        "tail_open_rounds": 226,
+        "no_assignment": 1553,
+        "completion_rounds": [
+          67,
+          96,
+          137
+        ],
+        "critical_dispatch_assignments": 0,
+        "critical_dispatch_payload_assignments": 0,
+        "critical_overlay_floor_deliver_assignments": 0,
+        "critical_overlay_payload_deliver_assignments": 0
+      }
+    ]
+  },
+  "overlay_v1": {
+    "runs": [
+      "run_20260311_235118",
+      "run_20260311_234948",
+      "run_20260311_234818"
+    ],
+    "median": {
+      "score": 52.0,
+      "orders": 5.0,
+      "items": 27.0,
+      "tail_open_rounds": 183.0,
+      "wait_due_to_no_assignment": 722.0,
+      "completion_round_1": 47,
+      "completion_round_2": 81,
+      "completion_round_3": 109,
+      "critical_dispatch_assignments": 80.0,
+      "critical_dispatch_payload_assignments": 0.0,
+      "critical_overlay_floor_deliver_assignments": 415.0,
+      "critical_overlay_payload_deliver_assignments": 0.0
+    },
+    "accept_summary": {
+      "runs": 3,
+      "score_median": 52.0,
+      "orders_completed_median": 5.0,
+      "items_delivered_median": 27.0,
+      "overall_pass_runs": 0,
+      "overall_pass_rate": 0.0,
+      "gate_fail_counts": {
+        "target_liveness": 0,
+        "drop_conversion_floor": 1,
+        "pickup_drop_coupling": 1,
+        "commitment_realism": 3,
+        "throughput_lane_floor": 3,
+        "delivery_lane_guarantee": 0
+      },
+      "conversion_medians": {
+        "items_per_drop_action": 0.9,
+        "drop_to_pick_ratio": 0.4339622641509434,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 722.0,
+        "wait_due_to_no_assignment_ratio": 0.24066666666666667,
+        "coupling_break_rounds": 26.0,
+        "commitment_stagnation_rounds": 152.0,
+        "throughput_floor_breach_rounds": 264.0,
+        "delivery_lane_breach_rounds": 0.0,
+        "weak_conversion_window_rounds": 239.0
+      }
+    },
+    "run_rows": [
+      {
+        "run": "run_20260311_235118",
+        "score": 25,
+        "orders": 2,
+        "items": 15,
+        "tail_open_rounds": 239,
+        "no_assignment": 1058,
+        "completion_rounds": [
+          48,
+          116
+        ],
+        "critical_dispatch_assignments": 162,
+        "critical_dispatch_payload_assignments": 0,
+        "critical_overlay_floor_deliver_assignments": 256,
+        "critical_overlay_payload_deliver_assignments": 0
+      },
+      {
+        "run": "run_20260311_234948",
+        "score": 62,
+        "orders": 6,
+        "items": 32,
+        "tail_open_rounds": 183,
+        "no_assignment": 722,
+        "completion_rounds": [
+          47,
+          81,
+          109
+        ],
+        "critical_dispatch_assignments": 50,
+        "critical_dispatch_payload_assignments": 0,
+        "critical_overlay_floor_deliver_assignments": 505,
+        "critical_overlay_payload_deliver_assignments": 0
+      },
+      {
+        "run": "run_20260311_234818",
+        "score": 52,
+        "orders": 5,
+        "items": 27,
+        "tail_open_rounds": 156,
+        "no_assignment": 436,
+        "completion_rounds": [
+          47,
+          81,
+          109
+        ],
+        "critical_dispatch_assignments": 80,
+        "critical_dispatch_payload_assignments": 0,
+        "critical_overlay_floor_deliver_assignments": 415,
+        "critical_overlay_payload_deliver_assignments": 0
+      }
+    ]
+  },
+  "overlay_v2": {
+    "runs": [
+      "run_20260312_003002",
+      "run_20260312_003202",
+      "run_20260312_003337"
+    ],
+    "median": {
+      "score": 73.0,
+      "orders": 7.0,
+      "items": 38.0,
+      "tail_open_rounds": 158.0,
+      "wait_due_to_no_assignment": 891.0,
+      "completion_round_1": 50,
+      "completion_round_2": 79,
+      "completion_round_3": 106,
+      "critical_dispatch_assignments": 60.0,
+      "critical_dispatch_payload_assignments": 49.0,
+      "critical_overlay_floor_deliver_assignments": 475.0,
+      "critical_overlay_payload_deliver_assignments": 468.0
+    },
+    "accept_summary": {
+      "runs": 3,
+      "score_median": 73.0,
+      "orders_completed_median": 7.0,
+      "items_delivered_median": 38.0,
+      "overall_pass_runs": 0,
+      "overall_pass_rate": 0.0,
+      "gate_fail_counts": {
+        "target_liveness": 0,
+        "drop_conversion_floor": 0,
+        "pickup_drop_coupling": 0,
+        "commitment_realism": 3,
+        "throughput_lane_floor": 3,
+        "delivery_lane_guarantee": 0
+      },
+      "conversion_medians": {
+        "items_per_drop_action": 1.2258064516129032,
+        "drop_to_pick_ratio": 0.5357142857142857,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 891.0,
+        "wait_due_to_no_assignment_ratio": 0.297,
+        "coupling_break_rounds": 24.0,
+        "commitment_stagnation_rounds": 122.0,
+        "throughput_floor_breach_rounds": 284.0,
+        "delivery_lane_breach_rounds": 0.0,
+        "weak_conversion_window_rounds": 245.0
+      }
+    },
+    "run_rows": [
+      {
+        "run": "run_20260312_003002",
+        "score": 54,
+        "orders": 5,
+        "items": 29,
+        "tail_open_rounds": 184,
+        "no_assignment": 724,
+        "completion_rounds": [
+          50,
+          79,
+          106
+        ],
+        "critical_dispatch_assignments": 54,
+        "critical_dispatch_payload_assignments": 43,
+        "critical_overlay_floor_deliver_assignments": 499,
+        "critical_overlay_payload_deliver_assignments": 455
+      },
+      {
+        "run": "run_20260312_003202",
+        "score": 73,
+        "orders": 7,
+        "items": 38,
+        "tail_open_rounds": 154,
+        "no_assignment": 978,
+        "completion_rounds": [
+          50,
+          79,
+          106
+        ],
+        "critical_dispatch_assignments": 60,
+        "critical_dispatch_payload_assignments": 49,
+        "critical_overlay_floor_deliver_assignments": 475,
+        "critical_overlay_payload_deliver_assignments": 469
+      },
+      {
+        "run": "run_20260312_003337",
+        "score": 73,
+        "orders": 7,
+        "items": 38,
+        "tail_open_rounds": 158,
+        "no_assignment": 891,
+        "completion_rounds": [
+          50,
+          79,
+          106
+        ],
+        "critical_dispatch_assignments": 61,
+        "critical_dispatch_payload_assignments": 50,
+        "critical_overlay_floor_deliver_assignments": 474,
+        "critical_overlay_payload_deliver_assignments": 468
+      }
+    ]
+  }
+}

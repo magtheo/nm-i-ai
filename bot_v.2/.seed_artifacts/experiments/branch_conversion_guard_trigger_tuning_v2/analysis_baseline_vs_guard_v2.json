@@ -1,0 +1,497 @@
+{
+  "baseline_88": {
+    "root": ".seed_artifacts\\experiments\\bundle_a_soft_spatial_iter4\\candidate_soft_penalty_v3\\expert",
+    "summary": {
+      "runs": 3,
+      "score_median": 88,
+      "orders_completed_median": 9,
+      "items_delivered_median": 43,
+      "first_completion_round_median": 54,
+      "second_completion_round_median": 91,
+      "third_completion_round_median": 118,
+      "wait_due_to_no_assignment_median": 873,
+      "wait_due_to_no_assignment_late_median": 214,
+      "wait_due_to_collision_block_median": 167,
+      "wait_due_to_collision_block_late_median": 72,
+      "items_per_drop_action_median": 1.3870967741935485,
+      "drop_to_pick_ratio_median": 0.543859649122807,
+      "emergency_active_rounds_median": 0.0,
+      "emergency_triggered_rounds_median": 0.0,
+      "combo_warn_rounds_median": 0.0,
+      "trigger_by_combo_rounds_median": 0.0,
+      "trigger_by_coupling_rounds_median": 0.0,
+      "coupling_break_rounds_median": 0.0,
+      "commitment_stagnation_rounds_median": 0.0,
+      "throughput_floor_breach_rounds_median": 0.0,
+      "first_emergency_trigger_round_median": null,
+      "max_trigger_count_median": 0.0
+    },
+    "runs": [
+      {
+        "run": "run_20260310_022113",
+        "score": 88,
+        "orders_completed": 9,
+        "items_delivered": 43,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "action_counts": {
+          "wait": 1040,
+          "pick_up": 57,
+          "drop_off": 31,
+          "move": 1872
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 873,
+          "wait_due_to_collision_block": 167,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 214,
+          "wait_due_to_collision_block": 72,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 0.0,
+          "conversion_guard_drop_conversion_floor_breach": 0.0,
+          "conversion_guard_commitment_stagnation": 0.0,
+          "conversion_guard_throughput_lane_floor_breach": 0.0,
+          "conversion_guard_delivery_lane_breach": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 0.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.0
+        },
+        "first_emergency_trigger_round": null,
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807,
+        "rounds": 300
+      },
+      {
+        "run": "run_20260310_022237",
+        "score": 88,
+        "orders_completed": 9,
+        "items_delivered": 43,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "action_counts": {
+          "wait": 1040,
+          "pick_up": 57,
+          "drop_off": 31,
+          "move": 1872
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 873,
+          "wait_due_to_collision_block": 167,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 214,
+          "wait_due_to_collision_block": 72,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 0.0,
+          "conversion_guard_drop_conversion_floor_breach": 0.0,
+          "conversion_guard_commitment_stagnation": 0.0,
+          "conversion_guard_throughput_lane_floor_breach": 0.0,
+          "conversion_guard_delivery_lane_breach": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 0.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.0
+        },
+        "first_emergency_trigger_round": null,
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807,
+        "rounds": 300
+      },
+      {
+        "run": "run_20260310_022403",
+        "score": 88,
+        "orders_completed": 9,
+        "items_delivered": 43,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "action_counts": {
+          "wait": 1040,
+          "pick_up": 57,
+          "drop_off": 31,
+          "move": 1872
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 873,
+          "wait_due_to_collision_block": 167,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 214,
+          "wait_due_to_collision_block": 72,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 0.0,
+          "conversion_guard_drop_conversion_floor_breach": 0.0,
+          "conversion_guard_commitment_stagnation": 0.0,
+          "conversion_guard_throughput_lane_floor_breach": 0.0,
+          "conversion_guard_delivery_lane_breach": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 0.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.0
+        },
+        "first_emergency_trigger_round": null,
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807,
+        "rounds": 300
+      }
+    ]
+  },
+  "guard_v1": {
+    "root": ".seed_artifacts\\experiments\\branch_conversion_guard_instrumentation_v1\\batch\\expert",
+    "summary": {
+      "runs": 3,
+      "score_median": 33,
+      "orders_completed_median": 3,
+      "items_delivered_median": 18,
+      "first_completion_round_median": 54,
+      "second_completion_round_median": 91,
+      "third_completion_round_median": 120,
+      "wait_due_to_no_assignment_median": 885,
+      "wait_due_to_no_assignment_late_median": 226,
+      "wait_due_to_collision_block_median": 88,
+      "wait_due_to_collision_block_late_median": 5,
+      "items_per_drop_action_median": 1.0588235294117647,
+      "drop_to_pick_ratio_median": 0.5660377358490566,
+      "emergency_active_rounds_median": 0.0,
+      "emergency_triggered_rounds_median": 0.0,
+      "combo_warn_rounds_median": 0.0,
+      "trigger_by_combo_rounds_median": 0.0,
+      "trigger_by_coupling_rounds_median": 0.0,
+      "coupling_break_rounds_median": 11.0,
+      "commitment_stagnation_rounds_median": 116.0,
+      "throughput_floor_breach_rounds_median": 128.0,
+      "first_emergency_trigger_round_median": 198,
+      "max_trigger_count_median": 0.0
+    },
+    "runs": [
+      {
+        "run": "run_20260310_150442",
+        "score": 79,
+        "orders_completed": 8,
+        "items_delivered": 39,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "action_counts": {
+          "wait": 1009,
+          "pick_up": 53,
+          "drop_off": 30,
+          "move": 1908
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 885,
+          "wait_due_to_collision_block": 124,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 226,
+          "wait_due_to_collision_block": 29,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 11.0,
+          "conversion_guard_drop_conversion_floor_breach": 11.0,
+          "conversion_guard_commitment_stagnation": 95.0,
+          "conversion_guard_throughput_lane_floor_breach": 117.0,
+          "conversion_guard_delivery_lane_breach": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 0.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.79
+        },
+        "first_emergency_trigger_round": null,
+        "items_per_drop_action": 1.3,
+        "drop_to_pick_ratio": 0.5660377358490566,
+        "rounds": 300
+      },
+      {
+        "run": "run_20260310_150616",
+        "score": 33,
+        "orders_completed": 3,
+        "items_delivered": 18,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 120,
+        "action_counts": {
+          "wait": 1110,
+          "pick_up": 29,
+          "drop_off": 17,
+          "move": 1844
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 1022,
+          "wait_due_to_collision_block": 88,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 360,
+          "wait_due_to_collision_block": 0,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 11.0,
+          "conversion_guard_drop_conversion_floor_breach": 11.0,
+          "conversion_guard_commitment_stagnation": 184.0,
+          "conversion_guard_throughput_lane_floor_breach": 128.0,
+          "conversion_guard_delivery_lane_breach": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 0.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.78
+        },
+        "first_emergency_trigger_round": null,
+        "items_per_drop_action": 1.0588235294117647,
+        "drop_to_pick_ratio": 0.5862068965517241,
+        "rounds": 300
+      },
+      {
+        "run": "run_20260310_150750",
+        "score": 31,
+        "orders_completed": 3,
+        "items_delivered": 16,
+        "first_completion_round": 54,
+        "second_completion_round": 121,
+        "third_completion_round": 246,
+        "action_counts": {
+          "wait": 722,
+          "pick_up": 88,
+          "drop_off": 41,
+          "move": 2149
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 655,
+          "wait_due_to_collision_block": 67,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 174,
+          "wait_due_to_collision_block": 5,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 16.0,
+          "conversion_guard_emergency_triggered": 2.0,
+          "conversion_guard_pickup_drop_coupling_break": 21.0,
+          "conversion_guard_drop_conversion_floor_breach": 21.0,
+          "conversion_guard_commitment_stagnation": 116.0,
+          "conversion_guard_throughput_lane_floor_breach": 167.0,
+          "conversion_guard_delivery_lane_breach": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 0.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 2.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.75
+        },
+        "first_emergency_trigger_round": 198,
+        "items_per_drop_action": 0.3902439024390244,
+        "drop_to_pick_ratio": 0.4659090909090909,
+        "rounds": 300
+      }
+    ]
+  },
+  "guard_v2": {
+    "root": ".seed_artifacts\\experiments\\branch_conversion_guard_trigger_tuning_v2\\batch\\expert",
+    "summary": {
+      "runs": 3,
+      "score_median": 29,
+      "orders_completed_median": 3,
+      "items_delivered_median": 14,
+      "first_completion_round_median": 56,
+      "second_completion_round_median": 112,
+      "third_completion_round_median": 201.5,
+      "wait_due_to_no_assignment_median": 584,
+      "wait_due_to_no_assignment_late_median": 214,
+      "wait_due_to_collision_block_median": 86,
+      "wait_due_to_collision_block_late_median": 12,
+      "items_per_drop_action_median": 0.7647058823529411,
+      "drop_to_pick_ratio_median": 0.2076923076923077,
+      "emergency_active_rounds_median": 16.0,
+      "emergency_triggered_rounds_median": 2.0,
+      "combo_warn_rounds_median": 3.0,
+      "trigger_by_combo_rounds_median": 0.0,
+      "trigger_by_coupling_rounds_median": 18.0,
+      "coupling_break_rounds_median": 29.0,
+      "commitment_stagnation_rounds_median": 62.0,
+      "throughput_floor_breach_rounds_median": 106.0,
+      "first_emergency_trigger_round_median": 110.0,
+      "max_trigger_count_median": 2.0
+    },
+    "runs": [
+      {
+        "run": "run_20260310_164106",
+        "score": 23,
+        "orders_completed": 2,
+        "items_delivered": 13,
+        "first_completion_round": 56,
+        "second_completion_round": 112,
+        "third_completion_round": null,
+        "action_counts": {
+          "wait": 670,
+          "pick_up": 100,
+          "drop_off": 17,
+          "move": 2213
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 584,
+          "wait_due_to_collision_block": 86,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 231,
+          "wait_due_to_collision_block": 12,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 16.0,
+          "conversion_guard_emergency_triggered": 2.0,
+          "conversion_guard_pickup_drop_coupling_break": 29.0,
+          "conversion_guard_drop_conversion_floor_breach": 29.0,
+          "conversion_guard_commitment_stagnation": 27.0,
+          "conversion_guard_throughput_lane_floor_breach": 106.0,
+          "conversion_guard_delivery_lane_breach": 0.0,
+          "conversion_guard_combo_warn_active": 3.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 18.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 2.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.75
+        },
+        "first_emergency_trigger_round": 99,
+        "items_per_drop_action": 0.7647058823529411,
+        "drop_to_pick_ratio": 0.17,
+        "rounds": 300
+      },
+      {
+        "run": "run_20260310_164243",
+        "score": 87,
+        "orders_completed": 9,
+        "items_delivered": 42,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "action_counts": {
+          "wait": 1031,
+          "pick_up": 58,
+          "drop_off": 32,
+          "move": 1879
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 873,
+          "wait_due_to_collision_block": 158,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 214,
+          "wait_due_to_collision_block": 63,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 13.0,
+          "conversion_guard_drop_conversion_floor_breach": 13.0,
+          "conversion_guard_commitment_stagnation": 62.0,
+          "conversion_guard_throughput_lane_floor_breach": 117.0,
+          "conversion_guard_delivery_lane_breach": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 6.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.79
+        },
+        "first_emergency_trigger_round": null,
+        "items_per_drop_action": 1.3125,
+        "drop_to_pick_ratio": 0.5517241379310345,
+        "rounds": 300
+      },
+      {
+        "run": "run_20260310_164424",
+        "score": 29,
+        "orders_completed": 3,
+        "items_delivered": 14,
+        "first_completion_round": 65,
+        "second_completion_round": 138,
+        "third_completion_round": 285,
+        "action_counts": {
+          "wait": 513,
+          "pick_up": 130,
+          "drop_off": 27,
+          "move": 2330
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 467,
+          "wait_due_to_collision_block": 46,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 106,
+          "wait_due_to_collision_block": 8,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 24.0,
+          "conversion_guard_emergency_triggered": 3.0,
+          "conversion_guard_pickup_drop_coupling_break": 56.0,
+          "conversion_guard_drop_conversion_floor_breach": 56.0,
+          "conversion_guard_commitment_stagnation": 161.0,
+          "conversion_guard_throughput_lane_floor_breach": 87.0,
+          "conversion_guard_delivery_lane_breach": 0.0,
+          "conversion_guard_combo_warn_active": 18.0,
+          "conversion_guard_trigger_by_combo": 10.0,
+          "conversion_guard_trigger_by_coupling": 31.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 3.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.79
+        },
+        "first_emergency_trigger_round": 121,
+        "items_per_drop_action": 0.5185185185185185,
+        "drop_to_pick_ratio": 0.2076923076923077,
+        "rounds": 300
+      }
+    ]
+  }
+}

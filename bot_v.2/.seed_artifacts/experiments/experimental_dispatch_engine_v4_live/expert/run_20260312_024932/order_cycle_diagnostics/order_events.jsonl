@@ -1,0 +1,16 @@
+{"round": 0, "event": "order_started", "active_order_id": "order_0", "active_order_index": 0}
+{"round": 16, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 20, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 35, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 47, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 6, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 67, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 71, "event": "active_secured", "active_order_id": "order_0", "remaining_items": 4}
+{"round": 75, "event": "tail_opened", "active_order_id": "order_0", "remaining_items": 3}
+{"round": 110, "event": "order_completed", "active_order_id": "order_0", "active_order_index": 0, "active_order_total_items": 6}
+{"round": 110, "event": "order_started", "active_order_id": "order_1", "active_order_index": 1}
+{"round": 117, "event": "pickup_drop_coupling_broken", "active_order_id": "order_1", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 129, "event": "tail_opened", "active_order_id": "order_1", "remaining_items": 3}
+{"round": 150, "event": "active_secured", "active_order_id": "order_1", "remaining_items": 2}
+{"round": 216, "event": "order_completed", "active_order_id": "order_1", "active_order_index": 1, "active_order_total_items": 5}
+{"round": 216, "event": "order_started", "active_order_id": "order_2", "active_order_index": 2}
+{"round": 244, "event": "tail_opened", "active_order_id": "order_2", "remaining_items": 3}

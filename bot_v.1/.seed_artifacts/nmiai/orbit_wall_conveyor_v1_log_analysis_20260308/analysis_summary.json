@@ -1,0 +1,60 @@
+﻿{
+    "generated_at":  "2026-03-08T20:13:42",
+    "runs":  [
+                 {
+                     "run":  "run_20260307_233817",
+                     "score":  12,
+                     "items":  7,
+                     "orders":  1,
+                     "branch_to_delivery_rate":  0,
+                     "spacing_wait":  0,
+                     "rejoin_denials":  0,
+                     "queue_violation":  0,
+                     "reasons":  ""
+                 },
+                 {
+                     "run":  "run_20260307_234824",
+                     "score":  12,
+                     "items":  7,
+                     "orders":  1,
+                     "branch_to_delivery_rate":  0,
+                     "spacing_wait":  0,
+                     "rejoin_denials":  0,
+                     "queue_violation":  0,
+                     "reasons":  ""
+                 },
+                 {
+                     "run":  "run_20260307_235618",
+                     "score":  12,
+                     "items":  7,
+                     "orders":  1,
+                     "branch_to_delivery_rate":  0,
+                     "spacing_wait":  0,
+                     "rejoin_denials":  0,
+                     "queue_violation":  0,
+                     "reasons":  ""
+                 },
+                 {
+                     "run":  "run_20260308_000913",
+                     "score":  12,
+                     "items":  7,
+                     "orders":  1,
+                     "branch_to_delivery_rate":  0,
+                     "spacing_wait":  632,
+                     "rejoin_denials":  0,
+                     "queue_violation":  0,
+                     "reasons":  "spacing_guard_dominant_wait"
+                 },
+                 {
+                     "run":  "run_20260308_001202",
+                     "score":  12,
+                     "items":  7,
+                     "orders":  1,
+                     "branch_to_delivery_rate":  0,
+                     "spacing_wait":  17,
+                     "rejoin_denials":  0,
+                     "queue_violation":  0,
+                     "reasons":  ""
+                 }
+             ]
+}

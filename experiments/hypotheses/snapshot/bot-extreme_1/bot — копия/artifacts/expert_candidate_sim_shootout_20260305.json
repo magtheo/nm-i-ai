@@ -1,0 +1,586 @@
+{
+  "seeds": [
+    7004,
+    7005,
+    7006,
+    7007
+  ],
+  "results": [
+    {
+      "file": "artifacts/expert_candidates_120/c05_stable.json",
+      "forecast": "mined",
+      "mean_score": 79,
+      "min_score": 79,
+      "max_score": 79,
+      "mean_orders": 7,
+      "mean_items": 44,
+      "mean_p95_ms": 107.91777497797739,
+      "scores": [
+        79,
+        79,
+        79,
+        79
+      ]
+    },
+    {
+      "file": "artifacts/expert_sim_best_params.json",
+      "forecast": "live",
+      "mean_score": 79,
+      "min_score": 79,
+      "max_score": 79,
+      "mean_orders": 7,
+      "mean_items": 44,
+      "mean_p95_ms": 76.809799997136,
+      "scores": [
+        79,
+        79,
+        79,
+        79
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c01_relax_force_dropoff.json",
+      "forecast": "mined",
+      "mean_score": 68,
+      "min_score": 68,
+      "max_score": 68,
+      "mean_orders": 6,
+      "mean_items": 38,
+      "mean_p95_ms": 254.6276250068331,
+      "scores": [
+        68,
+        68,
+        68,
+        68
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c07_endgame_push.json",
+      "forecast": "live",
+      "mean_score": 68,
+      "min_score": 68,
+      "max_score": 68,
+      "mean_orders": 6,
+      "mean_items": 38,
+      "mean_p95_ms": 76.00380000076257,
+      "scores": [
+        68,
+        68,
+        68,
+        68
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c03_detour_aggressive_queue.json",
+      "forecast": "live",
+      "mean_score": 67,
+      "min_score": 67,
+      "max_score": 67,
+      "mean_orders": 6,
+      "mean_items": 37,
+      "mean_p95_ms": 77.13212500675581,
+      "scores": [
+        67,
+        67,
+        67,
+        67
+      ]
+    },
+    {
+      "file": "app/integrations/nmiai_grocery_bot/best_configs/expert.json",
+      "forecast": "mined",
+      "mean_score": 57,
+      "min_score": 57,
+      "max_score": 57,
+      "mean_orders": 5,
+      "mean_items": 32,
+      "mean_p95_ms": 194.2530750093283,
+      "scores": [
+        57,
+        57,
+        57,
+        57
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c08_anti_stall.json",
+      "forecast": "mined",
+      "mean_score": 57,
+      "min_score": 57,
+      "max_score": 57,
+      "mean_orders": 5,
+      "mean_items": 32,
+      "mean_p95_ms": 194.50065001728944,
+      "scores": [
+        57,
+        57,
+        57,
+        57
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c11_allow_same_false.json",
+      "forecast": "mined",
+      "mean_score": 57,
+      "min_score": 57,
+      "max_score": 57,
+      "mean_orders": 5,
+      "mean_items": 32,
+      "mean_p95_ms": 195.6364250072511,
+      "scores": [
+        57,
+        57,
+        57,
+        57
+      ]
+    },
+    {
+      "file": "_tmp_oracle_162_params.json",
+      "forecast": "mined",
+      "mean_score": 57,
+      "min_score": 57,
+      "max_score": 57,
+      "mean_orders": 5,
+      "mean_items": 32,
+      "mean_p95_ms": 272.5415500026429,
+      "scores": [
+        57,
+        57,
+        57,
+        57
+      ]
+    },
+    {
+      "file": "_tmp_oracle_177_params.json",
+      "forecast": "mined",
+      "mean_score": 57,
+      "min_score": 57,
+      "max_score": 57,
+      "mean_orders": 5,
+      "mean_items": 32,
+      "mean_p95_ms": 279.8452250135597,
+      "scores": [
+        57,
+        57,
+        57,
+        57
+      ]
+    },
+    {
+      "file": "_tmp_oracle_179_params.json",
+      "forecast": "mined",
+      "mean_score": 57,
+      "min_score": 57,
+      "max_score": 57,
+      "mean_orders": 5,
+      "mean_items": 32,
+      "mean_p95_ms": 280.27407500485424,
+      "scores": [
+        57,
+        57,
+        57,
+        57
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c00_base_latest_best.json",
+      "forecast": "mined",
+      "mean_score": 46,
+      "min_score": 46,
+      "max_score": 46,
+      "mean_orders": 4,
+      "mean_items": 26,
+      "mean_p95_ms": 228.5907499899622,
+      "scores": [
+        46,
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c10_recovery_heavy.json",
+      "forecast": "mined",
+      "mean_score": 46,
+      "min_score": 46,
+      "max_score": 46,
+      "mean_orders": 4,
+      "mean_items": 26,
+      "mean_p95_ms": 279.6729499968933,
+      "scores": [
+        46,
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "artifacts/expert_sim_latest_best_params.json",
+      "forecast": "mined",
+      "mean_score": 46,
+      "min_score": 46,
+      "max_score": 46,
+      "mean_orders": 4,
+      "mean_items": 26,
+      "mean_p95_ms": 234.62987500533927,
+      "scores": [
+        46,
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c06_blend_141_plus.json",
+      "forecast": "live",
+      "mean_score": 43,
+      "min_score": 43,
+      "max_score": 43,
+      "mean_orders": 4,
+      "mean_items": 23,
+      "mean_p95_ms": 37.713975019869395,
+      "scores": [
+        43,
+        43,
+        43,
+        43
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c06_blend_141_plus.json",
+      "forecast": "mined",
+      "mean_score": 36,
+      "min_score": 36,
+      "max_score": 36,
+      "mean_orders": 3,
+      "mean_items": 21,
+      "mean_p95_ms": 88.29462500580121,
+      "scores": [
+        36,
+        36,
+        36,
+        36
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c09_fast_dropoff.json",
+      "forecast": "mined",
+      "mean_score": 36,
+      "min_score": 36,
+      "max_score": 36,
+      "mean_orders": 3,
+      "mean_items": 21,
+      "mean_p95_ms": 191.64437499421183,
+      "scores": [
+        36,
+        36,
+        36,
+        36
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c03_detour_aggressive_queue.json",
+      "forecast": "mined",
+      "mean_score": 34,
+      "min_score": 34,
+      "max_score": 34,
+      "mean_orders": 3,
+      "mean_items": 19,
+      "mean_p95_ms": 243.03782498463988,
+      "scores": [
+        34,
+        34,
+        34,
+        34
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c07_endgame_push.json",
+      "forecast": "mined",
+      "mean_score": 25,
+      "min_score": 25,
+      "max_score": 25,
+      "mean_orders": 2,
+      "mean_items": 15,
+      "mean_p95_ms": 194.24802499997895,
+      "scores": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    {
+      "file": "artifacts/expert_sim_best_params.json",
+      "forecast": "mined",
+      "mean_score": 25,
+      "min_score": 25,
+      "max_score": 25,
+      "mean_orders": 2,
+      "mean_items": 15,
+      "mean_p95_ms": 86.52682500542141,
+      "scores": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    {
+      "file": "_tmp_oracle_177_params.json",
+      "forecast": "live",
+      "mean_score": 25,
+      "min_score": 25,
+      "max_score": 25,
+      "mean_orders": 2,
+      "mean_items": 15,
+      "mean_p95_ms": 54.024274984840304,
+      "scores": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    {
+      "file": "_tmp_oracle_179_params.json",
+      "forecast": "live",
+      "mean_score": 25,
+      "min_score": 25,
+      "max_score": 25,
+      "mean_orders": 2,
+      "mean_items": 15,
+      "mean_p95_ms": 53.40304998389911,
+      "scores": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c02_preview_opportunistic.json",
+      "forecast": "mined",
+      "mean_score": 24,
+      "min_score": 24,
+      "max_score": 24,
+      "mean_orders": 2,
+      "mean_items": 14,
+      "mean_p95_ms": 173.49004998686723,
+      "scores": [
+        24,
+        24,
+        24,
+        24
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c09_fast_dropoff.json",
+      "forecast": "live",
+      "mean_score": 23,
+      "min_score": 23,
+      "max_score": 23,
+      "mean_orders": 2,
+      "mean_items": 13,
+      "mean_p95_ms": 31.191799993393943,
+      "scores": [
+        23,
+        23,
+        23,
+        23
+      ]
+    },
+    {
+      "file": "_tmp_oracle_162_params.json",
+      "forecast": "live",
+      "mean_score": 23,
+      "min_score": 23,
+      "max_score": 23,
+      "mean_orders": 2,
+      "mean_items": 13,
+      "mean_p95_ms": 51.468474994180724,
+      "scores": [
+        23,
+        23,
+        23,
+        23
+      ]
+    },
+    {
+      "file": "app/integrations/nmiai_grocery_bot/best_configs/expert.json",
+      "forecast": "live",
+      "mean_score": 22,
+      "min_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 36.89365000172984,
+      "scores": [
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c00_base_latest_best.json",
+      "forecast": "live",
+      "mean_score": 22,
+      "min_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.124324997421354,
+      "scores": [
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c01_relax_force_dropoff.json",
+      "forecast": "live",
+      "mean_score": 22,
+      "min_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.72344999015331,
+      "scores": [
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c05_stable.json",
+      "forecast": "live",
+      "mean_score": 22,
+      "min_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.112275007530116,
+      "scores": [
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c08_anti_stall.json",
+      "forecast": "live",
+      "mean_score": 22,
+      "min_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.08977498172317,
+      "scores": [
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c10_recovery_heavy.json",
+      "forecast": "live",
+      "mean_score": 22,
+      "min_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.43545000907034,
+      "scores": [
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c11_allow_same_false.json",
+      "forecast": "live",
+      "mean_score": 22,
+      "min_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.61117497924715,
+      "scores": [
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "file": "artifacts/expert_sim_latest_best_params.json",
+      "forecast": "live",
+      "mean_score": 22,
+      "min_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.49649997917004,
+      "scores": [
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c02_preview_opportunistic.json",
+      "forecast": "live",
+      "mean_score": 4,
+      "min_score": 4,
+      "max_score": 4,
+      "mean_orders": 0,
+      "mean_items": 4,
+      "mean_p95_ms": 6.980075020692311,
+      "scores": [
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c04_auction.json",
+      "forecast": "live",
+      "mean_score": 0,
+      "min_score": 0,
+      "max_score": 0,
+      "mean_orders": 0,
+      "mean_items": 0,
+      "mean_p95_ms": 64.10037500609178,
+      "scores": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c04_auction.json",
+      "forecast": "mined",
+      "mean_score": 0,
+      "min_score": 0,
+      "max_score": 0,
+      "mean_orders": 0,
+      "mean_items": 0,
+      "mean_p95_ms": 64.19274998188484,
+      "scores": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

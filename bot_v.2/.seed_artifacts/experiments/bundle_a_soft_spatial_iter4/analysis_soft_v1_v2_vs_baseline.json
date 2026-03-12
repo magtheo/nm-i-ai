@@ -1,0 +1,203 @@
+{
+  "baseline_fresh": {
+    "runs": [
+      {
+        "run": "run_20260310_020721",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "soft_applied": 0,
+        "soft_near": 0,
+        "soft_same_row": 0,
+        "overlap_after": 27,
+        "overlap_rounds_after": 25
+      },
+      {
+        "run": "run_20260310_020846",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "soft_applied": 0,
+        "soft_near": 0,
+        "soft_same_row": 0,
+        "overlap_after": 27,
+        "overlap_rounds_after": 25
+      },
+      {
+        "run": "run_20260310_021011",
+        "score": 34,
+        "orders": 3,
+        "items": 19,
+        "first": 54,
+        "second": 91,
+        "third": 122,
+        "late_noa": 720.0,
+        "coll": 71.0,
+        "soft_applied": 0,
+        "soft_near": 0,
+        "soft_same_row": 0,
+        "overlap_after": 0,
+        "overlap_rounds_after": 0
+      }
+    ],
+    "median": {
+      "score": 88,
+      "orders": 9,
+      "items": 43,
+      "first": 54,
+      "second": 91,
+      "third": 118,
+      "late_noa": 214.0,
+      "coll": 167.0,
+      "soft_applied": 0,
+      "soft_near": 0,
+      "soft_same_row": 0,
+      "overlap_after": 27,
+      "overlap_rounds_after": 25
+    }
+  },
+  "soft_v1": {
+    "runs": [
+      {
+        "run": "run_20260310_021239",
+        "score": 87,
+        "orders": 9,
+        "items": 42,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 263.0,
+        "coll": 144.0,
+        "soft_applied": 24,
+        "soft_near": 7,
+        "soft_same_row": 17,
+        "overlap_after": 24,
+        "overlap_rounds_after": 24
+      },
+      {
+        "run": "run_20260310_021403",
+        "score": 87,
+        "orders": 9,
+        "items": 42,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 263.0,
+        "coll": 144.0,
+        "soft_applied": 24,
+        "soft_near": 7,
+        "soft_same_row": 17,
+        "overlap_after": 24,
+        "overlap_rounds_after": 24
+      },
+      {
+        "run": "run_20260310_021529",
+        "score": 87,
+        "orders": 9,
+        "items": 42,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 263.0,
+        "coll": 144.0,
+        "soft_applied": 24,
+        "soft_near": 7,
+        "soft_same_row": 17,
+        "overlap_after": 24,
+        "overlap_rounds_after": 24
+      }
+    ],
+    "median": {
+      "score": 87,
+      "orders": 9,
+      "items": 42,
+      "first": 54,
+      "second": 91,
+      "third": 118,
+      "late_noa": 263.0,
+      "coll": 144.0,
+      "soft_applied": 24,
+      "soft_near": 7,
+      "soft_same_row": 17,
+      "overlap_after": 24,
+      "overlap_rounds_after": 24
+    }
+  },
+  "soft_v2": {
+    "runs": [
+      {
+        "run": "run_20260310_021657",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "soft_applied": 25,
+        "soft_near": 7,
+        "soft_same_row": 18,
+        "overlap_after": 25,
+        "overlap_rounds_after": 25
+      },
+      {
+        "run": "run_20260310_021821",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "soft_applied": 25,
+        "soft_near": 7,
+        "soft_same_row": 18,
+        "overlap_after": 25,
+        "overlap_rounds_after": 25
+      },
+      {
+        "run": "run_20260310_021946",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "soft_applied": 25,
+        "soft_near": 7,
+        "soft_same_row": 18,
+        "overlap_after": 25,
+        "overlap_rounds_after": 25
+      }
+    ],
+    "median": {
+      "score": 88,
+      "orders": 9,
+      "items": 43,
+      "first": 54,
+      "second": 91,
+      "third": 118,
+      "late_noa": 214.0,
+      "coll": 167.0,
+      "soft_applied": 25,
+      "soft_near": 7,
+      "soft_same_row": 18,
+      "overlap_after": 25,
+      "overlap_rounds_after": 25
+    }
+  }
+}

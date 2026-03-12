@@ -1,0 +1,11 @@
+primary_metric: score
+target: "Beat the canonical expert baseline on live score while maintaining or improving orders_completed and reducing idle_steps."
+comparison: bot — копия/best/expert/current.json
+secondary_metrics:
+	- orders_completed
+	- items_delivered
+	- idle_steps
+	- collisions_avoided
+validation_plan:
+	- Run candidate on expert difficulty with recording enabled.
+	- Compare against the canonical expert baseline using the same live workflow.

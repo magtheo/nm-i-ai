@@ -1,0 +1,662 @@
+{
+  "type": "game_state",
+  "round": 0,
+  "max_rounds": 300,
+  "grid": {
+    "width": 16,
+    "height": 12,
+    "walls": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        13,
+        0
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        15,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        14,
+        2
+      ],
+      [
+        15,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        15,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        15,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        10,
+        5
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        15,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        15,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        15,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        15,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        15,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        15,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        15,
+        11
+      ]
+    ]
+  },
+  "bots": [
+    {
+      "id": 0,
+      "position": [
+        14,
+        10
+      ],
+      "inventory": []
+    },
+    {
+      "id": 1,
+      "position": [
+        14,
+        10
+      ],
+      "inventory": []
+    },
+    {
+      "id": 2,
+      "position": [
+        14,
+        10
+      ],
+      "inventory": []
+    }
+  ],
+  "items": [
+    {
+      "id": "item_0",
+      "type": "cheese",
+      "position": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "item_1",
+      "type": "bread",
+      "position": [
+        5,
+        2
+      ]
+    },
+    {
+      "id": "item_2",
+      "type": "butter",
+      "position": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "item_3",
+      "type": "yogurt",
+      "position": [
+        5,
+        3
+      ]
+    },
+    {
+      "id": "item_4",
+      "type": "cream",
+      "position": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "item_5",
+      "type": "eggs",
+      "position": [
+        5,
+        4
+      ]
+    },
+    {
+      "id": "item_6",
+      "type": "pasta",
+      "position": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "item_7",
+      "type": "milk",
+      "position": [
+        5,
+        5
+      ]
+    },
+    {
+      "id": "item_8",
+      "type": "cheese",
+      "position": [
+        7,
+        2
+      ]
+    },
+    {
+      "id": "item_9",
+      "type": "bread",
+      "position": [
+        9,
+        2
+      ]
+    },
+    {
+      "id": "item_10",
+      "type": "butter",
+      "position": [
+        7,
+        3
+      ]
+    },
+    {
+      "id": "item_11",
+      "type": "yogurt",
+      "position": [
+        9,
+        3
+      ]
+    },
+    {
+      "id": "item_12",
+      "type": "cream",
+      "position": [
+        7,
+        4
+      ]
+    },
+    {
+      "id": "item_13",
+      "type": "eggs",
+      "position": [
+        9,
+        4
+      ]
+    },
+    {
+      "id": "item_14",
+      "type": "pasta",
+      "position": [
+        7,
+        5
+      ]
+    },
+    {
+      "id": "item_15",
+      "type": "milk",
+      "position": [
+        9,
+        5
+      ]
+    },
+    {
+      "id": "item_16",
+      "type": "cheese",
+      "position": [
+        11,
+        2
+      ]
+    },
+    {
+      "id": "item_17",
+      "type": "bread",
+      "position": [
+        13,
+        2
+      ]
+    },
+    {
+      "id": "item_18",
+      "type": "butter",
+      "position": [
+        11,
+        3
+      ]
+    },
+    {
+      "id": "item_19",
+      "type": "yogurt",
+      "position": [
+        13,
+        3
+      ]
+    },
+    {
+      "id": "item_20",
+      "type": "cream",
+      "position": [
+        11,
+        4
+      ]
+    },
+    {
+      "id": "item_21",
+      "type": "eggs",
+      "position": [
+        13,
+        4
+      ]
+    },
+    {
+      "id": "item_22",
+      "type": "pasta",
+      "position": [
+        11,
+        5
+      ]
+    },
+    {
+      "id": "item_23",
+      "type": "milk",
+      "position": [
+        13,
+        5
+      ]
+    },
+    {
+      "id": "item_24",
+      "type": "butter",
+      "position": [
+        3,
+        7
+      ]
+    },
+    {
+      "id": "item_25",
+      "type": "yogurt",
+      "position": [
+        5,
+        7
+      ]
+    },
+    {
+      "id": "item_26",
+      "type": "cream",
+      "position": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": "item_27",
+      "type": "eggs",
+      "position": [
+        5,
+        8
+      ]
+    },
+    {
+      "id": "item_28",
+      "type": "pasta",
+      "position": [
+        7,
+        7
+      ]
+    },
+    {
+      "id": "item_29",
+      "type": "milk",
+      "position": [
+        9,
+        7
+      ]
+    },
+    {
+      "id": "item_30",
+      "type": "butter",
+      "position": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "item_31",
+      "type": "yogurt",
+      "position": [
+        9,
+        8
+      ]
+    },
+    {
+      "id": "item_32",
+      "type": "cream",
+      "position": [
+        11,
+        7
+      ]
+    },
+    {
+      "id": "item_33",
+      "type": "eggs",
+      "position": [
+        13,
+        7
+      ]
+    },
+    {
+      "id": "item_34",
+      "type": "pasta",
+      "position": [
+        11,
+        8
+      ]
+    },
+    {
+      "id": "item_35",
+      "type": "milk",
+      "position": [
+        13,
+        8
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "order_0",
+      "items_required": [
+        "eggs",
+        "cream",
+        "bread"
+      ],
+      "items_delivered": [],
+      "complete": false,
+      "status": "active"
+    },
+    {
+      "id": "order_1",
+      "items_required": [
+        "cheese",
+        "milk",
+        "cheese"
+      ],
+      "items_delivered": [],
+      "complete": false,
+      "status": "preview"
+    }
+  ],
+  "drop_off": [
+    1,
+    10
+  ],
+  "score": 0,
+  "active_order_index": 0,
+  "total_orders": 50
+}

@@ -1,0 +1,27 @@
+{
+  "run_index": 2,
+  "score": 24,
+  "items_delivered": 14,
+  "orders_completed": 2,
+  "rounds_played": 300,
+  "idle_steps": 691,
+  "collisions_avoided": 180,
+  "avg_decision_ms": 11.65965199996208,
+  "max_score_exact": null,
+  "max_score_upper_bound": 548,
+  "max_score_lower_bound": 456,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\coordination_layer_v1_secured_fix_batch\\expert\\run_20260311_220229",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 4,
+    "completed_orders": 0,
+    "observed_items": 22,
+    "lower_bound_score": 456,
+    "upper_bound_score": 548,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 46
+  }
+}

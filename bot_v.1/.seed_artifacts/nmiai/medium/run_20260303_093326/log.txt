@@ -1,0 +1,12 @@
+run_index=1
+difficulty=medium
+map_seed=7002
+ws_url=wss://game.ainm.no/ws?token=eyJh...1vkY
+score=20
+items_delivered=10
+orders_completed=2
+rounds_played=300
+idle_steps=480
+collisions_avoided=113
+avg_decision_ms=1.064
+logger_path=.seed_artifacts\nmiai\medium\run_20260303_093326\round_logs\game_20260303_093326_medium.jsonl

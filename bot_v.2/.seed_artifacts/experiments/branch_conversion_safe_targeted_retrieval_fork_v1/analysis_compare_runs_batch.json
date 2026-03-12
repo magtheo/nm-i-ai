@@ -1,0 +1,98 @@
+{
+  "inputs": {
+    "artifact_root": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\branch_conversion_safe_targeted_retrieval_fork_v1\\batch",
+    "difficulty": "expert",
+    "limit": 3,
+    "engine_mode": null,
+    "analyzer_enabled": true
+  },
+  "summary": {
+    "runs": 3,
+    "mean_score": 8.0,
+    "median_score": 10.0,
+    "best_score": 11,
+    "mean_orders_completed": 0.6666666666666666,
+    "mean_items_delivered": 4.666666666666667,
+    "mean_idle_steps": 1621.6666666666667,
+    "mean_d0_busy_ratio": 0.02777777777777778,
+    "mean_spacing_wait": 0.0,
+    "queue_semantics_violations": 0.0,
+    "ring_direction_violations": 0.0,
+    "failure_reason_counts": {},
+    "by_engine_mode": {
+      "expert_supply_strategy": {
+        "runs": 3,
+        "mean_score": 8.0,
+        "mean_orders_completed": 0.6666666666666666,
+        "mean_items_delivered": 4.666666666666667,
+        "mean_idle_steps": 1621.6666666666667,
+        "mean_d0_busy_ratio": 0.02777777777777778
+      }
+    }
+  },
+  "runs": [
+    {
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\branch_conversion_safe_targeted_retrieval_fork_v1\\batch\\expert\\run_20260310_180246",
+      "run_name": "run_20260310_180246",
+      "engine_mode": "expert_supply_strategy",
+      "score": 11,
+      "items_delivered": 6,
+      "orders_completed": 1,
+      "idle_steps": 1672,
+      "rounds_played": 300,
+      "avg_decision_ms": 1.8291279999903054,
+      "d0_busy_ratio": 0.04,
+      "items_per_drop_action": 0.5,
+      "deliver_bots_avg": 0.0,
+      "rejoin_backlog_avg": 0.0,
+      "branch_to_delivery_rate": 0.0,
+      "wait_due_to_spacing_guard": 0.0,
+      "wait_due_to_collision_block": 949.0,
+      "queue_semantics_violation": 0.0,
+      "ring_direction_violation": 0.0,
+      "failure_reasons": []
+    },
+    {
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\branch_conversion_safe_targeted_retrieval_fork_v1\\batch\\expert\\run_20260310_180056",
+      "run_name": "run_20260310_180056",
+      "engine_mode": "expert_supply_strategy",
+      "score": 10,
+      "items_delivered": 5,
+      "orders_completed": 1,
+      "idle_steps": 2155,
+      "rounds_played": 300,
+      "avg_decision_ms": 1.7253760000555,
+      "d0_busy_ratio": 0.016666666666666666,
+      "items_per_drop_action": 1.0,
+      "deliver_bots_avg": 0.0,
+      "rejoin_backlog_avg": 0.0,
+      "branch_to_delivery_rate": 0.0,
+      "wait_due_to_spacing_guard": 0.0,
+      "wait_due_to_collision_block": 1164.0,
+      "queue_semantics_violation": 0.0,
+      "ring_direction_violation": 0.0,
+      "failure_reasons": []
+    },
+    {
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\branch_conversion_safe_targeted_retrieval_fork_v1\\batch\\expert\\run_20260310_175858",
+      "run_name": "run_20260310_175858",
+      "engine_mode": "expert_supply_strategy",
+      "score": 3,
+      "items_delivered": 3,
+      "orders_completed": 0,
+      "idle_steps": 1038,
+      "rounds_played": 300,
+      "avg_decision_ms": 1.640987000040089,
+      "d0_busy_ratio": 0.02666666666666667,
+      "items_per_drop_action": 0.375,
+      "deliver_bots_avg": 0.0,
+      "rejoin_backlog_avg": 0.0,
+      "branch_to_delivery_rate": 0.0,
+      "wait_due_to_spacing_guard": 0.0,
+      "wait_due_to_collision_block": 163.0,
+      "queue_semantics_violation": 0.0,
+      "ring_direction_violation": 0.0,
+      "failure_reasons": []
+    }
+  ]
+}

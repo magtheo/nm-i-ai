@@ -1,0 +1,191 @@
+{
+  "baseline_fresh": {
+    "runs": [
+      {
+        "run": "run_20260310_020721",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "fallback_soft_penalty_applied": 0,
+        "fallback_penalty_on_second_plus": 0,
+        "fallback_local_crowding_penalty_count": 0,
+        "fallback_target_overlap_after_ranking": 27
+      },
+      {
+        "run": "run_20260310_020846",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "fallback_soft_penalty_applied": 0,
+        "fallback_penalty_on_second_plus": 0,
+        "fallback_local_crowding_penalty_count": 0,
+        "fallback_target_overlap_after_ranking": 27
+      },
+      {
+        "run": "run_20260310_021011",
+        "score": 34,
+        "orders": 3,
+        "items": 19,
+        "first": 54,
+        "second": 91,
+        "third": 122,
+        "late_noa": 720.0,
+        "coll": 71.0,
+        "fallback_soft_penalty_applied": 0,
+        "fallback_penalty_on_second_plus": 0,
+        "fallback_local_crowding_penalty_count": 0,
+        "fallback_target_overlap_after_ranking": 0
+      }
+    ],
+    "median": {
+      "score": 88,
+      "orders": 9,
+      "items": 43,
+      "first": 54,
+      "second": 91,
+      "third": 118,
+      "late_noa": 214.0,
+      "coll": 167.0,
+      "fallback_soft_penalty_applied": 0,
+      "fallback_penalty_on_second_plus": 0,
+      "fallback_local_crowding_penalty_count": 0,
+      "fallback_target_overlap_after_ranking": 27
+    }
+  },
+  "soft_v3_baseline": {
+    "runs": [
+      {
+        "run": "run_20260310_022113",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "fallback_soft_penalty_applied": 25,
+        "fallback_penalty_on_second_plus": 0,
+        "fallback_local_crowding_penalty_count": 0,
+        "fallback_target_overlap_after_ranking": 25
+      },
+      {
+        "run": "run_20260310_022237",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "fallback_soft_penalty_applied": 25,
+        "fallback_penalty_on_second_plus": 0,
+        "fallback_local_crowding_penalty_count": 0,
+        "fallback_target_overlap_after_ranking": 25
+      },
+      {
+        "run": "run_20260310_022403",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "fallback_soft_penalty_applied": 25,
+        "fallback_penalty_on_second_plus": 0,
+        "fallback_local_crowding_penalty_count": 0,
+        "fallback_target_overlap_after_ranking": 25
+      }
+    ],
+    "median": {
+      "score": 88,
+      "orders": 9,
+      "items": 43,
+      "first": 54,
+      "second": 91,
+      "third": 118,
+      "late_noa": 214.0,
+      "coll": 167.0,
+      "fallback_soft_penalty_applied": 25,
+      "fallback_penalty_on_second_plus": 0,
+      "fallback_local_crowding_penalty_count": 0,
+      "fallback_target_overlap_after_ranking": 25
+    }
+  },
+  "soft_v4_conditional_candidate": {
+    "runs": [
+      {
+        "run": "run_20260310_024718",
+        "score": 81,
+        "orders": 8,
+        "items": 41,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 271.0,
+        "coll": 144.0,
+        "fallback_soft_penalty_applied": 24,
+        "fallback_penalty_on_second_plus": 24,
+        "fallback_local_crowding_penalty_count": 17,
+        "fallback_target_overlap_after_ranking": 24
+      },
+      {
+        "run": "run_20260310_024851",
+        "score": 72,
+        "orders": 7,
+        "items": 37,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 179.0,
+        "coll": 127.0,
+        "fallback_soft_penalty_applied": 9,
+        "fallback_penalty_on_second_plus": 9,
+        "fallback_local_crowding_penalty_count": 7,
+        "fallback_target_overlap_after_ranking": 9
+      },
+      {
+        "run": "run_20260310_025023",
+        "score": 87,
+        "orders": 9,
+        "items": 42,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 263.0,
+        "coll": 144.0,
+        "fallback_soft_penalty_applied": 24,
+        "fallback_penalty_on_second_plus": 24,
+        "fallback_local_crowding_penalty_count": 17,
+        "fallback_target_overlap_after_ranking": 24
+      }
+    ],
+    "median": {
+      "score": 81,
+      "orders": 8,
+      "items": 41,
+      "first": 54,
+      "second": 91,
+      "third": 118,
+      "late_noa": 263.0,
+      "coll": 144.0,
+      "fallback_soft_penalty_applied": 24,
+      "fallback_penalty_on_second_plus": 24,
+      "fallback_local_crowding_penalty_count": 17,
+      "fallback_target_overlap_after_ranking": 24
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "artifact_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\critical_dispatch_overlay_v2_iter9_live\\expert\\run_20260312_012927",
+  "result": {
+    "score": 41,
+    "orders_completed": 4,
+    "items_delivered": 21,
+    "rounds_played": 300
+  },
+  "diagnostics": {
+    "rounds": 300,
+    "tail_open_rounds": 168,
+    "secured_rounds": 236,
+    "coupling_break_rounds": 32,
+    "commitment_stagnation_rounds": 84,
+    "throughput_lane_breach_rounds": 297,
+    "delivery_lane_guarantee_breach_rounds": 193,
+    "wait_totals": {
+      "no_target": 0,
+      "no_assignment": 843,
+      "collision": 78,
+      "queue": 0
+    },
+    "completion_rounds": [
+      60,
+      97,
+      158
+    ]
+  },
+  "order_trace_rounds": 300
+}

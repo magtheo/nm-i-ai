@@ -1,0 +1,30 @@
+{
+  "artifact_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\bundle_a_soft_spatial_iter4\\candidate_soft_penalty_v3\\expert\\run_20260310_022113",
+  "result": {
+    "score": 88,
+    "orders_completed": 9,
+    "items_delivered": 43,
+    "rounds_played": 300
+  },
+  "diagnostics": {
+    "rounds": 300,
+    "tail_open_rounds": 186,
+    "secured_rounds": 274,
+    "coupling_break_rounds": 12,
+    "commitment_stagnation_rounds": 16,
+    "throughput_lane_breach_rounds": 10,
+    "delivery_lane_guarantee_breach_rounds": 94,
+    "wait_totals": {
+      "no_target": 0,
+      "no_assignment": 873,
+      "collision": 167,
+      "queue": 0
+    },
+    "completion_rounds": [
+      54,
+      91,
+      118
+    ]
+  },
+  "order_trace_rounds": 300
+}

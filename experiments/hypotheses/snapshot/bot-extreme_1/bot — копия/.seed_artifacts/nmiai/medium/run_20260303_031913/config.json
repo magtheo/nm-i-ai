@@ -1,0 +1,8 @@
+{
+  "difficulty": "medium",
+  "run_index": 1,
+  "cooldown_sec": 3.0,
+  "seed": 0,
+  "use_astar": false,
+  "show_max": true
+}

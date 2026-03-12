@@ -1,0 +1,29 @@
+{
+  "artifact_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\baseline_hungarian_smoke_v1\\expert\\run_20260312_134245",
+  "result": {
+    "score": 25,
+    "orders_completed": 2,
+    "items_delivered": 15,
+    "rounds_played": 300
+  },
+  "diagnostics": {
+    "rounds": 300,
+    "tail_open_rounds": 180,
+    "secured_rounds": 234,
+    "coupling_break_rounds": 28,
+    "commitment_stagnation_rounds": 217,
+    "throughput_lane_breach_rounds": 297,
+    "delivery_lane_guarantee_breach_rounds": 60,
+    "wait_totals": {
+      "no_target": 0,
+      "no_assignment": 1588,
+      "collision": 50,
+      "queue": 0
+    },
+    "completion_rounds": [
+      60,
+      105
+    ]
+  },
+  "order_trace_rounds": 300
+}

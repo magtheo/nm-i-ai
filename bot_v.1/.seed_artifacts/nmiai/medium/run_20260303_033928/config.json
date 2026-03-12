@@ -1,0 +1,16 @@
+{
+  "difficulty": "medium",
+  "run_index": 1,
+  "cooldown_sec": 3.0,
+  "seed": 0,
+  "use_astar": false,
+  "show_max": true,
+  "strategy": {
+    "lookahead_orders": 2,
+    "active_weight": 10.0,
+    "preview_weight": 4.0,
+    "dropoff_completion_threshold": 0.8,
+    "collision_aggressiveness": "detour",
+    "tie_break_seed": 0
+  }
+}

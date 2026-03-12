@@ -1,0 +1,27 @@
+{
+  "run_index": 1,
+  "score": 22,
+  "items_delivered": 12,
+  "orders_completed": 2,
+  "rounds_played": 300,
+  "idle_steps": 1806,
+  "collisions_avoided": 666,
+  "avg_decision_ms": 12.646002999584502,
+  "max_score_exact": null,
+  "max_score_upper_bound": 548,
+  "max_score_lower_bound": 456,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\nmiai\\expert\\run_20260305_173146",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 4,
+    "completed_orders": 0,
+    "observed_items": 22,
+    "lower_bound_score": 456,
+    "upper_bound_score": 548,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 46
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "run_index": 2,
+  "score": 62,
+  "items_delivered": 32,
+  "orders_completed": 6,
+  "rounds_played": 300,
+  "idle_steps": 856,
+  "collisions_avoided": 219,
+  "avg_decision_ms": 13.343897333361383,
+  "max_score_exact": null,
+  "max_score_upper_bound": 541,
+  "max_score_lower_bound": 457,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\critical_dispatch_overlay_v1_batch\\expert\\run_20260311_234948",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 8,
+    "completed_orders": 0,
+    "observed_items": 39,
+    "lower_bound_score": 457,
+    "upper_bound_score": 541,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 42
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "summary": {
+    "runs": 3,
+    "score_median": 10,
+    "orders_completed_median": 1,
+    "items_delivered_median": 5,
+    "first_completion_round_median": 67.0,
+    "second_completion_round_median": null,
+    "third_completion_round_median": null,
+    "action_wait_median": 1672,
+    "action_pick_up_median": 48,
+    "action_drop_off_median": 8,
+    "action_move_median": 1268,
+    "wait_due_to_no_target_median": 59,
+    "wait_due_to_collision_block_median": 949,
+    "wait_due_to_no_assignment_median": 0,
+    "wait_due_to_drop_queue_slot_hold_median": 566,
+    "active_stage_targets_median": 16.0,
+    "active_sustain_targets_median": 601.0,
+    "delivery_lane_force_rounds_median": 268.0,
+    "sustain_active_lane_rounds_median": 300.0,
+    "courier_active_targets_median": 361.0
+  },
+  "runs": [
+    {
+      "run": "run_20260310_175858",
+      "score": 3,
+      "orders_completed": 0,
+      "items_delivered": 3,
+      "first_completion_round": null,
+      "second_completion_round": null,
+      "third_completion_round": null,
+      "action_counts": {
+        "wait": 1038,
+        "pick_up": 138,
+        "drop_off": 8,
+        "move": 1816
+      },
+      "wait_counts": {
+        "wait_due_to_no_target": 656,
+        "wait_due_to_collision_block": 163,
+        "wait_due_to_no_assignment": 0,
+        "wait_due_to_drop_queue_slot_hold": 1
+      },
+      "telemetry_sums": {
+        "active_stage_targets": 181.0,
+        "active_sustain_targets": 495.0,
+        "delivery_lane_force": 52.0,
+        "sustain_active_lane": 300.0,
+        "courier_active_targets": 911.0
+      }
+    },
+    {
+      "run": "run_20260310_180056",
+      "score": 10,
+      "orders_completed": 1,
+      "items_delivered": 5,
+      "first_completion_round": 67,
+      "second_completion_round": null,
+      "third_completion_round": null,
+      "action_counts": {
+        "wait": 2155,
+        "pick_up": 29,
+        "drop_off": 5,
+        "move": 811
+      },
+      "wait_counts": {
+        "wait_due_to_no_target": 55,
+        "wait_due_to_collision_block": 1164,
+        "wait_due_to_no_assignment": 0,
+        "wait_due_to_drop_queue_slot_hold": 856
+      },
+      "telemetry_sums": {
+        "active_stage_targets": 16.0,
+        "active_sustain_targets": 601.0,
+        "delivery_lane_force": 272.0,
+        "sustain_active_lane": 300.0,
+        "courier_active_targets": 361.0
+      }
+    },
+    {
+      "run": "run_20260310_180246",
+      "score": 11,
+      "orders_completed": 1,
+      "items_delivered": 6,
+      "first_completion_round": 67,
+      "second_completion_round": null,
+      "third_completion_round": null,
+      "action_counts": {
+        "wait": 1672,
+        "pick_up": 48,
+        "drop_off": 12,
+        "move": 1268
+      },
+      "wait_counts": {
+        "wait_due_to_no_target": 59,
+        "wait_due_to_collision_block": 949,
+        "wait_due_to_no_assignment": 0,
+        "wait_due_to_drop_queue_slot_hold": 566
+      },
+      "telemetry_sums": {
+        "active_stage_targets": 16.0,
+        "active_sustain_targets": 613.0,
+        "delivery_lane_force": 268.0,
+        "sustain_active_lane": 298.0,
+        "courier_active_targets": 355.0
+      }
+    }
+  ]
+}

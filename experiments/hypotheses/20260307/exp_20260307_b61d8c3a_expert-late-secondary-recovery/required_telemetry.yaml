@@ -1,0 +1,23 @@
+required_telemetry:
+  baseline_reference: bot_v.1/best/expert/current.json
+  candidate_reference: pending_patch_and_candidate_config
+  required_metrics:
+    - score
+    - orders_completed
+    - items_delivered
+    - idle_steps
+    - no_assignment_wait_bots
+    - wait_due_to_no_assignment
+    - wait_due_to_no_assignment_streak_max
+    - primary_assignment_miss_streak_max
+    - secondary_assignment_used
+    - secondary_assigned_bots
+    - secondary_moved_bots
+    - collisions_avoided
+    - avg_decision_ms
+  focused_observations:
+    - whether secondary recovery activates only in the intended late-game window
+    - whether activation is concentrated on bots with sustained primary-assignment starvation
+    - whether late recovery reduces deadlock-like no-assignment behavior without broadening midgame support usage
+    - whether recovered bots later contribute to deliveries or only create extra motion
+  honesty_rule: Starvation proxy improvements alone are insufficient for promotion; score safety remains decisive.

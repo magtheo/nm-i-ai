@@ -1,0 +1,78 @@
+{
+  "experiment_id": "exp_20260307_1c08e847_expert-secondary-support",
+  "comparison_baseline": "best/expert/current.json",
+  "candidate": "configs/expert_candidate_secondary_support_20260307.json",
+  "method": "focused offline synthetic assignment checks modeled after existing assignment-policy scenarios",
+  "cases": [
+    {
+      "name": "secondary_active_support_loaded_bot",
+      "baseline": {
+        "assignments": [
+          {
+            "target_type": "pick_item",
+            "source": "greedy_candidate"
+          },
+          {
+            "target_type": "idle",
+            "source": "idle_fallback"
+          }
+        ],
+        "counts": {
+          "idle": 1,
+          "pick_item": 1
+        }
+      },
+      "candidate": {
+        "assignments": [
+          {
+            "target_type": "pick_item",
+            "source": "greedy_candidate"
+          },
+          {
+            "target_type": "secondary_reposition",
+            "source": "secondary_active_support"
+          }
+        ],
+        "counts": {
+          "pick_item": 1,
+          "secondary_reposition": 1
+        }
+      }
+    },
+    {
+      "name": "secondary_duplicate_support_loaded_bot",
+      "baseline": {
+        "assignments": [
+          {
+            "target_type": "pick_item",
+            "source": "greedy_candidate"
+          },
+          {
+            "target_type": "idle",
+            "source": "idle_fallback"
+          }
+        ],
+        "counts": {
+          "idle": 1,
+          "pick_item": 1
+        }
+      },
+      "candidate": {
+        "assignments": [
+          {
+            "target_type": "pick_item",
+            "source": "greedy_candidate"
+          },
+          {
+            "target_type": "secondary_reposition",
+            "source": "secondary_duplicate_support"
+          }
+        ],
+        "counts": {
+          "pick_item": 1,
+          "secondary_reposition": 1
+        }
+      }
+    }
+  ]
+}

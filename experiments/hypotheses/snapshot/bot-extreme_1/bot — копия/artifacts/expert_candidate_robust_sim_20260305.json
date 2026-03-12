@@ -1,0 +1,177 @@
+{
+  "forecast": "live",
+  "seeds": [
+    7004,
+    7005,
+    7006,
+    7007,
+    7008,
+    7009,
+    7010,
+    7011
+  ],
+  "known_orders_mode": "weighted",
+  "item_type_shuffle_prob": 0.2,
+  "results": [
+    {
+      "file": "artifacts/expert_sim_best_params.json",
+      "scores": [
+        66,
+        47,
+        74,
+        45,
+        26,
+        36,
+        26,
+        76
+      ],
+      "min_score": 26,
+      "p25_score": 33.5,
+      "mean_score": 49.5,
+      "max_score": 76,
+      "mean_orders": 4.375,
+      "mean_items": 27.625,
+      "mean_p95_ms": 45.207862502138596
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c06_blend_141_plus.json",
+      "scores": [
+        25,
+        57,
+        94,
+        25,
+        25,
+        55,
+        25,
+        76
+      ],
+      "min_score": 25,
+      "p25_score": 25.0,
+      "mean_score": 47.75,
+      "max_score": 94,
+      "mean_orders": 4.25,
+      "mean_items": 26.5,
+      "mean_p95_ms": 44.18338750110706
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c08_anti_stall.json",
+      "scores": [
+        101,
+        82,
+        91,
+        89,
+        5,
+        81,
+        5,
+        44
+      ],
+      "min_score": 5,
+      "p25_score": 34.25,
+      "mean_score": 62.25,
+      "max_score": 101,
+      "mean_orders": 6,
+      "mean_items": 32.25,
+      "mean_p95_ms": 41.43858749739593
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c00_base_latest_best.json",
+      "scores": [
+        93,
+        47,
+        91,
+        55,
+        5,
+        90,
+        5,
+        42
+      ],
+      "min_score": 5,
+      "p25_score": 32.75,
+      "mean_score": 53.5,
+      "max_score": 93,
+      "mean_orders": 5,
+      "mean_items": 28.5,
+      "mean_p95_ms": 43.24768749211216
+    },
+    {
+      "file": "artifacts/expert_sim_latest_best_params.json",
+      "scores": [
+        93,
+        47,
+        91,
+        55,
+        5,
+        90,
+        5,
+        42
+      ],
+      "min_score": 5,
+      "p25_score": 32.75,
+      "mean_score": 53.5,
+      "max_score": 93,
+      "mean_orders": 5,
+      "mean_items": 28.5,
+      "mean_p95_ms": 42.41010000987444
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c07_endgame_push.json",
+      "scores": [
+        66,
+        47,
+        92,
+        44,
+        5,
+        90,
+        5,
+        42
+      ],
+      "min_score": 5,
+      "p25_score": 32.75,
+      "mean_score": 48.875,
+      "max_score": 92,
+      "mean_orders": 4.5,
+      "mean_items": 26.375,
+      "mean_p95_ms": 43.59474997909274
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c03_detour_aggressive_queue.json",
+      "scores": [
+        46,
+        58,
+        83,
+        34,
+        5,
+        46,
+        5,
+        66
+      ],
+      "min_score": 5,
+      "p25_score": 26.75,
+      "mean_score": 42.875,
+      "max_score": 83,
+      "mean_orders": 3.75,
+      "mean_items": 24.125,
+      "mean_p95_ms": 36.86480000033043
+    },
+    {
+      "file": "_tmp_oracle_177_params.json",
+      "scores": [
+        3,
+        3,
+        73,
+        3,
+        91,
+        3,
+        91,
+        41
+      ],
+      "min_score": 3,
+      "p25_score": 3.0,
+      "mean_score": 38.5,
+      "max_score": 91,
+      "mean_orders": 3.625,
+      "mean_items": 20.375,
+      "mean_p95_ms": 67.59115000750171
+    }
+  ]
+}

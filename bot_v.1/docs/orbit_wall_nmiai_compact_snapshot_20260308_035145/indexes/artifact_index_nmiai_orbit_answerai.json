@@ -1,0 +1,282 @@
+﻿[
+    {
+        "name":  "nmiai_orbit_flow_stage3_probe_v1",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_stage3_probe_v1",
+        "files":  9,
+        "size_bytes":  15074029,
+        "size_mb":  14.38,
+        "last_write_utc":  "2026-03-08T02:39:48Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_telemetry_pack_v3",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_telemetry_pack_v3",
+        "files":  9,
+        "size_bytes":  15074017,
+        "size_mb":  14.38,
+        "last_write_utc":  "2026-03-08T02:38:24Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_stage_cli_smoke2",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_stage_cli_smoke2",
+        "files":  9,
+        "size_bytes":  14722932,
+        "size_mb":  14.04,
+        "last_write_utc":  "2026-03-08T02:36:45Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_stage_cli_smoke",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_stage_cli_smoke",
+        "files":  9,
+        "size_bytes":  14697104,
+        "size_mb":  14.02,
+        "last_write_utc":  "2026-03-08T02:35:05Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_telemetry_pack_v2_recovered",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_telemetry_pack_v2_recovered",
+        "files":  9,
+        "size_bytes":  14722973,
+        "size_mb":  14.04,
+        "last_write_utc":  "2026-03-08T02:33:41Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_stage3_baseline_fix1",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_stage3_baseline_fix1",
+        "files":  9,
+        "size_bytes":  14738408,
+        "size_mb":  14.06,
+        "last_write_utc":  "2026-03-08T02:32:16Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_stage3_baseline",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_stage3_baseline",
+        "files":  9,
+        "size_bytes":  14742870,
+        "size_mb":  14.06,
+        "last_write_utc":  "2026-03-08T02:30:49Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_telemetry_pack_v1b",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_telemetry_pack_v1b",
+        "files":  9,
+        "size_bytes":  14689974,
+        "size_mb":  14.01,
+        "last_write_utc":  "2026-03-08T02:27:50Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_telemetry_pack_v1",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_telemetry_pack_v1",
+        "files":  9,
+        "size_bytes":  14577759,
+        "size_mb":  13.9,
+        "last_write_utc":  "2026-03-08T02:26:20Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v3_active_preview_series",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v3_active_preview_series",
+        "files":  18,
+        "size_bytes":  27327769,
+        "size_mb":  26.06,
+        "last_write_utc":  "2026-03-08T02:17:59Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v3_active_preview_recheck2",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v3_active_preview_recheck2",
+        "files":  9,
+        "size_bytes":  13663883,
+        "size_mb":  13.03,
+        "last_write_utc":  "2026-03-08T02:16:36Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v3_active_preview_fix3",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v3_active_preview_fix3",
+        "files":  9,
+        "size_bytes":  13657633,
+        "size_mb":  13.02,
+        "last_write_utc":  "2026-03-08T02:15:01Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v3_active_preview_fix2",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v3_active_preview_fix2",
+        "files":  9,
+        "size_bytes":  13663891,
+        "size_mb":  13.03,
+        "last_write_utc":  "2026-03-08T02:13:38Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v3_active_preview_recheck",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v3_active_preview_recheck",
+        "files":  9,
+        "size_bytes":  13663136,
+        "size_mb":  13.03,
+        "last_write_utc":  "2026-03-08T02:12:04Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v3_active_preview_fix1",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v3_active_preview_fix1",
+        "files":  9,
+        "size_bytes":  13713216,
+        "size_mb":  13.08,
+        "last_write_utc":  "2026-03-08T02:10:38Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v3_active_preview",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v3_active_preview",
+        "files":  9,
+        "size_bytes":  13663845,
+        "size_mb":  13.03,
+        "last_write_utc":  "2026-03-08T02:09:13Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v2_pipeline_fix2_recheck",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v2_pipeline_fix2_recheck",
+        "files":  9,
+        "size_bytes":  13486416,
+        "size_mb":  12.86,
+        "last_write_utc":  "2026-03-08T02:02:02Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v2_pipeline_fix3",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v2_pipeline_fix3",
+        "files":  9,
+        "size_bytes":  13482841,
+        "size_mb":  12.86,
+        "last_write_utc":  "2026-03-08T02:00:39Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v2_pipeline_fix2_series",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v2_pipeline_fix2_series",
+        "files":  27,
+        "size_bytes":  40451665,
+        "size_mb":  38.58,
+        "last_write_utc":  "2026-03-08T01:56:16Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v2_pipeline_fix2",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v2_pipeline_fix2",
+        "files":  9,
+        "size_bytes":  13483853,
+        "size_mb":  12.86,
+        "last_write_utc":  "2026-03-08T01:54:47Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v2_pipeline_fix1",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v2_pipeline_fix1",
+        "files":  9,
+        "size_bytes":  13576897,
+        "size_mb":  12.95,
+        "last_write_utc":  "2026-03-08T01:53:21Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v2_pipeline",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v2_pipeline",
+        "files":  9,
+        "size_bytes":  13563884,
+        "size_mb":  12.94,
+        "last_write_utc":  "2026-03-08T01:51:57Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v1_fix2_series",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v1_fix2_series",
+        "files":  45,
+        "size_bytes":  67044860,
+        "size_mb":  63.94,
+        "last_write_utc":  "2026-03-08T01:38:26Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v1_fix2",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v1_fix2",
+        "files":  9,
+        "size_bytes":  13423046,
+        "size_mb":  12.8,
+        "last_write_utc":  "2026-03-08T01:36:52Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v1_fix1",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v1_fix1",
+        "files":  9,
+        "size_bytes":  13388274,
+        "size_mb":  12.77,
+        "last_write_utc":  "2026-03-08T01:34:35Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_arch_v1",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_arch_v1",
+        "files":  9,
+        "size_bytes":  13388288,
+        "size_mb":  12.77,
+        "last_write_utc":  "2026-03-08T01:31:15Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_backbone_v2_series",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_backbone_v2_series",
+        "files":  46,
+        "size_bytes":  70605018,
+        "size_mb":  67.33,
+        "last_write_utc":  "2026-03-08T01:16:39Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_backbone_v2",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_backbone_v2",
+        "files":  9,
+        "size_bytes":  12828339,
+        "size_mb":  12.23,
+        "last_write_utc":  "2026-03-08T01:15:13Z"
+    },
+    {
+        "name":  "nmiai_orbit_flow_backbone_v1",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_flow_backbone_v1",
+        "files":  9,
+        "size_bytes":  11853470,
+        "size_mb":  11.3,
+        "last_write_utc":  "2026-03-08T01:10:50Z"
+    },
+    {
+        "name":  "nmiai_orbit_wall_hybrid_patch_v3_series",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_wall_hybrid_patch_v3_series",
+        "files":  46,
+        "size_bytes":  70170824,
+        "size_mb":  66.92,
+        "last_write_utc":  "2026-03-08T00:57:06Z"
+    },
+    {
+        "name":  "nmiai_orbit_wall_hybrid_patch_v3",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_wall_hybrid_patch_v3",
+        "files":  9,
+        "size_bytes":  12765078,
+        "size_mb":  12.17,
+        "last_write_utc":  "2026-03-08T00:55:26Z"
+    },
+    {
+        "name":  "nmiai_orbit_wall_hybrid_patch_v2",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_wall_hybrid_patch_v2",
+        "files":  9,
+        "size_bytes":  12750165,
+        "size_mb":  12.16,
+        "last_write_utc":  "2026-03-08T00:53:46Z"
+    },
+    {
+        "name":  "nmiai_orbit_wall_hybrid_patch",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_orbit_wall_hybrid_patch",
+        "files":  9,
+        "size_bytes":  12761339,
+        "size_mb":  12.17,
+        "last_write_utc":  "2026-03-08T00:52:09Z"
+    },
+    {
+        "name":  "nmiai_answerai_baseline",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_answerai_baseline",
+        "files":  10,
+        "size_bytes":  19057068,
+        "size_mb":  18.17,
+        "last_write_utc":  "2026-03-08T00:38:20Z"
+    },
+    {
+        "name":  "nmiai_answerai_hypothesis",
+        "full_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai_answerai_hypothesis",
+        "files":  10,
+        "size_bytes":  19301713,
+        "size_mb":  18.41,
+        "last_write_utc":  "2026-03-08T00:36:40Z"
+    }
+]

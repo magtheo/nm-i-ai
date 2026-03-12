@@ -1,0 +1,51 @@
+{
+  "inputs": {
+    "decision_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_orbit_wall_patch2_20260309\\expert\\run_20260309_003127\\decision_trace.jsonl",
+    "order_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_orbit_wall_patch2_20260309\\expert\\run_20260309_003127\\order_trace.json",
+    "result": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\.seed_artifacts\\nmiai\\live_orbit_wall_patch2_20260309\\expert\\run_20260309_003127\\result.json"
+  },
+  "summary": {
+    "score": 12,
+    "items_delivered": 7,
+    "orders_completed": 1,
+    "idle_steps": 802,
+    "rounds_played": 300,
+    "order_trace_rounds": 300,
+    "active_order_switch_rounds": [
+      117
+    ]
+  },
+  "metrics": {
+    "rounds": 300,
+    "first_round": 0,
+    "last_round": 299,
+    "branch_exit_visits": 8.0,
+    "branch_to_delivery": 8.0,
+    "branch_continue_moves": 0.0,
+    "branch_waits": 0.0,
+    "branch_to_delivery_rate": 1.0,
+    "rejoin_branch_visits": 18.0,
+    "rejoin_admissions": 17.0,
+    "rejoin_denials": 1.0,
+    "rejoin_backlog_avg": 0.8333333333333334,
+    "rejoin_backlog_max": 4.0,
+    "wait_due_to_spacing_guard": 347.0,
+    "wait_due_to_collision_block": 185.0,
+    "wait_due_to_no_assignment": 0.0,
+    "queue_semantics_violation": 0.0,
+    "ring_direction_violation": 0.0,
+    "drop_off_actions": 12.0,
+    "deliver_bots_avg": 0.8566666666666667,
+    "drop_queue_len_avg": 0.29333333333333333
+  },
+  "failures": [
+    {
+      "reason": "spacing_guard_dominant_wait",
+      "evidence": {
+        "wait_due_to_spacing_guard": 347.0,
+        "wait_total": 532.0,
+        "spacing_wait_share": 0.6523
+      }
+    }
+  ]
+}

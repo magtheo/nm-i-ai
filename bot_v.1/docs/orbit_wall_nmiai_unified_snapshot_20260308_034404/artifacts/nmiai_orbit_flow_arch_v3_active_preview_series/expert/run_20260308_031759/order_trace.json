@@ -1,0 +1,9011 @@
+{
+  "trace": [
+    {
+      "round": 0,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 1,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 2,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 3,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 4,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 5,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 6,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 7,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 8,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 9,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 10,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 11,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 12,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 13,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 14,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 15,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 16,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 17,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 18,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 19,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 20,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 21,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 22,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 23,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 24,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 25,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 26,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 27,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 28,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 29,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 30,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 31,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 32,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 33,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 34,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 35,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 36,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 37,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 38,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 39,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 40,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 41,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 42,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 43,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 44,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 45,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 46,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 47,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 48,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 49,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 50,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 51,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 52,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 53,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 54,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 55,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 56,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 57,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 58,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 59,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 60,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 61,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 62,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 63,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 64,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 65,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 66,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 67,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 68,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 69,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 70,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 71,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 72,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 73,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 74,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 75,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 76,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 77,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 78,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 79,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 80,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 81,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 82,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 83,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 84,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 85,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 86,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 87,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 88,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 89,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 90,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 91,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 92,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 93,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 94,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 95,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 96,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 97,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 98,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 99,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 100,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 101,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 102,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 103,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 104,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 105,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 106,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 107,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 108,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 109,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 110,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 111,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 112,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 113,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 114,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 115,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 116,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 117,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 118,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 119,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 120,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 121,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 122,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 123,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "cheese",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": [
+          "cheese",
+          "cream",
+          "oats"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 124,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 125,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 126,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 127,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 128,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 129,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 130,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 131,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 132,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 133,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 134,
+      "score": 11,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 135,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 136,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 137,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 138,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 139,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 140,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 141,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 142,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 143,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 144,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 145,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 146,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 147,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 148,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 149,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 150,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 151,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 152,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 153,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 154,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 155,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 156,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 157,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 158,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 159,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 160,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 161,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 162,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 163,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 164,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 165,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 166,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 167,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 168,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 169,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 170,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 171,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 172,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 173,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 174,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 175,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 176,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 177,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 178,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 179,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 180,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 181,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 182,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 183,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 184,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 185,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 186,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 187,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 188,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 189,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 190,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 191,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 192,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 193,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 194,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 195,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 196,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 197,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 198,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 199,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 200,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 201,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 202,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 203,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 204,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 205,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 206,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 207,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 208,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 209,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 210,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 211,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 212,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 213,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 214,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 215,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 216,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 217,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 218,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 219,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 220,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 221,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 222,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 223,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 224,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 225,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 226,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 227,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 228,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 229,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 230,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 231,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 232,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 233,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 234,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 235,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 236,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 237,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 238,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 239,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 240,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 241,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 242,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 243,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 244,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 245,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 246,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 247,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 248,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 249,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 250,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 251,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 252,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 253,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 254,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 255,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 256,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 257,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 258,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 259,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 260,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 261,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 262,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 263,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 264,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 265,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 266,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 267,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 268,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 269,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 270,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 271,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 272,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 273,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 274,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 275,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 276,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 277,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 278,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 279,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 280,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 281,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 282,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 283,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 284,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 285,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 286,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 287,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 288,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 289,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 290,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 291,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 292,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 293,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 294,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 295,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 296,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 297,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 298,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 299,
+      "score": 13,
+      "active_order_index": 1,
+      "active": {
+        "id": "order_1",
+        "items_required": [
+          "yogurt",
+          "bananas",
+          "bananas",
+          "eggs",
+          "yogurt"
+        ],
+        "items_delivered": [
+          "bananas",
+          "eggs",
+          "yogurt",
+          "yogurt"
+        ]
+      },
+      "preview": {
+        "id": "order_2",
+        "items_required": [
+          "bananas",
+          "apples",
+          "oats",
+          "apples"
+        ],
+        "items_delivered": []
+      }
+    }
+  ]
+}

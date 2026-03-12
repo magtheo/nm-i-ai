@@ -1,0 +1,655 @@
+{
+  "summary": {
+    "samples": 30,
+    "baseline": {
+      "productive": 3.0,
+      "pick": 0.0,
+      "pre_pick": 1.0,
+      "deliver": 2.0,
+      "secondary": 0.0,
+      "idle": 7.0,
+      "soft_tagged": 0.0
+    },
+    "candidate": {
+      "productive": 3.0,
+      "pick": 0.0,
+      "pre_pick": 1.0,
+      "deliver": 2.0,
+      "secondary": 0.0,
+      "idle": 7.0,
+      "soft_tagged": 8.0
+    }
+  },
+  "rows": [
+    {
+      "round": 0,
+      "baseline": {
+        "productive": 4,
+        "pick": 4,
+        "pre_pick": 0,
+        "deliver": 0,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 4,
+        "pick": 4,
+        "pre_pick": 0,
+        "deliver": 0,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 10
+      }
+    },
+    {
+      "round": 10,
+      "baseline": {
+        "productive": 4,
+        "pick": 3,
+        "pre_pick": 0,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 4,
+        "pick": 3,
+        "pre_pick": 0,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 9
+      }
+    },
+    {
+      "round": 20,
+      "baseline": {
+        "productive": 6,
+        "pick": 1,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 4,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 6,
+        "pick": 1,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 4,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 30,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 40,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 50,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 60,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 9
+      }
+    },
+    {
+      "round": 70,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 9
+      }
+    },
+    {
+      "round": 80,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 90,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 100,
+      "baseline": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 110,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 120,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 130,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 140,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 150,
+      "baseline": {
+        "productive": 6,
+        "pick": 0,
+        "pre_pick": 4,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 4,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 6,
+        "pick": 0,
+        "pre_pick": 4,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 4,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 160,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 170,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 9
+      }
+    },
+    {
+      "round": 180,
+      "baseline": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 190,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 200,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 210,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 9
+      }
+    },
+    {
+      "round": 220,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 8,
+        "soft_tagged": 9
+      }
+    },
+    {
+      "round": 230,
+      "baseline": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 240,
+      "baseline": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 250,
+      "baseline": {
+        "productive": 5,
+        "pick": 0,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 5,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 5,
+        "pick": 0,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 5,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 260,
+      "baseline": {
+        "productive": 5,
+        "pick": 0,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 5,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 5,
+        "pick": 0,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 5,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 270,
+      "baseline": {
+        "productive": 5,
+        "pick": 0,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 5,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 5,
+        "pick": 0,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 5,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 280,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 8
+      }
+    },
+    {
+      "round": 290,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 0
+      },
+      "candidate": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "soft_tagged": 8
+      }
+    }
+  ]
+}

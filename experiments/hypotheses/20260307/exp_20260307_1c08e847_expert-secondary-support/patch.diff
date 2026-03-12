@@ -1,0 +1,14 @@
+# Candidate config diff relative to bot — копия/best/expert/current.json
+
+--- baseline
++++ candidate
+@@
+-  "anti_no_assignment_enabled": false,
+-  "secondary_assignment_enabled": false,
+-  "secondary_reposition_empty_only": true,
++  "anti_no_assignment_enabled": true,
++  "secondary_assignment_enabled": true,
++  "secondary_reposition_empty_only": false,
+
+# Candidate config file:
+# bot — копия/configs/expert_candidate_secondary_support_20260307.json

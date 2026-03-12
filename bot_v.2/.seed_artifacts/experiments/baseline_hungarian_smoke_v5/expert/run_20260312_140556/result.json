@@ -1,0 +1,27 @@
+{
+  "run_index": 1,
+  "score": 41,
+  "items_delivered": 21,
+  "orders_completed": 4,
+  "rounds_played": 300,
+  "idle_steps": 508,
+  "collisions_avoided": 107,
+  "avg_decision_ms": 22.67090000018167,
+  "max_score_exact": null,
+  "max_score_upper_bound": 546,
+  "max_score_lower_bound": 458,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\baseline_hungarian_smoke_v5\\expert\\run_20260312_140556",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 6,
+    "completed_orders": 0,
+    "observed_items": 32,
+    "lower_bound_score": 458,
+    "upper_bound_score": 546,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 44
+  }
+}

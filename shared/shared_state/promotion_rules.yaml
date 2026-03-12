@@ -1,0 +1,11 @@
+promotion_rules:
+  canonical_best_path: <bot_root>/best/<level>/current.json
+  metadata_path: <bot_root>/best/<level>/metadata.yaml
+  require_verdict: true
+  require_score: true
+  levels:
+    - easy
+    - medium
+    - hard
+    - expert
+    - nightmare

@@ -1,0 +1,17 @@
+id: handoff_20260307_expert_baseline_to_validation
+from: coding_agent
+to: analysis_agent
+type: experiment_handoff
+created_at: 2026-03-07T10:33:00
+summary: Canonical expert baseline promoted and first expert follow-up experiment package created.
+artifacts:
+  - path: bot — копия/best/expert/current.json
+  - path: bot — копия/best/expert/metadata.yaml
+  - path: bot — копия/configs/expert_baseline_current.json
+  - path: experiments/hypotheses/20260307/exp_20260307_a548deb2_expert-maxscore-engine-l/hypothesis.yaml
+  - path: experiments/hypotheses/20260307/exp_20260307_a548deb2_expert-maxscore-engine-l/mechanism.md
+  - path: shared/shared_state/active_baselines.yaml
+request:
+  baseline: Validate that the canonical expert baseline remains reproducible for future comparisons.
+  next_experiment: Score the maxscore-engine candidate against the promoted baseline using the standard expert live workflow.
+status: open

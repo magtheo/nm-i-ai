@@ -1,0 +1,74 @@
+{
+  "ranked": [
+    {
+      "name": "c08_anti_stall",
+      "params_file": "C:\\Users\\Aleksei\\Downloads\\bot-extreme_1\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\artifacts\\expert_candidates_120\\c08_anti_stall.json",
+      "score": 101,
+      "p95_ms": 44.393,
+      "ok": true
+    },
+    {
+      "name": "c00_base_latest_best",
+      "params_file": "C:\\Users\\Aleksei\\Downloads\\bot-extreme_1\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\artifacts\\expert_candidates_120\\c00_base_latest_best.json",
+      "score": 93,
+      "p95_ms": 51.944,
+      "ok": true
+    },
+    {
+      "name": "c07_endgame_push",
+      "params_file": "C:\\Users\\Aleksei\\Downloads\\bot-extreme_1\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\artifacts\\expert_candidates_120\\c07_endgame_push.json",
+      "score": 66,
+      "p95_ms": 50.341,
+      "ok": true
+    },
+    {
+      "name": "c03_detour_aggressive_queue",
+      "params_file": "C:\\Users\\Aleksei\\Downloads\\bot-extreme_1\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\artifacts\\expert_candidates_120\\c03_detour_aggressive_queue.json",
+      "score": 46,
+      "p95_ms": 37.894,
+      "ok": true
+    },
+    {
+      "name": "c06_blend_141_plus",
+      "params_file": "C:\\Users\\Aleksei\\Downloads\\bot-extreme_1\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\artifacts\\expert_candidates_120\\c06_blend_141_plus.json",
+      "score": 25,
+      "p95_ms": 36.502,
+      "ok": true
+    },
+    {
+      "name": "c02_preview_opportunistic",
+      "params_file": "C:\\Users\\Aleksei\\Downloads\\bot-extreme_1\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\artifacts\\expert_candidates_120\\c02_preview_opportunistic.json",
+      "score": 24,
+      "p95_ms": 46.236,
+      "ok": true
+    },
+    {
+      "name": "c01_relax_force_dropoff",
+      "params_file": "C:\\Users\\Aleksei\\Downloads\\bot-extreme_1\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\artifacts\\expert_candidates_120\\c01_relax_force_dropoff.json",
+      "score": 24,
+      "p95_ms": 47.857,
+      "ok": true
+    },
+    {
+      "name": "c05_stable",
+      "params_file": "C:\\Users\\Aleksei\\Downloads\\bot-extreme_1\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\artifacts\\expert_candidates_120\\c05_stable.json",
+      "score": 24,
+      "p95_ms": 48.387,
+      "ok": true
+    },
+    {
+      "name": "c09_fast_dropoff",
+      "params_file": "C:\\Users\\Aleksei\\Downloads\\bot-extreme_1\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\artifacts\\expert_candidates_120\\c09_fast_dropoff.json",
+      "score": 23,
+      "p95_ms": 43.385,
+      "ok": true
+    },
+    {
+      "name": "c04_auction",
+      "params_file": "C:\\Users\\Aleksei\\Downloads\\bot-extreme_1\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\artifacts\\expert_candidates_120\\c04_auction.json",
+      "score": 0,
+      "p95_ms": 115.52,
+      "ok": true
+    }
+  ]
+}

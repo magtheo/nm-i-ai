@@ -1,0 +1,15 @@
+experiment_id: exp_20260307_b61d8c3a_expert-late-secondary-recovery
+title: expert late-only secondary recovery gate
+level: expert
+owner: coding_agent
+created_at: "2026-03-07T12:15:00+01:00"
+hypothesis: Late-only secondary recovery can reduce true endgame no-assignment starvation without reintroducing the broad regressions seen from global stall-breaker behavior.
+mechanism: Gate the existing secondary recovery path so it only activates in a narrow late-game window for bots already showing sustained primary-assignment starvation.
+patch: patch.diff
+success_metric: success_metric.yaml
+failure_modes: failure_modes.md
+required_telemetry: required_telemetry.yaml
+verdict: null
+baseline_config: bot_v.1/best/expert/current.json
+baseline_policy: shared/curated/baseline_policy_expert.md
+scope: narrow_code_experiment

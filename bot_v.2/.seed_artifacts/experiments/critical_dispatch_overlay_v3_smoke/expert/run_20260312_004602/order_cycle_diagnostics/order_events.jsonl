@@ -1,0 +1,142 @@
+{"round": 0, "event": "order_started", "active_order_id": "order_0", "active_order_index": 0}
+{"round": 11, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 1, "converter_role_count": 0}
+{"round": 12, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 1, "converter_role_count": 0}
+{"round": 13, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 14, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 15, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 16, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 17, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 18, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 19, "event": "preview_enabled", "active_order_id": "order_0", "preview_order_id": "order_1"}
+{"round": 19, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 20, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 21, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 22, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 23, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 24, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 25, "event": "active_secured", "active_order_id": "order_0", "remaining_items": 5}
+{"round": 25, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 26, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 27, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 28, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 29, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 31, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 32, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 33, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 34, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 36, "event": "tail_opened", "active_order_id": "order_0", "remaining_items": 3}
+{"round": 50, "event": "order_completed", "active_order_id": "order_0", "active_order_index": 0, "active_order_total_items": 5}
+{"round": 50, "event": "order_started", "active_order_id": "order_1", "active_order_index": 1}
+{"round": 50, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 51, "event": "preview_enabled", "active_order_id": "order_1", "preview_order_id": "order_2"}
+{"round": 51, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 52, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 53, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 54, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 55, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 56, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 57, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 58, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 60, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 61, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 62, "event": "conversion_floor_breached", "active_order_id": "order_1", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 64, "event": "tail_opened", "active_order_id": "order_1", "remaining_items": 3}
+{"round": 79, "event": "order_completed", "active_order_id": "order_1", "active_order_index": 1, "active_order_total_items": 6}
+{"round": 79, "event": "order_started", "active_order_id": "order_2", "active_order_index": 2}
+{"round": 79, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 80, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 81, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 82, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 83, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 84, "event": "preview_enabled", "active_order_id": "order_2", "preview_order_id": "order_3"}
+{"round": 84, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 85, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 86, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 86, "event": "pickup_drop_coupling_broken", "active_order_id": "order_2", "pickup_window": 6, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 87, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 88, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 89, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 90, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 91, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 92, "event": "conversion_floor_breached", "active_order_id": "order_2", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 94, "event": "tail_opened", "active_order_id": "order_2", "remaining_items": 2}
+{"round": 104, "event": "order_completed", "active_order_id": "order_2", "active_order_index": 2, "active_order_total_items": 5}
+{"round": 104, "event": "order_started", "active_order_id": "order_3", "active_order_index": 3}
+{"round": 104, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 105, "event": "active_secured", "active_order_id": "order_3", "remaining_items": 6}
+{"round": 105, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 106, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 107, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 108, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 109, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 110, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 111, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 113, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 114, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 115, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 116, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 117, "event": "preview_enabled", "active_order_id": "order_3", "preview_order_id": "order_4"}
+{"round": 117, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 118, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 119, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 120, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 121, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 122, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 123, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 124, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 125, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 126, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 127, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 129, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 130, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 131, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 133, "event": "tail_opened", "active_order_id": "order_3", "remaining_items": 3}
+{"round": 133, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 134, "event": "conversion_floor_breached", "active_order_id": "order_3", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 154, "event": "order_completed", "active_order_id": "order_3", "active_order_index": 3, "active_order_total_items": 6}
+{"round": 154, "event": "order_started", "active_order_id": "order_4", "active_order_index": 4}
+{"round": 154, "event": "preview_enabled", "active_order_id": "order_4", "preview_order_id": "order_5"}
+{"round": 154, "event": "conversion_floor_breached", "active_order_id": "order_4", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 155, "event": "active_secured", "active_order_id": "order_4", "remaining_items": 4}
+{"round": 155, "event": "conversion_floor_breached", "active_order_id": "order_4", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 156, "event": "conversion_floor_breached", "active_order_id": "order_4", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 159, "event": "tail_opened", "active_order_id": "order_4", "remaining_items": 2}
+{"round": 199, "event": "order_completed", "active_order_id": "order_4", "active_order_index": 4, "active_order_total_items": 4}
+{"round": 199, "event": "order_started", "active_order_id": "order_5", "active_order_index": 5}
+{"round": 199, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 1, "converter_role_count": 0}
+{"round": 200, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 1, "converter_role_count": 0}
+{"round": 201, "event": "active_secured", "active_order_id": "order_5", "remaining_items": 3}
+{"round": 201, "event": "preview_enabled", "active_order_id": "order_5", "preview_order_id": "order_6"}
+{"round": 201, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 202, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 203, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 204, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 205, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 206, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 206, "event": "pickup_drop_coupling_broken", "active_order_id": "order_5", "pickup_window": 6, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 207, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 208, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 209, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 210, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 211, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 212, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 213, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 214, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 215, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 216, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 217, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 218, "event": "conversion_floor_breached", "active_order_id": "order_5", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 247, "event": "preview_enabled", "active_order_id": "order_5", "preview_order_id": "order_6"}
+{"round": 253, "event": "order_completed", "active_order_id": "order_5", "active_order_index": 5, "active_order_total_items": 4}
+{"round": 253, "event": "order_started", "active_order_id": "order_6", "active_order_index": 6}
+{"round": 255, "event": "active_secured", "active_order_id": "order_6", "remaining_items": 4}
+{"round": 255, "event": "conversion_floor_breached", "active_order_id": "order_6", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 256, "event": "conversion_floor_breached", "active_order_id": "order_6", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 257, "event": "conversion_floor_breached", "active_order_id": "order_6", "conversion_floor_target": 3, "converter_role_count": 2}
+{"round": 260, "event": "tail_opened", "active_order_id": "order_6", "remaining_items": 3}
+{"round": 275, "event": "order_completed", "active_order_id": "order_6", "active_order_index": 6, "active_order_total_items": 4}
+{"round": 275, "event": "order_started", "active_order_id": "order_7", "active_order_index": 7}
+{"round": 275, "event": "conversion_floor_breached", "active_order_id": "order_7", "conversion_floor_target": 2, "converter_role_count": 1}
+{"round": 276, "event": "conversion_floor_breached", "active_order_id": "order_7", "conversion_floor_target": 2, "converter_role_count": 1}
+{"round": 277, "event": "active_secured", "active_order_id": "order_7", "remaining_items": 4}
+{"round": 277, "event": "preview_enabled", "active_order_id": "order_7", "preview_order_id": "order_8"}

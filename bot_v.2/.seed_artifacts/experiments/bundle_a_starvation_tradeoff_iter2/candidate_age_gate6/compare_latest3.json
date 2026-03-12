@@ -1,0 +1,98 @@
+{
+  "inputs": {
+    "artifact_root": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\bundle_a_starvation_tradeoff_iter2\\candidate_age_gate6",
+    "difficulty": "expert",
+    "limit": 3,
+    "engine_mode": null,
+    "analyzer_enabled": true
+  },
+  "summary": {
+    "runs": 3,
+    "mean_score": 73.0,
+    "median_score": 90.0,
+    "best_score": 96,
+    "mean_orders_completed": 7.333333333333333,
+    "mean_items_delivered": 36.333333333333336,
+    "mean_idle_steps": 1214.0,
+    "mean_d0_busy_ratio": 0.09333333333333334,
+    "mean_spacing_wait": 0.0,
+    "queue_semantics_violations": 0.0,
+    "ring_direction_violations": 0.0,
+    "failure_reason_counts": {},
+    "by_engine_mode": {
+      "decision_engine": {
+        "runs": 3,
+        "mean_score": 73.0,
+        "mean_orders_completed": 7.333333333333333,
+        "mean_items_delivered": 36.333333333333336,
+        "mean_idle_steps": 1214.0,
+        "mean_d0_busy_ratio": 0.09333333333333334
+      }
+    }
+  },
+  "runs": [
+    {
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\bundle_a_starvation_tradeoff_iter2\\candidate_age_gate6\\expert\\run_20260310_013632",
+      "run_name": "run_20260310_013632",
+      "engine_mode": "decision_engine",
+      "score": 90,
+      "items_delivered": 45,
+      "orders_completed": 9,
+      "idle_steps": 1118,
+      "rounds_played": 300,
+      "avg_decision_ms": 9.790904667315772,
+      "d0_busy_ratio": 0.11666666666666667,
+      "items_per_drop_action": 1.2857142857142858,
+      "deliver_bots_avg": 0.0,
+      "rejoin_backlog_avg": 0.0,
+      "branch_to_delivery_rate": 0.0,
+      "wait_due_to_spacing_guard": 0.0,
+      "wait_due_to_collision_block": 186.0,
+      "queue_semantics_violation": 0.0,
+      "ring_direction_violation": 0.0,
+      "failure_reasons": []
+    },
+    {
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\bundle_a_starvation_tradeoff_iter2\\candidate_age_gate6\\expert\\run_20260310_013504",
+      "run_name": "run_20260310_013504",
+      "engine_mode": "decision_engine",
+      "score": 33,
+      "items_delivered": 18,
+      "orders_completed": 3,
+      "idle_steps": 1380,
+      "rounds_played": 300,
+      "avg_decision_ms": 8.904915332968812,
+      "d0_busy_ratio": 0.056666666666666664,
+      "items_per_drop_action": 1.0588235294117647,
+      "deliver_bots_avg": 0.0,
+      "rejoin_backlog_avg": 0.0,
+      "branch_to_delivery_rate": 0.0,
+      "wait_due_to_spacing_guard": 0.0,
+      "wait_due_to_collision_block": 77.0,
+      "queue_semantics_violation": 0.0,
+      "ring_direction_violation": 0.0,
+      "failure_reasons": []
+    },
+    {
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\bundle_a_starvation_tradeoff_iter2\\candidate_age_gate6\\expert\\run_20260310_013339",
+      "run_name": "run_20260310_013339",
+      "engine_mode": "decision_engine",
+      "score": 96,
+      "items_delivered": 46,
+      "orders_completed": 10,
+      "idle_steps": 1144,
+      "rounds_played": 300,
+      "avg_decision_ms": 8.464316666747132,
+      "d0_busy_ratio": 0.10666666666666667,
+      "items_per_drop_action": 1.4375,
+      "deliver_bots_avg": 0.0,
+      "rejoin_backlog_avg": 0.0,
+      "branch_to_delivery_rate": 0.0,
+      "wait_due_to_spacing_guard": 0.0,
+      "wait_due_to_collision_block": 192.0,
+      "queue_semantics_violation": 0.0,
+      "ring_direction_violation": 0.0,
+      "failure_reasons": []
+    }
+  ]
+}

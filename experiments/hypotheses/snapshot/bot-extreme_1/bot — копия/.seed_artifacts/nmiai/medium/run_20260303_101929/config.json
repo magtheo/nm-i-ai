@@ -1,0 +1,30 @@
+{
+  "difficulty": "medium",
+  "run_index": 1,
+  "cooldown_sec": 2.0,
+  "seed": 1,
+  "use_astar": false,
+  "show_max": false,
+  "strategy": {
+    "lookahead_orders": 5,
+    "active_weight": 8.0,
+    "preview_weight": 2.0,
+    "dropoff_completion_threshold": 1.0,
+    "zone_penalty_weight": 0.0,
+    "dist_weight": 1.0,
+    "dropoff_dist_weight": 0.5,
+    "congestion_weight": 2.0,
+    "collision_risk_weight": 2.0,
+    "replan_penalty_weight": 1.0,
+    "urgency_weight": 0.8,
+    "future_depth_decay": 1.0,
+    "future_prefetch_bonus": 0,
+    "future_priority_mode": "depth",
+    "reservation_horizon": 2,
+    "hysteresis_penalty": 0.0,
+    "collision_aggressiveness": "detour",
+    "decision_soft_budget_ms": 20.0,
+    "decision_hard_cap_ms": 50.0,
+    "tie_break_seed": 1
+  }
+}

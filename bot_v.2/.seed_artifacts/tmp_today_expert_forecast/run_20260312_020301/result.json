@@ -1,0 +1,27 @@
+{
+  "run_index": 1,
+  "score": 35,
+  "items_delivered": 20,
+  "orders_completed": 3,
+  "rounds_played": 300,
+  "idle_steps": 564,
+  "collisions_avoided": 171,
+  "avg_decision_ms": 14.162241666708724,
+  "max_score_exact": null,
+  "max_score_upper_bound": 547,
+  "max_score_lower_bound": 457,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\critical_dispatch_overlay_v2_iter23_forecast_live\\expert\\run_20260312_020301",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 5,
+    "completed_orders": 0,
+    "observed_items": 27,
+    "lower_bound_score": 457,
+    "upper_bound_score": 547,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 45
+  }
+}

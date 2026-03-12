@@ -1,0 +1,36 @@
+{
+  "difficulty": "expert",
+  "attempts": [
+    {
+      "config": {
+        "lookahead_k": 4,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.8,
+        "collision_aggressiveness": "wait",
+        "max_concurrent_deliverers": 3,
+        "seed": 0
+      },
+      "score": 12,
+      "items_delivered": 7,
+      "orders_completed": 1,
+      "max_score_exact": null,
+      "max_score_upper_bound": 548,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\.seed_artifacts\\nmiai\\expert\\run_20260304_144455"
+    }
+  ],
+  "best": {
+    "config": {
+      "lookahead_k": 4,
+      "active_weight": 10.0,
+      "preview_weight": 4.0,
+      "dropoff_threshold": 0.8,
+      "collision_aggressiveness": "wait",
+      "max_concurrent_deliverers": 3,
+      "seed": 0
+    },
+    "score": 12,
+    "run_dir": "C:\\Users\\Exempel\\Desktop\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\.seed_artifacts\\nmiai\\expert\\run_20260304_144455"
+  },
+  "best_config_path": "C:\\Users\\Exempel\\Desktop\\bot \u2014 \u043a\u043e\u043f\u0438\u044f\\app\\integrations\\nmiai_grocery_bot\\best_configs\\expert.json"
+}

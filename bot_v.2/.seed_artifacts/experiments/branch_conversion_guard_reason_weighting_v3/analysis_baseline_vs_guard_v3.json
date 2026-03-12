@@ -1,0 +1,521 @@
+{
+  "baseline_88": {
+    "root": ".seed_artifacts\\experiments\\bundle_a_soft_spatial_iter4\\candidate_soft_penalty_v3\\expert",
+    "summary": {
+      "runs": 3,
+      "score_median": 88,
+      "orders_completed_median": 9,
+      "items_delivered_median": 43,
+      "first_completion_round_median": 54,
+      "second_completion_round_median": 91,
+      "third_completion_round_median": 118,
+      "wait_due_to_no_assignment_median": 873,
+      "wait_due_to_collision_block_median": 167,
+      "items_per_drop_action_median": 1.3870967741935485,
+      "drop_to_pick_ratio_median": 0.543859649122807,
+      "emergency_active_rounds_median": 0.0,
+      "emergency_triggered_rounds_median": 0.0,
+      "combo_warn_rounds_median": 0.0,
+      "coupling_warn_rounds_median": 0.0,
+      "trigger_by_combo_rounds_median": 0.0,
+      "trigger_by_coupling_rounds_median": 0.0,
+      "first_emergency_trigger_round_median": null,
+      "max_trigger_count_median": 0.0,
+      "reason1_coupling_trigger_events_total": 0,
+      "reason2_combo_trigger_events_total": 0,
+      "reason3_delivery_trigger_events_total": 0
+    },
+    "runs": [
+      {
+        "run": "run_20260310_022113",
+        "score": 88,
+        "orders_completed": 9,
+        "items_delivered": 43,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "action_counts": {
+          "wait": 1040,
+          "pick_up": 57,
+          "drop_off": 31,
+          "move": 1872
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 873,
+          "wait_due_to_collision_block": 167,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 214,
+          "wait_due_to_collision_block": 72,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_coupling_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 0.0,
+          "conversion_guard_commitment_stagnation": 0.0,
+          "conversion_guard_throughput_lane_floor_breach": 0.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.0
+        },
+        "first_emergency_trigger_round": null,
+        "reason_counts": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807
+      },
+      {
+        "run": "run_20260310_022237",
+        "score": 88,
+        "orders_completed": 9,
+        "items_delivered": 43,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "action_counts": {
+          "wait": 1040,
+          "pick_up": 57,
+          "drop_off": 31,
+          "move": 1872
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 873,
+          "wait_due_to_collision_block": 167,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 214,
+          "wait_due_to_collision_block": 72,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_coupling_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 0.0,
+          "conversion_guard_commitment_stagnation": 0.0,
+          "conversion_guard_throughput_lane_floor_breach": 0.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.0
+        },
+        "first_emergency_trigger_round": null,
+        "reason_counts": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807
+      },
+      {
+        "run": "run_20260310_022403",
+        "score": 88,
+        "orders_completed": 9,
+        "items_delivered": 43,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "action_counts": {
+          "wait": 1040,
+          "pick_up": 57,
+          "drop_off": 31,
+          "move": 1872
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 873,
+          "wait_due_to_collision_block": 167,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 214,
+          "wait_due_to_collision_block": 72,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_coupling_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 0.0,
+          "conversion_guard_commitment_stagnation": 0.0,
+          "conversion_guard_throughput_lane_floor_breach": 0.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.0
+        },
+        "first_emergency_trigger_round": null,
+        "reason_counts": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807
+      }
+    ]
+  },
+  "guard_v2": {
+    "root": ".seed_artifacts\\experiments\\branch_conversion_guard_trigger_tuning_v2\\batch\\expert",
+    "summary": {
+      "runs": 3,
+      "score_median": 29,
+      "orders_completed_median": 3,
+      "items_delivered_median": 14,
+      "first_completion_round_median": 56,
+      "second_completion_round_median": 112,
+      "third_completion_round_median": 201.5,
+      "wait_due_to_no_assignment_median": 584,
+      "wait_due_to_collision_block_median": 86,
+      "items_per_drop_action_median": 0.7647058823529411,
+      "drop_to_pick_ratio_median": 0.2076923076923077,
+      "emergency_active_rounds_median": 16.0,
+      "emergency_triggered_rounds_median": 2.0,
+      "combo_warn_rounds_median": 3.0,
+      "coupling_warn_rounds_median": 0.0,
+      "trigger_by_combo_rounds_median": 0.0,
+      "trigger_by_coupling_rounds_median": 18.0,
+      "first_emergency_trigger_round_median": 110.0,
+      "max_trigger_count_median": 2.0,
+      "reason1_coupling_trigger_events_total": 4,
+      "reason2_combo_trigger_events_total": 1,
+      "reason3_delivery_trigger_events_total": 0
+    },
+    "runs": [
+      {
+        "run": "run_20260310_164106",
+        "score": 23,
+        "orders_completed": 2,
+        "items_delivered": 13,
+        "first_completion_round": 56,
+        "second_completion_round": 112,
+        "third_completion_round": null,
+        "action_counts": {
+          "wait": 670,
+          "pick_up": 100,
+          "drop_off": 17,
+          "move": 2213
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 584,
+          "wait_due_to_collision_block": 86,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 231,
+          "wait_due_to_collision_block": 12,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 16.0,
+          "conversion_guard_emergency_triggered": 2.0,
+          "conversion_guard_combo_warn_active": 3.0,
+          "conversion_guard_coupling_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 18.0,
+          "conversion_guard_pickup_drop_coupling_break": 29.0,
+          "conversion_guard_commitment_stagnation": 27.0,
+          "conversion_guard_throughput_lane_floor_breach": 106.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 2.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.75
+        },
+        "first_emergency_trigger_round": 99,
+        "reason_counts": {
+          "1": 2,
+          "2": 0,
+          "3": 0
+        },
+        "items_per_drop_action": 0.7647058823529411,
+        "drop_to_pick_ratio": 0.17
+      },
+      {
+        "run": "run_20260310_164243",
+        "score": 87,
+        "orders_completed": 9,
+        "items_delivered": 42,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "action_counts": {
+          "wait": 1031,
+          "pick_up": 58,
+          "drop_off": 32,
+          "move": 1879
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 873,
+          "wait_due_to_collision_block": 158,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 214,
+          "wait_due_to_collision_block": 63,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_combo_warn_active": 0.0,
+          "conversion_guard_coupling_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 6.0,
+          "conversion_guard_pickup_drop_coupling_break": 13.0,
+          "conversion_guard_commitment_stagnation": 62.0,
+          "conversion_guard_throughput_lane_floor_breach": 117.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.79
+        },
+        "first_emergency_trigger_round": null,
+        "reason_counts": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "items_per_drop_action": 1.3125,
+        "drop_to_pick_ratio": 0.5517241379310345
+      },
+      {
+        "run": "run_20260310_164424",
+        "score": 29,
+        "orders_completed": 3,
+        "items_delivered": 14,
+        "first_completion_round": 65,
+        "second_completion_round": 138,
+        "third_completion_round": 285,
+        "action_counts": {
+          "wait": 513,
+          "pick_up": 130,
+          "drop_off": 27,
+          "move": 2330
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 467,
+          "wait_due_to_collision_block": 46,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 106,
+          "wait_due_to_collision_block": 8,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 24.0,
+          "conversion_guard_emergency_triggered": 3.0,
+          "conversion_guard_combo_warn_active": 18.0,
+          "conversion_guard_coupling_warn_active": 0.0,
+          "conversion_guard_trigger_by_combo": 10.0,
+          "conversion_guard_trigger_by_coupling": 31.0,
+          "conversion_guard_pickup_drop_coupling_break": 56.0,
+          "conversion_guard_commitment_stagnation": 161.0,
+          "conversion_guard_throughput_lane_floor_breach": 87.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 3.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.79
+        },
+        "first_emergency_trigger_round": 121,
+        "reason_counts": {
+          "1": 2,
+          "2": 1,
+          "3": 0
+        },
+        "items_per_drop_action": 0.5185185185185185,
+        "drop_to_pick_ratio": 0.2076923076923077
+      }
+    ]
+  },
+  "guard_v3": {
+    "root": ".seed_artifacts\\experiments\\branch_conversion_guard_reason_weighting_v3\\batch\\expert",
+    "summary": {
+      "runs": 3,
+      "score_median": 23,
+      "orders_completed_median": 2,
+      "items_delivered_median": 13,
+      "first_completion_round_median": 56,
+      "second_completion_round_median": 112,
+      "third_completion_round_median": 123,
+      "wait_due_to_no_assignment_median": 669,
+      "wait_due_to_collision_block_median": 87,
+      "items_per_drop_action_median": 0.7647058823529411,
+      "drop_to_pick_ratio_median": 0.3627450980392157,
+      "emergency_active_rounds_median": 8.0,
+      "emergency_triggered_rounds_median": 1.0,
+      "combo_warn_rounds_median": 8.0,
+      "coupling_warn_rounds_median": 18.0,
+      "trigger_by_combo_rounds_median": 1.0,
+      "trigger_by_coupling_rounds_median": 0.0,
+      "first_emergency_trigger_round_median": 148.0,
+      "max_trigger_count_median": 1.0,
+      "reason1_coupling_trigger_events_total": 0,
+      "reason2_combo_trigger_events_total": 2,
+      "reason3_delivery_trigger_events_total": 0
+    },
+    "runs": [
+      {
+        "run": "run_20260310_171004",
+        "score": 23,
+        "orders_completed": 2,
+        "items_delivered": 13,
+        "first_completion_round": 71,
+        "second_completion_round": 137,
+        "third_completion_round": null,
+        "action_counts": {
+          "wait": 539,
+          "pick_up": 102,
+          "drop_off": 37,
+          "move": 2322
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 481,
+          "wait_due_to_collision_block": 58,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 56,
+          "wait_due_to_collision_block": 1,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 8.0,
+          "conversion_guard_emergency_triggered": 1.0,
+          "conversion_guard_combo_warn_active": 22.0,
+          "conversion_guard_coupling_warn_active": 28.0,
+          "conversion_guard_trigger_by_combo": 14.0,
+          "conversion_guard_trigger_by_coupling": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 45.0,
+          "conversion_guard_commitment_stagnation": 152.0,
+          "conversion_guard_throughput_lane_floor_breach": 118.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 1.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.74
+        },
+        "first_emergency_trigger_round": 144,
+        "reason_counts": {
+          "1": 0,
+          "2": 1,
+          "3": 0
+        },
+        "items_per_drop_action": 0.35135135135135137,
+        "drop_to_pick_ratio": 0.3627450980392157
+      },
+      {
+        "run": "run_20260310_171215",
+        "score": 23,
+        "orders_completed": 2,
+        "items_delivered": 13,
+        "first_completion_round": 56,
+        "second_completion_round": 112,
+        "third_completion_round": null,
+        "action_counts": {
+          "wait": 795,
+          "pick_up": 98,
+          "drop_off": 17,
+          "move": 2090
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 708,
+          "wait_due_to_collision_block": 87,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 360,
+          "wait_due_to_collision_block": 7,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 0.0,
+          "conversion_guard_emergency_triggered": 0.0,
+          "conversion_guard_combo_warn_active": 3.0,
+          "conversion_guard_coupling_warn_active": 18.0,
+          "conversion_guard_trigger_by_combo": 0.0,
+          "conversion_guard_trigger_by_coupling": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 29.0,
+          "conversion_guard_commitment_stagnation": 27.0,
+          "conversion_guard_throughput_lane_floor_breach": 106.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 0.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.75
+        },
+        "first_emergency_trigger_round": null,
+        "reason_counts": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "items_per_drop_action": 0.7647058823529411,
+        "drop_to_pick_ratio": 0.17346938775510204
+      },
+      {
+        "run": "run_20260310_171356",
+        "score": 54,
+        "orders_completed": 5,
+        "items_delivered": 29,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 123,
+        "action_counts": {
+          "wait": 813,
+          "pick_up": 67,
+          "drop_off": 36,
+          "move": 2084
+        },
+        "waits": {
+          "wait_due_to_no_assignment": 669,
+          "wait_due_to_collision_block": 144,
+          "wait_due_to_no_target": 0
+        },
+        "waits_late": {
+          "wait_due_to_no_assignment": 125,
+          "wait_due_to_collision_block": 44,
+          "wait_due_to_no_target": 0
+        },
+        "guard_sums": {
+          "conversion_guard_emergency_active": 8.0,
+          "conversion_guard_emergency_triggered": 1.0,
+          "conversion_guard_combo_warn_active": 8.0,
+          "conversion_guard_coupling_warn_active": 11.0,
+          "conversion_guard_trigger_by_combo": 1.0,
+          "conversion_guard_trigger_by_coupling": 0.0,
+          "conversion_guard_pickup_drop_coupling_break": 19.0,
+          "conversion_guard_commitment_stagnation": 69.0,
+          "conversion_guard_throughput_lane_floor_breach": 128.0
+        },
+        "guard_max": {
+          "conversion_guard_emergency_trigger_count": 1.0,
+          "conversion_guard_wait_no_assignment_ratio_window": 0.78
+        },
+        "first_emergency_trigger_round": 152,
+        "reason_counts": {
+          "1": 0,
+          "2": 1,
+          "3": 0
+        },
+        "items_per_drop_action": 0.8055555555555556,
+        "drop_to_pick_ratio": 0.5373134328358209
+      }
+    ]
+  }
+}

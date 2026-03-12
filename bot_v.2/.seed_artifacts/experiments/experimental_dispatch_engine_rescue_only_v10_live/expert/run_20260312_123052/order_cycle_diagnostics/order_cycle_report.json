@@ -1,0 +1,30 @@
+{
+  "artifact_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\experimental_dispatch_engine_rescue_only_v10_live\\expert\\run_20260312_123052",
+  "result": {
+    "score": 56,
+    "orders_completed": 5,
+    "items_delivered": 31,
+    "rounds_played": 300
+  },
+  "diagnostics": {
+    "rounds": 300,
+    "tail_open_rounds": 193,
+    "secured_rounds": 257,
+    "coupling_break_rounds": 13,
+    "commitment_stagnation_rounds": 148,
+    "throughput_lane_breach_rounds": 297,
+    "delivery_lane_guarantee_breach_rounds": 268,
+    "wait_totals": {
+      "no_target": 0,
+      "no_assignment": 909,
+      "collision": 185,
+      "queue": 0
+    },
+    "completion_rounds": [
+      71,
+      105,
+      164
+    ]
+  },
+  "order_trace_rounds": 300
+}

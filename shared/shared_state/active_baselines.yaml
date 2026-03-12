@@ -1,0 +1,21 @@
+baselines:
+  easy:
+    config: bot — копия/best/easy/current.json
+    status: pending
+  medium:
+    config: bot — копия/best/medium/current.json
+    status: pending
+  hard:
+    config: bot — копия/best/hard/current.json
+    status: pending
+  expert:
+    config: bot — копия/best/expert/current.json
+    status: bootstrap_only
+    experiment_id: expert_baseline_20260307
+    metadata: bot — копия/best/expert/metadata.yaml
+    source_config: bot — копия/configs/expert_baseline_current.json
+    promoted_at: 2026-03-07
+    provenance_note: "Stable expert 82 recovery failed; current expert baseline is a defaults-derived bootstrap reference pending run-backed replacement."
+  nightmare:
+    config: bot — копия/best/nightmare/current.json
+    status: pending

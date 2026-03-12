@@ -1,0 +1,29 @@
+{
+  "artifact_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\coordination_layer_v1_secured_fix_batch\\expert\\run_20260311_220229",
+  "result": {
+    "score": 24,
+    "orders_completed": 2,
+    "items_delivered": 14,
+    "rounds_played": 300
+  },
+  "diagnostics": {
+    "rounds": 300,
+    "tail_open_rounds": 189,
+    "secured_rounds": 114,
+    "coupling_break_rounds": 46,
+    "commitment_stagnation_rounds": 149,
+    "throughput_lane_breach_rounds": 231,
+    "delivery_lane_guarantee_breach_rounds": 138,
+    "wait_totals": {
+      "no_target": 0,
+      "no_assignment": 577,
+      "collision": 114,
+      "queue": 0
+    },
+    "completion_rounds": [
+      100,
+      188
+    ]
+  },
+  "order_trace_rounds": 300
+}

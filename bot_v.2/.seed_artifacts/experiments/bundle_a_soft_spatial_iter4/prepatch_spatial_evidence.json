@@ -1,0 +1,191 @@
+{
+  "fresh_baseline": {
+    "runs": [
+      {
+        "run": "run_20260310_020721",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "fb_assign": 269,
+        "fb_overlap_m_lt5": 27,
+        "fb_overlap_same_row_lt5": 19,
+        "fb_near_committed": 3
+      },
+      {
+        "run": "run_20260310_020846",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 214.0,
+        "coll": 167.0,
+        "fb_assign": 269,
+        "fb_overlap_m_lt5": 27,
+        "fb_overlap_same_row_lt5": 19,
+        "fb_near_committed": 3
+      },
+      {
+        "run": "run_20260310_021011",
+        "score": 34,
+        "orders": 3,
+        "items": 19,
+        "first": 54,
+        "second": 91,
+        "third": 122,
+        "late_noa": 720.0,
+        "coll": 71.0,
+        "fb_assign": 240,
+        "fb_overlap_m_lt5": 0,
+        "fb_overlap_same_row_lt5": 0,
+        "fb_near_committed": 0
+      }
+    ],
+    "median": {
+      "score": 88,
+      "orders": 9,
+      "items": 43,
+      "first": 54,
+      "second": 91,
+      "third": 118,
+      "late_noa": 214.0,
+      "coll": 167.0,
+      "fb_assign": 269,
+      "fb_overlap_m_lt5": 27,
+      "fb_overlap_same_row_lt5": 19,
+      "fb_near_committed": 3
+    }
+  },
+  "rejected_hard_row_gap": {
+    "runs": [
+      {
+        "run": "run_20260310_015726",
+        "score": 54,
+        "orders": 5,
+        "items": 29,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 17.0,
+        "coll": 94.0,
+        "fb_assign": 397,
+        "fb_overlap_m_lt5": 34,
+        "fb_overlap_same_row_lt5": 0,
+        "fb_near_committed": 1
+      },
+      {
+        "run": "run_20260310_015854",
+        "score": 78,
+        "orders": 8,
+        "items": 38,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 164.0,
+        "coll": 128.0,
+        "fb_assign": 261,
+        "fb_overlap_m_lt5": 5,
+        "fb_overlap_same_row_lt5": 0,
+        "fb_near_committed": 6
+      },
+      {
+        "run": "run_20260310_020033",
+        "score": 87,
+        "orders": 9,
+        "items": 42,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 262.0,
+        "coll": 140.0,
+        "fb_assign": 247,
+        "fb_overlap_m_lt5": 7,
+        "fb_overlap_same_row_lt5": 0,
+        "fb_near_committed": 4
+      }
+    ],
+    "median": {
+      "score": 78,
+      "orders": 8,
+      "items": 38,
+      "first": 54,
+      "second": 91,
+      "third": 118,
+      "late_noa": 164.0,
+      "coll": 128.0,
+      "fb_assign": 261,
+      "fb_overlap_m_lt5": 7,
+      "fb_overlap_same_row_lt5": 0,
+      "fb_near_committed": 4
+    }
+  },
+  "rejected_hard_manhattan_gap": {
+    "runs": [
+      {
+        "run": "run_20260310_015253",
+        "score": 23,
+        "orders": 2,
+        "items": 13,
+        "first": 56,
+        "second": 113,
+        "third": null,
+        "late_noa": 86.0,
+        "coll": 50.0,
+        "fb_assign": 124,
+        "fb_overlap_m_lt5": 0,
+        "fb_overlap_same_row_lt5": 0,
+        "fb_near_committed": 0
+      },
+      {
+        "run": "run_20260310_015418",
+        "score": 79,
+        "orders": 8,
+        "items": 39,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 202.0,
+        "coll": 117.0,
+        "fb_assign": 290,
+        "fb_overlap_m_lt5": 0,
+        "fb_overlap_same_row_lt5": 0,
+        "fb_near_committed": 0
+      },
+      {
+        "run": "run_20260310_015551",
+        "score": 54,
+        "orders": 5,
+        "items": 29,
+        "first": 54,
+        "second": 91,
+        "third": 118,
+        "late_noa": 165.0,
+        "coll": 135.0,
+        "fb_assign": 153,
+        "fb_overlap_m_lt5": 0,
+        "fb_overlap_same_row_lt5": 0,
+        "fb_near_committed": 2
+      }
+    ],
+    "median": {
+      "score": 54,
+      "orders": 5,
+      "items": 29,
+      "first": 54,
+      "second": 91,
+      "third": 118.0,
+      "late_noa": 165.0,
+      "coll": 117.0,
+      "fb_assign": 153,
+      "fb_overlap_m_lt5": 0,
+      "fb_overlap_same_row_lt5": 0,
+      "fb_near_committed": 0
+    }
+  }
+}

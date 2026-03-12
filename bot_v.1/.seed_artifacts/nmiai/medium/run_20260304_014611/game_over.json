@@ -1,0 +1,9 @@
+{
+  "type": "game_over",
+  "score": 48,
+  "items": null,
+  "orders": null,
+  "items_delivered": 23,
+  "orders_completed": 5,
+  "rounds_used": 300
+}

@@ -1,0 +1,27 @@
+{
+  "run_index": 1,
+  "score": 81,
+  "items_delivered": 41,
+  "orders_completed": 8,
+  "rounds_played": 300,
+  "idle_steps": 1074,
+  "collisions_avoided": 201,
+  "avg_decision_ms": 8.479468999576056,
+  "max_score_exact": null,
+  "max_score_upper_bound": 536,
+  "max_score_lower_bound": 456,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\bundle_a_soft_spatial_iter4\\candidate_soft_penalty_v4_conditional\\expert\\run_20260310_024718",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 10,
+    "completed_orders": 0,
+    "observed_items": 46,
+    "lower_bound_score": 456,
+    "upper_bound_score": 536,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 40
+  }
+}

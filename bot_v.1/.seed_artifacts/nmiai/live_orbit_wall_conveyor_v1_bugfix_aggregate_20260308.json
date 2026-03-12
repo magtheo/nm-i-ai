@@ -1,0 +1,50 @@
+{
+  "broken_conveyor_10runs": {
+    "runs": 10,
+    "score_mean": 0.5,
+    "score_min": 0,
+    "score_max": 2,
+    "items_mean": 0.5,
+    "orders_mean": 0.0,
+    "idle_mean": 570.2,
+    "scores": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      1,
+      0
+    ]
+  },
+  "bugfix2_conveyor_3runs": {
+    "runs": 3,
+    "score_mean": 16.0,
+    "score_min": 10,
+    "score_max": 28,
+    "items_mean": 7.666666666666667,
+    "orders_mean": 1.6666666666666667,
+    "idle_mean": 734.6666666666666,
+    "scores": [
+      10,
+      10,
+      28
+    ]
+  },
+  "bugfix3_conveyor_2runs": {
+    "runs": 2,
+    "score_mean": 12.0,
+    "score_min": 12,
+    "score_max": 12,
+    "items_mean": 7.0,
+    "orders_mean": 1.0,
+    "idle_mean": 673.5,
+    "scores": [
+      12,
+      12
+    ]
+  }
+}

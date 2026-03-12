@@ -1,0 +1,178 @@
+{
+  "forecast": "live",
+  "seeds": [
+    7004,
+    7005
+  ],
+  "results": [
+    {
+      "file": "artifacts/expert_sim_best_params.json",
+      "scores": [
+        79,
+        79
+      ],
+      "min_score": 79,
+      "mean_score": 79,
+      "max_score": 79,
+      "mean_orders": 7,
+      "mean_items": 44,
+      "mean_p95_ms": 76.84475000132807
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c07_endgame_push.json",
+      "scores": [
+        68,
+        68
+      ],
+      "min_score": 68,
+      "mean_score": 68,
+      "max_score": 68,
+      "mean_orders": 6,
+      "mean_items": 38,
+      "mean_p95_ms": 76.00890001049265
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c03_detour_aggressive_queue.json",
+      "scores": [
+        67,
+        67
+      ],
+      "min_score": 67,
+      "mean_score": 67,
+      "max_score": 67,
+      "mean_orders": 6,
+      "mean_items": 37,
+      "mean_p95_ms": 76.93484998890199
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c06_blend_141_plus.json",
+      "scores": [
+        43,
+        43
+      ],
+      "min_score": 43,
+      "mean_score": 43,
+      "max_score": 43,
+      "mean_orders": 4,
+      "mean_items": 23,
+      "mean_p95_ms": 37.492900009965524
+    },
+    {
+      "file": "_tmp_oracle_177_params.json",
+      "scores": [
+        25,
+        25
+      ],
+      "min_score": 25,
+      "mean_score": 25,
+      "max_score": 25,
+      "mean_orders": 2,
+      "mean_items": 15,
+      "mean_p95_ms": 50.88019999675453
+    },
+    {
+      "file": "_tmp_oracle_179_params.json",
+      "scores": [
+        25,
+        25
+      ],
+      "min_score": 25,
+      "mean_score": 25,
+      "max_score": 25,
+      "mean_orders": 2,
+      "mean_items": 15,
+      "mean_p95_ms": 50.45034998329356
+    },
+    {
+      "file": "_tmp_oracle_162_params.json",
+      "scores": [
+        23,
+        23
+      ],
+      "min_score": 23,
+      "mean_score": 23,
+      "max_score": 23,
+      "mean_orders": 2,
+      "mean_items": 13,
+      "mean_p95_ms": 50.53309997310862
+    },
+    {
+      "file": "app/integrations/nmiai_grocery_bot/best_configs/expert.json",
+      "scores": [
+        22,
+        22
+      ],
+      "min_score": 22,
+      "mean_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.5295499979984
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c00_base_latest_best.json",
+      "scores": [
+        22,
+        22
+      ],
+      "min_score": 22,
+      "mean_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.5579500105232
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c08_anti_stall.json",
+      "scores": [
+        22,
+        22
+      ],
+      "min_score": 22,
+      "mean_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.355849985033274
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c10_recovery_heavy.json",
+      "scores": [
+        22,
+        22
+      ],
+      "min_score": 22,
+      "mean_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.261500023305416
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c11_allow_same_false.json",
+      "scores": [
+        22,
+        22
+      ],
+      "min_score": 22,
+      "mean_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 37.186300032772124
+    },
+    {
+      "file": "artifacts/expert_sim_latest_best_params.json",
+      "scores": [
+        22,
+        22
+      ],
+      "min_score": 22,
+      "mean_score": 22,
+      "max_score": 22,
+      "mean_orders": 2,
+      "mean_items": 12,
+      "mean_p95_ms": 36.909749993355945
+    }
+  ]
+}

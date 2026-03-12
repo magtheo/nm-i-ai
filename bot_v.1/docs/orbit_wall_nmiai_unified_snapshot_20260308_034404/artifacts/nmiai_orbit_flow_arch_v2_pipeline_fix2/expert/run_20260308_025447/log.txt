@@ -1,0 +1,18 @@
+run_index=1
+difficulty=expert
+map_seed=0
+ws_url=wss://game.ainm.no/ws?token=eyJh...PX4M
+order_forecast_source=none
+orbit_flow_hypothesis=False
+orbit_wall=True
+engine_mode=orbit_wall
+orbit_shelf_ids=(72, 73, 112, 113)
+score=22
+items_delivered=12
+orders_completed=2
+rounds_played=300
+idle_steps=1749
+collisions_avoided=374
+avg_decision_ms=4.409
+logger_path=.seed_artifacts\nmiai_orbit_flow_arch_v2_pipeline_fix2\expert\run_20260308_025447\round_logs\game_20260308_025447_expert.jsonl
+decision_trace_path=.seed_artifacts\nmiai_orbit_flow_arch_v2_pipeline_fix2\expert\run_20260308_025447\decision_trace.jsonl

@@ -1,0 +1,24 @@
+{
+  "live_orbit_wall_tuned_v3_20260308": {
+    "runs": 8,
+    "mean_score": 16.0,
+    "max_score": 30,
+    "mean_orders": 1.5,
+    "mean_drop": 11.75,
+    "mean_spacing": 326.75,
+    "mean_rejoin_denials": 118.0,
+    "queue_violations_total": 0.0,
+    "best_run": "run_20260308_225125"
+  },
+  "live_orbit_wall_tuned_v3_cross_20260308": {
+    "runs": 5,
+    "mean_score": 19.4,
+    "max_score": 29,
+    "mean_orders": 1.8,
+    "mean_drop": 13.0,
+    "mean_spacing": 300.8,
+    "mean_rejoin_denials": 85.0,
+    "queue_violations_total": 0.0,
+    "best_run": "run_20260308_230429"
+  }
+}

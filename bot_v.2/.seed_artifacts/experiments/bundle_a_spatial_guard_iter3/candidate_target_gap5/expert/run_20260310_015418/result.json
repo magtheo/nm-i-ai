@@ -1,0 +1,27 @@
+{
+  "run_index": 2,
+  "score": 79,
+  "items_delivered": 39,
+  "orders_completed": 8,
+  "rounds_played": 300,
+  "idle_steps": 978,
+  "collisions_avoided": 176,
+  "avg_decision_ms": 9.63392733319779,
+  "max_score_exact": null,
+  "max_score_upper_bound": 536,
+  "max_score_lower_bound": 456,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\bundle_a_spatial_guard_iter3\\candidate_target_gap5\\expert\\run_20260310_015418",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 10,
+    "completed_orders": 0,
+    "observed_items": 46,
+    "lower_bound_score": 456,
+    "upper_bound_score": 536,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 40
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "actions.schema.json",
+  "title": "NMiAI Grocery Bot — actions message",
+  "description": "Client-to-server message sent each round with one action per bot. Must respond within 2 seconds.",
+  "type": "object",
+  "required": ["actions"],
+  "properties": {
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["bot", "action"],
+        "properties": {
+          "bot": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Bot ID matching a bot in game_state.bots"
+          },
+          "action": {
+            "type": "string",
+            "enum": ["move_up", "move_down", "move_left", "move_right", "pick_up", "drop_off", "wait"],
+            "description": "Action to perform. move_*: move one cell in direction (y-1=up, y+1=down, x-1=left, x+1=right). pick_up: pick item from adjacent shelf (requires item_id). drop_off: deliver inventory at drop-off cell. wait: do nothing."
+          },
+          "item_id": {
+            "type": "string",
+            "pattern": "^item_\\d+$",
+            "description": "Required only for pick_up action. Must match an item on the map adjacent (Manhattan distance 1) to the bot."
+          }
+        },
+        "additionalProperties": false,
+        "if": {
+          "properties": { "action": { "const": "pick_up" } }
+        },
+        "then": {
+          "required": ["bot", "action", "item_id"]
+        }
+      },
+      "minItems": 1,
+      "description": "One action per bot. Must include all bots. Actions resolve in bot ID order (bot 0 first)."
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "actions": [
+        {"bot": 0, "action": "move_up"}
+      ]
+    },
+    {
+      "actions": [
+        {"bot": 0, "action": "move_left"},
+        {"bot": 1, "action": "pick_up", "item_id": "item_3"},
+        {"bot": 2, "action": "drop_off"}
+      ]
+    },
+    {
+      "actions": [
+        {"bot": 0, "action": "wait"},
+        {"bot": 1, "action": "move_right"},
+        {"bot": 2, "action": "move_down"},
+        {"bot": 3, "action": "pick_up", "item_id": "item_12"},
+        {"bot": 4, "action": "drop_off"}
+      ]
+    }
+  ]
+}

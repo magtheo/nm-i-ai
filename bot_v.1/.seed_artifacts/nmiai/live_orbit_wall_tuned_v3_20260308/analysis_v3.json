@@ -1,0 +1,159 @@
+[
+  {
+    "run": "run_20260308_225125",
+    "score": 30,
+    "items": 15,
+    "orders": 3,
+    "idle": 565,
+    "branch_rate": 1.0,
+    "drop_actions": 23.0,
+    "deliver_avg": 1.07,
+    "spacing_wait": 220.0,
+    "collision_wait": 161.0,
+    "no_assign_wait": 12.0,
+    "rejoin_denials": 12.0,
+    "rejoin_backlog_avg": 1.18,
+    "queue_violation": 0.0,
+    "failures": [
+      "rejoin_admission_pressure",
+      "spacing_guard_dominant_wait"
+    ]
+  },
+  {
+    "run": "run_20260308_225803",
+    "score": 29,
+    "items": 14,
+    "orders": 3,
+    "idle": 696,
+    "branch_rate": 1.0,
+    "drop_actions": 15.0,
+    "deliver_avg": 1.0433333333333332,
+    "spacing_wait": 298.0,
+    "collision_wait": 175.0,
+    "no_assign_wait": 80.0,
+    "rejoin_denials": 80.0,
+    "rejoin_backlog_avg": 1.4433333333333334,
+    "queue_violation": 0.0,
+    "failures": [
+      "rejoin_admission_pressure",
+      "spacing_guard_dominant_wait"
+    ]
+  },
+  {
+    "run": "run_20260308_225310",
+    "score": 12,
+    "items": 7,
+    "orders": 1,
+    "idle": 739,
+    "branch_rate": 1.0,
+    "drop_actions": 12.0,
+    "deliver_avg": 0.6033333333333334,
+    "spacing_wait": 359.0,
+    "collision_wait": 146.0,
+    "no_assign_wait": 7.0,
+    "rejoin_denials": 8.0,
+    "rejoin_backlog_avg": 0.5266666666666666,
+    "queue_violation": 0.0,
+    "failures": [
+      "spacing_guard_dominant_wait"
+    ]
+  },
+  {
+    "run": "run_20260308_225942",
+    "score": 12,
+    "items": 7,
+    "orders": 1,
+    "idle": 855,
+    "branch_rate": 1.0,
+    "drop_actions": 12.0,
+    "deliver_avg": 0.6033333333333334,
+    "spacing_wait": 445.0,
+    "collision_wait": 146.0,
+    "no_assign_wait": 7.0,
+    "rejoin_denials": 8.0,
+    "rejoin_backlog_avg": 0.5266666666666666,
+    "queue_violation": 0.0,
+    "failures": [
+      "spacing_guard_dominant_wait"
+    ]
+  },
+  {
+    "run": "run_20260308_224951",
+    "score": 12,
+    "items": 7,
+    "orders": 1,
+    "idle": 937,
+    "branch_rate": 1.0,
+    "drop_actions": 6.0,
+    "deliver_avg": 0.52,
+    "spacing_wait": 351.0,
+    "collision_wait": 201.0,
+    "no_assign_wait": 261.0,
+    "rejoin_denials": 263.0,
+    "rejoin_backlog_avg": 2.8733333333333335,
+    "queue_violation": 0.0,
+    "failures": [
+      "rejoin_admission_pressure",
+      "spacing_guard_dominant_wait"
+    ]
+  },
+  {
+    "run": "run_20260308_225454",
+    "score": 12,
+    "items": 7,
+    "orders": 1,
+    "idle": 968,
+    "branch_rate": 1.0,
+    "drop_actions": 6.0,
+    "deliver_avg": 0.52,
+    "spacing_wait": 373.0,
+    "collision_wait": 204.0,
+    "no_assign_wait": 283.0,
+    "rejoin_denials": 283.0,
+    "rejoin_backlog_avg": 2.9066666666666667,
+    "queue_violation": 0.0,
+    "failures": [
+      "rejoin_admission_pressure",
+      "spacing_guard_dominant_wait"
+    ]
+  },
+  {
+    "run": "run_20260308_224828",
+    "score": 12,
+    "items": 7,
+    "orders": 1,
+    "idle": 968,
+    "branch_rate": 1.0,
+    "drop_actions": 6.0,
+    "deliver_avg": 0.52,
+    "spacing_wait": 373.0,
+    "collision_wait": 204.0,
+    "no_assign_wait": 283.0,
+    "rejoin_denials": 283.0,
+    "rejoin_backlog_avg": 2.9066666666666667,
+    "queue_violation": 0.0,
+    "failures": [
+      "rejoin_admission_pressure",
+      "spacing_guard_dominant_wait"
+    ]
+  },
+  {
+    "run": "run_20260308_225618",
+    "score": 9,
+    "items": 4,
+    "orders": 1,
+    "idle": 365,
+    "branch_rate": 1.0,
+    "drop_actions": 14.0,
+    "deliver_avg": 1.2033333333333334,
+    "spacing_wait": 195.0,
+    "collision_wait": 142.0,
+    "no_assign_wait": 0.0,
+    "rejoin_denials": 7.0,
+    "rejoin_backlog_avg": 1.0233333333333334,
+    "queue_violation": 0.0,
+    "failures": [
+      "spacing_guard_dominant_wait"
+    ]
+  }
+]

@@ -1,0 +1,458 @@
+{
+  "generated_at": "2026-03-09T01:39:12",
+  "dataset_source": "mine:.seed_artifacts/nmiai/live_screen_expert_orbit_collect_20260307/expert",
+  "train_seeds": [
+    9100,
+    9101,
+    9102,
+    9103,
+    9104,
+    9105
+  ],
+  "holdout_seeds": [
+    9200,
+    9201,
+    9202,
+    9203,
+    9204,
+    9205
+  ],
+  "gate_a": {
+    "known_orders_mode": "weighted",
+    "forecast_mode": "mined",
+    "shuffle": 0.2
+  },
+  "gate_b": {
+    "known_orders_mode": "latest",
+    "forecast_mode": "live",
+    "shuffle": 0.45
+  },
+  "candidate_count": 12,
+  "best": {
+    "params": {
+      "reservation_horizon": 2,
+      "migration_stage": 5,
+      "delivery_quota_min": 1,
+      "delivery_quota_max": 3,
+      "forecast_buffer_cap": 2,
+      "rejoin_slot_headroom": 2
+    },
+    "coarse": {
+      "objective": 320.16,
+      "gate_a": {
+        "runs": 6.0,
+        "mean_score": 3.0,
+        "min_score": 3.0,
+        "mean_items": 3.0,
+        "mean_orders": 0.0,
+        "mean_idle": 343.0,
+        "mean_spacing_wait": 30.0,
+        "mean_collision_wait": 43.0,
+        "mean_no_assign_wait": 223.0,
+        "mean_queue_violation": 0.0,
+        "mean_rejoin_denials": 223.0,
+        "mean_rejoin_backlog": 3.38,
+        "mean_branch_rate": 1.0,
+        "mean_deliver_bots": 0.26666666666666666,
+        "mean_drop_off_actions": 3.0
+      },
+      "gate_b": {
+        "runs": 6.0,
+        "mean_score": 3.0,
+        "min_score": 3.0,
+        "mean_items": 3.0,
+        "mean_orders": 0.0,
+        "mean_idle": 343.0,
+        "mean_spacing_wait": 30.0,
+        "mean_collision_wait": 43.0,
+        "mean_no_assign_wait": 223.0,
+        "mean_queue_violation": 0.0,
+        "mean_rejoin_denials": 223.0,
+        "mean_rejoin_backlog": 3.38,
+        "mean_branch_rate": 1.0,
+        "mean_deliver_bots": 0.26666666666666666,
+        "mean_drop_off_actions": 3.0
+      }
+    },
+    "holdout": {
+      "objective": 320.16,
+      "gate_a": {
+        "runs": 6.0,
+        "mean_score": 3.0,
+        "min_score": 3.0,
+        "mean_items": 3.0,
+        "mean_orders": 0.0,
+        "mean_idle": 343.0,
+        "mean_spacing_wait": 30.0,
+        "mean_collision_wait": 43.0,
+        "mean_no_assign_wait": 223.0,
+        "mean_queue_violation": 0.0,
+        "mean_rejoin_denials": 223.0,
+        "mean_rejoin_backlog": 3.38,
+        "mean_branch_rate": 1.0,
+        "mean_deliver_bots": 0.26666666666666666,
+        "mean_drop_off_actions": 3.0
+      },
+      "gate_b": {
+        "runs": 6.0,
+        "mean_score": 3.0,
+        "min_score": 3.0,
+        "mean_items": 3.0,
+        "mean_orders": 0.0,
+        "mean_idle": 343.0,
+        "mean_spacing_wait": 30.0,
+        "mean_collision_wait": 43.0,
+        "mean_no_assign_wait": 223.0,
+        "mean_queue_violation": 0.0,
+        "mean_rejoin_denials": 223.0,
+        "mean_rejoin_backlog": 3.38,
+        "mean_branch_rate": 1.0,
+        "mean_deliver_bots": 0.26666666666666666,
+        "mean_drop_off_actions": 3.0
+      }
+    },
+    "combined_objective": 320.16
+  },
+  "top_finalists": [
+    {
+      "params": {
+        "reservation_horizon": 2,
+        "migration_stage": 5,
+        "delivery_quota_min": 1,
+        "delivery_quota_max": 3,
+        "forecast_buffer_cap": 2,
+        "rejoin_slot_headroom": 2
+      },
+      "coarse": {
+        "objective": 320.16,
+        "gate_a": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        },
+        "gate_b": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        }
+      },
+      "holdout": {
+        "objective": 320.16,
+        "gate_a": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        },
+        "gate_b": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        }
+      },
+      "combined_objective": 320.16
+    },
+    {
+      "params": {
+        "reservation_horizon": 1,
+        "migration_stage": 5,
+        "delivery_quota_min": 2,
+        "delivery_quota_max": 3,
+        "forecast_buffer_cap": 3,
+        "rejoin_slot_headroom": 3
+      },
+      "coarse": {
+        "objective": 320.16,
+        "gate_a": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        },
+        "gate_b": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        }
+      },
+      "holdout": {
+        "objective": 320.16,
+        "gate_a": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        },
+        "gate_b": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        }
+      },
+      "combined_objective": 320.16
+    },
+    {
+      "params": {
+        "reservation_horizon": 3,
+        "migration_stage": 6,
+        "delivery_quota_min": 2,
+        "delivery_quota_max": 3,
+        "forecast_buffer_cap": 4,
+        "rejoin_slot_headroom": 2
+      },
+      "coarse": {
+        "objective": 320.16,
+        "gate_a": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        },
+        "gate_b": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        }
+      },
+      "holdout": {
+        "objective": 320.16,
+        "gate_a": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        },
+        "gate_b": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 343.0,
+          "mean_spacing_wait": 30.0,
+          "mean_collision_wait": 43.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 3.38,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.26666666666666666,
+          "mean_drop_off_actions": 3.0
+        }
+      },
+      "combined_objective": 320.16
+    },
+    {
+      "params": {
+        "reservation_horizon": 2,
+        "migration_stage": 6,
+        "delivery_quota_min": 1,
+        "delivery_quota_max": 1,
+        "forecast_buffer_cap": 4,
+        "rejoin_slot_headroom": 3
+      },
+      "coarse": {
+        "objective": 320.04,
+        "gate_a": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 328.0,
+          "mean_spacing_wait": 33.0,
+          "mean_collision_wait": 41.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 2.46,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.19,
+          "mean_drop_off_actions": 3.0
+        },
+        "gate_b": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 328.0,
+          "mean_spacing_wait": 33.0,
+          "mean_collision_wait": 41.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 2.46,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.19,
+          "mean_drop_off_actions": 3.0
+        }
+      },
+      "holdout": {
+        "objective": 320.04,
+        "gate_a": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 328.0,
+          "mean_spacing_wait": 33.0,
+          "mean_collision_wait": 41.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 2.46,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.19,
+          "mean_drop_off_actions": 3.0
+        },
+        "gate_b": {
+          "runs": 6.0,
+          "mean_score": 3.0,
+          "min_score": 3.0,
+          "mean_items": 3.0,
+          "mean_orders": 0.0,
+          "mean_idle": 328.0,
+          "mean_spacing_wait": 33.0,
+          "mean_collision_wait": 41.0,
+          "mean_no_assign_wait": 223.0,
+          "mean_queue_violation": 0.0,
+          "mean_rejoin_denials": 223.0,
+          "mean_rejoin_backlog": 2.46,
+          "mean_branch_rate": 1.0,
+          "mean_deliver_bots": 0.19,
+          "mean_drop_off_actions": 3.0
+        }
+      },
+      "combined_objective": 320.04
+    }
+  ]
+}

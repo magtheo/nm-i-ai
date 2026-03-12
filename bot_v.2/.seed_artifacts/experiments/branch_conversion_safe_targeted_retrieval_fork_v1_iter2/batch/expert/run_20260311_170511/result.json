@@ -1,0 +1,27 @@
+{
+  "run_index": 2,
+  "score": 32,
+  "items_delivered": 17,
+  "orders_completed": 3,
+  "rounds_played": 300,
+  "idle_steps": 1892,
+  "collisions_avoided": 484,
+  "avg_decision_ms": 1.7149483337804365,
+  "max_score_exact": null,
+  "max_score_upper_bound": 546,
+  "max_score_lower_bound": 456,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\branch_conversion_safe_targeted_retrieval_fork_v1_iter2\\batch\\expert\\run_20260311_170511",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 5,
+    "completed_orders": 0,
+    "observed_items": 26,
+    "lower_bound_score": 456,
+    "upper_bound_score": 546,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 45
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "inputs": {
+    "artifact_root": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\bundle_a_soft_spatial_iter4\\candidate_soft_penalty_v3",
+    "difficulty": "expert",
+    "limit": 3
+  },
+  "thresholds": {
+    "max_no_target_wait_ratio": 0.1,
+    "max_no_target_waits": 120,
+    "min_drop_actions": 12,
+    "min_items_per_drop": 0.9,
+    "min_drop_to_pick_ratio": 0.3,
+    "max_coupling_break_rounds": 40,
+    "max_commitment_stagnation_rounds": 80,
+    "max_throughput_floor_breach_rounds": 90,
+    "max_delivery_lane_breach_rounds": 20
+  },
+  "summary": {
+    "runs": 3,
+    "score_median": 88.0,
+    "orders_completed_median": 9.0,
+    "items_delivered_median": 43.0,
+    "overall_pass_runs": 3,
+    "overall_pass_rate": 1.0,
+    "gate_fail_counts": {
+      "target_liveness": 0,
+      "drop_conversion_floor": 0,
+      "pickup_drop_coupling": 0,
+      "commitment_realism": 0,
+      "throughput_lane_floor": 0,
+      "delivery_lane_guarantee": 0
+    },
+    "conversion_medians": {
+      "items_per_drop_action": 1.3870967741935485,
+      "drop_to_pick_ratio": 0.543859649122807,
+      "wait_due_to_no_target": 0.0,
+      "wait_due_to_no_target_ratio": 0.0,
+      "wait_due_to_no_assignment": 873.0,
+      "wait_due_to_no_assignment_ratio": 0.291,
+      "coupling_break_rounds": 0.0,
+      "commitment_stagnation_rounds": 0.0,
+      "throughput_floor_breach_rounds": 0.0,
+      "delivery_lane_breach_rounds": 0.0,
+      "weak_conversion_window_rounds": 0.0
+    }
+  },
+  "runs": [
+    {
+      "run_name": "run_20260310_022113",
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\bundle_a_soft_spatial_iter4\\candidate_soft_penalty_v3\\expert\\run_20260310_022113",
+      "score": 88,
+      "orders_completed": 9,
+      "items_delivered": 43,
+      "rounds": 300,
+      "bot_count": 10,
+      "action_counts": {
+        "pick_up": 57,
+        "drop_off": 31,
+        "wait": 1040
+      },
+      "conversion_metrics": {
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 873.0,
+        "wait_due_to_no_assignment_ratio": 0.291,
+        "coupling_break_rounds": 0,
+        "commitment_stagnation_rounds": 0,
+        "throughput_floor_breach_rounds": 0,
+        "delivery_lane_breach_rounds": 0,
+        "weak_conversion_window_rounds": 0
+      },
+      "gates": {
+        "target_liveness": true,
+        "drop_conversion_floor": true,
+        "pickup_drop_coupling": true,
+        "commitment_realism": true,
+        "throughput_lane_floor": true,
+        "delivery_lane_guarantee": true
+      },
+      "pass_all_gates": true
+    },
+    {
+      "run_name": "run_20260310_022403",
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\bundle_a_soft_spatial_iter4\\candidate_soft_penalty_v3\\expert\\run_20260310_022403",
+      "score": 88,
+      "orders_completed": 9,
+      "items_delivered": 43,
+      "rounds": 300,
+      "bot_count": 10,
+      "action_counts": {
+        "pick_up": 57,
+        "drop_off": 31,
+        "wait": 1040
+      },
+      "conversion_metrics": {
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 873.0,
+        "wait_due_to_no_assignment_ratio": 0.291,
+        "coupling_break_rounds": 0,
+        "commitment_stagnation_rounds": 0,
+        "throughput_floor_breach_rounds": 0,
+        "delivery_lane_breach_rounds": 0,
+        "weak_conversion_window_rounds": 0
+      },
+      "gates": {
+        "target_liveness": true,
+        "drop_conversion_floor": true,
+        "pickup_drop_coupling": true,
+        "commitment_realism": true,
+        "throughput_lane_floor": true,
+        "delivery_lane_guarantee": true
+      },
+      "pass_all_gates": true
+    },
+    {
+      "run_name": "run_20260310_022237",
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\bundle_a_soft_spatial_iter4\\candidate_soft_penalty_v3\\expert\\run_20260310_022237",
+      "score": 88,
+      "orders_completed": 9,
+      "items_delivered": 43,
+      "rounds": 300,
+      "bot_count": 10,
+      "action_counts": {
+        "pick_up": 57,
+        "drop_off": 31,
+        "wait": 1040
+      },
+      "conversion_metrics": {
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 873.0,
+        "wait_due_to_no_assignment_ratio": 0.291,
+        "coupling_break_rounds": 0,
+        "commitment_stagnation_rounds": 0,
+        "throughput_floor_breach_rounds": 0,
+        "delivery_lane_breach_rounds": 0,
+        "weak_conversion_window_rounds": 0
+      },
+      "gates": {
+        "target_liveness": true,
+        "drop_conversion_floor": true,
+        "pickup_drop_coupling": true,
+        "commitment_realism": true,
+        "throughput_lane_floor": true,
+        "delivery_lane_guarantee": true
+      },
+      "pass_all_gates": true
+    }
+  ]
+}

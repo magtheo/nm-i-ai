@@ -1,0 +1,47 @@
+{
+  "source_batch_root": ".seed_artifacts\\experiments\\branch_conversion_guard_instrumentation_v1\\batch\\expert",
+  "preset": "configs\\expert_coordination_presets\\bundle_a_conversion_guard_v1.json",
+  "results": {
+    "run_20260310_150442": {
+      "first_warn_round": null,
+      "first_trigger_by_combo_round": null,
+      "first_emergency_triggered_round": null,
+      "first_emergency_active_round": null,
+      "emergency_trigger_count": 0,
+      "emergency_active_rounds": 0,
+      "trigger_reasons": []
+    },
+    "run_20260310_150616": {
+      "first_warn_round": 152,
+      "first_trigger_by_combo_round": 156,
+      "first_emergency_triggered_round": 156,
+      "first_emergency_active_round": 157,
+      "emergency_trigger_count": 1,
+      "emergency_active_rounds": 8,
+      "trigger_reasons": [
+        {
+          "round": 156,
+          "reason_code": 2.0
+        }
+      ]
+    },
+    "run_20260310_150750": {
+      "first_warn_round": 86,
+      "first_trigger_by_combo_round": 90,
+      "first_emergency_triggered_round": 90,
+      "first_emergency_active_round": 91,
+      "emergency_trigger_count": 2,
+      "emergency_active_rounds": 16,
+      "trigger_reasons": [
+        {
+          "round": 90,
+          "reason_code": 2.0
+        },
+        {
+          "round": 268,
+          "reason_code": 1.0
+        }
+      ]
+    }
+  }
+}

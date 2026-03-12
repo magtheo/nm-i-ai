@@ -1,0 +1,15 @@
+id: audit_20260307_layout
+from: coding_agent
+to: review_agent
+type: audit
+created_at: "2026-03-07T10:30:00"
+summary: Validated lab-level shared path routing from inside bot root.
+artifacts:
+  -
+    path: "C:\\Users\\Exempel\\Desktop\\bot-extreme_1\\experiments\\hypotheses"
+resolved_paths:
+  bot_root: "C:\\Users\\Exempel\\Desktop\\bot-extreme_1\\bot — копия"
+  lab_root: "C:\\Users\\Exempel\\Desktop\\bot-extreme_1"
+  shared_root: "C:\\Users\\Exempel\\Desktop\\bot-extreme_1\\shared"
+  experiments_root: "C:\\Users\\Exempel\\Desktop\\bot-extreme_1\\experiments"
+status: open

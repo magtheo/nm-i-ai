@@ -1,0 +1,19 @@
+{
+  "strict_active_priority": true,
+  "prefetch_release_use_delivered_completion": true,
+  "transition_stash_enabled": true,
+  "transition_stash_completion_ratio": 0.9,
+  "transition_stash_remaining_items": 2,
+  "transition_stash_finisher_count": 2,
+  "transition_stash_preview_bonus": 1.0,
+  "anti_no_assignment_enabled": true,
+  "secondary_assignment_enabled": true,
+  "coordination_layer_enabled": true,
+  "coordination_preview_weight_when_open": 0.0,
+  "coordination_conversion_floor_min": 1,
+  "coordination_conversion_floor_max": 2,
+  "coordination_reliable_max_dropoff_dist": 3,
+  "coordination_reliable_min_matching_ratio": 0.67,
+  "coordination_secured_progress_stall_rounds": 4,
+  "coordination_secured_revoke_no_assignment_streak": 4
+}

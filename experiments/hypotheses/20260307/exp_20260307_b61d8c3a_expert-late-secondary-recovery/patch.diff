@@ -1,0 +1,16 @@
+# Planned smallest patch only. No bot logic has been changed yet.
+
+# Intended scope:
+# - touch the existing secondary fallback gate in bot_v.1/assignment.py
+# - reuse existing rounds_left and primary assignment miss streak signals
+# - add one narrow late-only condition ahead of the current secondary recovery path
+
+# Intended behavior:
+# - baseline behavior remains unchanged outside the late-game window
+# - secondary recovery remains unavailable for broad/global use
+# - existing secondary assignment machinery is reused rather than rewritten
+
+# Non-goals:
+# - no broad orchestration rewrite
+# - no infrastructure changes
+# - no telemetry expansion beyond experiment needs unless required later

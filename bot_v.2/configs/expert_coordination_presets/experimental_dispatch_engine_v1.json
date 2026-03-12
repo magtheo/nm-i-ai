@@ -1,0 +1,22 @@
+﻿{
+  "reservation_horizon": 2,
+  "top_k_candidates_per_bot": 12,
+  "eta_weight": 9.0,
+  "drop_eta_weight": 0.65,
+  "preview_weight_open": 0.0,
+  "preview_weight_secured": 0.3,
+  "forecast_weight": 0.15,
+  "forecast_depth": 2,
+  "path_window": 8,
+  "tail_remaining_threshold": 3,
+  "tail_distinct_threshold": 2,
+  "converter_floor_max": 3,
+  "converter_local_harvest_radius": 6,
+  "reliable_drop_dist_max": 6,
+  "reliable_wait_streak_max": 3,
+  "secured_progress_window": 8,
+  "secured_progress_min_points": 1,
+  "critical_dispatch_slots_default": 1,
+  "critical_dispatch_slots_tail": 2,
+  "critical_dispatch_type_limit": 2
+}

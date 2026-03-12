@@ -1,0 +1,13 @@
+run_index=1
+difficulty=medium
+map_seed=7002
+ws_url=wss://game.ainm.no/ws?token=eyJh...ARGo
+order_forecast_source=simulate
+score=177
+items_delivered=77
+orders_completed=20
+rounds_played=300
+idle_steps=69
+collisions_avoided=9
+avg_decision_ms=1.897
+logger_path=.seed_artifacts\nmiai\medium\run_20260304_081406\round_logs\game_20260304_081407_medium.jsonl

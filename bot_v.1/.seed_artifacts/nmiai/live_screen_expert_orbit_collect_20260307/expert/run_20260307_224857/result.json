@@ -1,0 +1,27 @@
+{
+  "run_index": 1,
+  "score": 0,
+  "items_delivered": 0,
+  "orders_completed": 0,
+  "rounds_played": 300,
+  "idle_steps": 90,
+  "collisions_avoided": 0,
+  "avg_decision_ms": 1.6735116666889855,
+  "max_score_exact": null,
+  "max_score_upper_bound": 547,
+  "max_score_lower_bound": 451,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\nmiai\\live_screen_expert_orbit_collect_20260307\\expert\\run_20260307_224857",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 2,
+    "completed_orders": 0,
+    "observed_items": 9,
+    "lower_bound_score": 451,
+    "upper_bound_score": 547,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 48
+  }
+}

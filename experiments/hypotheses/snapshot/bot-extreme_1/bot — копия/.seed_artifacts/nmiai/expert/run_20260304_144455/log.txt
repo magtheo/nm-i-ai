@@ -1,0 +1,13 @@
+run_index=1
+difficulty=expert
+map_seed=7004
+ws_url=wss://game.ainm.no/ws?token=eyJh...IZWQ
+order_forecast_source=none
+score=12
+items_delivered=7
+orders_completed=1
+rounds_played=300
+idle_steps=1149
+collisions_avoided=686
+avg_decision_ms=69.162
+logger_path=.seed_artifacts\nmiai\expert\run_20260304_144455\round_logs\game_20260304_144455_expert.jsonl

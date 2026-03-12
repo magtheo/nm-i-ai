@@ -1,0 +1,17 @@
+{
+  "lookahead_orders": 2,
+  "active_weight": 16.42,
+  "preview_weight": 6.51,
+  "dropoff_completion_threshold": 0.76,
+  "zone_penalty_weight": 0.02,
+  "dist_weight": 1.1,
+  "dropoff_dist_weight": 0.93,
+  "congestion_weight": 1.18,
+  "collision_risk_weight": 2.9,
+  "replan_penalty_weight": 1.17,
+  "urgency_weight": 2.49,
+  "reservation_horizon": 2,
+  "hysteresis_penalty": 2.71,
+  "collision_aggressiveness": "wait",
+  "tie_break_seed": 7
+}

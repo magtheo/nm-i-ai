@@ -1,0 +1,655 @@
+{
+  "summary": {
+    "samples": 30,
+    "baseline": {
+      "productive": 3.0,
+      "pick": 0.0,
+      "pre_pick": 1.0,
+      "deliver": 2.0,
+      "secondary": 0.0,
+      "idle": 7.0,
+      "critical_pool": 0.0
+    },
+    "candidate": {
+      "productive": 8.0,
+      "pick": 5.0,
+      "pre_pick": 1.0,
+      "deliver": 2.0,
+      "secondary": 0.0,
+      "idle": 2.0,
+      "critical_pool": 5.0
+    }
+  },
+  "rows": [
+    {
+      "round": 0,
+      "baseline": {
+        "productive": 4,
+        "pick": 4,
+        "pre_pick": 0,
+        "deliver": 0,
+        "secondary": 0,
+        "idle": 6,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 9,
+        "pick": 9,
+        "pre_pick": 0,
+        "deliver": 0,
+        "secondary": 0,
+        "idle": 1,
+        "critical_pool": 8
+      }
+    },
+    {
+      "round": 10,
+      "baseline": {
+        "productive": 4,
+        "pick": 3,
+        "pre_pick": 0,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 6,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 7,
+        "pre_pick": 0,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 7
+      }
+    },
+    {
+      "round": 20,
+      "baseline": {
+        "productive": 6,
+        "pick": 1,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 4,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 9,
+        "pick": 4,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 1,
+        "critical_pool": 4
+      }
+    },
+    {
+      "round": 30,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 7,
+        "pick": 4,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 3,
+        "critical_pool": 4
+      }
+    },
+    {
+      "round": 40,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 6,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 50,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 6,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 60,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 7,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 6,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 70,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 6,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 80,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 7,
+        "pick": 5,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 3,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 90,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 6,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 100,
+      "baseline": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 4,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 4
+      }
+    },
+    {
+      "round": 110,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 5,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 120,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 7,
+        "pick": 5,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 3,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 130,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 7,
+        "pick": 5,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 3,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 140,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 7,
+        "pick": 5,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 3,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 150,
+      "baseline": {
+        "productive": 6,
+        "pick": 0,
+        "pre_pick": 4,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 4,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 9,
+        "pick": 6,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 1,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 160,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 5,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 170,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 6,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 180,
+      "baseline": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 9,
+        "pick": 5,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 1,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 190,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 7,
+        "pick": 5,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 3,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 200,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 7,
+        "pick": 5,
+        "pre_pick": 0,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 3,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 210,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 7,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 5,
+        "pre_pick": 2,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 220,
+      "baseline": {
+        "productive": 2,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 8,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 7,
+        "pick": 5,
+        "pre_pick": 1,
+        "deliver": 1,
+        "secondary": 0,
+        "idle": 3,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 230,
+      "baseline": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 10,
+        "pick": 6,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 0,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 240,
+      "baseline": {
+        "productive": 4,
+        "pick": 0,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 6,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 9,
+        "pick": 5,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 1,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 250,
+      "baseline": {
+        "productive": 5,
+        "pick": 0,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 5,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 9,
+        "pick": 6,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 1,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 260,
+      "baseline": {
+        "productive": 5,
+        "pick": 0,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 5,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 10,
+        "pick": 6,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 0,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 270,
+      "baseline": {
+        "productive": 5,
+        "pick": 0,
+        "pre_pick": 3,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 5,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 10,
+        "pick": 6,
+        "pre_pick": 2,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 0,
+        "critical_pool": 6
+      }
+    },
+    {
+      "round": 280,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 8,
+        "pick": 5,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 2,
+        "critical_pool": 5
+      }
+    },
+    {
+      "round": 290,
+      "baseline": {
+        "productive": 3,
+        "pick": 0,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 7,
+        "critical_pool": 0
+      },
+      "candidate": {
+        "productive": 9,
+        "pick": 6,
+        "pre_pick": 1,
+        "deliver": 2,
+        "secondary": 0,
+        "idle": 1,
+        "critical_pool": 6
+      }
+    }
+  ]
+}

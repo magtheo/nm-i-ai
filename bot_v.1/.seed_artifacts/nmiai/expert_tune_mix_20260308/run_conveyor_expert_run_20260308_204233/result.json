@@ -1,0 +1,27 @@
+{
+  "run_index": 1,
+  "score": 2,
+  "items_delivered": 2,
+  "orders_completed": 0,
+  "rounds_played": 300,
+  "idle_steps": 662,
+  "collisions_avoided": 93,
+  "avg_decision_ms": 7.435794000042127,
+  "max_score_exact": null,
+  "max_score_upper_bound": 547,
+  "max_score_lower_bound": 451,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\nmiai\\live_ab_orbit_wall_conveyor_v1_20260308\\conveyor\\expert\\run_20260308_204233",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 2,
+    "completed_orders": 0,
+    "observed_items": 9,
+    "lower_bound_score": 451,
+    "upper_bound_score": 547,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 48
+  }
+}

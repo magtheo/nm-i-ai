@@ -1,0 +1,10 @@
+experiment_id: exp_20260307_4ad767b4_expert-proactive-dropoff
+title: expert proactive dropoff lane clearing
+level: expert
+owner: planner_agent
+created_at: "2026-03-07T10:59:54.529359"
+hypothesis: expert proactive dropoff lane clearing
+mechanism: Enable existing proactive dropoff-lane clearing in the Expert candidate config so adjacent idle or nonmatching bots vacate the dropoff approach earlier, reducing delivery blockage in Expert congestion hotspots.
+patch: patch.diff
+success_metric: score
+verdict: null

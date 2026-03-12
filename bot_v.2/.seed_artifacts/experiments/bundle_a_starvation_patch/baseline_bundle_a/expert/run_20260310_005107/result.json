@@ -1,0 +1,27 @@
+{
+  "run_index": 2,
+  "score": 74,
+  "items_delivered": 39,
+  "orders_completed": 7,
+  "rounds_played": 300,
+  "idle_steps": 1368,
+  "collisions_avoided": 165,
+  "avg_decision_ms": 7.6417576664243825,
+  "max_score_exact": null,
+  "max_score_upper_bound": 542,
+  "max_score_lower_bound": 460,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\experiments\\bundle_a_starvation_patch\\baseline_bundle_a\\expert\\run_20260310_005107",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 9,
+    "completed_orders": 0,
+    "observed_items": 46,
+    "lower_bound_score": 460,
+    "upper_bound_score": 542,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 41
+  }
+}

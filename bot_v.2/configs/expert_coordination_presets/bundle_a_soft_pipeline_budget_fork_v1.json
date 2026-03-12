@@ -1,0 +1,19 @@
+{
+  "strict_active_priority": true,
+  "prefetch_release_use_delivered_completion": true,
+  "transition_stash_enabled": true,
+  "transition_stash_completion_ratio": 0.9,
+  "transition_stash_remaining_items": 2,
+  "transition_stash_finisher_count": 2,
+  "transition_stash_preview_bonus": 1.0,
+  "anti_no_assignment_enabled": true,
+  "secondary_assignment_enabled": true,
+  "secondary_reposition_empty_only": true,
+  "soft_pipeline_budget_enabled": true,
+  "soft_pipeline_secure_delivered_deficit_threshold": 2,
+  "soft_pipeline_active_close_bonus": 1.5,
+  "soft_pipeline_delivery_conversion_bonus": 1.25,
+  "soft_pipeline_preview_preload_discount": 0.9,
+  "soft_pipeline_transition_preview_bonus": 0.75,
+  "soft_pipeline_fallback_penalty_open_tail": 0.6
+}

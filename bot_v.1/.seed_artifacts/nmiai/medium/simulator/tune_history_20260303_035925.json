@@ -1,0 +1,7084 @@
+{
+  "target_score": 189,
+  "max_attempts": 2000,
+  "attempts_evaluated": 294,
+  "best": {
+    "score": 193,
+    "items_delivered": 73,
+    "orders_completed": 24,
+    "avg_decision_ms": 0.621,
+    "policy": {
+      "decision": {
+        "lookahead_orders": 3,
+        "active_weight": 12.0,
+        "preview_weight": 4.0,
+        "dropoff_completion_threshold": 0.5,
+        "collision_aggressiveness": "wait",
+        "tie_break_seed": 1
+      },
+      "generator": {
+        "seed": 7041,
+        "size3_bias": 0.75,
+        "template_repeat_prob": 0.65,
+        "hot_type_bias": 0.85
+      }
+    }
+  },
+  "history": [
+    {
+      "attempt": 1,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3932,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.8,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "score": 164,
+      "items_delivered": 64,
+      "orders_completed": 20,
+      "avg_decision_ms": 0.6036,
+      "improved": true,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5424,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3799,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 5,
+      "score": 93,
+      "items_delivered": 38,
+      "orders_completed": 11,
+      "avg_decision_ms": 0.5735,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 6,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5361,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 7,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3587,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 8,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5005,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 9,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5407,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 10,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.402,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 11,
+      "score": 51,
+      "items_delivered": 21,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.5342,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 12,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.526,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 13,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5792,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 14,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4999,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 15,
+      "score": 130,
+      "items_delivered": 50,
+      "orders_completed": 16,
+      "avg_decision_ms": 0.6291,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 16,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3609,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 17,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5259,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 18,
+      "score": 35,
+      "items_delivered": 15,
+      "orders_completed": 4,
+      "avg_decision_ms": 0.5097,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 14.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 19,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.544,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 20,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5165,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 21,
+      "score": 42,
+      "items_delivered": 17,
+      "orders_completed": 5,
+      "avg_decision_ms": 0.5254,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 22,
+      "score": 92,
+      "items_delivered": 37,
+      "orders_completed": 11,
+      "avg_decision_ms": 0.7299,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 23,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5345,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 24,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3651,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 25,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3833,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 26,
+      "score": 49,
+      "items_delivered": 19,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.7106,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 27,
+      "score": 152,
+      "items_delivered": 62,
+      "orders_completed": 18,
+      "avg_decision_ms": 0.6218,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 28,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5059,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 29,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3695,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 30,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5162,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 31,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5439,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 32,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3645,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 33,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5007,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 34,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4536,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 35,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3662,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 36,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5293,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 37,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5573,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 38,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5504,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 39,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3912,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 40,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5508,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 41,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4036,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 42,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5665,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 43,
+      "score": 68,
+      "items_delivered": 28,
+      "orders_completed": 8,
+      "avg_decision_ms": 0.5648,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 44,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3782,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 45,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5402,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 46,
+      "score": 164,
+      "items_delivered": 64,
+      "orders_completed": 20,
+      "avg_decision_ms": 0.5546,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 47,
+      "score": 92,
+      "items_delivered": 37,
+      "orders_completed": 11,
+      "avg_decision_ms": 0.7302,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 48,
+      "score": 89,
+      "items_delivered": 34,
+      "orders_completed": 11,
+      "avg_decision_ms": 0.6444,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 49,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5547,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 50,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3682,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 51,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5056,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 14.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 52,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3747,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 53,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3767,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 54,
+      "score": 19,
+      "items_delivered": 9,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5137,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 55,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5266,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 14.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 56,
+      "score": 74,
+      "items_delivered": 29,
+      "orders_completed": 9,
+      "avg_decision_ms": 0.4581,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 57,
+      "score": 57,
+      "items_delivered": 22,
+      "orders_completed": 7,
+      "avg_decision_ms": 0.5514,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 58,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5151,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 59,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5018,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 60,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5517,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 61,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.405,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 62,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4199,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 63,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5023,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 64,
+      "score": 26,
+      "items_delivered": 11,
+      "orders_completed": 3,
+      "avg_decision_ms": 0.5258,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 65,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3652,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 66,
+      "score": 59,
+      "items_delivered": 24,
+      "orders_completed": 7,
+      "avg_decision_ms": 0.4674,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 67,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5267,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 68,
+      "score": 121,
+      "items_delivered": 46,
+      "orders_completed": 15,
+      "avg_decision_ms": 0.5841,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 14.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 69,
+      "score": 53,
+      "items_delivered": 23,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.4508,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 70,
+      "score": 51,
+      "items_delivered": 21,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.5356,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 71,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3589,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 72,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5526,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 73,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.495,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 74,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3958,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 75,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5781,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 76,
+      "score": 28,
+      "items_delivered": 13,
+      "orders_completed": 3,
+      "avg_decision_ms": 0.4077,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 77,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5418,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 78,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3705,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 79,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5062,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 80,
+      "score": 35,
+      "items_delivered": 15,
+      "orders_completed": 4,
+      "avg_decision_ms": 0.5258,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 81,
+      "score": 28,
+      "items_delivered": 13,
+      "orders_completed": 3,
+      "avg_decision_ms": 0.4146,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 82,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5448,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 83,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5511,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 84,
+      "score": 27,
+      "items_delivered": 12,
+      "orders_completed": 3,
+      "avg_decision_ms": 0.7271,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 85,
+      "score": 176,
+      "items_delivered": 66,
+      "orders_completed": 22,
+      "avg_decision_ms": 0.5973,
+      "improved": true,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 86,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3836,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 87,
+      "score": 67,
+      "items_delivered": 27,
+      "orders_completed": 8,
+      "avg_decision_ms": 0.4802,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 88,
+      "score": 138,
+      "items_delivered": 53,
+      "orders_completed": 17,
+      "avg_decision_ms": 0.6536,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 14.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 89,
+      "score": 49,
+      "items_delivered": 19,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.4214,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 90,
+      "score": 42,
+      "items_delivered": 17,
+      "orders_completed": 5,
+      "avg_decision_ms": 0.5144,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 91,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4411,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 92,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5237,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 93,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3914,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 94,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5369,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 95,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3916,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 96,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3677,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 97,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4031,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 98,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5043,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 99,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5544,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 100,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3959,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 101,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3989,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 102,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5819,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 103,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.404,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 104,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5656,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 105,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5022,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 106,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5545,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 107,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3817,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 108,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5119,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 109,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5422,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 110,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4255,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 111,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3625,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 112,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.527,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 113,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.548,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 114,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5321,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 115,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4181,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 116,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5496,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 117,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4043,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 118,
+      "score": 107,
+      "items_delivered": 42,
+      "orders_completed": 13,
+      "avg_decision_ms": 0.4997,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 119,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3829,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 120,
+      "score": 78,
+      "items_delivered": 33,
+      "orders_completed": 9,
+      "avg_decision_ms": 0.7373,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 121,
+      "score": 49,
+      "items_delivered": 19,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.4349,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 122,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5632,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 123,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3629,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 124,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5495,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 125,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5021,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 126,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5407,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 127,
+      "score": 68,
+      "items_delivered": 28,
+      "orders_completed": 8,
+      "avg_decision_ms": 0.6077,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 14.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 128,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5135,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 129,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3764,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 130,
+      "score": 174,
+      "items_delivered": 69,
+      "orders_completed": 21,
+      "avg_decision_ms": 0.6641,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 131,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.373,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 132,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.505,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 133,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5523,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 134,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5249,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 135,
+      "score": 89,
+      "items_delivered": 34,
+      "orders_completed": 11,
+      "avg_decision_ms": 0.5105,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 136,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3795,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 137,
+      "score": 33,
+      "items_delivered": 13,
+      "orders_completed": 4,
+      "avg_decision_ms": 0.4195,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 138,
+      "score": 66,
+      "items_delivered": 26,
+      "orders_completed": 8,
+      "avg_decision_ms": 0.5708,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 139,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3801,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 140,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4075,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 141,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5556,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 142,
+      "score": 138,
+      "items_delivered": 53,
+      "orders_completed": 17,
+      "avg_decision_ms": 0.6295,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 143,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5479,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 144,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3864,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 145,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5616,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 146,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5016,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 147,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5366,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 148,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5083,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 149,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5004,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 14.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 150,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3529,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 151,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4955,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 152,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3777,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 153,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3839,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 154,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4002,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 155,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5387,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 156,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3615,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 157,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3664,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 158,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3741,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 159,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3635,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 160,
+      "score": 35,
+      "items_delivered": 15,
+      "orders_completed": 4,
+      "avg_decision_ms": 0.5059,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 161,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5133,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 162,
+      "score": 35,
+      "items_delivered": 15,
+      "orders_completed": 4,
+      "avg_decision_ms": 0.5115,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 163,
+      "score": 49,
+      "items_delivered": 19,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.4391,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 164,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5758,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 165,
+      "score": 92,
+      "items_delivered": 37,
+      "orders_completed": 11,
+      "avg_decision_ms": 0.7837,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 166,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3616,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 167,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4061,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 168,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3654,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 169,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4098,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 170,
+      "score": 117,
+      "items_delivered": 47,
+      "orders_completed": 14,
+      "avg_decision_ms": 0.5577,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 171,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3796,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 172,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3847,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 173,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3917,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 174,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5104,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 175,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5441,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 176,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4022,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 14.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 177,
+      "score": 51,
+      "items_delivered": 21,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.4623,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 178,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4356,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 179,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.576,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 180,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3658,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 181,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4198,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 182,
+      "score": 19,
+      "items_delivered": 9,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5078,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 183,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4943,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 184,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4938,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 185,
+      "score": 124,
+      "items_delivered": 49,
+      "orders_completed": 15,
+      "avg_decision_ms": 0.6672,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 186,
+      "score": 66,
+      "items_delivered": 26,
+      "orders_completed": 8,
+      "avg_decision_ms": 0.6746,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 187,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3621,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 188,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3657,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 189,
+      "score": 49,
+      "items_delivered": 19,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.5707,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 190,
+      "score": 89,
+      "items_delivered": 34,
+      "orders_completed": 11,
+      "avg_decision_ms": 0.5004,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 191,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5293,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 192,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3794,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 193,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3738,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 194,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5948,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 195,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3687,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 196,
+      "score": 93,
+      "items_delivered": 38,
+      "orders_completed": 11,
+      "avg_decision_ms": 0.6607,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 197,
+      "score": 19,
+      "items_delivered": 9,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.507,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 198,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.397,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 199,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3999,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 200,
+      "score": 57,
+      "items_delivered": 22,
+      "orders_completed": 7,
+      "avg_decision_ms": 0.5574,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 201,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.385,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 202,
+      "score": 42,
+      "items_delivered": 17,
+      "orders_completed": 5,
+      "avg_decision_ms": 0.5151,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 203,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5048,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 204,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3878,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 205,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4215,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 206,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4953,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 207,
+      "score": 173,
+      "items_delivered": 68,
+      "orders_completed": 21,
+      "avg_decision_ms": 0.6593,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 208,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4085,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 209,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3988,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 210,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.539,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 211,
+      "score": 36,
+      "items_delivered": 16,
+      "orders_completed": 4,
+      "avg_decision_ms": 0.525,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 212,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5416,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 213,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5364,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 214,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5514,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 215,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3853,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 216,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3798,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 217,
+      "score": 66,
+      "items_delivered": 26,
+      "orders_completed": 8,
+      "avg_decision_ms": 0.6796,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 218,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5342,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 219,
+      "score": 35,
+      "items_delivered": 15,
+      "orders_completed": 4,
+      "avg_decision_ms": 0.6906,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 220,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5702,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 221,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4976,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 222,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5245,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 223,
+      "score": 126,
+      "items_delivered": 51,
+      "orders_completed": 15,
+      "avg_decision_ms": 0.611,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 224,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5051,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 225,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5329,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 226,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3789,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 227,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5356,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 228,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3575,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 229,
+      "score": 28,
+      "items_delivered": 13,
+      "orders_completed": 3,
+      "avg_decision_ms": 0.6843,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 230,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5345,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 231,
+      "score": 121,
+      "items_delivered": 46,
+      "orders_completed": 15,
+      "avg_decision_ms": 0.5845,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 232,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5331,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 233,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3874,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 234,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3827,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 235,
+      "score": 51,
+      "items_delivered": 21,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.5302,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 236,
+      "score": 81,
+      "items_delivered": 31,
+      "orders_completed": 10,
+      "avg_decision_ms": 0.6768,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 237,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.3891,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 238,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.371,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 239,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.5309,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 240,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5488,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 241,
+      "score": 49,
+      "items_delivered": 19,
+      "orders_completed": 6,
+      "avg_decision_ms": 0.4246,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 242,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5445,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 243,
+      "score": 19,
+      "items_delivered": 9,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5043,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 244,
+      "score": 169,
+      "items_delivered": 64,
+      "orders_completed": 21,
+      "avg_decision_ms": 0.6335,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 245,
+      "score": 131,
+      "items_delivered": 51,
+      "orders_completed": 16,
+      "avg_decision_ms": 0.5682,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 246,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4067,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 247,
+      "score": 67,
+      "items_delivered": 27,
+      "orders_completed": 8,
+      "avg_decision_ms": 0.6554,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 248,
+      "score": 89,
+      "items_delivered": 34,
+      "orders_completed": 11,
+      "avg_decision_ms": 0.5224,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 249,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4082,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 250,
+      "score": 67,
+      "items_delivered": 27,
+      "orders_completed": 8,
+      "avg_decision_ms": 0.6047,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 251,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4108,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 252,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.512,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 253,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.56,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 254,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.501,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 255,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5557,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 256,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4054,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 257,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4223,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 258,
+      "score": 19,
+      "items_delivered": 9,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.521,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 259,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5052,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 260,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5361,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 261,
+      "score": 60,
+      "items_delivered": 25,
+      "orders_completed": 7,
+      "avg_decision_ms": 0.6075,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 10.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 262,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5593,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 263,
+      "score": 59,
+      "items_delivered": 24,
+      "orders_completed": 7,
+      "avg_decision_ms": 0.5326,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 10.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 264,
+      "score": 157,
+      "items_delivered": 62,
+      "orders_completed": 19,
+      "avg_decision_ms": 0.6202,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 265,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.384,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 10.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 266,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5036,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 267,
+      "score": 42,
+      "items_delivered": 17,
+      "orders_completed": 5,
+      "avg_decision_ms": 0.517,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 268,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.534,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 10.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 269,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5434,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 270,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5275,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 14.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 271,
+      "score": 86,
+      "items_delivered": 36,
+      "orders_completed": 10,
+      "avg_decision_ms": 0.5897,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 272,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 273,
+      "score": 74,
+      "items_delivered": 29,
+      "orders_completed": 9,
+      "avg_decision_ms": 0.5505,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 274,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5361,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 275,
+      "score": 124,
+      "items_delivered": 49,
+      "orders_completed": 15,
+      "avg_decision_ms": 0.5608,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 276,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4079,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 277,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5053,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 278,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4032,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 279,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5025,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 280,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5038,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 281,
+      "score": 9,
+      "items_delivered": 4,
+      "orders_completed": 1,
+      "avg_decision_ms": 0.5551,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 1,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 282,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4399,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 10.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 7
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 283,
+      "score": 36,
+      "items_delivered": 16,
+      "orders_completed": 4,
+      "avg_decision_ms": 0.549,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 12.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7031,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 284,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5226,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 12.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 5
+        },
+        "generator": {
+          "seed": 7005,
+          "size3_bias": 0.85,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 285,
+      "score": 66,
+      "items_delivered": 26,
+      "orders_completed": 8,
+      "avg_decision_ms": 0.5481,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 8.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 286,
+      "score": 34,
+      "items_delivered": 14,
+      "orders_completed": 4,
+      "avg_decision_ms": 0.5173,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 8.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 6
+        },
+        "generator": {
+          "seed": 7003,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 287,
+      "score": 42,
+      "items_delivered": 17,
+      "orders_completed": 5,
+      "avg_decision_ms": 0.5375,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 8.0,
+          "preview_weight": 6.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7004,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.3,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 288,
+      "score": 18,
+      "items_delivered": 8,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.5016,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 2,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 3
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 289,
+      "score": 2,
+      "items_delivered": 2,
+      "orders_completed": 0,
+      "avg_decision_ms": 0.3591,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 4,
+          "active_weight": 14.0,
+          "preview_weight": 2.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7011,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 290,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4956,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 5,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 1.0,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 4
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 291,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.4118,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 8.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.67,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 0
+        },
+        "generator": {
+          "seed": 7021,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.8,
+          "hot_type_bias": 0.85
+        }
+      }
+    },
+    {
+      "attempt": 292,
+      "score": 68,
+      "items_delivered": 28,
+      "orders_completed": 8,
+      "avg_decision_ms": 0.5305,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 0.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "detour",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7002,
+          "size3_bias": 0.65,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.55
+        }
+      }
+    },
+    {
+      "attempt": 293,
+      "score": 17,
+      "items_delivered": 7,
+      "orders_completed": 2,
+      "avg_decision_ms": 0.387,
+      "improved": false,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 6,
+          "active_weight": 14.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.8,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 2
+        },
+        "generator": {
+          "seed": 7051,
+          "size3_bias": 0.93,
+          "template_repeat_prob": 0.5,
+          "hot_type_bias": 0.7
+        }
+      }
+    },
+    {
+      "attempt": 294,
+      "score": 193,
+      "items_delivered": 73,
+      "orders_completed": 24,
+      "avg_decision_ms": 0.621,
+      "improved": true,
+      "policy": {
+        "decision": {
+          "lookahead_orders": 3,
+          "active_weight": 12.0,
+          "preview_weight": 4.0,
+          "dropoff_completion_threshold": 0.5,
+          "collision_aggressiveness": "wait",
+          "tie_break_seed": 1
+        },
+        "generator": {
+          "seed": 7041,
+          "size3_bias": 0.75,
+          "template_repeat_prob": 0.65,
+          "hot_type_bias": 0.85
+        }
+      }
+    }
+  ]
+}

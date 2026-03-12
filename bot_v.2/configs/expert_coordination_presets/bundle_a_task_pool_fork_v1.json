@@ -1,0 +1,17 @@
+{
+  "strict_active_priority": true,
+  "prefetch_release_use_delivered_completion": true,
+  "transition_stash_enabled": true,
+  "transition_stash_completion_ratio": 0.9,
+  "transition_stash_remaining_items": 2,
+  "transition_stash_finisher_count": 2,
+  "transition_stash_preview_bonus": 1.0,
+  "anti_no_assignment_enabled": true,
+  "secondary_assignment_enabled": true,
+  "secondary_reposition_empty_only": true,
+  "task_pool_admission_enabled": true,
+  "task_pool_critical_min_bots": 5,
+  "task_pool_critical_max_bots": 8,
+  "task_pool_tail_boost_bots": 2,
+  "task_pool_preview_reserve_bots": 2
+}

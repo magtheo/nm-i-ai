@@ -1,0 +1,27 @@
+{
+  "run_index": 3,
+  "score": 3,
+  "items_delivered": 3,
+  "orders_completed": 0,
+  "rounds_played": 300,
+  "idle_steps": 2620,
+  "collisions_avoided": 357,
+  "avg_decision_ms": 6.2248130000686315,
+  "max_score_exact": null,
+  "max_score_upper_bound": 547,
+  "max_score_lower_bound": 451,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\nmiai\\live_ab_decision_commitment_20260308\\expert\\run_20260308_042852",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 2,
+    "completed_orders": 0,
+    "observed_items": 9,
+    "lower_bound_score": 451,
+    "upper_bound_score": 547,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 48
+  }
+}

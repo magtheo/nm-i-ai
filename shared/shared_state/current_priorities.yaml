@@ -1,0 +1,5 @@
+priorities:
+  - id: infra-001
+    title: validate lab-root migration
+    owner: planner_agent
+    status: open

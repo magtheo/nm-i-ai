@@ -1,0 +1,16 @@
+primary_metric: score
+target: "Beat or match the operational Expert baseline score while reducing late no-assignment starvation without lowering orders_completed."
+comparison: bot_v.1/best/expert/current.json
+secondary_metrics:
+  - orders_completed
+  - items_delivered
+  - idle_steps
+  - no_assignment_wait_bots
+  - wait_due_to_no_assignment_streak_max
+  - secondary_assignment_used
+proxy_metric:
+  - late-window reduction in wait_due_to_no_assignment without broad early or midgame activation
+acceptance_notes:
+  - Do not promote on proxy behavior alone.
+  - Reject if score regresses materially even if starvation proxies improve.
+  - Prefer evidence that the mechanism activates rarely and late.

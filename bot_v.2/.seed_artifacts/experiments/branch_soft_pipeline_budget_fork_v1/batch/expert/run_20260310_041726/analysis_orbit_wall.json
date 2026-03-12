@@ -1,0 +1,51 @@
+{
+  "inputs": {
+    "decision_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\branch_soft_pipeline_budget_fork_v1\\batch\\expert\\run_20260310_041726\\decision_trace.jsonl",
+    "order_trace": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\branch_soft_pipeline_budget_fork_v1\\batch\\expert\\run_20260310_041726\\order_trace.json",
+    "result": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\branch_soft_pipeline_budget_fork_v1\\batch\\expert\\run_20260310_041726\\result.json"
+  },
+  "summary": {
+    "score": 78,
+    "items_delivered": 38,
+    "orders_completed": 8,
+    "idle_steps": 1303,
+    "rounds_played": 300,
+    "order_trace_rounds": 300,
+    "active_order_switch_rounds": [
+      54,
+      91,
+      118,
+      145,
+      175,
+      212,
+      243,
+      297
+    ]
+  },
+  "metrics": {
+    "rounds": 300,
+    "first_round": 0,
+    "last_round": 299,
+    "branch_exit_visits": 0.0,
+    "branch_to_delivery": 0.0,
+    "branch_continue_moves": 0.0,
+    "branch_waits": 0.0,
+    "branch_to_delivery_rate": 0.0,
+    "rejoin_branch_visits": 0.0,
+    "rejoin_admissions": 0.0,
+    "rejoin_denials": 0.0,
+    "rejoin_backlog_avg": 0.0,
+    "rejoin_backlog_max": 0.0,
+    "wait_due_to_spacing_guard": 0.0,
+    "wait_due_to_collision_block": 114.0,
+    "wait_due_to_no_assignment": 1189.0,
+    "queue_semantics_violation": 0.0,
+    "ring_direction_violation": 0.0,
+    "drop_off_actions": 27.0,
+    "d0_busy_ratio": 0.09,
+    "deliver_bots_avg": 0.0,
+    "drop_queue_len_avg": 0.0,
+    "items_per_drop_action": 1.4074074074074074
+  },
+  "failures": []
+}

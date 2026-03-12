@@ -1,0 +1,44 @@
+{
+  "candidates": [
+    {
+      "name": "c00_base_latest_best",
+      "path": "bot\\artifacts\\expert_candidates_120\\c00_base_latest_best.json"
+    },
+    {
+      "name": "c01_relax_force_dropoff",
+      "path": "bot\\artifacts\\expert_candidates_120\\c01_relax_force_dropoff.json"
+    },
+    {
+      "name": "c02_preview_opportunistic",
+      "path": "bot\\artifacts\\expert_candidates_120\\c02_preview_opportunistic.json"
+    },
+    {
+      "name": "c03_detour_aggressive_queue",
+      "path": "bot\\artifacts\\expert_candidates_120\\c03_detour_aggressive_queue.json"
+    },
+    {
+      "name": "c04_auction",
+      "path": "bot\\artifacts\\expert_candidates_120\\c04_auction.json"
+    },
+    {
+      "name": "c05_stable",
+      "path": "bot\\artifacts\\expert_candidates_120\\c05_stable.json"
+    },
+    {
+      "name": "c06_blend_141_plus",
+      "path": "bot\\artifacts\\expert_candidates_120\\c06_blend_141_plus.json"
+    },
+    {
+      "name": "c07_endgame_push",
+      "path": "bot\\artifacts\\expert_candidates_120\\c07_endgame_push.json"
+    },
+    {
+      "name": "c08_anti_stall",
+      "path": "bot\\artifacts\\expert_candidates_120\\c08_anti_stall.json"
+    },
+    {
+      "name": "c09_fast_dropoff",
+      "path": "bot\\artifacts\\expert_candidates_120\\c09_fast_dropoff.json"
+    }
+  ]
+}

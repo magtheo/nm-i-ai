@@ -1,0 +1,45 @@
+{
+  "source_batch_root": ".seed_artifacts\\experiments\\branch_conversion_guard_trigger_tuning_v2\\batch\\expert",
+  "preset": "configs\\expert_coordination_presets\\bundle_a_conversion_guard_v1.json",
+  "results": {
+    "run_20260310_164106": {
+      "first_combo_warn_round": null,
+      "first_coupling_warn_round": 170,
+      "first_combo_path_round": null,
+      "first_coupling_path_round": null,
+      "first_emergency_trigger_round": null,
+      "first_emergency_active_round": null,
+      "emergency_trigger_count": 0,
+      "emergency_active_rounds": 0,
+      "combo_path_rounds": 0,
+      "coupling_path_rounds": 0,
+      "trigger_reasons": []
+    },
+    "run_20260310_164243": {
+      "first_combo_warn_round": null,
+      "first_coupling_warn_round": null,
+      "first_combo_path_round": null,
+      "first_coupling_path_round": null,
+      "first_emergency_trigger_round": null,
+      "first_emergency_active_round": null,
+      "emergency_trigger_count": 0,
+      "emergency_active_rounds": 0,
+      "combo_path_rounds": 0,
+      "coupling_path_rounds": 0,
+      "trigger_reasons": []
+    },
+    "run_20260310_164424": {
+      "first_combo_warn_round": 64,
+      "first_coupling_warn_round": 121,
+      "first_combo_path_round": null,
+      "first_coupling_path_round": null,
+      "first_emergency_trigger_round": null,
+      "first_emergency_active_round": null,
+      "emergency_trigger_count": 0,
+      "emergency_active_rounds": 0,
+      "combo_path_rounds": 0,
+      "coupling_path_rounds": 0,
+      "trigger_reasons": []
+    }
+  }
+}

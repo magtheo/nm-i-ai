@@ -1,0 +1,404 @@
+{
+  "evaluated": 180,
+  "best": {
+    "score": 101,
+    "orders": 10,
+    "items": 51,
+    "p95": 42.16389998327941,
+    "params": {
+      "backtrack_slack": 0,
+      "pickup_fail_blacklist_rounds": 50,
+      "pickup_fail_blacklist_threshold": 4,
+      "stall_recovery_force_dropoff": null,
+      "stall_recovery_preview_weight": 3.0,
+      "stall_recovery_rounds": 50,
+      "stall_recovery_strict_active": false,
+      "stall_round_threshold": 18,
+      "wait_on_backtrack_conflict": false,
+      "hysteresis_penalty": 0.09,
+      "sticky_target_bonus": null
+    }
+  },
+  "top20": [
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 42.16389998327941,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 50,
+        "pickup_fail_blacklist_threshold": 4,
+        "stall_recovery_force_dropoff": null,
+        "stall_recovery_preview_weight": 3.0,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 43.74420002568513,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 50,
+        "pickup_fail_blacklist_threshold": 1,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 1.0,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 26,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 43.967299978248775,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 30,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 3.0,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.08629995305091,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 35,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": true,
+        "stall_recovery_preview_weight": 0.5,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 26,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.232700020074844,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 30,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 0.0,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.309599965345114,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 18,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": true,
+        "stall_recovery_preview_weight": 1.0,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 36,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.33230002177879,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 30,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": true,
+        "stall_recovery_preview_weight": 2.0,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.426699983887374,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 35,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 2.0,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 36,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.4288999424316,
+      "params": {
+        "backtrack_slack": 1,
+        "pickup_fail_blacklist_rounds": 8,
+        "pickup_fail_blacklist_threshold": 4,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 2.0,
+        "stall_recovery_rounds": 65,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.499400013592094,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 30,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": null,
+        "stall_recovery_preview_weight": 0.0,
+        "stall_recovery_rounds": 65,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 22,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.59740000311285,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 30,
+        "pickup_fail_blacklist_threshold": 1,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 3.0,
+        "stall_recovery_rounds": 65,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": 0.0
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.668199960142374,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 30,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": null,
+        "stall_recovery_preview_weight": 1.0,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.70700002275407,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 18,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 0.5,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 44.92919996846467,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 70,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": true,
+        "stall_recovery_preview_weight": 0.5,
+        "stall_recovery_rounds": 65,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 101,
+      "orders": 10,
+      "items": 51,
+      "p95": 46.27789999358356,
+      "params": {
+        "backtrack_slack": 1,
+        "pickup_fail_blacklist_rounds": 30,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": null,
+        "stall_recovery_preview_weight": 1.0,
+        "stall_recovery_rounds": 50,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 26,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.0,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 94,
+      "orders": 9,
+      "items": 49,
+      "p95": 49.06140000093728,
+      "params": {
+        "backtrack_slack": 1,
+        "pickup_fail_blacklist_rounds": 50,
+        "pickup_fail_blacklist_threshold": 3,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 1.5,
+        "stall_recovery_rounds": 30,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 22,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": 0.0
+      }
+    },
+    {
+      "score": 94,
+      "orders": 9,
+      "items": 49,
+      "p95": 51.86640005558729,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 12,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": true,
+        "stall_recovery_preview_weight": 1.5,
+        "stall_recovery_rounds": 30,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 36,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 94,
+      "orders": 9,
+      "items": 49,
+      "p95": 52.24900000030175,
+      "params": {
+        "backtrack_slack": 1,
+        "pickup_fail_blacklist_rounds": 30,
+        "pickup_fail_blacklist_threshold": 2,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 1.0,
+        "stall_recovery_rounds": 30,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 22,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 93,
+      "orders": 9,
+      "items": 48,
+      "p95": 48.051999998278916,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 70,
+        "pickup_fail_blacklist_threshold": 1,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 0.5,
+        "stall_recovery_rounds": 30,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.0,
+        "sticky_target_bonus": null
+      }
+    },
+    {
+      "score": 93,
+      "orders": 9,
+      "items": 48,
+      "p95": 48.66430000402033,
+      "params": {
+        "backtrack_slack": 0,
+        "pickup_fail_blacklist_rounds": 30,
+        "pickup_fail_blacklist_threshold": 4,
+        "stall_recovery_force_dropoff": false,
+        "stall_recovery_preview_weight": 1.5,
+        "stall_recovery_rounds": 30,
+        "stall_recovery_strict_active": false,
+        "stall_round_threshold": 18,
+        "wait_on_backtrack_conflict": false,
+        "hysteresis_penalty": 0.09,
+        "sticky_target_bonus": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "baseline": {
+    "runs": [
+      "run_20260310_022237",
+      "run_20260310_022403",
+      "run_20260310_022113"
+    ],
+    "median": {
+      "score": 88.0,
+      "orders": 9.0,
+      "items": 43.0,
+      "completion_round_1": 54,
+      "completion_round_2": 91,
+      "completion_round_3": 118,
+      "tail_open_rounds": 186.0,
+      "wait_due_to_no_assignment": 873.0,
+      "throughput_floor_breach_rounds": 10.0,
+      "commitment_stagnation_rounds": 16.0,
+      "items_per_drop_action": 1.3870967741935485,
+      "drop_to_pick_ratio": 0.543859649122807
+    },
+    "accept_summary": {
+      "runs": 3,
+      "score_median": 88.0,
+      "orders_completed_median": 9.0,
+      "items_delivered_median": 43.0,
+      "overall_pass_runs": 3,
+      "overall_pass_rate": 1.0,
+      "gate_fail_counts": {
+        "target_liveness": 0,
+        "drop_conversion_floor": 0,
+        "pickup_drop_coupling": 0,
+        "commitment_realism": 0,
+        "throughput_lane_floor": 0,
+        "delivery_lane_guarantee": 0
+      },
+      "conversion_medians": {
+        "items_per_drop_action": 1.3870967741935485,
+        "drop_to_pick_ratio": 0.543859649122807,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 873.0,
+        "wait_due_to_no_assignment_ratio": 0.291,
+        "coupling_break_rounds": 0.0,
+        "commitment_stagnation_rounds": 0.0,
+        "throughput_floor_breach_rounds": 0.0,
+        "delivery_lane_breach_rounds": 0.0,
+        "weak_conversion_window_rounds": 0.0
+      }
+    },
+    "run_rows": [
+      {
+        "run": "run_20260310_022237",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "tail_open_rounds": 186,
+        "wait_due_to_no_assignment": 873,
+        "completion_rounds": [
+          54,
+          91,
+          118
+        ],
+        "throughput_floor_breach_rounds": 10,
+        "commitment_stagnation_rounds": 16
+      },
+      {
+        "run": "run_20260310_022403",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "tail_open_rounds": 186,
+        "wait_due_to_no_assignment": 873,
+        "completion_rounds": [
+          54,
+          91,
+          118
+        ],
+        "throughput_floor_breach_rounds": 10,
+        "commitment_stagnation_rounds": 16
+      },
+      {
+        "run": "run_20260310_022113",
+        "score": 88,
+        "orders": 9,
+        "items": 43,
+        "tail_open_rounds": 186,
+        "wait_due_to_no_assignment": 873,
+        "completion_rounds": [
+          54,
+          91,
+          118
+        ],
+        "throughput_floor_breach_rounds": 10,
+        "commitment_stagnation_rounds": 16
+      }
+    ]
+  },
+  "etadlc_v1": {
+    "runs": [
+      "run_20260311_232359",
+      "run_20260311_232233",
+      "run_20260311_232104"
+    ],
+    "median": {
+      "score": 35.0,
+      "orders": 3.0,
+      "items": 20.0,
+      "completion_round_1": 67,
+      "completion_round_2": 96,
+      "completion_round_3": 137,
+      "tail_open_rounds": 226.0,
+      "wait_due_to_no_assignment": 1553.0,
+      "throughput_floor_breach_rounds": 287.0,
+      "commitment_stagnation_rounds": 195.0,
+      "items_per_drop_action": 1.4285714285714286,
+      "drop_to_pick_ratio": 0.3684210526315789
+    },
+    "accept_summary": {
+      "runs": 3,
+      "score_median": 35.0,
+      "orders_completed_median": 3.0,
+      "items_delivered_median": 20.0,
+      "overall_pass_runs": 0,
+      "overall_pass_rate": 0.0,
+      "gate_fail_counts": {
+        "target_liveness": 0,
+        "drop_conversion_floor": 0,
+        "pickup_drop_coupling": 0,
+        "commitment_realism": 3,
+        "throughput_lane_floor": 3,
+        "delivery_lane_guarantee": 0
+      },
+      "conversion_medians": {
+        "items_per_drop_action": 1.4285714285714286,
+        "drop_to_pick_ratio": 0.3684210526315789,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 1553.0,
+        "wait_due_to_no_assignment_ratio": 0.5176666666666667,
+        "coupling_break_rounds": 11.0,
+        "commitment_stagnation_rounds": 178.0,
+        "throughput_floor_breach_rounds": 283.0,
+        "delivery_lane_breach_rounds": 0.0,
+        "weak_conversion_window_rounds": 245.0
+      }
+    },
+    "run_rows": [
+      {
+        "run": "run_20260311_232359",
+        "score": 35,
+        "orders": 3,
+        "items": 20,
+        "tail_open_rounds": 226,
+        "wait_due_to_no_assignment": 1553,
+        "completion_rounds": [
+          67,
+          96,
+          137
+        ],
+        "throughput_floor_breach_rounds": 287,
+        "commitment_stagnation_rounds": 195
+      },
+      {
+        "run": "run_20260311_232233",
+        "score": 35,
+        "orders": 3,
+        "items": 20,
+        "tail_open_rounds": 226,
+        "wait_due_to_no_assignment": 1553,
+        "completion_rounds": [
+          67,
+          96,
+          137
+        ],
+        "throughput_floor_breach_rounds": 287,
+        "commitment_stagnation_rounds": 195
+      },
+      {
+        "run": "run_20260311_232104",
+        "score": 35,
+        "orders": 3,
+        "items": 20,
+        "tail_open_rounds": 226,
+        "wait_due_to_no_assignment": 1553,
+        "completion_rounds": [
+          67,
+          96,
+          137
+        ],
+        "throughput_floor_breach_rounds": 287,
+        "commitment_stagnation_rounds": 195
+      }
+    ]
+  },
+  "overlay_v1": {
+    "runs": [
+      "run_20260311_235118",
+      "run_20260311_234948",
+      "run_20260311_234818"
+    ],
+    "median": {
+      "score": 52.0,
+      "orders": 5.0,
+      "items": 27.0,
+      "completion_round_1": 47,
+      "completion_round_2": 81,
+      "completion_round_3": 109,
+      "tail_open_rounds": 183.0,
+      "wait_due_to_no_assignment": 722.0,
+      "throughput_floor_breach_rounds": 271.0,
+      "commitment_stagnation_rounds": 183.0,
+      "items_per_drop_action": 0.9,
+      "drop_to_pick_ratio": 0.4339622641509434
+    },
+    "accept_summary": {
+      "runs": 3,
+      "score_median": 52.0,
+      "orders_completed_median": 5.0,
+      "items_delivered_median": 27.0,
+      "overall_pass_runs": 0,
+      "overall_pass_rate": 0.0,
+      "gate_fail_counts": {
+        "target_liveness": 0,
+        "drop_conversion_floor": 1,
+        "pickup_drop_coupling": 1,
+        "commitment_realism": 3,
+        "throughput_lane_floor": 3,
+        "delivery_lane_guarantee": 0
+      },
+      "conversion_medians": {
+        "items_per_drop_action": 0.9,
+        "drop_to_pick_ratio": 0.4339622641509434,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 722.0,
+        "wait_due_to_no_assignment_ratio": 0.24066666666666667,
+        "coupling_break_rounds": 26.0,
+        "commitment_stagnation_rounds": 152.0,
+        "throughput_floor_breach_rounds": 264.0,
+        "delivery_lane_breach_rounds": 0.0,
+        "weak_conversion_window_rounds": 239.0
+      }
+    },
+    "run_rows": [
+      {
+        "run": "run_20260311_235118",
+        "score": 25,
+        "orders": 2,
+        "items": 15,
+        "tail_open_rounds": 239,
+        "wait_due_to_no_assignment": 1058,
+        "completion_rounds": [
+          48,
+          116
+        ],
+        "throughput_floor_breach_rounds": 271,
+        "commitment_stagnation_rounds": 192
+      },
+      {
+        "run": "run_20260311_234948",
+        "score": 62,
+        "orders": 6,
+        "items": 32,
+        "tail_open_rounds": 183,
+        "wait_due_to_no_assignment": 722,
+        "completion_rounds": [
+          47,
+          81,
+          109
+        ],
+        "throughput_floor_breach_rounds": 227,
+        "commitment_stagnation_rounds": 160
+      },
+      {
+        "run": "run_20260311_234818",
+        "score": 52,
+        "orders": 5,
+        "items": 27,
+        "tail_open_rounds": 156,
+        "wait_due_to_no_assignment": 436,
+        "completion_rounds": [
+          47,
+          81,
+          109
+        ],
+        "throughput_floor_breach_rounds": 271,
+        "commitment_stagnation_rounds": 183
+      }
+    ]
+  },
+  "overlay_v2": {
+    "runs": [
+      "run_20260312_003002",
+      "run_20260312_003202",
+      "run_20260312_003337"
+    ],
+    "median": {
+      "score": 73.0,
+      "orders": 7.0,
+      "items": 38.0,
+      "completion_round_1": 50,
+      "completion_round_2": 79,
+      "completion_round_3": 106,
+      "tail_open_rounds": 158.0,
+      "wait_due_to_no_assignment": 891.0,
+      "throughput_floor_breach_rounds": 288.0,
+      "commitment_stagnation_rounds": 135.0,
+      "items_per_drop_action": 1.2258064516129032,
+      "drop_to_pick_ratio": 0.5357142857142857
+    },
+    "accept_summary": {
+      "runs": 3,
+      "score_median": 73.0,
+      "orders_completed_median": 7.0,
+      "items_delivered_median": 38.0,
+      "overall_pass_runs": 0,
+      "overall_pass_rate": 0.0,
+      "gate_fail_counts": {
+        "target_liveness": 0,
+        "drop_conversion_floor": 0,
+        "pickup_drop_coupling": 0,
+        "commitment_realism": 3,
+        "throughput_lane_floor": 3,
+        "delivery_lane_guarantee": 0
+      },
+      "conversion_medians": {
+        "items_per_drop_action": 1.2258064516129032,
+        "drop_to_pick_ratio": 0.5357142857142857,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 891.0,
+        "wait_due_to_no_assignment_ratio": 0.297,
+        "coupling_break_rounds": 24.0,
+        "commitment_stagnation_rounds": 122.0,
+        "throughput_floor_breach_rounds": 284.0,
+        "delivery_lane_breach_rounds": 0.0,
+        "weak_conversion_window_rounds": 245.0
+      }
+    },
+    "run_rows": [
+      {
+        "run": "run_20260312_003002",
+        "score": 54,
+        "orders": 5,
+        "items": 29,
+        "tail_open_rounds": 184,
+        "wait_due_to_no_assignment": 724,
+        "completion_rounds": [
+          50,
+          79,
+          106
+        ],
+        "throughput_floor_breach_rounds": 288,
+        "commitment_stagnation_rounds": 170
+      },
+      {
+        "run": "run_20260312_003202",
+        "score": 73,
+        "orders": 7,
+        "items": 38,
+        "tail_open_rounds": 154,
+        "wait_due_to_no_assignment": 978,
+        "completion_rounds": [
+          50,
+          79,
+          106
+        ],
+        "throughput_floor_breach_rounds": 288,
+        "commitment_stagnation_rounds": 135
+      },
+      {
+        "run": "run_20260312_003337",
+        "score": 73,
+        "orders": 7,
+        "items": 38,
+        "tail_open_rounds": 158,
+        "wait_due_to_no_assignment": 891,
+        "completion_rounds": [
+          50,
+          79,
+          106
+        ],
+        "throughput_floor_breach_rounds": 288,
+        "commitment_stagnation_rounds": 131
+      }
+    ]
+  },
+  "overlay_v3": {
+    "runs": [
+      "run_20260312_004733",
+      "run_20260312_004907",
+      "run_20260312_005047"
+    ],
+    "median": {
+      "score": 62.0,
+      "orders": 6.0,
+      "items": 32.0,
+      "completion_round_1": 50,
+      "completion_round_2": 79,
+      "completion_round_3": 104,
+      "tail_open_rounds": 170.0,
+      "wait_due_to_no_assignment": 1047.0,
+      "throughput_floor_breach_rounds": 267.0,
+      "commitment_stagnation_rounds": 175.0,
+      "items_per_drop_action": 1.391304347826087,
+      "drop_to_pick_ratio": 0.48936170212765956
+    },
+    "accept_summary": {
+      "runs": 3,
+      "score_median": 62.0,
+      "orders_completed_median": 6.0,
+      "items_delivered_median": 32.0,
+      "overall_pass_runs": 0,
+      "overall_pass_rate": 0.0,
+      "gate_fail_counts": {
+        "target_liveness": 0,
+        "drop_conversion_floor": 0,
+        "pickup_drop_coupling": 0,
+        "commitment_realism": 3,
+        "throughput_lane_floor": 3,
+        "delivery_lane_guarantee": 0
+      },
+      "conversion_medians": {
+        "items_per_drop_action": 1.391304347826087,
+        "drop_to_pick_ratio": 0.48936170212765956,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 1047.0,
+        "wait_due_to_no_assignment_ratio": 0.349,
+        "coupling_break_rounds": 24.0,
+        "commitment_stagnation_rounds": 162.0,
+        "throughput_floor_breach_rounds": 263.0,
+        "delivery_lane_breach_rounds": 0.0,
+        "weak_conversion_window_rounds": 248.0
+      }
+    },
+    "run_rows": [
+      {
+        "run": "run_20260312_004733",
+        "score": 62,
+        "orders": 6,
+        "items": 32,
+        "tail_open_rounds": 170,
+        "wait_due_to_no_assignment": 1047,
+        "completion_rounds": [
+          50,
+          79,
+          104
+        ],
+        "throughput_floor_breach_rounds": 267,
+        "commitment_stagnation_rounds": 175
+      },
+      {
+        "run": "run_20260312_004907",
+        "score": 54,
+        "orders": 5,
+        "items": 29,
+        "tail_open_rounds": 203,
+        "wait_due_to_no_assignment": 703,
+        "completion_rounds": [
+          50,
+          79,
+          104
+        ],
+        "throughput_floor_breach_rounds": 275,
+        "commitment_stagnation_rounds": 174
+      },
+      {
+        "run": "run_20260312_005047",
+        "score": 62,
+        "orders": 6,
+        "items": 32,
+        "tail_open_rounds": 170,
+        "wait_due_to_no_assignment": 1047,
+        "completion_rounds": [
+          50,
+          79,
+          104
+        ],
+        "throughput_floor_breach_rounds": 267,
+        "commitment_stagnation_rounds": 175
+      }
+    ]
+  }
+}

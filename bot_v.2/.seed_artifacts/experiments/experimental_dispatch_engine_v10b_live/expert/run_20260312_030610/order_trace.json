@@ -1,0 +1,2374 @@
+{
+  "trace": [
+    {
+      "round": 0,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 1,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 2,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 3,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 4,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 5,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 6,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 7,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 8,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 9,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 10,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 11,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 12,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 13,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 14,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 15,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 16,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 17,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 18,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 19,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 20,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 21,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 22,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 23,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 24,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 25,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 26,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 27,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 28,
+      "score": 0,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": []
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 29,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 30,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 31,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 32,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 33,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 34,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 35,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 36,
+      "score": 1,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 37,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 38,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 39,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 40,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 41,
+      "score": 2,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 42,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 43,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 44,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 45,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 46,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 47,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 48,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 49,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 50,
+      "score": 3,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 51,
+      "score": 4,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 52,
+      "score": 4,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 53,
+      "score": 4,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 54,
+      "score": 4,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 55,
+      "score": 4,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 56,
+      "score": 4,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 57,
+      "score": 4,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 58,
+      "score": 4,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 59,
+      "score": 4,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 60,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 61,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 62,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 63,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 64,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 65,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 66,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 67,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 68,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 69,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 70,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 71,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 72,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 73,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 74,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 75,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    },
+    {
+      "round": 76,
+      "score": 5,
+      "active_order_index": 0,
+      "active": {
+        "id": "order_0",
+        "items_required": [
+          "cream",
+          "onions",
+          "flour",
+          "cereal",
+          "cheese",
+          "milk"
+        ],
+        "items_delivered": [
+          "cereal",
+          "onions",
+          "cream",
+          "flour",
+          "milk"
+        ]
+      },
+      "preview": {
+        "id": "order_1",
+        "items_required": [
+          "cereal",
+          "yogurt",
+          "oats",
+          "bananas",
+          "eggs"
+        ],
+        "items_delivered": []
+      }
+    }
+  ]
+}

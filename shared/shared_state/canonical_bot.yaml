@@ -1,0 +1,6 @@
+canonical_bot:
+  name: bot — копия
+  path: bot — копия
+  reason: active Codex working tree and only bot folder currently present under lab root
+  declared_at: 2026-03-07T10:30:00
+legacy_bot_copies: []

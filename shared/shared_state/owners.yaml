@@ -1,0 +1,17 @@
+owners:
+  coding_agent:
+    scope:
+      - bot-code
+      - bot-scripts
+  analysis_agent:
+    scope:
+      - replay-analysis
+      - metrics
+  planner_agent:
+    scope:
+      - experiment-design
+      - prioritization
+  review_agent:
+    scope:
+      - validation
+      - promotion

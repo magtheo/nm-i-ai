@@ -1,0 +1,6 @@
+{
+  "startup_release_v3_enabled": true,
+  "idle_stage_when_no_visible_targets": true,
+  "anti_no_assignment_enabled": true,
+  "secondary_assignment_enabled": true
+}

@@ -1,0 +1,157 @@
+{
+  "inputs": {
+    "artifact_root": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\critical_dispatch_overlay_v2_batch",
+    "difficulty": "expert",
+    "limit": 3
+  },
+  "thresholds": {
+    "max_no_target_wait_ratio": 0.1,
+    "max_no_target_waits": 120,
+    "min_drop_actions": 12,
+    "min_items_per_drop": 0.9,
+    "min_drop_to_pick_ratio": 0.3,
+    "max_coupling_break_rounds": 40,
+    "max_commitment_stagnation_rounds": 80,
+    "max_throughput_floor_breach_rounds": 90,
+    "max_delivery_lane_breach_rounds": 20
+  },
+  "summary": {
+    "runs": 3,
+    "score_median": 73.0,
+    "orders_completed_median": 7.0,
+    "items_delivered_median": 38.0,
+    "overall_pass_runs": 0,
+    "overall_pass_rate": 0.0,
+    "gate_fail_counts": {
+      "target_liveness": 0,
+      "drop_conversion_floor": 0,
+      "pickup_drop_coupling": 0,
+      "commitment_realism": 3,
+      "throughput_lane_floor": 3,
+      "delivery_lane_guarantee": 0
+    },
+    "conversion_medians": {
+      "items_per_drop_action": 1.2258064516129032,
+      "drop_to_pick_ratio": 0.5357142857142857,
+      "wait_due_to_no_target": 0.0,
+      "wait_due_to_no_target_ratio": 0.0,
+      "wait_due_to_no_assignment": 891.0,
+      "wait_due_to_no_assignment_ratio": 0.297,
+      "coupling_break_rounds": 24.0,
+      "commitment_stagnation_rounds": 122.0,
+      "throughput_floor_breach_rounds": 284.0,
+      "delivery_lane_breach_rounds": 0.0,
+      "weak_conversion_window_rounds": 245.0
+    }
+  },
+  "runs": [
+    {
+      "run_name": "run_20260312_003337",
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\critical_dispatch_overlay_v2_batch\\expert\\run_20260312_003337",
+      "score": 73,
+      "orders_completed": 7,
+      "items_delivered": 38,
+      "rounds": 300,
+      "bot_count": 10,
+      "action_counts": {
+        "pick_up": 55,
+        "drop_off": 31,
+        "wait": 1048
+      },
+      "conversion_metrics": {
+        "items_per_drop_action": 1.2258064516129032,
+        "drop_to_pick_ratio": 0.5636363636363636,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 891.0,
+        "wait_due_to_no_assignment_ratio": 0.297,
+        "coupling_break_rounds": 22,
+        "commitment_stagnation_rounds": 118,
+        "throughput_floor_breach_rounds": 284,
+        "delivery_lane_breach_rounds": 0,
+        "weak_conversion_window_rounds": 244
+      },
+      "gates": {
+        "target_liveness": true,
+        "drop_conversion_floor": true,
+        "pickup_drop_coupling": true,
+        "commitment_realism": false,
+        "throughput_lane_floor": false,
+        "delivery_lane_guarantee": true
+      },
+      "pass_all_gates": false
+    },
+    {
+      "run_name": "run_20260312_003202",
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\critical_dispatch_overlay_v2_batch\\expert\\run_20260312_003202",
+      "score": 73,
+      "orders_completed": 7,
+      "items_delivered": 38,
+      "rounds": 300,
+      "bot_count": 10,
+      "action_counts": {
+        "pick_up": 56,
+        "drop_off": 30,
+        "wait": 1117
+      },
+      "conversion_metrics": {
+        "items_per_drop_action": 1.2666666666666666,
+        "drop_to_pick_ratio": 0.5357142857142857,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 978.0,
+        "wait_due_to_no_assignment_ratio": 0.326,
+        "coupling_break_rounds": 24,
+        "commitment_stagnation_rounds": 122,
+        "throughput_floor_breach_rounds": 284,
+        "delivery_lane_breach_rounds": 0,
+        "weak_conversion_window_rounds": 245
+      },
+      "gates": {
+        "target_liveness": true,
+        "drop_conversion_floor": true,
+        "pickup_drop_coupling": true,
+        "commitment_realism": false,
+        "throughput_lane_floor": false,
+        "delivery_lane_guarantee": true
+      },
+      "pass_all_gates": false
+    },
+    {
+      "run_name": "run_20260312_003002",
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\critical_dispatch_overlay_v2_batch\\expert\\run_20260312_003002",
+      "score": 54,
+      "orders_completed": 5,
+      "items_delivered": 29,
+      "rounds": 300,
+      "bot_count": 10,
+      "action_counts": {
+        "pick_up": 54,
+        "drop_off": 24,
+        "wait": 903
+      },
+      "conversion_metrics": {
+        "items_per_drop_action": 1.2083333333333333,
+        "drop_to_pick_ratio": 0.4444444444444444,
+        "wait_due_to_no_target": 0.0,
+        "wait_due_to_no_target_ratio": 0.0,
+        "wait_due_to_no_assignment": 724.0,
+        "wait_due_to_no_assignment_ratio": 0.24133333333333334,
+        "coupling_break_rounds": 25,
+        "commitment_stagnation_rounds": 157,
+        "throughput_floor_breach_rounds": 284,
+        "delivery_lane_breach_rounds": 0,
+        "weak_conversion_window_rounds": 252
+      },
+      "gates": {
+        "target_liveness": true,
+        "drop_conversion_floor": true,
+        "pickup_drop_coupling": true,
+        "commitment_realism": false,
+        "throughput_lane_floor": false,
+        "delivery_lane_guarantee": true
+      },
+      "pass_all_gates": false
+    }
+  ]
+}

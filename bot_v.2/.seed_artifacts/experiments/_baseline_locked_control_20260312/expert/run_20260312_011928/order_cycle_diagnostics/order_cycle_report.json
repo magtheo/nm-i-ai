@@ -1,0 +1,30 @@
+{
+  "artifact_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\_baseline_locked_control_20260312\\expert\\run_20260312_011928",
+  "result": {
+    "score": 33,
+    "orders_completed": 3,
+    "items_delivered": 18,
+    "rounds_played": 300
+  },
+  "diagnostics": {
+    "rounds": 300,
+    "tail_open_rounds": 173,
+    "secured_rounds": 164,
+    "coupling_break_rounds": 40,
+    "commitment_stagnation_rounds": 201,
+    "throughput_lane_breach_rounds": 257,
+    "delivery_lane_guarantee_breach_rounds": 90,
+    "wait_totals": {
+      "no_target": 0,
+      "no_assignment": 692,
+      "collision": 65,
+      "queue": 0
+    },
+    "completion_rounds": [
+      65,
+      132,
+      275
+    ]
+  },
+  "order_trace_rounds": 300
+}

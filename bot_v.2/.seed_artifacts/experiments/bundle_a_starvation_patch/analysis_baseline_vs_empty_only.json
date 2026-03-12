@@ -1,0 +1,201 @@
+{
+  "late_round_threshold": 180,
+  "baseline_bundle_a": {
+    "runs": [
+      {
+        "run_name": "run_20260310_004942",
+        "score": 74,
+        "orders_completed": 7,
+        "items_delivered": 39,
+        "idle_steps": 1368,
+        "first_completion_round": 52,
+        "second_completion_round": 82,
+        "third_completion_round": 113,
+        "no_assignment_waits_total": 1266.0,
+        "no_assignment_waits_late": 578.0,
+        "late_no_assignment_reason_waits": {
+          "active_visible_but_unassigned": 578.0
+        },
+        "late_no_assignment_inventory_posture": {
+          "holding_deadweight_only": 149,
+          "holding_preview_only": 274,
+          "empty": 155
+        },
+        "late_committed_suppression_rounds": 58,
+        "late_committed_suppression_wait": 387.0,
+        "secondary_source_counts": {}
+      },
+      {
+        "run_name": "run_20260310_005107",
+        "score": 74,
+        "orders_completed": 7,
+        "items_delivered": 39,
+        "idle_steps": 1368,
+        "first_completion_round": 52,
+        "second_completion_round": 82,
+        "third_completion_round": 113,
+        "no_assignment_waits_total": 1266.0,
+        "no_assignment_waits_late": 578.0,
+        "late_no_assignment_reason_waits": {
+          "active_visible_but_unassigned": 578.0
+        },
+        "late_no_assignment_inventory_posture": {
+          "holding_deadweight_only": 149,
+          "holding_preview_only": 274,
+          "empty": 155
+        },
+        "late_committed_suppression_rounds": 58,
+        "late_committed_suppression_wait": 387.0,
+        "secondary_source_counts": {}
+      },
+      {
+        "run_name": "run_20260310_005239",
+        "score": 70,
+        "orders_completed": 7,
+        "items_delivered": 35,
+        "idle_steps": 1136,
+        "first_completion_round": 52,
+        "second_completion_round": 82,
+        "third_completion_round": 113,
+        "no_assignment_waits_total": 1042.0,
+        "no_assignment_waits_late": 354.0,
+        "late_no_assignment_reason_waits": {
+          "active_visible_but_unassigned": 354.0
+        },
+        "late_no_assignment_inventory_posture": {
+          "holding_deadweight_only": 107,
+          "holding_preview_only": 151,
+          "empty": 96
+        },
+        "late_committed_suppression_rounds": 22,
+        "late_committed_suppression_wait": 137.0,
+        "secondary_source_counts": {}
+      }
+    ],
+    "median": {
+      "score": 74,
+      "orders_completed": 7,
+      "items_delivered": 39,
+      "idle_steps": 1368,
+      "first_completion_round": 52,
+      "second_completion_round": 82,
+      "third_completion_round": 113,
+      "no_assignment_waits_total": 1266.0,
+      "no_assignment_waits_late": 578.0,
+      "late_committed_suppression_rounds": 58,
+      "late_committed_suppression_wait": 387.0
+    },
+    "aggregate_late_no_assignment_reason_waits": {
+      "active_visible_but_unassigned": 1510.0
+    },
+    "aggregate_late_no_assignment_inventory_posture": {
+      "holding_deadweight_only": 405,
+      "holding_preview_only": 699,
+      "empty": 406
+    },
+    "aggregate_secondary_source_counts": {}
+  },
+  "patched_bundle_a_starvation_relief_empty_only": {
+    "runs": [
+      {
+        "run_name": "run_20260310_010641",
+        "score": 88,
+        "orders_completed": 9,
+        "items_delivered": 43,
+        "idle_steps": 1040,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "no_assignment_waits_total": 873.0,
+        "no_assignment_waits_late": 214.0,
+        "late_no_assignment_reason_waits": {
+          "active_visible_but_unassigned": 214.0
+        },
+        "late_no_assignment_inventory_posture": {
+          "holding_preview_only": 86,
+          "holding_deadweight_only": 46,
+          "empty": 82
+        },
+        "late_committed_suppression_rounds": 51,
+        "late_committed_suppression_wait": 180.0,
+        "secondary_source_counts": {
+          "secondary_active_support_delivered_need": 269
+        }
+      },
+      {
+        "run_name": "run_20260310_010806",
+        "score": 88,
+        "orders_completed": 9,
+        "items_delivered": 43,
+        "idle_steps": 1040,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "no_assignment_waits_total": 873.0,
+        "no_assignment_waits_late": 214.0,
+        "late_no_assignment_reason_waits": {
+          "active_visible_but_unassigned": 214.0
+        },
+        "late_no_assignment_inventory_posture": {
+          "holding_preview_only": 86,
+          "holding_deadweight_only": 46,
+          "empty": 82
+        },
+        "late_committed_suppression_rounds": 51,
+        "late_committed_suppression_wait": 180.0,
+        "secondary_source_counts": {
+          "secondary_active_support_delivered_need": 269
+        }
+      },
+      {
+        "run_name": "run_20260310_010940",
+        "score": 81,
+        "orders_completed": 8,
+        "items_delivered": 41,
+        "idle_steps": 1007,
+        "first_completion_round": 54,
+        "second_completion_round": 91,
+        "third_completion_round": 118,
+        "no_assignment_waits_total": 869.0,
+        "no_assignment_waits_late": 210.0,
+        "late_no_assignment_reason_waits": {
+          "active_visible_but_unassigned": 210.0
+        },
+        "late_no_assignment_inventory_posture": {
+          "holding_preview_only": 63,
+          "holding_deadweight_only": 46,
+          "empty": 101
+        },
+        "late_committed_suppression_rounds": 56,
+        "late_committed_suppression_wait": 180.0,
+        "secondary_source_counts": {
+          "secondary_active_support_delivered_need": 265
+        }
+      }
+    ],
+    "median": {
+      "score": 88,
+      "orders_completed": 9,
+      "items_delivered": 43,
+      "idle_steps": 1040,
+      "first_completion_round": 54,
+      "second_completion_round": 91,
+      "third_completion_round": 118,
+      "no_assignment_waits_total": 873.0,
+      "no_assignment_waits_late": 214.0,
+      "late_committed_suppression_rounds": 51,
+      "late_committed_suppression_wait": 180.0
+    },
+    "aggregate_late_no_assignment_reason_waits": {
+      "active_visible_but_unassigned": 638.0
+    },
+    "aggregate_late_no_assignment_inventory_posture": {
+      "holding_preview_only": 235,
+      "holding_deadweight_only": 138,
+      "empty": 265
+    },
+    "aggregate_secondary_source_counts": {
+      "secondary_active_support_delivered_need": 803
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "run_index": 4,
+  "score": 31,
+  "items_delivered": 16,
+  "orders_completed": 3,
+  "rounds_played": 300,
+  "idle_steps": 696,
+  "collisions_avoided": 197,
+  "avg_decision_ms": 7.6173970000309055,
+  "max_score_exact": null,
+  "max_score_upper_bound": 541,
+  "max_score_lower_bound": 451,
+  "all_orders_observed": false,
+  "artifact_dir": ".seed_artifacts\\nmiai\\live_orbit_wall_patch3_20260309\\expert\\run_20260309_005917",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 5,
+    "completed_orders": 0,
+    "observed_items": 21,
+    "lower_bound_score": 451,
+    "upper_bound_score": 541,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 45
+  }
+}

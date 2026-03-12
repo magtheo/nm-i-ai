@@ -1,0 +1,27 @@
+{
+  "run_index": 2,
+  "score": 74,
+  "items_delivered": 39,
+  "orders_completed": 7,
+  "rounds_played": 300,
+  "idle_steps": 955,
+  "collisions_avoided": 260,
+  "avg_decision_ms": 9.650440000211043,
+  "max_score_exact": null,
+  "max_score_upper_bound": 542,
+  "max_score_lower_bound": 460,
+  "all_orders_observed": false,
+  "artifact_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\expert_coordination_matrix\\bundle_c_startup_anti_idle\\expert\\run_20260310_001032",
+  "max_score_info": {
+    "difficulty": "expert",
+    "total_orders": 50,
+    "observed_orders": 9,
+    "completed_orders": 0,
+    "observed_items": 46,
+    "lower_bound_score": 460,
+    "upper_bound_score": 542,
+    "exact": false,
+    "max_score": null,
+    "unseen_orders": 41
+  }
+}

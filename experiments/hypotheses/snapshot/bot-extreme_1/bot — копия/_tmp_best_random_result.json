@@ -1,0 +1,52 @@
+{
+  "score": 131,
+  "items_delivered": 61,
+  "orders_completed": 14,
+  "rounds_used": 300,
+  "avg_decision_ms": 0.8032,
+  "p95_decision_ms": 1.2801,
+  "idle_steps_per_bot": {
+    "0": 13,
+    "1": 72,
+    "2": 56
+  },
+  "blocked_moves": 5,
+  "collisions_avoided": 28,
+  "swaps_prevented": 0,
+  "replans": 45,
+  "fallback_rounds": 0,
+  "policy": {
+    "decision": {
+      "lookahead_orders": 2,
+      "active_weight": 16.42,
+      "preview_weight": 6.51,
+      "dropoff_completion_threshold": 0.76,
+      "zone_penalty_weight": 0.02,
+      "dist_weight": 1.1,
+      "dropoff_dist_weight": 0.93,
+      "congestion_weight": 1.18,
+      "collision_risk_weight": 2.9,
+      "replan_penalty_weight": 1.17,
+      "urgency_weight": 2.49,
+      "reservation_horizon": 2,
+      "hysteresis_penalty": 2.71,
+      "collision_aggressiveness": "wait",
+      "decision_soft_budget_ms": 20.0,
+      "decision_hard_cap_ms": 50.0,
+      "tie_break_seed": 7
+    },
+    "generator": {
+      "seed": 7002,
+      "size3_bias": 0.25,
+      "template_repeat_prob": 0.3,
+      "hot_type_bias": 0.66
+    }
+  },
+  "max_info": {
+    "total_orders": 50,
+    "total_items_needed": 204,
+    "max_score": 454,
+    "exact": true,
+    "score_formula": "max_score = delivered_items + 5 * completed_orders"
+  }
+}

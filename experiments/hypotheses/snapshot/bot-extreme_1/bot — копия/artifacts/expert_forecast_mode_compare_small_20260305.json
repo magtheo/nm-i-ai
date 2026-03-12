@@ -1,0 +1,64 @@
+{
+  "seeds": [
+    7004,
+    7005,
+    7006,
+    7007
+  ],
+  "known_orders_mode": "weighted",
+  "item_type_shuffle_prob": 0.2,
+  "results": [
+    {
+      "file": "artifacts/expert_sim_best_params.json",
+      "forecast": "live",
+      "min_score": 45,
+      "mean_score": 58,
+      "max_score": 74,
+      "scores": [
+        66,
+        47,
+        74,
+        45
+      ]
+    },
+    {
+      "file": "artifacts/expert_sim_best_params.json",
+      "forecast": "mined",
+      "min_score": 45,
+      "mean_score": 58,
+      "max_score": 74,
+      "scores": [
+        66,
+        47,
+        74,
+        45
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c08_anti_stall.json",
+      "forecast": "live",
+      "min_score": 82,
+      "mean_score": 90.75,
+      "max_score": 101,
+      "scores": [
+        101,
+        82,
+        91,
+        89
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c08_anti_stall.json",
+      "forecast": "mined",
+      "min_score": 82,
+      "mean_score": 90.75,
+      "max_score": 101,
+      "scores": [
+        101,
+        82,
+        91,
+        89
+      ]
+    }
+  ]
+}

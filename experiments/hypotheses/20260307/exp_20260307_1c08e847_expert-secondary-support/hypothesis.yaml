@@ -1,0 +1,14 @@
+experiment_id: exp_20260307_1c08e847_expert-secondary-support
+title: expert secondary support anti-idle trial
+level: expert
+owner: planner_agent
+created_at: "2026-03-07T10:58:03.461746"
+hypothesis: expert secondary support anti-idle trial
+mechanism: Enable existing anti-no-assignment secondary support in the Expert candidate config to reduce idle fallback when extra bots are available but active items are under-covered.
+patch: patch.diff
+success_metric: score
+verdict: ready_for_live_validation
+baseline_config: bot — копия/best/expert/current.json
+candidate_config: bot — копия/configs/expert_candidate_secondary_support_20260307.json
+baseline_policy: shared/curated/baseline_policy_expert.md
+scope: narrow_config_experiment

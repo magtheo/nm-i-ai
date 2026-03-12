@@ -1,0 +1,17 @@
+﻿{
+    "snapshot_type":  "compact",
+    "created_utc":  "2026-03-08T02:51:45Z",
+    "source_root":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1",
+    "snapshot_path":  "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.1\\docs\\orbit_wall_nmiai_compact_snapshot_20260308_035145",
+    "totals":  {
+                   "files":  35,
+                   "size_bytes":  12877877,
+                   "size_mb":  12.28
+               },
+    "notes":  [
+                  "Compact snapshot intentionally excludes heavy raw .seed_artifacts copies.",
+                  "Includes full core code for --orbit-wall and nmiai_grocery_bot decision stack.",
+                  "Includes enriched round traces and run summaries for architect context.",
+                  "Includes artifact index with absolute paths to all related raw artifact directories."
+              ]
+}

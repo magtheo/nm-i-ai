@@ -1,0 +1,56 @@
+{
+  "inputs": {
+    "artifact_root": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\critical_dispatch_overlay_v2_iter1_live",
+    "difficulty": "expert",
+    "limit": 1,
+    "engine_mode": null,
+    "analyzer_enabled": true
+  },
+  "summary": {
+    "runs": 1,
+    "mean_score": 79.0,
+    "median_score": 79.0,
+    "best_score": 79,
+    "mean_orders_completed": 8.0,
+    "mean_items_delivered": 39.0,
+    "mean_idle_steps": 1078.0,
+    "mean_d0_busy_ratio": 0.09333333333333334,
+    "mean_spacing_wait": 0.0,
+    "queue_semantics_violations": 0.0,
+    "ring_direction_violations": 0.0,
+    "failure_reason_counts": {},
+    "by_engine_mode": {
+      "decision_engine": {
+        "runs": 1,
+        "mean_score": 79.0,
+        "mean_orders_completed": 8.0,
+        "mean_items_delivered": 39.0,
+        "mean_idle_steps": 1078.0,
+        "mean_d0_busy_ratio": 0.09333333333333334
+      }
+    }
+  },
+  "runs": [
+    {
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\Seed\\bot_v.2\\.seed_artifacts\\experiments\\critical_dispatch_overlay_v2_iter1_live\\expert\\run_20260312_005933",
+      "run_name": "run_20260312_005933",
+      "engine_mode": "decision_engine",
+      "score": 79,
+      "items_delivered": 39,
+      "orders_completed": 8,
+      "idle_steps": 1078,
+      "rounds_played": 300,
+      "avg_decision_ms": 13.970409333293597,
+      "d0_busy_ratio": 0.09333333333333334,
+      "items_per_drop_action": 1.3928571428571428,
+      "deliver_bots_avg": 0.0,
+      "rejoin_backlog_avg": 0.0,
+      "branch_to_delivery_rate": 0.0,
+      "wait_due_to_spacing_guard": 0.0,
+      "wait_due_to_collision_block": 168.0,
+      "queue_semantics_violation": 0.0,
+      "ring_direction_violation": 0.0,
+      "failure_reasons": []
+    }
+  ]
+}

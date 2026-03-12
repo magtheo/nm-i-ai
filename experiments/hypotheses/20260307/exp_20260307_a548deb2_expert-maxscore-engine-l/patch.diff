@@ -1,0 +1,8 @@
+# Candidate reference for first expert experiment lifecycle
+
+# This experiment starts as an evaluation package rather than an applied bot patch.
+# Review candidate notes:
+# expert_snapshot_copy_20260306_maxscore_engine/expert_snapshot_copy_20260306/artifacts/MAXSCORE_ENGINE_NOTES.md
+#
+# If the package is accepted after validation, attach the real implementation diff here
+# or replace this file with the commit hash / patch bundle used for the experiment.

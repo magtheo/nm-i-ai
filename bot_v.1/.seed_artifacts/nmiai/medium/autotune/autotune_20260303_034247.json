@@ -1,0 +1,209 @@
+{
+  "attempts": [
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.67,
+        "collision_aggressiveness": "wait",
+        "seed": 0
+      },
+      "score": 26,
+      "items_delivered": 11,
+      "orders_completed": 3,
+      "max_score_exact": null,
+      "max_score_upper_bound": 496,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_032519"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.67,
+        "collision_aggressiveness": "wait",
+        "seed": 1
+      },
+      "score": 129,
+      "items_delivered": 59,
+      "orders_completed": 14,
+      "max_score_exact": null,
+      "max_score_upper_bound": 487,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_032700"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.67,
+        "collision_aggressiveness": "wait",
+        "seed": 2
+      },
+      "score": 30,
+      "items_delivered": 15,
+      "orders_completed": 3,
+      "max_score_exact": null,
+      "max_score_upper_bound": 496,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_032824"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.67,
+        "collision_aggressiveness": "detour",
+        "seed": 0
+      },
+      "score": 103,
+      "items_delivered": 48,
+      "orders_completed": 11,
+      "max_score_exact": null,
+      "max_score_upper_bound": 490,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_033011"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.67,
+        "collision_aggressiveness": "detour",
+        "seed": 1
+      },
+      "score": 103,
+      "items_delivered": 48,
+      "orders_completed": 11,
+      "max_score_exact": null,
+      "max_score_upper_bound": 490,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_033144"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.67,
+        "collision_aggressiveness": "detour",
+        "seed": 2
+      },
+      "score": 70,
+      "items_delivered": 35,
+      "orders_completed": 7,
+      "max_score_exact": null,
+      "max_score_upper_bound": 495,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_033317"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.8,
+        "collision_aggressiveness": "wait",
+        "seed": 0
+      },
+      "score": 112,
+      "items_delivered": 52,
+      "orders_completed": 12,
+      "max_score_exact": null,
+      "max_score_upper_bound": 489,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_033455"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.8,
+        "collision_aggressiveness": "wait",
+        "seed": 1
+      },
+      "score": 112,
+      "items_delivered": 52,
+      "orders_completed": 12,
+      "max_score_exact": null,
+      "max_score_upper_bound": 489,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_033627"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.8,
+        "collision_aggressiveness": "wait",
+        "seed": 2
+      },
+      "score": 112,
+      "items_delivered": 52,
+      "orders_completed": 12,
+      "max_score_exact": null,
+      "max_score_upper_bound": 489,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_033755"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.8,
+        "collision_aggressiveness": "detour",
+        "seed": 0
+      },
+      "score": 106,
+      "items_delivered": 51,
+      "orders_completed": 11,
+      "max_score_exact": null,
+      "max_score_upper_bound": 490,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_033928"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.8,
+        "collision_aggressiveness": "detour",
+        "seed": 1
+      },
+      "score": 106,
+      "items_delivered": 51,
+      "orders_completed": 11,
+      "max_score_exact": null,
+      "max_score_upper_bound": 490,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_034053"
+    },
+    {
+      "config": {
+        "lookahead_k": 2,
+        "active_weight": 10.0,
+        "preview_weight": 4.0,
+        "dropoff_threshold": 0.8,
+        "collision_aggressiveness": "detour",
+        "seed": 2
+      },
+      "score": 106,
+      "items_delivered": 51,
+      "orders_completed": 11,
+      "max_score_exact": null,
+      "max_score_upper_bound": 490,
+      "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_034221"
+    }
+  ],
+  "best": {
+    "config": {
+      "lookahead_k": 2,
+      "active_weight": 10.0,
+      "preview_weight": 4.0,
+      "dropoff_threshold": 0.67,
+      "collision_aggressiveness": "wait",
+      "seed": 1
+    },
+    "score": 129,
+    "run_dir": "C:\\Users\\Exempel\\Desktop\\bot\\.seed_artifacts\\nmiai\\medium\\run_20260303_032700"
+  },
+  "best_config_path": "C:\\Users\\Exempel\\Desktop\\bot\\app\\integrations\\nmiai_grocery_bot\\best_configs\\medium.json"
+}

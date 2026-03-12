@@ -1,0 +1,232 @@
+{
+  "seeds": [
+    7004,
+    7005,
+    7006,
+    7007,
+    7008,
+    7009,
+    7010,
+    7011
+  ],
+  "known_orders_mode": "weighted",
+  "item_type_shuffle_prob": 0.2,
+  "results": [
+    {
+      "file": "artifacts/expert_candidates_120/c08_anti_stall.json",
+      "forecast": "mined",
+      "min_score": 33,
+      "p25": 41.25,
+      "mean_score": 69.25,
+      "max_score": 101,
+      "scores": [
+        101,
+        82,
+        91,
+        89,
+        33,
+        81,
+        33,
+        44
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c08_anti_stall.json",
+      "forecast": "live",
+      "min_score": 5,
+      "p25": 34.25,
+      "mean_score": 62.25,
+      "max_score": 101,
+      "scores": [
+        101,
+        82,
+        91,
+        89,
+        5,
+        81,
+        5,
+        44
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c06_blend_141_plus.json",
+      "forecast": "mined",
+      "min_score": 25,
+      "p25": 26.5,
+      "mean_score": 48.25,
+      "max_score": 94,
+      "scores": [
+        25,
+        57,
+        94,
+        25,
+        27,
+        55,
+        27,
+        76
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c06_blend_141_plus.json",
+      "forecast": "live",
+      "min_score": 25,
+      "p25": 25.0,
+      "mean_score": 47.75,
+      "max_score": 94,
+      "scores": [
+        25,
+        57,
+        94,
+        25,
+        25,
+        55,
+        25,
+        76
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c07_endgame_push.json",
+      "forecast": "mined",
+      "min_score": 27,
+      "p25": 38.25,
+      "mean_score": 54.375,
+      "max_score": 92,
+      "scores": [
+        66,
+        47,
+        92,
+        44,
+        27,
+        90,
+        27,
+        42
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c07_endgame_push.json",
+      "forecast": "live",
+      "min_score": 5,
+      "p25": 32.75,
+      "mean_score": 48.875,
+      "max_score": 92,
+      "scores": [
+        66,
+        47,
+        92,
+        44,
+        5,
+        90,
+        5,
+        42
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c07_endgame_push.json",
+      "forecast": "oracle",
+      "min_score": 3,
+      "p25": 20.0,
+      "mean_score": 42.75,
+      "max_score": 91,
+      "scores": [
+        3,
+        22,
+        67,
+        35,
+        55,
+        14,
+        55,
+        91
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c08_anti_stall.json",
+      "forecast": "oracle",
+      "min_score": 5,
+      "p25": 20.0,
+      "mean_score": 42.25,
+      "max_score": 90,
+      "scores": [
+        25,
+        36,
+        55,
+        90,
+        5,
+        46,
+        5,
+        76
+      ]
+    },
+    {
+      "file": "artifacts/expert_sim_best_params.json",
+      "forecast": "oracle",
+      "min_score": 3,
+      "p25": 32.5,
+      "mean_score": 47.25,
+      "max_score": 85,
+      "scores": [
+        25,
+        3,
+        85,
+        81,
+        37,
+        35,
+        37,
+        75
+      ]
+    },
+    {
+      "file": "artifacts/expert_candidates_120/c06_blend_141_plus.json",
+      "forecast": "oracle",
+      "min_score": 3,
+      "p25": 26.0,
+      "mean_score": 44.75,
+      "max_score": 85,
+      "scores": [
+        81,
+        67,
+        85,
+        23,
+        27,
+        3,
+        27,
+        45
+      ]
+    },
+    {
+      "file": "artifacts/expert_sim_best_params.json",
+      "forecast": "live",
+      "min_score": 26,
+      "p25": 33.5,
+      "mean_score": 49.5,
+      "max_score": 76,
+      "scores": [
+        66,
+        47,
+        74,
+        45,
+        26,
+        36,
+        26,
+        76
+      ]
+    },
+    {
+      "file": "artifacts/expert_sim_best_params.json",
+      "forecast": "mined",
+      "min_score": 4,
+      "p25": 28.0,
+      "mean_score": 44,
+      "max_score": 76,
+      "scores": [
+        66,
+        47,
+        74,
+        45,
+        4,
+        36,
+        4,
+        76
+      ]
+    }
+  ]
+}

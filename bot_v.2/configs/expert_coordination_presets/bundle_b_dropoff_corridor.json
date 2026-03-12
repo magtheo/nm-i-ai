@@ -1,0 +1,5 @@
+{
+  "adaptive_deliver_queue": true,
+  "dropoff_stop_line_enabled": true,
+  "clear_adjacent_dropoff_lane": true
+}

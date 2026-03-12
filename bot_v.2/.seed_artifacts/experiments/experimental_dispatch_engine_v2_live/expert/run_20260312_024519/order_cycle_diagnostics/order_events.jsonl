@@ -1,0 +1,34 @@
+{"round": 0, "event": "order_started", "active_order_id": "order_0", "active_order_index": 0}
+{"round": 11, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 1, "converter_role_count": 0}
+{"round": 12, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 1, "converter_role_count": 0}
+{"round": 13, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 1, "converter_role_count": 0}
+{"round": 14, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 1, "converter_role_count": 0}
+{"round": 15, "event": "conversion_floor_breached", "active_order_id": "order_0", "conversion_floor_target": 1, "converter_role_count": 0}
+{"round": 20, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 53, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 6, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 58, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 60, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 75, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 77, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 82, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 106, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 6, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 146, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 7, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 155, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 161, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 166, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 168, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 6, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 179, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 183, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 207, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 212, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 6, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 223, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 235, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 240, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 6, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 251, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 254, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 263, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 267, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 278, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 282, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 291, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}
+{"round": 295, "event": "pickup_drop_coupling_broken", "active_order_id": "order_0", "pickup_window": 5, "drop_window": 0, "delivered_delta_window": 0}

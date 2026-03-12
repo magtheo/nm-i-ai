@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-03-08T22:44:40",
+  "params": {
+    "reservation_horizon": 2,
+    "migration_stage": 5,
+    "delivery_quota_min": 2,
+    "delivery_quota_max": 2,
+    "forecast_buffer_cap": 3,
+    "rejoin_slot_headroom": 2
+  },
+  "recommended_live_cmd": "python scripts/run_nmiai_grocery_bot.py --difficulty expert --runs 1 --record --record-order-trace --record-decision-trace --orbit-wall --orbit-branch-exit 8,15 --orbit-branch-continue 7,15 --orbit-delivery-entry 8,16 --orbit-rejoin-branch 3,15 --orbit-dropoff 1,16 --orbit-return-buffer-cells \"3,16;2,16\" --reservation-horizon 2 --orbit-migration-stage 5 --orbit-delivery-quota-min 2 --orbit-delivery-quota-max 2 --orbit-forecast-buffer-cap 3 --orbit-rejoin-slot-headroom 2"
+}
