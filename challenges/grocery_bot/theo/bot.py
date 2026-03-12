@@ -191,16 +191,52 @@ class GroceryBot:
             
             # Apply stuck recovery for bots that have been stuck too long
             bot_positions = [bot.position for bot in state.bots]
+            active_order = state.active_order
+            
             for i, action in enumerate(actions):
                 bot_id = action.get("bot")
                 if bot_id in bots_needing_recovery:
                     stuck_count = bots_needing_recovery[bot_id]
                     bot = next((b for b in state.bots if b.id == bot_id), None)
                     if bot:
-                        if stuck_count >= STUCK_TASK_CLEAR_THRESHOLD:
+                        # BUGFIX: Check if bot is stuck at drop-off with ONLY preview items
+                        at_dropoff = bot.position in state.drop_off_zones
+                        has_only_preview_items = False
+                        
+                        if at_dropoff and active_order and bot.inventory:
+                            # Check if ALL inventory items are NOT in active order
+                            needed_types = set(active_order.items_needed)
+                            has_any_active = any(t in needed_types for t in bot.inventory)
+                            if bot.inventory and not has_any_active:
+                                has_only_preview_items = True
+                                logger.info(f"  Bot {bot_id} stuck at drop-off with only preview items: {bot.inventory}")
+                        
+                        if stuck_count >= STUCK_TASK_CLEAR_THRESHOLD or has_only_preview_items:
                             if bot_id in tasks:
                                 logger.info(f"  Bot {bot_id} severely stuck ({stuck_count} rounds), clearing task for reassignment")
                                 del tasks[bot_id]
+                        
+                        # BUGFIX: If at drop-off with only preview items, force move away
+                        if has_only_preview_items and at_dropoff:
+                            escape_pos = self._find_escape_position(bot.position, bot_positions)
+                            if escape_pos:
+                                x, y = bot.position
+                                nx, ny = escape_pos
+                                if ny < y:
+                                    move_action = "move_up"
+                                elif ny > y:
+                                    move_action = "move_down"
+                                elif nx > x:
+                                    move_action = "move_right"
+                                elif nx < x:
+                                    move_action = "move_left"
+                                else:
+                                    move_action = "wait"
+                                logger.info(f"  Bot {bot_id} moving away from drop-off with preview items: {move_action}")
+                                actions[i] = {"bot": bot_id, "action": move_action}
+                                self._stuck_counts[bot_id] = 0
+                                continue
+                        
                         recovery_action = self._get_recovery_action(bot_id, bot.position, bot_positions)
                         if recovery_action:
                             actions[i] = recovery_action
