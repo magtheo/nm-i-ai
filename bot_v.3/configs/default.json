@@ -1,0 +1,10 @@
+{
+  "active_item_weight": 10.0,
+  "preview_item_weight": 3.0,
+  "dist_weight": 1.0,
+  "max_deliverers": 3,
+  "enable_preview_picks": true,
+  "preview_safety_slots": 1,
+  "starvation_rounds": 5,
+  "decision_timeout_ms": 50.0
+}
