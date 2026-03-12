@@ -61,8 +61,9 @@ class Task:
 class TaskAssigner:
     """Assigns tasks to bots using global optimization with route bundling."""
     
-    def __init__(self, pathfinder: Pathfinder):
+    def __init__(self, pathfinder: Pathfinder, observer=None):
         self.pathfinder = pathfinder
+        self.observer = observer
         self._zone_load: dict[tuple[int, int], int] = {}
         self._distance_cache: dict[tuple[tuple[int, int], tuple[int, int]], int] = {}
         self._spatial_indices: dict[str, SpatialIndex] = {}
@@ -73,21 +74,32 @@ class TaskAssigner:
         preview_order = state.preview_order
         
         self._distance_cache = {}
-        self._rebuild_spatial_indices(state)
         
-        bot_positions_list = [bot.position for bot in state.bots]
-        self.pathfinder.update_congestion(bot_positions_list)
+        # Sub-phase: rebuild spatial indices
+        with self._phase("tasks:spatial_indices"):
+            self._rebuild_spatial_indices(state)
+        
+        # Sub-phase: update congestion
+        with self._phase("tasks:congestion"):
+            bot_positions_list = [bot.position for bot in state.bots]
+            self.pathfinder.update_congestion(bot_positions_list)
         
         self._zone_load = {zone: 0 for zone in state.drop_off_zones}
         
-        active_needed = self._get_needed_items(active_order, state.bots, "active")
-        preview_needed = self._get_needed_items(preview_order, state.bots, "preview")
+        # Sub-phase: calculate needed items
+        with self._phase("tasks:needed_items"):
+            active_needed = self._get_needed_items(active_order, state.bots, "active")
+            preview_needed = self._get_needed_items(preview_order, state.bots, "preview")
         
-        all_candidates = self._generate_all_candidates(
-            state, active_order, preview_order, active_needed, preview_needed
-        )
+        # Sub-phase: generate candidates
+        with self._phase("tasks:generate_candidates"):
+            all_candidates = self._generate_all_candidates(
+                state, active_order, preview_order, active_needed, preview_needed
+            )
         
-        assignments = self._global_assignment(state.bots, all_candidates, state)
+        # Sub-phase: global assignment
+        with self._phase("tasks:global_assignment"):
+            assignments = self._global_assignment(state.bots, all_candidates, state)
         
         for bot_id, task in assignments.items():
             if task.target_position and task.target_position in state.drop_off_zones:
@@ -101,6 +113,15 @@ class TaskAssigner:
                 tasks[bot.id] = self._get_fallback_task(bot, state, active_needed, preview_needed)
         
         return tasks
+    
+    def _phase(self, name: str):
+        """Context manager for sub-phase timing with log markers."""
+        logger.debug(f"[PHASE:{name}] start")
+        if self.observer:
+            return self.observer.phase(name)
+        from contextlib import nullcontext
+        return nullcontext()
+
     
     def _get_needed_items(self, order: Optional[Order], bots: list[Bot], order_type: str) -> dict[str, int]:
         """Get count of each item type still needed."""

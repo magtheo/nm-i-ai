@@ -22,10 +22,19 @@ logger = get_logger(LogCategory.COLLISION)
 class CollisionAvoider:
     """Resolves collisions between bot movements with multi-step lookahead."""
     
-    def __init__(self, lookahead_steps: int = 4, pathfinder=None):
+    def __init__(self, lookahead_steps: int = 4, pathfinder=None, observer=None):
         self.lookahead_steps = lookahead_steps
         self.pathfinder = pathfinder
+        self.observer = observer
         self._wait_counts: dict[int, int] = {}  # Track consecutive waits per bot
+    
+    def _phase(self, name: str):
+        """Context manager for sub-phase timing with log markers."""
+        logger.debug(f"[PHASE:{name}] start")
+        if self.observer:
+            return self.observer.phase(name)
+        from contextlib import nullcontext
+        return nullcontext()
     
     def resolve_conflicts(
         self,
@@ -58,21 +67,23 @@ class CollisionAvoider:
         # Build bot lookup
         bot_lookup = {bot.id: bot for bot in state.bots}
         
-        # Calculate priority for each bot
-        priorities = self._calculate_priorities(state, bot_lookup)
+        # Sub-phase: Calculate priority for each bot
+        with self._phase("collision:priorities"):
+            priorities = self._calculate_priorities(state, bot_lookup)
         
         # Build reservation table: position -> (bot_id, step)
         # Also track reverse: bot_id -> reserved positions
         reservation_table: dict[tuple[int, int], set[int]] = defaultdict(set)
         bot_reservations: dict[int, list[tuple[int, int]]] = {}
         
-        # Calculate planned paths for each bot
-        planned_paths = {}
-        for action in actions:
-            bot_id = action["bot"]
-            current_pos = bot_positions[bot_id]
-            path = self._get_planned_path(current_pos, action, self.lookahead_steps)
-            planned_paths[bot_id] = path
+        # Sub-phase: Calculate planned paths for each bot
+        with self._phase("collision:path_projection"):
+            planned_paths = {}
+            for action in actions:
+                bot_id = action["bot"]
+                current_pos = bot_positions[bot_id]
+                path = self._get_planned_path(current_pos, action, self.lookahead_steps)
+                planned_paths[bot_id] = path
         
         # Sort actions by priority (higher priority = lower number)
         sorted_actions = sorted(actions, key=lambda a: priorities.get(a["bot"], 999))
@@ -84,19 +95,21 @@ class CollisionAvoider:
             current_pos = bot_positions[bot_id]
             planned_path = planned_paths[bot_id]
             
-            # Check for conflicts with already-reserved positions
-            conflict = self._check_path_conflict(
-                bot_id, planned_path, reservation_table, current_pos
-            )
+            # Sub-phase: Check for conflicts
+            with self._phase("collision:conflict_check"):
+                conflict = self._check_path_conflict(
+                    bot_id, planned_path, reservation_table, current_pos
+                )
             
             if conflict:
-                # Try to find alternative action
-                goal_pos = goals.get(bot_id) if goals else None
-                alternative = self._find_alternative_action(
-                    bot_id, current_pos, action, 
-                    reservation_table, bot_positions, priorities, goal_pos,
-                    stuck_counts
-                )
+                # Sub-phase: Find alternative action
+                with self._phase("collision:alternative"):
+                    goal_pos = goals.get(bot_id) if goals else None
+                    alternative = self._find_alternative_action(
+                        bot_id, current_pos, action, 
+                        reservation_table, bot_positions, priorities, goal_pos,
+                        stuck_counts
+                    )
                 
                 if alternative:
                     resolved_actions.append(alternative)

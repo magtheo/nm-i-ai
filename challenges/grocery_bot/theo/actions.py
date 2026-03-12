@@ -14,8 +14,17 @@ logger = get_logger(LogCategory.ACTIONS)
 class ActionGenerator:
     """Generates actions from assigned tasks."""
     
-    def __init__(self, pathfinder: Pathfinder):
+    def __init__(self, pathfinder: Pathfinder, observer=None):
         self.pathfinder = pathfinder
+        self.observer = observer
+    
+    def _phase(self, name: str):
+        """Context manager for sub-phase timing with log markers."""
+        logger.debug(f"[PHASE:{name}] start")
+        if self.observer:
+            return self.observer.phase(name)
+        from contextlib import nullcontext
+        return nullcontext()
     
     def generate_actions(
         self,
@@ -56,30 +65,36 @@ class ActionGenerator:
         """Generate an action for a bot based on its task."""
         
         if task.type == TaskType.DROP_OFF:
-            return self._drop_off_action(bot)
+            with self._phase("actions:drop_off"):
+                return self._drop_off_action(bot)
         
         if task.type == TaskType.PICK_ACTIVE or task.type == TaskType.PICK_PREVIEW:
-            return self._pick_up_action(bot, task.target_item)
+            with self._phase("actions:pick_up"):
+                return self._pick_up_action(bot, task.target_item)
         
         if task.type == TaskType.MOVE_TO_ITEM and task.target_item:
             item_pos = task.target_item.position
             if is_adjacent(bot.position, item_pos):
-                return self._pick_up_action(bot, task.target_item)
-            adjacent_target = self._get_adjacent_position(bot.position, item_pos)
+                with self._phase("actions:pick_up"):
+                    return self._pick_up_action(bot, task.target_item)
+            with self._phase("actions:adjacent"):
+                adjacent_target = self._get_adjacent_position(bot.position, item_pos)
             if adjacent_target:
-                return self._move_toward_action(
-                    bot, 
-                    adjacent_target, 
-                    bot_positions
-                )
+                with self._phase("actions:move"):
+                    return self._move_toward_action(
+                        bot, 
+                        adjacent_target, 
+                        bot_positions
+                    )
             return {"bot": bot.id, "action": "wait"}
         
         if task.type == TaskType.MOVE_TO_DROP_OFF and task.target_position:
-            return self._move_toward_action(
-                bot, 
-                task.target_position, 
-                bot_positions
-            )
+            with self._phase("actions:move"):
+                return self._move_toward_action(
+                    bot, 
+                    task.target_position, 
+                    bot_positions
+                )
         
         # Default: wait
         return {"bot": bot.id, "action": "wait"}

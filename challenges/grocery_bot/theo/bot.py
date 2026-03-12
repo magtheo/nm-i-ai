@@ -23,9 +23,9 @@ class GroceryBot:
     def __init__(self, observer: Observer | None = None):
         self.observer = observer or Observer(enabled=False)
         self.pathfinder = Pathfinder()
-        self.task_assigner = TaskAssigner(self.pathfinder)
-        self.action_generator = ActionGenerator(self.pathfinder)
-        self.collision_avoider = CollisionAvoider(lookahead_steps=4, pathfinder=self.pathfinder)
+        self.task_assigner = TaskAssigner(self.pathfinder, observer=self.observer)
+        self.action_generator = ActionGenerator(self.pathfinder, observer=self.observer)
+        self.collision_avoider = CollisionAvoider(lookahead_steps=4, pathfinder=self.pathfinder, observer=self.observer)
         self.current_state: GameState | None = None
         self._last_positions: dict[int, tuple[int, int]] = {}
         self._stuck_counts: dict[int, int] = {}
