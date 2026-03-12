@@ -237,7 +237,7 @@ interactive_mode() {
     fi
     
     # Build and save command
-    local cmd="cd $SCRIPT_DIR && ./run.sh play -b $BOT -d $DIFFICULTY"
+    local cmd="cd $SCRIPT_DIR && ./run.sh play -c $CHALLENGE -b $BOT -d $DIFFICULTY"
     [[ -n "$AUTO_TOKEN" ]] && cmd="$cmd -a"
     [[ -n "$TOKEN" ]] && cmd="$cmd -t $TOKEN"
     [[ -n "$OBSERVE" ]] && cmd="$cmd -o"
@@ -265,6 +265,7 @@ cmd_play() {
     fi
     args+=("--bot" "$BOT")
     args+=("--difficulty" "$DIFFICULTY")
+    args+=("--challenge" "$CHALLENGE")
     if [[ -n "$VERBOSE" ]]; then
         args+=("--verbose")
     fi
@@ -419,7 +420,7 @@ fi
 
 # Save to history for direct mode (only for play command)
 if [[ "$COMMAND" == "play" ]]; then
-    HISTORY_CMD="cd $SCRIPT_DIR && ./run.sh play -b $BOT -d $DIFFICULTY"
+    HISTORY_CMD="cd $SCRIPT_DIR && ./run.sh play -c $CHALLENGE -b $BOT -d $DIFFICULTY"
     [[ -n "$AUTO_TOKEN" ]] && HISTORY_CMD="$HISTORY_CMD -a"
     [[ -n "$TOKEN" ]] && HISTORY_CMD="$HISTORY_CMD -t $TOKEN"
     [[ -n "$OBSERVE" ]] && HISTORY_CMD="$HISTORY_CMD -o"

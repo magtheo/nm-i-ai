@@ -10,6 +10,7 @@ from typing import Optional
 
 class LogCategory(Enum):
     """Log categories for different aspects of the bot."""
+
     MAIN = "main"
     PATHFINDING = "pathfinding"
     TASKS = "tasks"
@@ -75,6 +76,7 @@ LOG_DESCRIPTIONS = {
 }
 
 _loggers: dict[LogCategory, logging.Logger] = {}
+_current_log_dir: str = "logs"
 
 
 class LogFormatter(logging.Formatter):
@@ -94,20 +96,25 @@ class LogFormatter(logging.Formatter):
 
 def get_log_reference(category: LogCategory) -> str:
     """Get a reference string pointing to a specific log file.
-    
+
     Args:
         category: The log category to reference.
-    
+
     Returns:
-        String like "(see logs/pathfinding.log for details)"
+        String like "(see logs/grocery_bot/theo/pathfinding.log for details)"
     """
     filename = LOG_CONFIG[category]["filename"]
-    return f"(see logs/{filename} for details)"
+    return f"(see {_current_log_dir}/{filename} for details)"
 
 
-def log_issue(logger: logging.Logger, category: LogCategory, message: str, level: int = logging.WARNING) -> None:
+def log_issue(
+    logger: logging.Logger,
+    category: LogCategory,
+    message: str,
+    level: int = logging.WARNING,
+) -> None:
     """Log an issue to the main logger with a reference to a detailed log file.
-    
+
     Args:
         logger: The main logger to log to.
         category: The log category that contains detailed information.
@@ -120,10 +127,10 @@ def log_issue(logger: logging.Logger, category: LogCategory, message: str, level
 
 def _build_log_files_reference(log_dir: str) -> str:
     """Build the log files reference section.
-    
+
     Args:
         log_dir: The log directory path.
-    
+
     Returns:
         Formatted string with log files reference.
     """
@@ -136,33 +143,38 @@ def _build_log_files_reference(log_dir: str) -> str:
     return "\n".join(lines)
 
 
-def setup_file_logging(verbose: bool = False, log_dir: str = "logs") -> dict[str, logging.Logger]:
+def setup_file_logging(
+    verbose: bool = False, log_dir: str = "logs"
+) -> dict[str, logging.Logger]:
     """Set up multi-file logging system.
-    
+
     Args:
         verbose: If True, enable DEBUG level for console output on main logger.
         log_dir: Directory to store log files.
-    
+
     Returns:
         Dictionary of loggers keyed by category name.
     """
-    global _loggers
-    
+    global _loggers, _current_log_dir
+
     log_path = Path(log_dir)
     log_path.mkdir(parents=True, exist_ok=True)
-    
+    _current_log_dir = log_dir
+
     root_logger = logging.getLogger()
     root_logger.handlers.clear()
     root_logger.setLevel(logging.DEBUG)
-    
+
     session_separator = "=" * 80
-    session_start = f"NEW SESSION STARTED: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-    
+    session_start = (
+        f"NEW SESSION STARTED: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+    )
+
     for category, config in LOG_CONFIG.items():
         logger = logging.getLogger(f"bot.{category.value}")
         logger.handlers.clear()
         logger.setLevel(config["level"])
-        
+
         file_path = log_path / config["filename"]
         file_handler = logging.FileHandler(
             file_path,
@@ -172,54 +184,58 @@ def setup_file_logging(verbose: bool = False, log_dir: str = "logs") -> dict[str
         file_handler.setLevel(config["level"])
         file_handler.setFormatter(LogFormatter(config["format"]))
         logger.addHandler(file_handler)
-        
-        file_handler.emit(logging.LogRecord(
-            name=logger.name,
-            level=logging.INFO,
-            pathname="",
-            lineno=0,
-            msg=f"\n{session_separator}\n{session_start}\n{session_separator}",
-            args=(),
-            exc_info=None,
-        ))
-        
-        if category == LogCategory.MAIN:
-            log_files_section = _build_log_files_reference(log_dir)
-            file_handler.emit(logging.LogRecord(
+
+        file_handler.emit(
+            logging.LogRecord(
                 name=logger.name,
                 level=logging.INFO,
                 pathname="",
                 lineno=0,
-                msg=log_files_section,
+                msg=f"\n{session_separator}\n{session_start}\n{session_separator}",
                 args=(),
                 exc_info=None,
-            ))
-        
+            )
+        )
+
+        if category == LogCategory.MAIN:
+            log_files_section = _build_log_files_reference(log_dir)
+            file_handler.emit(
+                logging.LogRecord(
+                    name=logger.name,
+                    level=logging.INFO,
+                    pathname="",
+                    lineno=0,
+                    msg=log_files_section,
+                    args=(),
+                    exc_info=None,
+                )
+            )
+
         if config["console"]:
             console_level = logging.DEBUG if verbose else logging.INFO
             console_handler = logging.StreamHandler(sys.stdout)
             console_handler.setLevel(console_level)
             console_handler.setFormatter(LogFormatter(config["format"]))
             logger.addHandler(console_handler)
-        
+
         _loggers[category] = logger
-    
+
     result: dict[str, logging.Logger] = {}
     for category, logger in _loggers.items():
         result[category.name] = logger
-    
+
     return result
 
 
 def get_logger(category: LogCategory) -> logging.Logger:
     """Get a logger for a specific category.
-    
+
     Args:
         category: The log category to get a logger for.
-    
+
     Returns:
         Logger instance for the specified category.
-        
+
     Raises:
         RuntimeError: If logging has not been set up yet.
     """
@@ -232,7 +248,7 @@ def get_logger(category: LogCategory) -> logging.Logger:
 
 def log_game_summary(logger: logging.Logger, result: dict) -> None:
     """Log the final game summary.
-    
+
     Args:
         logger: Logger to use for output.
         result: Dictionary containing game results with keys like:
@@ -243,40 +259,40 @@ def log_game_summary(logger: logging.Logger, result: dict) -> None:
             - errors: Any errors encountered
     """
     separator = "=" * 60
-    
+
     logger.info(separator)
     logger.info("GAME SUMMARY")
     logger.info(separator)
-    
+
     if "winner" in result:
         logger.info(f"Winner: {result['winner']}")
-    
+
     if "score" in result:
         logger.info(f"Final Score: {result['score']}")
-    
+
     if "rounds" in result:
         logger.info(f"Rounds Played: {result['rounds']}")
-    
+
     if "duration" in result:
         logger.info(f"Game Duration: {result['duration']}")
-    
+
     if "errors" in result and result["errors"]:
         logger.warning(f"Errors Encountered: {len(result['errors'])}")
         for error in result["errors"]:
             logger.warning(f"  - {error}")
-    
+
     for key, value in result.items():
         if key not in ("winner", "score", "rounds", "duration", "errors"):
             logger.info(f"{key.replace('_', ' ').title()}: {value}")
-    
+
     logger.info(separator)
     logger.info("For detailed logs, see:")
     for category in LogCategory:
         if category != LogCategory.MAIN:
             filename = LOG_CONFIG[category]["filename"]
             description = LOG_DESCRIPTIONS[category]
-            logger.info(f"  logs/{filename} - {description}")
-    
+            logger.info(f"  {_current_log_dir}/{filename} - {description}")
+
     logger.info(separator)
     logger.info(f"Session ended at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info(separator)
