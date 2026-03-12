@@ -79,6 +79,11 @@ _loggers: dict[LogCategory, logging.Logger] = {}
 _current_log_dir: str = "logs"
 
 
+def get_log_dir() -> str:
+    """Get the current log directory path."""
+    return _current_log_dir
+
+
 class LogFormatter(logging.Formatter):
     """Custom log formatter with timestamps."""
 

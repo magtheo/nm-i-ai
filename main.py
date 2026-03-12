@@ -16,6 +16,7 @@ from tools.logging_config import (
     setup_file_logging,
 )
 from tools.observer import JSONOutput, Observer
+from tools.observer.analysis import set_context
 from tools.token_manager import VALID_DIFFICULTIES, TokenManager
 
 # Available bot implementations
@@ -57,6 +58,7 @@ async def run_bot(
     log_dir = Path("logs") / challenge / bot_name
 
     setup_file_logging(verbose, log_dir=str(log_dir))
+    set_context(bot_name, challenge)
     logger = get_logger(LogCategory.MAIN)
 
     logger.info(f"Starting Grocery Bot ({bot_name})...")
@@ -113,6 +115,7 @@ async def run_with_auto_token(
     log_dir = Path("logs") / challenge / bot_name / difficulty
 
     setup_file_logging(verbose, log_dir=str(log_dir))
+    set_context(bot_name, challenge)
     logger = get_logger(LogCategory.MAIN)
 
     token_manager = TokenManager()

@@ -3,7 +3,17 @@
 from dataclasses import dataclass, field
 from typing import Any
 from collections import defaultdict
-from tools.logging_config import _current_log_dir
+from tools.logging_config import get_log_dir
+
+_current_bot: str = "theo"
+_current_challenge: str = "grocery_bot"
+
+
+def set_context(bot: str = "theo", challenge: str = "grocery_bot") -> None:
+    """Set the current bot and challenge context for dynamic paths."""
+    global _current_bot, _current_challenge
+    _current_bot = bot
+    _current_challenge = challenge
 
 
 @dataclass
@@ -30,37 +40,44 @@ class SubPhaseMapping:
 PHASE_MAPPINGS: dict[str, PhaseMapping] = {
     "parsing": PhaseMapping(
         log_file="main.log",
-        source_file="challenges/grocery_bot/shared/state.py",
+        source_file="shared/state.py",
         entry_point="GameState.from_dict()",
         description="State deserialization from server data",
     ),
     "pathfinding": PhaseMapping(
         log_file="pathfinding.log",
-        source_file="challenges/grocery_bot/theo/pathfinding.py",
+        source_file="pathfinding.py",
         entry_point="Pathfinder class",
         description="Navigation, BFS, obstacle handling",
     ),
     "tasks": PhaseMapping(
         log_file="tasks.log",
-        source_file="challenges/grocery_bot/theo/tasks.py",
+        source_file="tasks.py",
         entry_point="TaskAssigner.assign_tasks()",
         description="Task assignment and prioritization",
     ),
     "actions": PhaseMapping(
         log_file="actions.log",
-        source_file="challenges/grocery_bot/theo/actions.py",
+        source_file="actions.py",
         entry_point="ActionGenerator.generate_actions()",
         description="Action generation (move/pick_up/drop_off)",
     ),
     "collision": PhaseMapping(
         log_file="collision.log",
-        source_file="challenges/grocery_bot/theo/collision.py",
+        source_file="collision.py",
         entry_point="CollisionAvoider.resolve_conflicts()",
         description="Collision detection and resolution",
     ),
 }
 
-# Sub-phase mappings with specific function names and search hints
+
+def _build_source_path(relative_path: str) -> str:
+    """Build full source file path from relative path."""
+    if relative_path.startswith("shared/"):
+        return f"challenges/{_current_challenge}/{relative_path}"
+    return f"challenges/{_current_challenge}/{_current_bot}/{relative_path}"
+
+
 SUBPHASE_MAPPINGS: dict[str, SubPhaseMapping] = {
     # Tasks sub-phases
     "tasks:spatial_indices": SubPhaseMapping(
@@ -198,9 +215,9 @@ class Bottleneck:
         if parent in PHASE_MAPPINGS:
             mapping = PHASE_MAPPINGS[parent]
             if not self.log_file:
-                self.log_file = f"{_current_log_dir}/{mapping.log_file}"
+                self.log_file = f"{get_log_dir()}/{mapping.log_file}"
             if not self.source_file:
-                self.source_file = mapping.source_file
+                self.source_file = _build_source_path(mapping.source_file)
             if not self.entry_point:
                 self.entry_point = mapping.entry_point
 
@@ -327,10 +344,12 @@ class Analysis:
                     "total_ms": timer.total,
                     "avg_ms": timer.avg,
                     "count": timer.count,
-                    "log_file": f"{_current_log_dir}/{mapping.log_file}"
+                    "log_file": f"{get_log_dir()}/{mapping.log_file}"
                     if mapping
-                    else f"{_current_log_dir}/main.log",
-                    "source_file": mapping.source_file if mapping else "unknown",
+                    else f"{get_log_dir()}/main.log",
+                    "source_file": _build_source_path(mapping.source_file)
+                    if mapping
+                    else "unknown",
                     "function": sub_mapping.function_name
                     if sub_mapping
                     else name.split(":")[1],
@@ -348,10 +367,12 @@ class Analysis:
                     "total_ms": timer.total,
                     "avg_ms": timer.avg,
                     "count": timer.count,
-                    "log_file": f"{_current_log_dir}/{mapping.log_file}"
+                    "log_file": f"{get_log_dir()}/{mapping.log_file}"
                     if mapping
-                    else f"{_current_log_dir}/main.log",
-                    "source_file": mapping.source_file if mapping else "unknown",
+                    else f"{get_log_dir()}/main.log",
+                    "source_file": _build_source_path(mapping.source_file)
+                    if mapping
+                    else "unknown",
                     "entry_point": mapping.entry_point if mapping else "unknown",
                     "is_sub_phase": False,
                 }
