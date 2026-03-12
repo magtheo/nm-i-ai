@@ -1,12 +1,13 @@
 """Task generation and assignment with global optimization and route bundling."""
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional
 from collections import defaultdict
 
 from challenges.grocery_bot.shared.state import GameState, Bot, Item, Order
 from challenges.grocery_bot.theo.pathfinding import Pathfinder
+from challenges.grocery_bot.theo.utils import is_adjacent, MAX_INVENTORY_SIZE, SpatialIndex
 from challenges.grocery_bot.shared.config import (
     WEIGHT_ACTIVE_ITEM, 
     WEIGHT_ORDER_COMPLETION, 
@@ -17,6 +18,13 @@ from challenges.grocery_bot.shared.config import (
 from tools.logging_config import get_logger, LogCategory
 
 logger = get_logger(LogCategory.TASKS)
+
+
+@dataclass
+class ScoringConfig:
+    """Configuration for task scoring"""
+    distance_threshold: int = 5
+    bundling_bonus: float = 0.3
 
 
 class TaskType(Enum):
@@ -37,7 +45,7 @@ class Task:
     target_position: Optional[tuple[int, int]] = None
     priority: float = 0.0
     score: float = 0.0
-    bundle_items: list[Item] = None  # For route bundling
+    bundle_items: list[Item] = field(default_factory=list)
     
     def __repr__(self):
         if self.bundle_items and len(self.bundle_items) > 1:
@@ -57,6 +65,7 @@ class TaskAssigner:
         self.pathfinder = pathfinder
         self._zone_load: dict[tuple[int, int], int] = {}
         self._distance_cache: dict[tuple[tuple[int, int], tuple[int, int]], int] = {}
+        self._spatial_indices: dict[str, SpatialIndex] = {}
     
     def assign_tasks(self, state: GameState) -> dict[int, Task]:
         """Assign tasks to all bots using global optimization."""
@@ -64,6 +73,7 @@ class TaskAssigner:
         preview_order = state.preview_order
         
         self._distance_cache = {}
+        self._rebuild_spatial_indices(state)
         
         bot_positions_list = [bot.position for bot in state.bots]
         self.pathfinder.update_congestion(bot_positions_list)
@@ -112,6 +122,17 @@ class TaskAssigner:
         
         return dict(needed)
     
+    def _rebuild_spatial_indices(self, state: GameState):
+        """Rebuild spatial indices for all item types."""
+        self._spatial_indices.clear()
+        
+        for item in state.items:
+            if not hasattr(item, 'position') or item.position is None:
+                continue
+            if item.type not in self._spatial_indices:
+                self._spatial_indices[item.type] = SpatialIndex()
+            self._spatial_indices[item.type].add_item(item)
+    
     def _generate_all_candidates(self, state: GameState, active_order: Optional[Order], 
                                   preview_order: Optional[Order], active_needed: dict[str, int],
                                   preview_needed: dict[str, int]) -> dict[int, list[Task]]:
@@ -153,7 +174,7 @@ class TaskAssigner:
             active_in_inventory = 0
         
         # If inventory is full, must go to drop-off (unless already there)
-        if len(bot.inventory) >= 3:
+        if len(bot.inventory) >= MAX_INVENTORY_SIZE:
             if bot.position in state.drop_off_zones:
                 # Already at drop-off, create DROP_OFF task
                 score = self._score_drop_off(bot, state, active_order, active_needed)
@@ -168,16 +189,15 @@ class TaskAssigner:
             zone, score = self._score_move_to_drop_off(bot, state, active_order, active_needed)
             candidates.append(Task(TaskType.MOVE_TO_DROP_OFF, target_position=zone, score=score))
             
-            if len(bot.inventory) < 3:
+            if len(bot.inventory) < MAX_INVENTORY_SIZE:
                 for item_type, count in active_needed.items():
                     if count <= 0:
                         continue
                     for item in state.get_items_by_type(item_type):
                         dist = abs(bot.position[0] - item.position[0]) + abs(bot.position[1] - item.position[1])
-                        if dist > 1 and dist <= 5:
+                        if dist > 1 and dist <= ScoringConfig.distance_threshold:
                             score = self._score_pick_active(bot, item, state, active_order, active_needed)
-                            # Bonus for bundling
-                            score *= (1 + 0.3 * active_in_inventory)
+                            score *= (1 + ScoringConfig.bundling_bonus * active_in_inventory)
                             candidates.append(Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score))
         
         # Pick up adjacent active items (high priority)
@@ -185,7 +205,7 @@ class TaskAssigner:
             if count <= 0:
                 continue
             for item in state.get_items_by_type(item_type):
-                if self._is_adjacent(bot.position, item.position):
+                if is_adjacent(bot.position, item.position):
                     score = self._score_pick_active(bot, item, state, active_order, active_needed)
                     candidates.append(Task(TaskType.PICK_ACTIVE, target_item=item, score=score))
         
@@ -194,7 +214,7 @@ class TaskAssigner:
             if count <= 0:
                 continue
             for item in state.get_items_by_type(item_type):
-                if self._is_adjacent(bot.position, item.position):
+                if is_adjacent(bot.position, item.position):
                     score = self._score_pick_preview(bot, item, state)
                     candidates.append(Task(TaskType.PICK_PREVIEW, target_item=item, score=score))
         
@@ -259,7 +279,7 @@ class TaskAssigner:
         if task.type in (TaskType.PICK_ACTIVE, TaskType.PICK_PREVIEW):
             if not task.target_item:
                 return False
-            if len(bot.inventory) >= 3:
+            if len(bot.inventory) >= MAX_INVENTORY_SIZE:
                 return False
             if not state.get_item(task.target_item.id):
                 return False
@@ -395,10 +415,28 @@ class TaskAssigner:
                 return True
         return False
     
-    def _is_adjacent(self, pos1: tuple[int, int], pos2: tuple[int, int]) -> bool:
-        return abs(pos1[0] - pos2[0]) + abs(pos1[1] - pos2[1]) == 1
-    
     def _get_closest_items_of_type(self, item_type: str, state: GameState, bot: Bot, limit: int = 3) -> list[Item]:
+        if item_type in self._spatial_indices:
+            index = self._spatial_indices[item_type]
+            candidates = []
+            radius_cells = 1
+            max_radius = max(state.grid_width, state.grid_height) // index.cell_size + 1
+            
+            while len(candidates) < limit and radius_cells <= max_radius:
+                nearby = index.get_nearby_items(bot.position, radius_cells)
+                for item in nearby:
+                    if item not in candidates:
+                        candidates.append(item)
+                radius_cells += 1
+            
+            if candidates:
+                candidates_with_dist = [
+                    (item, abs(bot.position[0] - item.position[0]) + abs(bot.position[1] - item.position[1]))
+                    for item in candidates
+                ]
+                candidates_with_dist.sort(key=lambda x: x[1])
+                return [item for item, _ in candidates_with_dist[:limit]]
+        
         items = state.get_items_by_type(item_type)
         if len(items) <= limit:
             return items
@@ -414,7 +452,7 @@ class TaskAssigner:
     def _get_distance_to_item(self, bot_pos: tuple[int, int], item_pos: tuple[int, int]) -> int:
         """Get distance from bot to nearest adjacent position of an item.
         
-        Optimized to minimize BFS calls with caching.
+        Uses batched BFS for efficiency.
         """
         cache_key = (bot_pos, item_pos)
         if cache_key in self._distance_cache:
@@ -436,13 +474,13 @@ class TaskAssigner:
             self._distance_cache[cache_key] = 0
             return 0
         
+        distances = self.pathfinder.get_distances_to_positions(bot_pos, valid_adjacent)
+        
         min_distance = float('inf')
         for adj_pos in valid_adjacent:
-            dist = self.pathfinder.bfs_distance(bot_pos, adj_pos)
+            dist = distances.get(adj_pos, -1)
             if dist > 0 and dist < min_distance:
                 min_distance = dist
-                if min_distance == 1:
-                    break
         
         result = int(min_distance) if min_distance != float('inf') else -1
         self._distance_cache[cache_key] = result

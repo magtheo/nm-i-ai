@@ -29,6 +29,7 @@ class Pathfinder:
         self._dynamic_obstacles: set[tuple[int, int]] = set()
         self._distance_cache: dict[tuple, dict[tuple, int]] = {}
         self._congestion_map: dict[tuple[int, int], float] = {}
+        self._cached_obstacles: set[tuple[int, int]] = set()
     
     def set_map(self, width: int, height: int, walls: set[tuple[int, int]]) -> None:
         """Set the current map configuration."""
@@ -41,14 +42,50 @@ class Pathfinder:
         self.obstacles = set()
         self._dynamic_obstacles = set()
         self._distance_cache = {}
+        self._cached_obstacles = set()
         self._congestion_map = {}
         logger.debug(f"Map set: {width}x{height}, {len(walls)} walls")
     
+    def invalidate_positions(self, positions: set[tuple[int, int]]) -> None:
+        """Invalidate only cache entries involving the given positions.
+        
+        This is smarter than clearing the entire cache - it only removes
+        entries where either the start or goal is one of the changed positions.
+        
+        Args:
+            positions: Set of positions that have changed
+        """
+        if not self._distance_cache:
+            return
+        
+        positions_to_clear = positions & self._distance_cache.keys()
+        for pos in positions_to_clear:
+            del self._distance_cache[pos]
+        
+        for start_pos in list(self._distance_cache.keys()):
+            goals_to_remove = [goal for goal in self._distance_cache[start_pos] if goal in positions]
+            for goal in goals_to_remove:
+                del self._distance_cache[start_pos][goal]
+        
+        logger.debug(f"Invalidated cache for {len(positions)} positions")
+    
     def set_obstacles(self, positions: set[tuple[int, int]]) -> None:
-        """Set shelf positions where items are placed (semi-permanent obstacles)."""
+        """Set shelf positions where items are placed (semi-permanent obstacles).
+        
+        Uses smart cache invalidation - only clears cache entries for positions
+        that have actually changed.
+        """
+        if self.obstacles == positions:
+            return
+        
+        changed_positions = self.obstacles.symmetric_difference(positions)
         self.obstacles = positions.copy()
-        self._distance_cache = {}
-        logger.debug(f"Obstacles set: {len(positions)} shelf positions")
+        
+        if changed_positions:
+            self.invalidate_positions(changed_positions)
+        
+        self._cached_obstacles = positions.copy()
+        logger.debug(f"Obstacles set: {len(positions)} shelf positions, {len(changed_positions)} changed")
     
     def add_dynamic_obstacle(self, position: tuple[int, int]) -> None:
         """Mark a position as blocked at runtime (e.g., bot got stuck there)."""
@@ -61,10 +98,14 @@ class Pathfinder:
         logger.debug("Dynamic obstacles cleared")
     
     def remove_obstacle(self, position: tuple[int, int]) -> None:
-        """Remove a specific obstacle when an item is picked up."""
+        """Remove a specific obstacle when an item is picked up.
+        
+        Uses smart cache invalidation - only clears cache entries involving
+        this specific position.
+        """
         self.obstacles.discard(position)
         self._dynamic_obstacles.discard(position)
-        self._distance_cache = {}
+        self.invalidate_positions({position})
         logger.debug(f"Obstacle removed at {position}")
     
     def update_congestion(self, bot_positions: list[tuple[int, int]]) -> None:
@@ -148,6 +189,65 @@ class Pathfinder:
                     queue.append((neighbor, dist + 1))
         
         return -1
+    
+    def get_distances_to_positions(
+        self, 
+        start: tuple[int, int], 
+        goals: list[tuple[int, int]], 
+        use_congestion: bool = False
+    ) -> dict[tuple[int, int], int]:
+        """Run BFS once from start and return distances to all goal positions.
+        
+        Much more efficient than calling bfs_distance() multiple times.
+        
+        Args:
+            start: Starting position
+            goals: List of target positions
+            use_congestion: If True, consider congestion in path cost
+            
+        Returns:
+            Dict mapping each goal position to its distance (or -1 if unreachable)
+        """
+        if not goals:
+            return {}
+        
+        result = {goal: -1 for goal in goals}
+        goals_set = set(goals)
+        
+        if start in goals_set:
+            result[start] = 0
+            goals_set.discard(start)
+            if not goals_set:
+                return result
+        
+        if not self.is_valid(start[0], start[1]):
+            return result
+        
+        goals_set = {goal for goal in goals_set if self.is_valid(goal[0], goal[1])}
+        
+        if not goals_set:
+            return result
+        
+        visited = {start}
+        queue = deque([(start, 0)])
+        
+        while queue and goals_set:
+            current, dist = queue.popleft()
+            
+            for neighbor in self.get_neighbors(*current):
+                if neighbor in goals_set:
+                    result[neighbor] = dist + 1
+                    goals_set.discard(neighbor)
+                    if not use_congestion and CACHE_DISTANCE_TABLES:
+                        if start not in self._distance_cache:
+                            self._distance_cache[start] = {}
+                        self._distance_cache[start][neighbor] = dist + 1
+                
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append((neighbor, dist + 1))
+        
+        return result
     
     def get_next_step(
         self, 
@@ -253,6 +353,71 @@ class Pathfinder:
                 else:
                     table[pos][other] = 0
         return table
+    
+    def precompute_distances(self, positions: list[tuple[int, int]]) -> None:
+        """Pre-compute and cache all pairwise distances between given positions.
+        
+        This is useful to call at initialization for all shelf positions,
+        so subsequent distance queries are O(1) lookups.
+        
+        Args:
+            positions: List of positions to precompute distances between
+        """
+        if not CACHE_DISTANCE_TABLES:
+            return
+        
+        for pos in positions:
+            if pos not in self._distance_cache:
+                self._distance_cache[pos] = {}
+            
+            for other in positions:
+                if pos == other:
+                    continue
+                if other not in self._distance_cache[pos]:
+                    dist = self._bfs_distance_uncached(pos, other)
+                    self._distance_cache[pos][other] = dist
+        
+        self._cached_obstacles = self.obstacles.copy()
+        logger.debug(f"Precomputed distances for {len(positions)} positions")
+    
+    def _bfs_distance_uncached(
+        self, 
+        start: tuple[int, int], 
+        goal: tuple[int, int]
+    ) -> int:
+        """Calculate shortest path distance using BFS without caching.
+        
+        Internal method used by precompute_distances to avoid redundant
+        cache checks.
+        
+        Args:
+            start: Starting position
+            goal: Target position
+            
+        Returns:
+            Distance in steps, or -1 if no path exists
+        """
+        if start == goal:
+            return 0
+        
+        if not self.is_valid(start[0], start[1]) or not self.is_valid(goal[0], goal[1]):
+            return -1
+        
+        visited = {start}
+        queue = deque([(start, 0)])
+        
+        while queue:
+            current, dist = queue.popleft()
+            
+            for neighbor in self.get_neighbors(*current):
+                if neighbor == goal:
+                    return dist + 1
+                
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append((neighbor, dist + 1))
+        
+        return -1
     
     def get_congestion_at(self, position: tuple[int, int]) -> float:
         """Get congestion level at a position."""

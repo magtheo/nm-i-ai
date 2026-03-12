@@ -5,6 +5,7 @@ from typing import Any, Optional
 from challenges.grocery_bot.shared.state import GameState, Bot
 from challenges.grocery_bot.theo.tasks import Task, TaskType
 from challenges.grocery_bot.theo.pathfinding import Pathfinder
+from challenges.grocery_bot.theo.utils import is_adjacent, MAX_INVENTORY_SIZE
 from tools.logging_config import get_logger, LogCategory
 
 logger = get_logger(LogCategory.ACTIONS)
@@ -62,7 +63,7 @@ class ActionGenerator:
         
         if task.type == TaskType.MOVE_TO_ITEM and task.target_item:
             item_pos = task.target_item.position
-            if self._is_adjacent(bot.position, item_pos):
+            if is_adjacent(bot.position, item_pos):
                 return self._pick_up_action(bot, task.target_item)
             adjacent_target = self._get_adjacent_position(bot.position, item_pos)
             if adjacent_target:
@@ -83,10 +84,6 @@ class ActionGenerator:
         # Default: wait
         return {"bot": bot.id, "action": "wait"}
     
-    def _is_adjacent(self, pos1: tuple[int, int], pos2: tuple[int, int]) -> bool:
-        """Check if two positions are adjacent (Manhattan distance of 1)."""
-        return abs(pos1[0] - pos2[0]) + abs(pos1[1] - pos2[1]) == 1
-    
     def _get_adjacent_position(
         self, 
         bot_pos: tuple[int, int], 
@@ -95,7 +92,7 @@ class ActionGenerator:
         """Find the best adjacent position to navigate to for reaching a target.
         
         For items on shelves, we need to navigate to an adjacent position
-        rather than the item's position itself.
+        rather than the item's position itself. Uses batched BFS for efficiency.
         
         Args:
             bot_pos: Current bot position
@@ -112,16 +109,23 @@ class ActionGenerator:
             (x, y + 1),
         ]
         
+        valid_adjacent = [
+            pos for pos in adjacent_positions 
+            if self.pathfinder.is_valid(pos[0], pos[1])
+        ]
+        
+        if not valid_adjacent:
+            return None
+        
+        distances = self.pathfinder.get_distances_to_positions(bot_pos, valid_adjacent)
+        
         best_pos = None
         best_distance = float('inf')
         
-        for adj_pos in adjacent_positions:
-            if not self.pathfinder.is_valid(adj_pos[0], adj_pos[1]):
-                continue
-            
-            distance = self.pathfinder.bfs_distance(bot_pos, adj_pos)
-            if distance > 0 and distance < best_distance:
-                best_distance = distance
+        for adj_pos in valid_adjacent:
+            dist = distances.get(adj_pos, -1)
+            if dist > 0 and dist < best_distance:
+                best_distance = dist
                 best_pos = adj_pos
         
         return best_pos
@@ -132,7 +136,7 @@ class ActionGenerator:
     
     def _pick_up_action(self, bot: Bot, item) -> dict[str, Any]:
         """Generate a pick_up action."""
-        if item and len(bot.inventory) < 3:
+        if item and len(bot.inventory) < MAX_INVENTORY_SIZE:
             return {"bot": bot.id, "action": "pick_up", "item_id": item.id}
         return {"bot": bot.id, "action": "wait"}
     

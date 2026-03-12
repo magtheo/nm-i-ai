@@ -1,10 +1,20 @@
 """Collision avoidance between bots with multi-step reservation."""
 
+from dataclasses import dataclass
 from typing import Any
 from collections import defaultdict
 
 from challenges.grocery_bot.shared.state import GameState, Bot
 from tools.logging_config import get_logger, LogCategory
+
+
+@dataclass
+class PriorityConfig:
+    """Configuration for collision priority calculations"""
+    base_priority: int = 500
+    carrying_items_bonus: int = 200
+    distance_to_goal_penalty: int = 100
+    stuck_count_multiplier: int = 5
 
 logger = get_logger(LogCategory.COLLISION)
 
@@ -146,18 +156,18 @@ class CollisionAvoider:
             )
             
             if carrying_active:
-                priority -= 500  # High priority for active delivery
+                priority -= PriorityConfig.base_priority
             
             # Check inventory fullness
             inventory_ratio = len(bot.inventory) / 3
-            priority -= int(inventory_ratio * 200)
+            priority -= int(inventory_ratio * PriorityConfig.carrying_items_bonus)
             
             # Check distance to nearest drop-off
             min_dist = min(
                 abs(bot.position[0] - zone[0]) + abs(bot.position[1] - zone[1])
                 for zone in state.drop_off_zones
             )
-            priority -= max(0, 100 - min_dist * 5)  # Closer = higher priority
+            priority -= max(0, PriorityConfig.distance_to_goal_penalty - min_dist * PriorityConfig.stuck_count_multiplier)
             
             # Tie-breaker: lower bot ID = higher priority
             priority += bot.id
