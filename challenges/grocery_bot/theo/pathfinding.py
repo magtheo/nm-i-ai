@@ -175,7 +175,8 @@ class Pathfinder:
         while queue:
             current, dist = queue.popleft()
 
-            for neighbor in self.get_neighbors(*current):
+            for dx, dy in [(0, -1), (0, 1), (-1, 0), (1, 0)]:
+                neighbor = (current[0] + dx, current[1] + dy)
                 if neighbor == goal:
                     if not use_congestion and CACHE_DISTANCE_TABLES:
                         if start not in self._distance_cache:
@@ -183,7 +184,7 @@ class Pathfinder:
                         self._distance_cache[start][goal] = dist + 1
                     return dist + 1
 
-                if neighbor not in visited:
+                if self.is_valid(neighbor[0], neighbor[1]) and neighbor not in visited:
                     visited.add(neighbor)
                     queue.append((neighbor, dist + 1))
 
@@ -238,7 +239,8 @@ class Pathfinder:
         while queue and goals_set:
             current, dist = queue.popleft()
 
-            for neighbor in self.get_neighbors(*current):
+            for dx, dy in [(0, -1), (0, 1), (-1, 0), (1, 0)]:
+                neighbor = (current[0] + dx, current[1] + dy)
                 if neighbor in goals_set:
                     result[neighbor] = dist + 1
                     goals_set.discard(neighbor)
@@ -247,7 +249,7 @@ class Pathfinder:
                             self._distance_cache[start] = {}
                         self._distance_cache[start][neighbor] = dist + 1
 
-                if neighbor not in visited:
+                if self.is_valid(neighbor[0], neighbor[1]) and neighbor not in visited:
                     visited.add(neighbor)
                     queue.append((neighbor, dist + 1))
 
@@ -288,17 +290,18 @@ class Pathfinder:
                     return parent[start]
                 return None
 
-            neighbors = self.get_neighbors(*current)
-
-            # Sort neighbors by congestion (less congested first), with position as tie-breaker
-            if use_congestion and self._congestion_map:
-                neighbors.sort(key=lambda n: (self._congestion_map.get(n, 0), n))
-
-            for neighbor in neighbors:
+            # For the first step (the goal itself), neighbors don't have to be "valid" in the moving sense
+            # but for all subsequent steps, they must be.
+            for dx, dy in [(0, -1), (0, 1), (-1, 0), (1, 0)]:
+                neighbor = (current[0] + dx, current[1] + dy)
+                
+                # If we're at the goal, we can move to any valid neighbor
+                # If we're not at the goal, we must have come from a valid neighbor
                 if neighbor not in visited:
-                    visited.add(neighbor)
-                    parent[neighbor] = current
-                    queue.append(neighbor)
+                    if neighbor == start or self.is_valid(neighbor[0], neighbor[1]):
+                        visited.add(neighbor)
+                        parent[neighbor] = current
+                        queue.append(neighbor)
 
         return None
 

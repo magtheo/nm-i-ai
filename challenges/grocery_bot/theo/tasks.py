@@ -369,18 +369,20 @@ class TaskAssigner:
                             Task(TaskType.PICK_PREVIEW, target_item=item, score=score)
                         )
 
-        for item_type, count in active_needed.items():
-            if count <= 0:
-                continue
-            for item in self._get_closest_items_of_type(
-                item_type, state, bot, distances, limit=3
-            ):
-                score = self._score_move_to_item(
-                    bot, item, state, active_order, active_needed, is_active=True
-                )
-                candidates.append(
-                    Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score)
-                )
+        # Move to active items - if inventory is not full
+        if len(bot.inventory) < MAX_INVENTORY_SIZE:
+            for item_type, count in active_needed.items():
+                if count <= 0:
+                    continue
+                for item in self._get_closest_items_of_type(
+                    item_type, state, bot, distances, limit=3
+                ):
+                    score = self._score_move_to_item(
+                        bot, item, state, active_order, active_needed, is_active=True
+                    )
+                    candidates.append(
+                        Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score)
+                    )
 
         # Move to preview items - only if inventory is mostly empty
         if len(bot.inventory) < 2 or not active_needed:
