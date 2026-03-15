@@ -73,6 +73,7 @@ class TaskAssigner:
         self.observer = observer
         self._zone_load: dict[tuple[int, int], int] = {}
         self._spatial_indices: dict[str, SpatialIndex] = {}
+        self._items_by_id: dict[str, Item] = {}
 
     def assign_tasks(self, state: GameState) -> dict[int, Task]:
         """Assign tasks to all bots using global optimization."""
@@ -154,15 +155,49 @@ class TaskAssigner:
         return dict(needed)
 
     def _rebuild_spatial_indices(self, state: GameState):
-        """Rebuild spatial indices for all item types."""
-        self._spatial_indices.clear()
+        """Rebuild spatial indices for all item types incrementally."""
+        # Clear state if it's the first round of a new game
+        if state.round == 0:
+            self._spatial_indices.clear()
+            self._items_by_id.clear()
 
+        # Identify items to remove
+        current_ids = {item.id for item in state.items}
+        removed_ids = set(self._items_by_id.keys()) - current_ids
+
+        for item_id in removed_ids:
+            old_item = self._items_by_id.pop(item_id)
+            if old_item.type in self._spatial_indices:
+                self._spatial_indices[old_item.type].remove_item(old_item)
+
+        # Add or update current items
         for item in state.items:
             if not hasattr(item, "position") or item.position is None:
                 continue
-            if item.type not in self._spatial_indices:
-                self._spatial_indices[item.type] = SpatialIndex()
-            self._spatial_indices[item.type].add_item(item)
+
+            if item.id not in self._items_by_id:
+                # New item
+                if item.type not in self._spatial_indices:
+                    self._spatial_indices[item.type] = SpatialIndex()
+                self._spatial_indices[item.type].add_item(item)
+                self._items_by_id[item.id] = item
+            else:
+                # Existing item - check if it moved (though items on shelves shouldn't move)
+                old_item = self._items_by_id[item.id]
+                if old_item.position != item.position:
+                    if old_item.type != item.type:
+                        # Rare case: type changed?
+                        if old_item.type in self._spatial_indices:
+                            self._spatial_indices[old_item.type].remove_item(old_item)
+                        if item.type not in self._spatial_indices:
+                            self._spatial_indices[item.type] = SpatialIndex()
+                        self._spatial_indices[item.type].add_item(item)
+                    else:
+                        # Moved
+                        self._spatial_indices[item.type].update_item_position(
+                            item, old_item.position
+                        )
+                    self._items_by_id[item.id] = item
 
     def _generate_all_candidates(
         self,
@@ -270,10 +305,8 @@ class TaskAssigner:
                     if count <= 0:
                         continue
                     for item in state.get_items_by_type(item_type):
-                        dist = abs(bot.position[0] - item.position[0]) + abs(
-                            bot.position[1] - item.position[1]
-                        )
-                        if dist > 1 and dist <= ScoringConfig.distance_threshold:
+                        dist = self.pathfinder.bfs_distance(bot.position, item.position)
+                        if 1 < dist <= ScoringConfig.distance_threshold:
                             score = self._score_pick_active(
                                 bot, item, state, active_order, active_needed
                             )
@@ -529,9 +562,7 @@ class TaskAssigner:
         active_needed: dict[str, int],
         is_active: bool,
     ) -> float:
-        distance = abs(bot.position[0] - item.position[0]) + abs(
-            bot.position[1] - item.position[1]
-        )
+        distance = self.pathfinder.bfs_distance(bot.position, item.position)
 
         if distance <= 0:
             return 0.0
@@ -585,14 +616,12 @@ class TaskAssigner:
                 radius_cells += 1
 
             if candidates:
-                candidates_with_dist = [
-                    (
-                        item,
-                        abs(bot.position[0] - item.position[0])
-                        + abs(bot.position[1] - item.position[1]),
-                    )
-                    for item in candidates
-                ]
+                candidates_with_dist = []
+                for item in candidates:
+                    dist = self.pathfinder.bfs_distance(bot.position, item.position)
+                    if dist >= 0:
+                        candidates_with_dist.append((item, dist))
+
                 candidates_with_dist.sort(key=lambda x: x[1])
                 return [item for item, _ in candidates_with_dist[:limit]]
 
@@ -602,10 +631,9 @@ class TaskAssigner:
 
         items_with_dist = []
         for item in items:
-            dist = abs(bot.position[0] - item.position[0]) + abs(
-                bot.position[1] - item.position[1]
-            )
-            items_with_dist.append((item, dist))
+            dist = self.pathfinder.bfs_distance(bot.position, item.position)
+            if dist >= 0:
+                items_with_dist.append((item, dist))
 
         items_with_dist.sort(key=lambda x: x[1])
         return [item for item, _ in items_with_dist[:limit]]
