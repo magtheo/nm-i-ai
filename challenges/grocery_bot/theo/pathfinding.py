@@ -159,7 +159,8 @@ class Pathfinder:
         if start == goal:
             return 0
 
-        if not self.is_valid(start[0], start[1]) or not self.is_valid(goal[0], goal[1]):
+        # Goal is allowed to be an obstacle (shelf), but start must be valid
+        if not self.is_valid(start[0], start[1]):
             return -1
 
         # Check cache (only for simple distance queries)
@@ -221,7 +222,12 @@ class Pathfinder:
         if not self.is_valid(start[0], start[1]):
             return result
 
-        goals_set = {goal for goal in goals_set if self.is_valid(goal[0], goal[1])}
+        # Only filter goals that are outside map bounds
+        goals_set = {
+            goal
+            for goal in goals_set
+            if 0 <= goal[0] < self.width and 0 <= goal[1] < self.height
+        }
 
         if not goals_set:
             return result
@@ -266,7 +272,7 @@ class Pathfinder:
         if start == goal:
             return None
 
-        if not self.is_valid(start[0], start[1]) or not self.is_valid(goal[0], goal[1]):
+        if not self.is_valid(start[0], start[1]):
             return None
 
         # BFS from goal to find shortest path

@@ -8,10 +8,10 @@ import os
 # Add parent directory to path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.pathfinding import Pathfinder
-from src.state import GameState, Bot, Item, Order
-from src.tasks import TaskAssigner
-from src.bot import GroceryBot
+from challenges.grocery_bot.theo.pathfinding import Pathfinder
+from challenges.grocery_bot.shared.state import GameState, Bot, Item, Order
+from challenges.grocery_bot.theo.tasks import TaskAssigner
+from challenges.grocery_bot.theo.bot import GroceryBot
 
 
 def test_pathfinding_performance():

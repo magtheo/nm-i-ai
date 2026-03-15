@@ -100,8 +100,21 @@ class TaskAssigner:
 
         # Sub-phase: generate candidates
         with self._phase("tasks:generate_candidates"):
+            # Precompute distances from all bots to all relevant items for performance
+            item_positions = list({item.position for item in state.items})
+            bot_distances = {}
+            for bot in state.bots:
+                bot_distances[bot.id] = self.pathfinder.get_distances_to_positions(
+                    bot.position, item_positions
+                )
+
             all_candidates = self._generate_all_candidates(
-                state, active_order, preview_order, active_needed, preview_needed
+                state,
+                active_order,
+                preview_order,
+                active_needed,
+                preview_needed,
+                bot_distances,
             )
 
         # Sub-phase: global assignment
@@ -206,13 +219,20 @@ class TaskAssigner:
         preview_order: Optional[Order],
         active_needed: dict[str, int],
         preview_needed: dict[str, int],
+        bot_distances: dict[int, dict[tuple[int, int], int]],
     ) -> dict[int, list[Task]]:
         """Generate candidate tasks for each bot."""
         candidates = {}
 
         for bot in state.bots:
             bot_candidates = self._generate_bot_candidates(
-                bot, state, active_order, preview_order, active_needed, preview_needed
+                bot,
+                state,
+                active_order,
+                preview_order,
+                active_needed,
+                preview_needed,
+                bot_distances.get(bot.id, {}),
             )
             candidates[bot.id] = bot_candidates
 
@@ -226,6 +246,7 @@ class TaskAssigner:
         preview_order: Optional[Order],
         active_needed: dict[str, int],
         preview_needed: dict[str, int],
+        distances: dict[tuple[int, int], int],
     ) -> list[Task]:
         """Generate candidate tasks for a single bot with route bundling."""
         candidates = []
@@ -254,10 +275,9 @@ class TaskAssigner:
             )
 
             if active_count > 0 or preview_count > 0:
-                score = self._score_drop_off(bot, state, active_order, active_needed)
-                # Boost score if carrying preview items too
-                if preview_count > 0:
-                    score += WEIGHT_PREVIEW_ITEM * preview_count
+                score = self._score_drop_off(
+                    bot, state, active_order, preview_order, active_needed
+                )
                 candidates.append(Task(TaskType.DROP_OFF, score=score))
 
         # Count active items in inventory (check against order's items_needed, not active_needed)
@@ -272,11 +292,13 @@ class TaskAssigner:
         if len(bot.inventory) >= MAX_INVENTORY_SIZE:
             if bot.position in state.drop_off_zones:
                 # Already at drop-off, create DROP_OFF task
-                score = self._score_drop_off(bot, state, active_order, active_needed)
+                score = self._score_drop_off(
+                    bot, state, active_order, preview_order, active_needed
+                )
                 candidates.append(Task(TaskType.DROP_OFF, score=score))
             else:
                 zone, score = self._score_move_to_drop_off(
-                    bot, state, active_order, active_needed
+                    bot, state, active_order, preview_order, active_needed
                 )
                 candidates.append(
                     Task(TaskType.MOVE_TO_DROP_OFF, target_position=zone, score=score)
@@ -290,11 +312,12 @@ class TaskAssigner:
             remaining = len(active_order.items_needed) - len(
                 active_order.items_delivered
             )
-            would_complete_order = remaining <= active_in_inventory
+            if remaining <= active_in_inventory:
+                would_complete_order = True
 
         if active_in_inventory >= MIN_ITEMS_FOR_DROP_OFF or would_complete_order:
             zone, score = self._score_move_to_drop_off(
-                bot, state, active_order, active_needed
+                bot, state, active_order, preview_order, active_needed
             )
             candidates.append(
                 Task(TaskType.MOVE_TO_DROP_OFF, target_position=zone, score=score)
@@ -305,7 +328,7 @@ class TaskAssigner:
                     if count <= 0:
                         continue
                     for item in state.get_items_by_type(item_type):
-                        dist = self.pathfinder.bfs_distance(bot.position, item.position)
+                        dist = distances.get(item.position, -1)
                         if 1 < dist <= ScoringConfig.distance_threshold:
                             score = self._score_pick_active(
                                 bot, item, state, active_order, active_needed
@@ -332,23 +355,26 @@ class TaskAssigner:
                         Task(TaskType.PICK_ACTIVE, target_item=item, score=score)
                     )
 
-        # Pick up adjacent preview items
-        for item_type, count in preview_needed.items():
-            if count <= 0:
-                continue
-            for item in state.get_items_by_type(item_type):
-                if is_adjacent(bot.position, item.position):
-                    score = self._score_pick_preview(
-                        bot, item, state, active_order, active_needed
-                    )
-                    candidates.append(
-                        Task(TaskType.PICK_PREVIEW, target_item=item, score=score)
-                    )
+        # Pick up adjacent preview items - only if inventory is mostly empty
+        if len(bot.inventory) < 2 or not active_needed:
+            for item_type, count in preview_needed.items():
+                if count <= 0:
+                    continue
+                for item in state.get_items_by_type(item_type):
+                    if is_adjacent(bot.position, item.position):
+                        score = self._score_pick_preview(
+                            bot, item, state, active_order, active_needed
+                        )
+                        candidates.append(
+                            Task(TaskType.PICK_PREVIEW, target_item=item, score=score)
+                        )
 
         for item_type, count in active_needed.items():
             if count <= 0:
                 continue
-            for item in self._get_closest_items_of_type(item_type, state, bot, limit=3):
+            for item in self._get_closest_items_of_type(
+                item_type, state, bot, distances, limit=3
+            ):
                 score = self._score_move_to_item(
                     bot, item, state, active_order, active_needed, is_active=True
                 )
@@ -356,17 +382,20 @@ class TaskAssigner:
                     Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score)
                 )
 
-        # Move to preview items
-        for item_type, count in preview_needed.items():
-            if count <= 0:
-                continue
-            for item in self._get_closest_items_of_type(item_type, state, bot, limit=3):
-                score = self._score_move_to_item(
-                    bot, item, state, preview_order, active_needed, is_active=False
-                )
-                candidates.append(
-                    Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score)
-                )
+        # Move to preview items - only if inventory is mostly empty
+        if len(bot.inventory) < 2 or not active_needed:
+            for item_type, count in preview_needed.items():
+                if count <= 0:
+                    continue
+                for item in self._get_closest_items_of_type(
+                    item_type, state, bot, distances, limit=3
+                ):
+                    score = self._score_move_to_item(
+                        bot, item, state, preview_order, active_needed, is_active=False
+                    )
+                    candidates.append(
+                        Task(TaskType.MOVE_TO_ITEM, target_item=item, score=score)
+                    )
 
         # Always include wait as fallback
         candidates.append(Task(TaskType.WAIT, score=0.0))
@@ -446,26 +475,43 @@ class TaskAssigner:
         bot: Bot,
         state: GameState,
         active_order: Optional[Order],
+        preview_order: Optional[Order],
         active_needed: dict[str, int],
     ) -> float:
         """Score for dropping off items."""
         score = 0.0
         active_count = 0
+        preview_count = 0
 
         if active_order:
             for item_type in bot.inventory:
                 if item_type in active_order.items_needed:
                     score += WEIGHT_ACTIVE_ITEM
                     active_count += 1
+        
+        if preview_order:
+            for item_type in bot.inventory:
+                if item_type in preview_order.items_required:
+                    preview_count += 1
 
-        # Base bonus for carrying active items (same as move_to_drop_off)
+        # Base bonus for carrying active items
         if active_count > 0:
             score += 2.0
+            # Only add preview score if we are already going for active items
+            if preview_count > 0:
+                score += WEIGHT_PREVIEW_ITEM * preview_count * 0.5
+        elif len(bot.inventory) >= MAX_INVENTORY_SIZE:
+            # If full but only preview items, still give some score but much lower
+            score += 0.5
+            if preview_count > 0:
+                score += WEIGHT_PREVIEW_ITEM * preview_count * 0.2
 
         # Immediate action bonus - drop_off can be done right now!
-        score += 1.0
+        if active_count > 0 or len(bot.inventory) >= MAX_INVENTORY_SIZE:
+            score += 1.0
+
         # BIG bonus for completing order
-        if active_order:
+        if active_order and active_count > 0:
             remaining = len(active_order.items_needed) - len(
                 active_order.items_delivered
             )
@@ -481,6 +527,7 @@ class TaskAssigner:
         bot: Bot,
         state: GameState,
         active_order: Optional[Order],
+        preview_order: Optional[Order],
         active_needed: dict[str, int],
     ) -> tuple[tuple[int, int], float]:
         """Score for moving to drop-off zone."""
@@ -490,11 +537,21 @@ class TaskAssigner:
         active_count = sum(
             1 for t in bot.inventory if active_order and t in active_order.items_needed
         )
+        preview_count = sum(
+            1 for t in bot.inventory if preview_order and t in preview_order.items_required
+        )
+        
         score = active_count * WEIGHT_ACTIVE_ITEM
 
         # Significant base bonus when carrying ANY active items
         if active_count > 0:
             score += 2.0
+            if preview_count > 0:
+                score += WEIGHT_PREVIEW_ITEM * preview_count * 0.5
+        elif len(bot.inventory) >= MAX_INVENTORY_SIZE:
+            score += 0.5
+            if preview_count > 0:
+                score += WEIGHT_PREVIEW_ITEM * preview_count * 0.2
 
         # Extra bonus when delivery would complete the order
         if active_order and active_count > 0:
@@ -600,7 +657,12 @@ class TaskAssigner:
         return False
 
     def _get_closest_items_of_type(
-        self, item_type: str, state: GameState, bot: Bot, limit: int = 3
+        self,
+        item_type: str,
+        state: GameState,
+        bot: Bot,
+        distances: dict[tuple[int, int], int],
+        limit: int = 3,
     ) -> list[Item]:
         if item_type in self._spatial_indices:
             index = self._spatial_indices[item_type]
@@ -618,7 +680,7 @@ class TaskAssigner:
             if candidates:
                 candidates_with_dist = []
                 for item in candidates:
-                    dist = self.pathfinder.bfs_distance(bot.position, item.position)
+                    dist = distances.get(item.position, -1)
                     if dist >= 0:
                         candidates_with_dist.append((item, dist))
 
@@ -631,7 +693,7 @@ class TaskAssigner:
 
         items_with_dist = []
         for item in items:
-            dist = self.pathfinder.bfs_distance(bot.position, item.position)
+            dist = distances.get(item.position, -1)
             if dist >= 0:
                 items_with_dist.append((item, dist))
 
