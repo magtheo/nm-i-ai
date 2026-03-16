@@ -98,11 +98,19 @@ class TaskAssigner:
             preview_needed = self._get_needed_items(
                 preview_order, state.bots, "preview"
             )
-            
+
             # Pre-calculate sets and remaining count for faster membership tests and scoring
-            active_items_needed = set(active_order.items_needed) if active_order else set()
-            preview_items_required = set(preview_order.items_required) if preview_order else set()
-            remaining_active = len(active_order.items_needed) if active_order else 0
+            active_items_needed = (
+                set(active_order.items_needed) if active_order else set()
+            )
+            preview_items_required = (
+                set(preview_order.items_required) if preview_order else set()
+            )
+            remaining_active = (
+                len(active_order.items_needed) - len(active_order.items_delivered)
+                if active_order
+                else 0
+            )
 
         # Sub-phase: generate candidates
         with self._phase("tasks:generate_candidates"):
@@ -150,7 +158,11 @@ class TaskAssigner:
                 tasks[bot.id] = assignments[bot.id]
             else:
                 tasks[bot.id] = self._get_fallback_task(
-                    bot, state, active_needed, preview_needed, bot_distances.get(bot.id, {})
+                    bot,
+                    state,
+                    active_needed,
+                    preview_needed,
+                    bot_distances.get(bot.id, {}),
                 )
 
         return tasks
@@ -314,7 +326,9 @@ class TaskAssigner:
 
         # Count active items in inventory
         if active_order:
-            active_in_inventory = sum(1 for t in bot.inventory if t in active_items_needed)
+            active_in_inventory = sum(
+                1 for t in bot.inventory if t in active_items_needed
+            )
         else:
             active_in_inventory = 0
 
@@ -380,7 +394,7 @@ class TaskAssigner:
                     for item in items_by_type.get(item_type, []):
                         dist = distances.get(item.position, -1)
                         if 1 < dist <= ScoringConfig.distance_threshold:
-                            score = self._score_pick_active(
+                            score = self._score_move_to_item(
                                 bot,
                                 item,
                                 state,
@@ -388,9 +402,8 @@ class TaskAssigner:
                                 active_needed,
                                 active_items_needed,
                                 remaining_active,
-                            )
-                            score *= (
-                                1 + ScoringConfig.bundling_bonus * active_in_inventory
+                                distances,
+                                is_active=True,
                             )
                             candidates.append(
                                 Task(
@@ -406,20 +419,34 @@ class TaskAssigner:
             item = items_by_pos.get(adj_pos)
             if not item:
                 continue
-                
+
             # Check if it's an active item we need
             if item.type in active_needed and active_needed[item.type] > 0:
                 score = self._score_pick_active(
-                    bot, item, state, active_order, active_needed, active_items_needed, remaining_active
+                    bot,
+                    item,
+                    state,
+                    active_order,
+                    active_needed,
+                    active_items_needed,
+                    remaining_active,
                 )
                 candidates.append(
                     Task(TaskType.PICK_ACTIVE, target_item=item, score=score)
                 )
             # Check if it's a preview item we need (only if inventory is mostly empty)
-            elif (len(bot.inventory) < 2 or not active_needed) and \
-                 item.type in preview_needed and preview_needed[item.type] > 0:
+            elif (
+                (len(bot.inventory) < 2 or not active_needed)
+                and item.type in preview_needed
+                and preview_needed[item.type] > 0
+            ):
                 score = self._score_pick_preview(
-                    bot, item, state, active_order, active_needed, preview_items_required
+                    bot,
+                    item,
+                    state,
+                    active_order,
+                    active_needed,
+                    preview_items_required,
                 )
                 candidates.append(
                     Task(TaskType.PICK_PREVIEW, target_item=item, score=score)
@@ -463,7 +490,7 @@ class TaskAssigner:
                         preview_order,
                         active_needed,
                         preview_items_required,
-                        0, # remaining_active is 0 for preview
+                        0,  # remaining_active is 0 for preview
                         distances,
                         is_active=False,
                     )
@@ -539,7 +566,9 @@ class TaskAssigner:
         if bot.position in state.drop_off_zones and bot.inventory:
             return Task(TaskType.DROP_OFF, score=10)
         if self._has_useful_items(bot, active_needed, preview_needed):
-            zone = self._find_best_drop_off_balanced(bot.position, state.drop_off_zones, distances)
+            zone = self._find_best_drop_off_balanced(
+                bot.position, state.drop_off_zones, distances
+            )
             return Task(TaskType.MOVE_TO_DROP_OFF, target_position=zone, score=10)
         return Task(TaskType.WAIT, score=0)
 
@@ -566,7 +595,7 @@ class TaskAssigner:
                 if item_type in active_items_needed:
                     score += WEIGHT_ACTIVE_ITEM
                     active_count += 1
-        
+
         if preview_order:
             for item_type in bot.inventory:
                 if item_type in preview_items_required:
@@ -610,12 +639,14 @@ class TaskAssigner:
         distances: dict[tuple[int, int], int],
     ) -> tuple[tuple[int, int], float]:
         """Score for moving to drop-off zone."""
-        zone = self._find_best_drop_off_balanced(bot.position, state.drop_off_zones, distances)
+        zone = self._find_best_drop_off_balanced(
+            bot.position, state.drop_off_zones, distances
+        )
         distance = distances.get(zone, -1)
 
         active_count = sum(1 for t in bot.inventory if t in active_items_needed)
         preview_count = sum(1 for t in bot.inventory if t in preview_items_required)
-        
+
         score = active_count * WEIGHT_ACTIVE_ITEM
 
         # Significant base bonus when carrying ANY active items
@@ -631,7 +662,7 @@ class TaskAssigner:
         # Extra bonus when delivery would complete the order
         if active_order and active_count > 0:
             if remaining_active <= active_count:
-                score += WEIGHT_ORDER_COMPLETION * 0.3
+                score += WEIGHT_ORDER_COMPLETION
 
         # Bonus for having multiple active items (bundling)
         if active_count >= MIN_ITEMS_FOR_DROP_OFF:
@@ -662,7 +693,7 @@ class TaskAssigner:
         # Bonus if this completes the order (with items already in inventory)
         if active_order:
             if remaining_active <= active_in_inventory + 1:
-                score += WEIGHT_ORDER_COMPLETION
+                score += WEIGHT_ORDER_COMPLETION * 0.3
 
         # Reduced bundling bonus (0.05 instead of 0.1)
         if active_in_inventory > 0:
@@ -705,12 +736,10 @@ class TaskAssigner:
         active_in_inventory = sum(1 for t in bot.inventory if t in needed_items_set)
 
         if is_active and order:
-            # Bonus if this completes the order (with items already in inventory)
             if remaining_active <= active_in_inventory + 1:
-                base_value += WEIGHT_ORDER_COMPLETION
+                base_value += WEIGHT_ORDER_COMPLETION * 0.3
 
         if active_in_inventory > 0:
-            # Bonus for bundling - picking up more items while already carrying
             base_value *= 1 + ScoringConfig.bundling_bonus * 0.5 * active_in_inventory
 
         score = base_value / (1 + distance * 0.2)
@@ -756,10 +785,10 @@ class TaskAssigner:
         return [c[0] for c in candidates_with_dist[:limit]]
 
     def _find_best_drop_off_balanced(
-        self, 
-        position: tuple[int, int], 
+        self,
+        position: tuple[int, int],
         drop_off_zones: list[tuple[int, int]],
-        distances: dict[tuple[int, int], int]
+        distances: dict[tuple[int, int], int],
     ) -> tuple[int, int]:
         if len(drop_off_zones) == 1:
             return drop_off_zones[0]
